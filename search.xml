@@ -95,18 +95,35 @@
     <title>高级生化</title>
     <url>/2025/03/26/%E9%AB%98%E7%BA%A7%E7%94%9F%E5%8C%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="高级生物化学"><a href="#高级生物化学" class="headerlink" title="高级生物化学"></a><span style="display:block;text-align:center;color:#00BFFF;">高级生物化学</span></h1><h2 id="第一组试题"><a href="#第一组试题" class="headerlink" title="第一组试题"></a><span style="display:block;text-align:center;color:#84C36E;">第一组试题</span></h2><h3 id="一、名词解释"><a href="#一、名词解释" class="headerlink" title="一、名词解释"></a>一、名词解释</h3><ol>
-<li>   氨基酸的等电点：<details></li>
-</ol>
+<li><p>   氨基酸的等电点：</p>
+<details> 
+<summary>点击查看答案</summary>
+在某一pH的溶液中，氨基酸解离成阳离子和阴离子的趋势及程度相等，成为兼性离子，呈电中性，此时的溶液pH称该氨基酸的等电点。
 </details>
-2.	茚三酮反应：
-
-<ol start="3">
+</li>
+<li><p>   茚三酮反应：</p>
+<details> 
+<summary>点击查看答案</summary>
+氨基酸与茚三酮在弱酸性溶液中加热，引起氨基酸氧化脱氨，产生相应的醛、氨、二氧化碳和还原茚三酮，产生的氨和还原性茚三酮与另一个茚三酮分子反应生成紫色产物的反应。茚三酮与大多数氨基酸反应生成紫色物质，最大吸收峰在570nm左右，但与脯氨酸或羟脯氨酸反应则生成亮黄色物质。
+</details>
+</li>
 <li><p>   DNA的变性：</p>
+<details> 
+<summary>点击查看答案</summary>
+DNA的变性是指 DNA 双螺旋区的氢键断裂，空间结构破坏，形成单链无规则线团状态的过程。变性只涉及次级键的变化，不涉及共价键的断裂。
+</details>
 </li>
 <li><p>   增色效应：</p>
+<details> 
+<summary>点击查看答案</summary>
+当核酸水解为核苷酸时，紫外吸收值通常增加30%~40%，这种现象被称为“增色效应”。（另一种表述：当DNA 从双螺旋结构变为单链的无规则卷曲状态时，它在260nm 处的紫外吸收值增加）
+</details>
 </li>
 <li><p>   核酸分子杂交：</p>
-</li>
+<details> 
+<summary>点击查看答案</summary>
+在退火条件下，不同来源的DNA互补区形成双链，或DNA单链和RNA单链的互补区形成DNA-RNA杂合双链的过程称分子杂交。
+</details></li>
 </ol>
 <h3 id="二、判断题"><a href="#二、判断题" class="headerlink" title="二、判断题"></a>二、判断题</h3><p>1.当单一氨基酸溶液的pH在pKa时缓冲能力最弱。（  ）<br>2.多肽链通过与DNFB反应可以用于测定N-末端氨基酸种类，由此可用于整个氨基酸序列测序。（  ）<br>3.蛋白质的变性作用都是不可逆的。（  ）<br>4.等电点条件下，蛋白质的溶解度最大。（  ）<br>5.DNA双螺旋结构的稳定性，主要来自碱基对之间的氢键。（  ）<br>6.双链DNA分子中GC含量越高，Tm值越大。（  ）<br>7.原核生物中水解酶参与DNA的复制过程。（  ）<br>8.核小体是构成染色体的基本单位。（  ）</p>
 <h3 id="三、填空题"><a href="#三、填空题" class="headerlink" title="三、填空题"></a>三、填空题</h3><p>1.蛋白质通过酸水解后检测不到_______、_______、_______这三种氨基酸。<br>2.常见氨基酸中_______由于具有_______，还原性较强，易被氧化。<br>3.当pH＞pI时，氨基酸_______，在电场中_______。<br>4.维持蛋白质二级结构的主要化学键是_______。<br>5.氨基酸在晶体和水溶液状态下主要以_______形式存在。<br>6.纸层析中的Rf指________________________。<br>7.蛋白质的二级结构中，α-螺旋每圈包含_______个氨基酸残基，螺距大小为_______。<br>8.测定多肽链N-末端的方法包括_______、_______、_______等。<br>9.稳定DNA二级结构的作用力主要是_______、_______。<br>10.核酸的特征元素是_______。<br>11.蛋白质和核酸的最大紫外线吸收波长分别为_______、_______。</p>

@@ -142,8 +142,8 @@
 <h2 id="第二节-药物的作用机制-特异性作用"><a href="#第二节-药物的作用机制-特异性作用" class="headerlink" title="第二节 药物的作用机制 (特异性作用)"></a>第二节 药物的作用机制 (特异性作用)</h2><h3 id="一、药物与受体的作用"><a href="#一、药物与受体的作用" class="headerlink" title="一、药物与受体的作用"></a>一、药物与受体的作用</h3><h4 id="1、受体"><a href="#1、受体" class="headerlink" title="1、受体"></a>1、受体</h4><p>受体是与生物活性物质(神经递质、激素、活性肽、药物、毒素)结合并传递信息，引起生物学效应的跨膜或细胞膜内的生物大分子。与受体结合的物质为配体，也称第一信使。</p>
 <p><font size="4"><span style="color:red">● 受体理论：配体与受体结合，通过中介的信息放大、分化、以及整合系统，触发后续的生理反应或药理效应。药效学的基本理论之一。</span></font><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.png"></p>
 <h4 id="2、受体的特征"><a href="#2、受体的特征" class="headerlink" title="2、受体的特征"></a>2、受体的特征</h4><p>特异性：受体只接受特定的配体结合。<br>高亲和力：离解常数在nM的水平。<br>饱和性：受体蛋白分子数目有限，故结合配体具有饱和性。<br>可逆性：配体与受体结合是可逆的。</p>
-<h4 id="3、受体的命名与分类"><a href="#3、受体的命名与分类" class="headerlink" title="3、受体的命名与分类"></a>3、受体的命名与分类</h4><h5 id="命名："><a href="#命名：" class="headerlink" title="命名："></a>命名：</h5><p>●  按特异内源性配体命名<br>●  未知内源配体，以药物命名<br>●  未知配体与药物，孤儿受体</p>
-<h5 id="分类：根据存在的部位"><a href="#分类：根据存在的部位" class="headerlink" title="分类：根据存在的部位"></a>分类：根据存在的部位</h5><p>●  细胞膜受体<br>●  细胞质受体<br>●  细胞核受体</p>
+<h4 id="3、受体的命名与分类"><a href="#3、受体的命名与分类" class="headerlink" title="3、受体的命名与分类"></a>3、受体的命名与分类</h4><h5 id="命名："><a href="#命名：" class="headerlink" title="命名："></a><font size="4">命名：</font></h5><p>●  按特异内源性配体命名<br>●  未知内源配体，以药物命名<br>●  未知配体与药物，孤儿受体</p>
+<h5 id="分类：根据存在的部位"><a href="#分类：根据存在的部位" class="headerlink" title="分类：根据存在的部位"></a><font size="4">分类：根据存在的部位</font></h5><p>●  细胞膜受体<br>●  细胞质受体<br>●  细胞核受体</p>
 <h5>
 <span style="color:#D81C2F">
 根据信号传导机制
@@ -165,9 +165,9 @@
 抑制受体活性，拮抗剂 (antagonist)
 </span>
 
-<h4 id="4、配体门控离子通道型受体-ligand-gated-ion-channels"><a href="#4、配体门控离子通道型受体-ligand-gated-ion-channels" class="headerlink" title="4、配体门控离子通道型受体 (ligand-gated ion channels)"></a>4、配体门控离子通道型受体 (ligand-gated ion channels)</h4><h5 id="（1）分类-根据结构特征"><a href="#（1）分类-根据结构特征" class="headerlink" title="（1）分类 (根据结构特征)"></a>（1）分类 (根据结构特征)</h5><p>●  Cys-环受体类<br>●  谷氨酸门控阳离子通道<br>●  环核苷酸受体相关离子通道<br>●  上皮钠通道相关离子通道<br>●  内向整流钾通道相关离子通道</p>
-<h5 id="（2）离子通道型受体生理功能"><a href="#（2）离子通道型受体生理功能" class="headerlink" title="（2）离子通道型受体生理功能"></a>（2）离子通道型受体生理功能</h5><p>●  化学信号转变为电信号，引起电位变化<br>●  快速信号传递<br>●  重要的药物靶点</p>
-<h5 id="（3）结构特征以及代表性受体"><a href="#（3）结构特征以及代表性受体" class="headerlink" title="（3）结构特征以及代表性受体"></a>（3）结构特征以及代表性受体</h5><p>●  Cys-环受体类：5聚体围成中央离子通道；每个亚基4TM；N或C-端位于膜外；胞外结构域，每隔15个残基，存在一个Cys，形成Cys-环；配体来自胞外。代表性受体：nAChR, 5-HT3R, GABAAR, GlyR。</p>
+<h4 id="4、配体门控离子通道型受体-ligand-gated-ion-channels"><a href="#4、配体门控离子通道型受体-ligand-gated-ion-channels" class="headerlink" title="4、配体门控离子通道型受体 (ligand-gated ion channels)"></a>4、配体门控离子通道型受体 (ligand-gated ion channels)</h4><h5 id="（1）分类-根据结构特征"><a href="#（1）分类-根据结构特征" class="headerlink" title="（1）分类 (根据结构特征)"></a><font size="4">（1）分类 (根据结构特征)</font></h5><p>●  Cys-环受体类<br>●  谷氨酸门控阳离子通道<br>●  环核苷酸受体相关离子通道<br>●  上皮钠通道相关离子通道<br>●  内向整流钾通道相关离子通道</p>
+<h5 id="（2）离子通道型受体生理功能"><a href="#（2）离子通道型受体生理功能" class="headerlink" title="（2）离子通道型受体生理功能"></a><font size="4">（2）离子通道型受体生理功能</font></h5><p>●  化学信号转变为电信号，引起电位变化<br>●  快速信号传递<br>●  重要的药物靶点</p>
+<h5 id="（3）结构特征以及代表性受体"><a href="#（3）结构特征以及代表性受体" class="headerlink" title="（3）结构特征以及代表性受体"></a><font size="4">（3）结构特征以及代表性受体</font></h5><p>●  Cys-环受体类：5聚体围成中央离子通道；每个亚基4TM；N或C-端位于膜外；胞外结构域，每隔15个残基，存在一个Cys，形成Cys-环；配体来自胞外。代表性受体：nAChR, 5-HT3R, GABAAR, GlyR。</p>
 <span style="display:block;text-align:center;">
 <font size="4">
 烟碱型乙酰胆碱受体(nAChR)
@@ -192,13 +192,13 @@
 激动剂的结合经过G蛋白的转导，将信号传递至效应器。
 </font>
 
-<h5 id="1-特征"><a href="#1-特征" class="headerlink" title="(1) 特征"></a>(1) 特征</h5><p>● 最多的一类，超1000种，但有共同特征。<br>● 慢突触后反应。<br>● G蛋白为胞内信号通路的关键分子，由α, β和γ 亚基组成三聚体。<br>● G蛋白介导的信号通路有腺苷酸环化酶偶联通路、磷脂酶C偶联通路、磷脂酶A2  (PLA2) 偶联通路等。</p>
-<h5 id="2-GPCR结构"><a href="#2-GPCR结构" class="headerlink" title="(2) GPCR结构"></a>(2) GPCR结构</h5><p>● 不同受体具有不同的结构。<br>● 单一的多肽链构成，7个跨膜区域。<br>●  N端胞外，糖基化位点以及与其它膜外区域形成配体结合位点。<br>●  C端形成G蛋白结合域。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/11.png"></p>
-<h5 id="3-GPCR的分类-（根据结构特点）"><a href="#3-GPCR的分类-（根据结构特点）" class="headerlink" title="(3) GPCR的分类 （根据结构特点）"></a>(3) GPCR的分类 （根据结构特点）</h5><p>● 视紫红质亚类，7个TM、N端外参与配体结合、C端内参与G蛋白结合与活化。<br>● mGluR&#x2F;GABAB受体亚类，肽链长 (&gt;1000 aa)、N和 C端含有大的疏水性结构域。<br>● 肠促胰液肽受体亚型，N端均有疏水性结构域，与之相连一条亲水性区域并含有多个Cys。血管肠肽、降钙素、甲状旁腺素受体等。<br><span style="display:block;text-align:center;color:#D81C2F"><br><font size="6"><br>mGluR<br></font><br></span></p>
+<h5 id="1-特征"><a href="#1-特征" class="headerlink" title="(1) 特征"></a><font size="4">(1) 特征</font></h5><p>● 最多的一类，超1000种，但有共同特征。<br>● 慢突触后反应。<br>● G蛋白为胞内信号通路的关键分子，由α, β和γ 亚基组成三聚体。<br>● G蛋白介导的信号通路有腺苷酸环化酶偶联通路、磷脂酶C偶联通路、磷脂酶A2  (PLA2) 偶联通路等。</p>
+<h5 id="2-GPCR结构"><a href="#2-GPCR结构" class="headerlink" title="(2) GPCR结构"></a><font size="4">(2) GPCR结构</font></h5><p>● 不同受体具有不同的结构。<br>● 单一的多肽链构成，7个跨膜区域。<br>●  N端胞外，糖基化位点以及与其它膜外区域形成配体结合位点。<br>●  C端形成G蛋白结合域。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/11.png"></p>
+<h5 id="3-GPCR的分类-（根据结构特点）"><a href="#3-GPCR的分类-（根据结构特点）" class="headerlink" title="(3) GPCR的分类 （根据结构特点）"></a><font size="4">(3) GPCR的分类 （根据结构特点）</font></h5><p>● 视紫红质亚类，7个TM、N端外参与配体结合、C端内参与G蛋白结合与活化。<br>● mGluR&#x2F;GABAB受体亚类，肽链长 (&gt;1000 aa)、N和 C端含有大的疏水性结构域。<br>● 肠促胰液肽受体亚型，N端均有疏水性结构域，与之相连一条亲水性区域并含有多个Cys。血管肠肽、降钙素、甲状旁腺素受体等。<br><span style="display:block;text-align:center;color:#D81C2F"><br><font size="6"><br>mGluR<br></font><br></span></p>
 <p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/12.png"></p>
-<h5 id="4-GPCR配体结合域"><a href="#4-GPCR配体结合域" class="headerlink" title="(4) GPCR配体结合域"></a>(4) GPCR配体结合域</h5><p>● 配体种类多样，从单胺类到多肽和糖蛋白，配体结合域复杂。<br>● 小分子配体存在配体结合口袋。<br>● 大分子配体先与N-端序列结合，再与胞外的功能域结合，受体结构产生大的改变。</p>
-<h5 id="5-GPCR的G蛋白结合域"><a href="#5-GPCR的G蛋白结合域" class="headerlink" title="(5) GPCR的G蛋白结合域"></a>(5) GPCR的G蛋白结合域</h5><p>● 胞内区域，包括C端、TM5-6之间的内环。<br>● 调节G蛋白GTP&#x2F;GDP的转换，活化G蛋白。<br>● G蛋白则用其α亚基C端末7个氨基酸与受体结合。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png"></p>
-<h5 id="6-G蛋白结构"><a href="#6-G蛋白结构" class="headerlink" title="(6) G蛋白结构"></a>(6) G蛋白结构</h5><p>● α、β、γ亚基组成的杂合三聚体。<br>● α亚基为功能性亚基，并带有GTP结合位点，具有GTP水解酶活性。<br>● 不同G蛋白α亚基的序列差别很大，功能有所不同。<br>● α亚基有3个结构域: G结构域，参与结合和水解GTP；螺旋区，参与包埋GTP; 与GPCR结合的C端序列。<br>● β和γ亚基结合在一起形成复合体。当G蛋白被激活时，βγ复合体与a亚基解离。</p>
+<h5 id="4-GPCR配体结合域"><a href="#4-GPCR配体结合域" class="headerlink" title="(4) GPCR配体结合域"></a><font size="4">(4) GPCR配体结合域</font></h5><p>● 配体种类多样，从单胺类到多肽和糖蛋白，配体结合域复杂。<br>● 小分子配体存在配体结合口袋。<br>● 大分子配体先与N-端序列结合，再与胞外的功能域结合，受体结构产生大的改变。</p>
+<h5 id="5-GPCR的G蛋白结合域"><a href="#5-GPCR的G蛋白结合域" class="headerlink" title="(5) GPCR的G蛋白结合域"></a><font size="4">(5) GPCR的G蛋白结合域</font></h5><p>● 胞内区域，包括C端、TM5-6之间的内环。<br>● 调节G蛋白GTP&#x2F;GDP的转换，活化G蛋白。<br>● G蛋白则用其α亚基C端末7个氨基酸与受体结合。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png"></p>
+<h5 id="6-G蛋白结构"><a href="#6-G蛋白结构" class="headerlink" title="(6) G蛋白结构"></a><font size="4">(6) G蛋白结构</font></h5><p>● α、β、γ亚基组成的杂合三聚体。<br>● α亚基为功能性亚基，并带有GTP结合位点，具有GTP水解酶活性。<br>● 不同G蛋白α亚基的序列差别很大，功能有所不同。<br>● α亚基有3个结构域: G结构域，参与结合和水解GTP；螺旋区，参与包埋GTP; 与GPCR结合的C端序列。<br>● β和γ亚基结合在一起形成复合体。当G蛋白被激活时，βγ复合体与a亚基解离。</p>
 <table>
   <tr>
     <td height="50%"><img src="/../img/生理药理学/第三章/14.png" ></td>
@@ -206,12 +206,12 @@
   </tr>
 </table>
 
-<h5 id="7-G蛋白的分类"><a href="#7-G蛋白的分类" class="headerlink" title="(7) G蛋白的分类"></a>(7) G蛋白的分类</h5><p>● 根据α亚基分类。4大类。<br>● Gs、Gi、Gq、G12。<br>● 5种β亚基和13种γ亚基。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/16.png"></p>
-<h5 id="8-G蛋白的活化"><a href="#8-G蛋白的活化" class="headerlink" title="(8) G蛋白的活化"></a>(8) G蛋白的活化</h5><p>● 失活状态，α亚基结合GDP。<br>● 配体结合。<br>● 引发α亚基结构变化。<br>● 减小GDP亲和力，GTP取代GDP。<br>● 蛋白复合体解离为三，受体、βγ复合体、结合GTP的α亚基。结合GTP的α亚基与βγ复合体分别激活下游的效应器。<br>● α亚基水解结合GTP为GDP而处于失活状态。<br>● 失活状态的α亚基与βγ结合形成复合物，处于失活状态。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/17.png"></p>
+<h5 id="7-G蛋白的分类"><a href="#7-G蛋白的分类" class="headerlink" title="(7) G蛋白的分类"></a><font size="4">(7) G蛋白的分类</font></h5><p>● 根据α亚基分类。4大类。<br>● Gs、Gi、Gq、G12。<br>● 5种β亚基和13种γ亚基。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/16.png"></p>
+<h5 id="8-G蛋白的活化"><a href="#8-G蛋白的活化" class="headerlink" title="(8) G蛋白的活化"></a><font size="4">(8) G蛋白的活化</font></h5><p>● 失活状态，α亚基结合GDP。<br>● 配体结合。<br>● 引发α亚基结构变化。<br>● 减小GDP亲和力，GTP取代GDP。<br>● 蛋白复合体解离为三，受体、βγ复合体、结合GTP的α亚基。结合GTP的α亚基与βγ复合体分别激活下游的效应器。<br>● α亚基水解结合GTP为GDP而处于失活状态。<br>● 失活状态的α亚基与βγ结合形成复合物，处于失活状态。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/17.png"></p>
 <p><strong>活化态的G蛋白寿命较长，且快速刺激GTP&#x2F;GDP的转换，故每个激动剂的结合可催化多个G蛋白分子。信号放大的第一步。</strong></p>
 <h4 id="6、激酶偶联受体"><a href="#6、激酶偶联受体" class="headerlink" title="6、激酶偶联受体"></a>6、激酶偶联受体</h4><p>● 受体本身具有激酶的活性或与激酶结合。<br>● 结构特征：单跨膜区段。<br>● 常见配体：激素、生长因子、细胞因子等。<br>● 产生效应慢，主要涉及细胞代谢、生长、增殖、分化、与存活等过程。</p>
-<h5 id="1-酪氨酸激酶受体"><a href="#1-酪氨酸激酶受体" class="headerlink" title="(1) 酪氨酸激酶受体"></a>(1) 酪氨酸激酶受体</h5><p>● 酪氨酸激酶受体 (tyrosine kinase receptor, TKR) 也称受体酪氨酸激酶。<br>● 配体为表皮生长因子、血小板源生长因子、成纤维细胞生长因子、胰岛素等<br>● 胞内结构区具有酪氨酸激酶活性，磷酸化胞内域酪氨酸，激活下游信号通路。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/18.png"></p>
-<h5 id="2-酪氨酸激酶结合性受体"><a href="#2-酪氨酸激酶结合性受体" class="headerlink" title="(2) 酪氨酸激酶结合性受体"></a>(2) 酪氨酸激酶结合性受体</h5><p>●  酪氨酸激酶结合性受体(tyrosine kinase associated receptor, TKAR)不同于TKR，其本身无酶的活性。<br>●  TKAR激活后，活化结合的酪氨酸激酶，磷酸化下游的信号通路。<br>●  TKAR的配体为促红细胞生成素、干扰素、白细胞介素、生长激素、催乳素等。<br><span style="display:block;text-align:center"><br><font size="6"><br>γ-干扰素受体<br></font><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/19.png"></p>
+<h5 id="1-酪氨酸激酶受体"><a href="#1-酪氨酸激酶受体" class="headerlink" title="(1) 酪氨酸激酶受体"></a><font size="4">(1) 酪氨酸激酶受体</font></h5><p>● 酪氨酸激酶受体 (tyrosine kinase receptor, TKR) 也称受体酪氨酸激酶。<br>● 配体为表皮生长因子、血小板源生长因子、成纤维细胞生长因子、胰岛素等<br>● 胞内结构区具有酪氨酸激酶活性，磷酸化胞内域酪氨酸，激活下游信号通路。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/18.png"></p>
+<h5 id="2-酪氨酸激酶结合性受体"><a href="#2-酪氨酸激酶结合性受体" class="headerlink" title="(2) 酪氨酸激酶结合性受体"></a><font size="4">(2) 酪氨酸激酶结合性受体</font></h5><p>●  酪氨酸激酶结合性受体(tyrosine kinase associated receptor, TKAR)不同于TKR，其本身无酶的活性。<br>●  TKAR激活后，活化结合的酪氨酸激酶，磷酸化下游的信号通路。<br>●  TKAR的配体为促红细胞生成素、干扰素、白细胞介素、生长激素、催乳素等。<br><span style="display:block;text-align:center"><br><font size="6"><br>γ-干扰素受体<br></font><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/19.png"></p>
 <h4 id="7、核受体"><a href="#7、核受体" class="headerlink" title="7、核受体"></a>7、核受体</h4><p>● 脂溶性配体：蛋白激素 (甲状腺激素) 与类固醇 (糖皮质激素、盐皮质激素、维生素D、性类固醇)。<br>● 核受体为细胞内受体。<br>● 配体与受体结合，到达核内，刺激基因转录。<br>● 起效慢但持续长。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/20.png"></p>
 <h4>
 <span style="color:#D81C2F">
@@ -223,10 +223,10 @@
 常见的第二信使：cAMP、cGMP、IP3、DAG、Ca2+、NO等。
 </span>
 
-<h5 id="1-腺苷酸环化酶信号通路"><a href="#1-腺苷酸环化酶信号通路" class="headerlink" title="(1) 腺苷酸环化酶信号通路"></a>(1) 腺苷酸环化酶信号通路</h5><p>● 腺苷酸环化酶，ATP转化为cAMP。<br>● cAMP重要的第二信使，激活cAMP依赖的蛋白激酶A (protein kinase A, PKA)。<br>●与腺苷酸环化酶作用相反为磷酸二酯酶 (PDE)，催化cAMP生成5’-AMP, 从而终止PKA的活性。<br>● PKA和PDE参与多种细胞功能的调节。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/21.png"></p>
-<h5 id="2-磷酶脂C-PLC-信号通路"><a href="#2-磷酶脂C-PLC-信号通路" class="headerlink" title="(2) 磷酶脂C (PLC) 信号通路"></a>(2) 磷酶脂C (PLC) 信号通路</h5><p>● 配体(激素、神经递质、或生长因子) 结合受体。<br>● 活化PLC。<br>● PLC催化膜磷酸酯 (PIP2) 转化为两个重要的第二信使，IP3 (三磷酸肌醇)和 DAG (甘油二酯)。<br>● 甘油二脂活化激酶C (PKC)。<br>● 三磷酸肌醇引发Ca2+的释放，<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/22.png"></p>
-<h5 id="3-Ca2-信号系统"><a href="#3-Ca2-信号系统" class="headerlink" title="(3) Ca2+信号系统"></a>(3) Ca2+信号系统</h5><p>● Ca2+的多途径释放<br>● 所带电荷影响膜电位，直接改变细胞功能。<br>● 作为第二信使，与胞内多种底物结合，参与信号传导。<br>● 可与钙调蛋白 (calmodulin, CaM) 结合，激活Ca2+-CaM依赖性蛋白激酶 (CaMK)、钙调磷酸酶(calcineurin)等，产生广泛的生物学效应。<br>● Ca2+成像技术观察胞内微区域Ca2+信号。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/23.png"></p>
-<h5 id="4-cGMP-环鸟苷酸-系统"><a href="#4-cGMP-环鸟苷酸-系统" class="headerlink" title="(4) cGMP (环鸟苷酸)系统"></a>(4) cGMP (环鸟苷酸)系统</h5><p>● cGMP由鸟苷酸环化酶 (GC) 从GTP催化产生。<br>● 存在两种形式的鸟苷酸环化酶，膜结合性GC与可溶性GC。<br>● 膜结合性GC为酶联型单跨膜受体，具有环化GTP为cGMP的功能。<br>● 配体为心房钠尿肽(ANP)、脑钠尿肽(BNP)。<br>● cGMP为第二信使，可激活cGMP依赖性激酶(PKG)。<br><font size="4"><br>NO-sGC通路<br></font><br>● 一氧化氮合成酶合成NO。<br>● 活化可溶性鸟苷酸环化酶(sGC)。<br>● GTP转化为cGMP。<br>● 激活cGMP依赖性激酶(PKG)。<br>● PKG磷酸化下游的蛋白，产生生物学效应。<br>● cGMP的作用可被PDE5或9终止。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/24.png"></p>
+<h5 id="1-腺苷酸环化酶信号通路"><a href="#1-腺苷酸环化酶信号通路" class="headerlink" title="(1) 腺苷酸环化酶信号通路"></a><font size="4">(1) 腺苷酸环化酶信号通路</font></h5><p>● 腺苷酸环化酶，ATP转化为cAMP。<br>● cAMP重要的第二信使，激活cAMP依赖的蛋白激酶A (protein kinase A, PKA)。<br>●与腺苷酸环化酶作用相反为磷酸二酯酶 (PDE)，催化cAMP生成5’-AMP, 从而终止PKA的活性。<br>● PKA和PDE参与多种细胞功能的调节。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/21.png"></p>
+<h5 id="2-磷酶脂C-PLC-信号通路"><a href="#2-磷酶脂C-PLC-信号通路" class="headerlink" title="(2) 磷酶脂C (PLC) 信号通路"></a><font size="4">(2) 磷酶脂C (PLC) 信号通路</font></h5><p>● 配体(激素、神经递质、或生长因子) 结合受体。<br>● 活化PLC。<br>● PLC催化膜磷酸酯 (PIP2) 转化为两个重要的第二信使，IP3 (三磷酸肌醇)和 DAG (甘油二酯)。<br>● 甘油二脂活化激酶C (PKC)。<br>● 三磷酸肌醇引发Ca2+的释放，<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/22.png"></p>
+<h5 id="3-Ca2-信号系统"><a href="#3-Ca2-信号系统" class="headerlink" title="(3) Ca2+信号系统"></a><font size="4">(3) Ca2+信号系统</font></h5><p>● Ca2+的多途径释放<br>● 所带电荷影响膜电位，直接改变细胞功能。<br>● 作为第二信使，与胞内多种底物结合，参与信号传导。<br>● 可与钙调蛋白 (calmodulin, CaM) 结合，激活Ca2+-CaM依赖性蛋白激酶 (CaMK)、钙调磷酸酶(calcineurin)等，产生广泛的生物学效应。<br>● Ca2+成像技术观察胞内微区域Ca2+信号。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/23.png"></p>
+<h5 id="4-cGMP-环鸟苷酸-系统"><a href="#4-cGMP-环鸟苷酸-系统" class="headerlink" title="(4) cGMP (环鸟苷酸)系统"></a><font size="4">(4) cGMP (环鸟苷酸)系统</font></h5><p>● cGMP由鸟苷酸环化酶 (GC) 从GTP催化产生。<br>● 存在两种形式的鸟苷酸环化酶，膜结合性GC与可溶性GC。<br>● 膜结合性GC为酶联型单跨膜受体，具有环化GTP为cGMP的功能。<br>● 配体为心房钠尿肽(ANP)、脑钠尿肽(BNP)。<br>● cGMP为第二信使，可激活cGMP依赖性激酶(PKG)。<br><font size="4"><br>NO-sGC通路<br></font><br>● 一氧化氮合成酶合成NO。<br>● 活化可溶性鸟苷酸环化酶(sGC)。<br>● GTP转化为cGMP。<br>● 激活cGMP依赖性激酶(PKG)。<br>● PKG磷酸化下游的蛋白，产生生物学效应。<br>● cGMP的作用可被PDE5或9终止。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/24.png"></p>
 <h3 id="二、药物与酶的作用"><a href="#二、药物与酶的作用" class="headerlink" title="二、药物与酶的作用"></a>二、药物与酶的作用</h3><p>以酶为靶点的药物超60%。</p>
 <h3 id="三、药物与转运蛋白的作用"><a href="#三、药物与转运蛋白的作用" class="headerlink" title="三、药物与转运蛋白的作用"></a>三、药物与转运蛋白的作用</h3><p>在中枢神经系统药物部分详细讲解。</p>
 <h3 id="四、药物与结构蛋白与功能蛋白的作用"><a href="#四、药物与结构蛋白与功能蛋白的作用" class="headerlink" title="四、药物与结构蛋白与功能蛋白的作用"></a>四、药物与结构蛋白与功能蛋白的作用</h3><p>信号蛋白、结构蛋白、收缩蛋白、转录因子等。</p>
@@ -236,8 +236,8 @@
 <h4 id="2、激动剂-agonist"><a href="#2、激动剂-agonist" class="headerlink" title="2、激动剂 (agonist)"></a>2、激动剂 (agonist)</h4><p>激动剂是与受体结合并激活受体、产生生物反应的化学物质。</p>
 <p>● 完全激动剂：与受体结合产生最大效应 (Emax)。<br>● 部分激动剂：与受体结合产生较小的效应。<br>● 共同激动剂：与其他激动剂一起产生所需的效果。<br>● 反向激动剂：与受体结合并抑制受体的固有活性。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%89%E7%AB%A0/26.png"></p>
 <h4 id="3、拮抗剂"><a href="#3、拮抗剂" class="headerlink" title="3、拮抗剂"></a>3、拮抗剂</h4><p>阻断受体激动剂介导的作用的化学物质，其本身并不引起生物学效应。</p>
-<h5 id="1-竞争性拮抗剂"><a href="#1-竞争性拮抗剂" class="headerlink" title="(1) 竞争性拮抗剂"></a>(1) 竞争性拮抗剂</h5><p>● 与激动剂结合位点相同，竞争性地抑制激动剂对受体的作用。<br>● 抑制程度依赖于拮抗剂的浓度。</p>
-<h5 id="2-非竞争性拮抗剂"><a href="#2-非竞争性拮抗剂" class="headerlink" title="(2) 非竞争性拮抗剂"></a>(2) 非竞争性拮抗剂</h5><p>● 与激动剂结合位点不同，抑制激动剂对受体的作用。<br>● 也称为变构调节剂。</p>
+<h5 id="1-竞争性拮抗剂"><a href="#1-竞争性拮抗剂" class="headerlink" title="(1) 竞争性拮抗剂"></a><font size="4">(1) 竞争性拮抗剂</font></h5><p>● 与激动剂结合位点相同，竞争性地抑制激动剂对受体的作用。<br>● 抑制程度依赖于拮抗剂的浓度。</p>
+<h5 id="2-非竞争性拮抗剂"><a href="#2-非竞争性拮抗剂" class="headerlink" title="(2) 非竞争性拮抗剂"></a><font size="4">(2) 非竞争性拮抗剂</font></h5><p>● 与激动剂结合位点不同，抑制激动剂对受体的作用。<br>● 也称为变构调节剂。</p>
 <table>
   <tr>
     <td height="50%"><img src="/../img/生理药理学/第三章/27.png" ></td>
@@ -290,12 +290,12 @@
 <h3 id="二、药物的吸收"><a href="#二、药物的吸收" class="headerlink" title="二、药物的吸收"></a>二、药物的吸收</h3><p><span style="color:red">药物由给药部位进入血液循环的过程。</span><br>吸收受药物的理化性质、剂型、血流量、给药途径的影响。</p>
 <h4 id="1、药物的理化性质"><a href="#1、药物的理化性质" class="headerlink" title="1、药物的理化性质"></a>1、药物的理化性质</h4><p>● 溶脂性：脂溶性药物易被扩散吸收。经主动转运体转运，也易被吸收。<br>● 解离度：易解离的弱酸或弱碱性药物，解离后不易吸收。<br>● 分子量：分子量大，无论脂溶或水溶，不易吸收。</p>
 <h4 id="2、给药途径"><a href="#2、给药途径" class="headerlink" title="2、给药途径"></a>2、给药途径</h4><p>● 静脉注射直接到血液。<br>● 气雾吸入&gt;腹腔注射&gt;舌下给药&gt;肌肉注射&gt;皮下注射&gt;口服&gt;直肠给药&gt;皮肤给药</p>
-<h5 id="1-消化道内吸收-口服给药的吸收部位"><a href="#1-消化道内吸收-口服给药的吸收部位" class="headerlink" title="(1) 消化道内吸收 (口服给药的吸收部位)"></a>(1) <strong>消化道内吸收</strong> (口服给药的吸收部位)</h5><p>●  药物的理化性质<br>●  机体方面：肠胃的 pH; 胃排空与肠蠕动；肠胃内容物；药物转运体；首关效应。<br>●  <span style="color:red">首关效应：药物口服后被肠壁或肝脏的酶代谢，进入人体循环系统有效药量减少。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/6.png"></p>
-<h5 id="2-舌下给药"><a href="#2-舌下给药" class="headerlink" title="(2) 舌下给药"></a>(2) 舌下给药</h5><p>● 血流丰富，吸收快。<br>● 面积小，吸收量有限。</p>
-<h5 id="3-直肠给药"><a href="#3-直肠给药" class="headerlink" title="(3) 直肠给药"></a>(3) 直肠给药</h5><p>● 防止对上呼吸道的刺激。<br>● 避开肝脏的首关效应。</p>
+<h5 id="1-消化道内吸收-口服给药的吸收部位"><a href="#1-消化道内吸收-口服给药的吸收部位" class="headerlink" title="(1) 消化道内吸收 (口服给药的吸收部位)"></a><font size="4">(1) <strong>消化道内吸收</strong> (口服给药的吸收部位)</font></h5><p>●  药物的理化性质<br>●  机体方面：肠胃的 pH; 胃排空与肠蠕动；肠胃内容物；药物转运体；首关效应。<br>●  <span style="color:red">首关效应：药物口服后被肠壁或肝脏的酶代谢，进入人体循环系统有效药量减少。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/6.png"></p>
+<h5 id="2-舌下给药"><a href="#2-舌下给药" class="headerlink" title="(2) 舌下给药"></a><font size="4">(2) 舌下给药</font></h5><p>● 血流丰富，吸收快。<br>● 面积小，吸收量有限。</p>
+<h5 id="3-直肠给药"><a href="#3-直肠给药" class="headerlink" title="(3) 直肠给药"></a><font size="4">(3) 直肠给药</font></h5><p>● 防止对上呼吸道的刺激。<br>● 避开肝脏的首关效应。</p>
 <h3 id="三、药物的分布"><a href="#三、药物的分布" class="headerlink" title="三、药物的分布"></a>三、药物的分布</h3><p><span style="color:red">药物吸收后随血液到达各组织器官的过程。</span>药效取决于药物进入靶器官的速度与浓度。</p>
 <h4 id="1、药物与血浆蛋白结合"><a href="#1、药物与血浆蛋白结合" class="headerlink" title="1、药物与血浆蛋白结合"></a>1、药物与血浆蛋白结合</h4><p>● 结合的饱和性：加大药物用量，血液蛋白结合饱和后，增加游离型药物，药效增强，但也可产生中毒。<br>● 药物间竞争性抑制：联合用药时，药物间发生与血液蛋白结合的竞争抑制现象，使药效增强，但也可产生中毒。<br><em>药物与血浆蛋白结合率 &#x3D; [结合型药物浓度]∕[总药物浓度]</em></p>
-<h4 id="2、细胞膜屏障"><a href="#2、细胞膜屏障" class="headerlink" title="2、细胞膜屏障"></a>2、细胞膜屏障</h4><h5 id="（1）血脑屏障-blood-brain-barrier-BBB"><a href="#（1）血脑屏障-blood-brain-barrier-BBB" class="headerlink" title="（1）血脑屏障 (blood-brain barrier, BBB)"></a>（1）血脑屏障 (blood-brain barrier, BBB)</h5><p>● 毛细血管壁的内皮细胞、脑的星形胶质细胞末端和嵌入毛细血管基底膜中的周细胞形成。<br>● 高选择性的内皮细胞半透性边界屏障，可防止血液中的物质非选择性地进入神经元。<br>● 允许一些小分子通过被动扩散通过，以及选择性地主动运输对神经功能至关重要的各种营养物质、离子、有机阴离子和大分子(如葡萄糖和氨基酸)。<br>● 毛细血管壁的内皮细胞表达外排性转运体(P-gp), 使一些高亲脂性药物不能进入血脑屏障。</p>
+<h4 id="2、细胞膜屏障"><a href="#2、细胞膜屏障" class="headerlink" title="2、细胞膜屏障"></a>2、细胞膜屏障</h4><h5 id="（1）血脑屏障-blood-brain-barrier-BBB"><a href="#（1）血脑屏障-blood-brain-barrier-BBB" class="headerlink" title="（1）血脑屏障 (blood-brain barrier, BBB)"></a><font size="4">（1）血脑屏障 (blood-brain barrier, BBB)</font></h5><p>● 毛细血管壁的内皮细胞、脑的星形胶质细胞末端和嵌入毛细血管基底膜中的周细胞形成。<br>● 高选择性的内皮细胞半透性边界屏障，可防止血液中的物质非选择性地进入神经元。<br>● 允许一些小分子通过被动扩散通过，以及选择性地主动运输对神经功能至关重要的各种营养物质、离子、有机阴离子和大分子(如葡萄糖和氨基酸)。<br>● 毛细血管壁的内皮细胞表达外排性转运体(P-gp), 使一些高亲脂性药物不能进入血脑屏障。</p>
 <table>
   <tr>
     <td height="50%"><img src="/../img/生理药理学/第二章/7.png" ></td>
@@ -303,24 +303,24 @@
   </tr>
 </table>
 
-<h5 id="2-胎盘屏障"><a href="#2-胎盘屏障" class="headerlink" title="(2)胎盘屏障"></a>(2)胎盘屏障</h5><p>● 由母体和胎儿双方组织构成、胎盘绒毛组织与子宫血窦间的屏障。绒毛膜、绒毛间隙和基蜕膜构成。<br>● 绒毛膜内含有脐血管分支，存在很多大小不同的绒毛，并分散在母血之中，吸收氧和营养成分，排泄代谢产物。<br>● 胎盘屏障阻止水溶性或解离性药物通过，但可通过脂溶性高的药物，可能导致毒性以及畸胎。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/9.png"></p>
-<h5 id="3-血眼屏障"><a href="#3-血眼屏障" class="headerlink" title="(3)血眼屏障"></a>(3)血眼屏障</h5><h5 id="4-血-关节囊液屏障"><a href="#4-血-关节囊液屏障" class="headerlink" title="(4)血-关节囊液屏障"></a>(4)血-关节囊液屏障</h5><h4 id="3、体液pH"><a href="#3、体液pH" class="headerlink" title="3、体液pH"></a>3、体液pH</h4><p>生理条件下，细胞外液pH为7.4。体液的pH影响药物的离解度，因而对药物的分布也会产生影响。</p>
+<h5 id="2-胎盘屏障"><a href="#2-胎盘屏障" class="headerlink" title="(2)胎盘屏障"></a><font size="4">(2)胎盘屏障</font></h5><p>● 由母体和胎儿双方组织构成、胎盘绒毛组织与子宫血窦间的屏障。绒毛膜、绒毛间隙和基蜕膜构成。<br>● 绒毛膜内含有脐血管分支，存在很多大小不同的绒毛，并分散在母血之中，吸收氧和营养成分，排泄代谢产物。<br>● 胎盘屏障阻止水溶性或解离性药物通过，但可通过脂溶性高的药物，可能导致毒性以及畸胎。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/9.png"></p>
+<h5 id="3-血眼屏障"><a href="#3-血眼屏障" class="headerlink" title="(3)血眼屏障"></a><font size="4">(3)血眼屏障</font></h5><h5 id="4-血-关节囊液屏障"><a href="#4-血-关节囊液屏障" class="headerlink" title="(4)血-关节囊液屏障"></a><font size="4">(4)血-关节囊液屏障</font></h5><h4 id="3、体液pH"><a href="#3、体液pH" class="headerlink" title="3、体液pH"></a>3、体液pH</h4><p>生理条件下，细胞外液pH为7.4。体液的pH影响药物的离解度，因而对药物的分布也会产生影响。</p>
 <h4 id="4、器官的血流量"><a href="#4、器官的血流量" class="headerlink" title="4、器官的血流量"></a>4、器官的血流量</h4><p>肝、肾、脑、肺等高血流量的器官，药物分布快且浓度高。皮肤与肌肉等低血流量器官，药物分布慢。</p>
 <h4 id="5、药物与组织的亲和力"><a href="#5、药物与组织的亲和力" class="headerlink" title="5、药物与组织的亲和力"></a>5、药物与组织的亲和力</h4><p>如甲状腺对碘有高亲和力，碘的浓度在该组织浓度远超其它组织。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/10.png"></p>
 <h4 id="6、药物转运体"><a href="#6、药物转运体" class="headerlink" title="6、药物转运体"></a>6、药物转运体</h4><h3 id="四、药物的代谢"><a href="#四、药物的代谢" class="headerlink" title="四、药物的代谢"></a>四、药物的代谢</h3><p><span style="color:red">药物在体内发生化学结构改变的过程。代谢主要器官为肝脏。</span>其次为小肠、肾、肺以及脑。</p>
-<h4 id="1、代谢方式"><a href="#1、代谢方式" class="headerlink" title="1、代谢方式"></a>1、代谢方式</h4><h5 id="1-I相反应"><a href="#1-I相反应" class="headerlink" title="(1)I相反应"></a>(1)I相反应</h5><p>● 氧化、还原、水解反应。主要由肝微粒体混合功能氧化酶以及非微粒体酶催化。<br>● 混合功能氧化酶不是一种酶，而是一组酶，包括细胞色素P-450，NADPH细胞色素P-450还原酶、细胞色素B-5NADH-细胞色素B-5还原酶、芳烃经化酶、环氧化物水化酶等。<br>● 向药物引入极性基团， 如-OH、-COOH、-NH2、-SH等。</p>
-<h5 id="2-II相反应"><a href="#2-II相反应" class="headerlink" title="(2)II相反应"></a>(2)II相反应</h5><p>● 药物的极性基团与体内水溶性较大的内源性物质结合反应，如葡萄糖酸、醋酸、硫酸、氨基酸等。<br>● 由非颗粒体专一性酶催化。<br><em><strong>多数药物接受两相反应，生成易溶于水且极性高的代谢物，以迅速排出体外。</strong></em></p>
-<h4 id="2、代谢酶"><a href="#2、代谢酶" class="headerlink" title="2、代谢酶"></a>2、代谢酶</h4><h5 id="1-特异性酶"><a href="#1-特异性酶" class="headerlink" title="(1)特异性酶"></a>(1)特异性酶</h5><p>● 具有特异性。<br>● 催化特定的药物或化合物，如胆碱酯酶、单胺氧化酶等。</p>
-<h5 id="2-非特异性酶"><a href="#2-非特异性酶" class="headerlink" title="(2)非特异性酶"></a>(2)非特异性酶</h5><p>● 细胞色素P450 (cytochrome P450, CYP): 主要存在肝细胞内质网，能催化数百种药物分子的代谢，称为“肝药酶”。<br>● 基因大家族，从人体中已分离出的70余种。<br>● 特性：选择性低；易受多种因素的影响，如遗传、年龄、性别、营养状态等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/11.png"></p>
-<h4 id="3、影响代谢的因素"><a href="#3、影响代谢的因素" class="headerlink" title="3、影响代谢的因素"></a>3、影响代谢的因素</h4><h5 id="1-遗传因素"><a href="#1-遗传因素" class="headerlink" title="(1)遗传因素"></a>(1)遗传因素</h5><p>● 突变体的存在。</p>
-<h5 id="2-环境因素"><a href="#2-环境因素" class="headerlink" title="(2)环境因素"></a>(2)环境因素</h5><p>● 化学分子对CYP酶活性的提高与抑制。</p>
-<h5 id="3-生理因素与营养状态"><a href="#3-生理因素与营养状态" class="headerlink" title="(3)生理因素与营养状态"></a>(3)生理因素与营养状态</h5><p>● 年龄。新生儿肝药酶活性低，用药要减量。<br>● 性别。女性的CYP2C19及CYP3A4活性高于男性。<br>● 节律。夜间酶活性高，昼间较低。<br>● 食物。</p>
+<h4 id="1、代谢方式"><a href="#1、代谢方式" class="headerlink" title="1、代谢方式"></a>1、代谢方式</h4><h5 id="1-I相反应"><a href="#1-I相反应" class="headerlink" title="(1)I相反应"></a><font size="4">(1)I相反应</font></h5><p>● 氧化、还原、水解反应。主要由肝微粒体混合功能氧化酶以及非微粒体酶催化。<br>● 混合功能氧化酶不是一种酶，而是一组酶，包括细胞色素P-450，NADPH细胞色素P-450还原酶、细胞色素B-5NADH-细胞色素B-5还原酶、芳烃经化酶、环氧化物水化酶等。<br>● 向药物引入极性基团， 如-OH、-COOH、-NH2、-SH等。</p>
+<h5 id="2-II相反应"><a href="#2-II相反应" class="headerlink" title="(2)II相反应"></a><font size="4">(2)II相反应</font></h5><p>● 药物的极性基团与体内水溶性较大的内源性物质结合反应，如葡萄糖酸、醋酸、硫酸、氨基酸等。<br>● 由非颗粒体专一性酶催化。<br><em><strong>多数药物接受两相反应，生成易溶于水且极性高的代谢物，以迅速排出体外。</strong></em></p>
+<h4 id="2、代谢酶"><a href="#2、代谢酶" class="headerlink" title="2、代谢酶"></a>2、代谢酶</h4><h5 id="1-特异性酶"><a href="#1-特异性酶" class="headerlink" title="(1)特异性酶"></a><font size="4">(1)特异性酶</font></h5><p>● 具有特异性。<br>● 催化特定的药物或化合物，如胆碱酯酶、单胺氧化酶等。</p>
+<h5 id="2-非特异性酶"><a href="#2-非特异性酶" class="headerlink" title="(2)非特异性酶"></a><font size="4">(2)非特异性酶</font></h5><p>● 细胞色素P450 (cytochrome P450, CYP): 主要存在肝细胞内质网，能催化数百种药物分子的代谢，称为“肝药酶”。<br>● 基因大家族，从人体中已分离出的70余种。<br>● 特性：选择性低；易受多种因素的影响，如遗传、年龄、性别、营养状态等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/11.png"></p>
+<h4 id="3、影响代谢的因素"><a href="#3、影响代谢的因素" class="headerlink" title="3、影响代谢的因素"></a>3、影响代谢的因素</h4><h5 id="1-遗传因素"><a href="#1-遗传因素" class="headerlink" title="(1)遗传因素"></a><font size="4">(1)遗传因素</font></h5><p>● 突变体的存在。</p>
+<h5 id="2-环境因素"><a href="#2-环境因素" class="headerlink" title="(2)环境因素"></a><font size="4">(2)环境因素</font></h5><p>● 化学分子对CYP酶活性的提高与抑制。</p>
+<h5 id="3-生理因素与营养状态"><a href="#3-生理因素与营养状态" class="headerlink" title="(3)生理因素与营养状态"></a><font size="4">(3)生理因素与营养状态</font></h5><p>● 年龄。新生儿肝药酶活性低，用药要减量。<br>● 性别。女性的CYP2C19及CYP3A4活性高于男性。<br>● 节律。夜间酶活性高，昼间较低。<br>● 食物。</p>
 <h3 id="五、药物的排泄"><a href="#五、药物的排泄" class="headerlink" title="五、药物的排泄"></a>五、药物的排泄</h3><p><span style="color:red">药物以及其代谢物被排出体外的过程。肾脏是主要的排泄器官，由肾脏随尿排出。</span><br>气体与挥发性药物由肺排出，而有些药物从胆汁、乳腺、汗腺、唾液、头发以及皮肤排出。</p>
-<h4 id="1、肾排泄方式"><a href="#1、肾排泄方式" class="headerlink" title="1、肾排泄方式"></a>1、肾排泄方式</h4><h5 id="1-肾小球滤过"><a href="#1-肾小球滤过" class="headerlink" title="(1)肾小球滤过"></a>(1)肾小球滤过</h5><p>● 筛状滤过膜，可滤过游离型药物或代谢物。<br>● 血液结合型药物分子量超50000，不能滤过。<br>● 新生儿与老人肾小球滤过率降低。</p>
-<h5 id="2-肾小管重吸收"><a href="#2-肾小管重吸收" class="headerlink" title="(2)肾小管重吸收"></a>(2)肾小管重吸收</h5><p>● 主动重吸收身体必需品，如葡萄糖、氨基酸、维生素以及电解质等。<br>● 被动重吸收为被动扩散。</p>
-<h5 id="3-肾小管分泌"><a href="#3-肾小管分泌" class="headerlink" title="(3)肾小管分泌"></a>(3)肾小管分泌</h5><p>● 主动转运有机酸和有机碱系统。<br>● 新生儿与老人的肾小管分泌功能较低。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/12.png"><br><em>药物肾排泄&#x3D;滤过-重吸收+分泌；或药物肾排泄率&#x3D;(1-FR) (过滤率+分泌率)</em><br><em>FR为重吸收比例分数。</em></p>
-<h4 id="2、胆汁排泄"><a href="#2、胆汁排泄" class="headerlink" title="2、胆汁排泄"></a>2、胆汁排泄</h4><h5 id="1-极性强水溶性代谢物可自胆汁排出。"><a href="#1-极性强水溶性代谢物可自胆汁排出。" class="headerlink" title="(1)极性强水溶性代谢物可自胆汁排出。"></a>(1)极性强水溶性代谢物可自胆汁排出。</h5><p>主动转运过程需要能量。分子量大于500、小于5000的极性代谢物。由胆汁排入小肠、从粪便排出。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/13.png"></p>
-<h5 id="2-肝肠循环"><a href="#2-肝肠循环" class="headerlink" title="(2)肝肠循环"></a>(2)肝肠循环</h5><p>● 肠黏膜上皮细胞重吸收，经门静脉、肝脏重新进入体循环。<br>● 肝肠循环延迟药物的排泄。<br>● 肝肠循环的药物血液浓度与时间的关系呈双峰。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/14.png"></p>
+<h4 id="1、肾排泄方式"><a href="#1、肾排泄方式" class="headerlink" title="1、肾排泄方式"></a>1、肾排泄方式</h4><h5 id="1-肾小球滤过"><a href="#1-肾小球滤过" class="headerlink" title="(1)肾小球滤过"></a><font size="4">(1)肾小球滤过</font></h5><p>● 筛状滤过膜，可滤过游离型药物或代谢物。<br>● 血液结合型药物分子量超50000，不能滤过。<br>● 新生儿与老人肾小球滤过率降低。</p>
+<h5 id="2-肾小管重吸收"><a href="#2-肾小管重吸收" class="headerlink" title="(2)肾小管重吸收"></a><font size="4">(2)肾小管重吸收</font></h5><p>● 主动重吸收身体必需品，如葡萄糖、氨基酸、维生素以及电解质等。<br>● 被动重吸收为被动扩散。</p>
+<h5 id="3-肾小管分泌"><a href="#3-肾小管分泌" class="headerlink" title="(3)肾小管分泌"></a><font size="4">(3)肾小管分泌</font></h5><p>● 主动转运有机酸和有机碱系统。<br>● 新生儿与老人的肾小管分泌功能较低。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/12.png"><br><em>药物肾排泄&#x3D;滤过-重吸收+分泌；或药物肾排泄率&#x3D;(1-FR) (过滤率+分泌率)</em><br><em>FR为重吸收比例分数。</em></p>
+<h4 id="2、胆汁排泄"><a href="#2、胆汁排泄" class="headerlink" title="2、胆汁排泄"></a>2、胆汁排泄</h4><h5 id="1-极性强水溶性代谢物可自胆汁排出。"><a href="#1-极性强水溶性代谢物可自胆汁排出。" class="headerlink" title="(1)极性强水溶性代谢物可自胆汁排出。"></a><font size="4">(1)极性强水溶性代谢物可自胆汁排出。</font></h5><p>主动转运过程需要能量。分子量大于500、小于5000的极性代谢物。由胆汁排入小肠、从粪便排出。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/13.png"></p>
+<h5 id="2-肝肠循环"><a href="#2-肝肠循环" class="headerlink" title="(2)肝肠循环"></a><font size="4">(2)肝肠循环</font></h5><p>● 肠黏膜上皮细胞重吸收，经门静脉、肝脏重新进入体循环。<br>● 肝肠循环延迟药物的排泄。<br>● 肝肠循环的药物血液浓度与时间的关系呈双峰。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/14.png"></p>
 <h4 id="3、其它排泄途径"><a href="#3、其它排泄途径" class="headerlink" title="3、其它排泄途径"></a>3、其它排泄途径</h4><p>● 肠道排泄<br>● 乳汁排泄<br>● 汗液、唾液、泪液、皮肤、肺等。</p>
 <h2 id="第二节-药物代谢动力学的数学模型"><a href="#第二节-药物代谢动力学的数学模型" class="headerlink" title="第二节 药物代谢动力学的数学模型"></a>第二节 药物代谢动力学的数学模型</h2><h3 id="一、数学模型"><a href="#一、数学模型" class="headerlink" title="一、数学模型"></a>一、数学模型</h3><h4 id="1、房室模型"><a href="#1、房室模型" class="headerlink" title="1、房室模型"></a>1、房室模型</h4><p>机体由若干个房室组成。<br>● 开放性一室模型：给药后药物立即均匀地分布整个身体。药时曲线呈直线。<br>● 开放性二室模型: 中央室与周边室，药物仅从中央室消除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/15.png"></p>
 <h4 id="2、非房室模型"><a href="#2、非房室模型" class="headerlink" title="2、非房室模型"></a>2、非房室模型</h4><p>数学的概率论与统计学为理论根据，统计每个药物分子在体内滞留时间。药时曲线为随机变量的总和，概率的统计曲线。</p>
@@ -331,9 +331,9 @@
   </tr>
 </table>
 
-<h4 id="3、药物消除速率过程"><a href="#3、药物消除速率过程" class="headerlink" title="3、药物消除速率过程"></a>3、药物消除速率过程</h4><h5 id="1-一级动力学过程"><a href="#1-一级动力学过程" class="headerlink" title="(1)一级动力学过程"></a>(1)一级动力学过程</h5><p>● 药物消除速率与药量的一次方成正比。<br>● 血药浓度-时间曲线为指数曲线，lnC对T作图为直线。<br>● t1&#x2F;2恒定，与剂量无关。<br>● 血药浓度-时间曲线下面积(area under curve, AUC) 与剂量成正比。<br>● 药物消除取决于t1&#x2F;2，约经5个t1&#x2F;2，药物完全消除。</p>
-<h4 id="2-零级动力学过程"><a href="#2-零级动力学过程" class="headerlink" title="(2)零级动力学过程"></a>(2)零级动力学过程</h4><p>● 药物消除速率与药量的零次方成正比。<br>● 单位时间消除的药量相等，与药物浓度无关。<br>● 半衰期是一个不恒定的数值。<br>● AUC与剂量不成正比。<br>● 当药物浓度降至最大消除能力以下时，则转为一级动力学消除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/19.png"></p>
-<h4 id="3-米-曼速率过程"><a href="#3-米-曼速率过程" class="headerlink" title="(3)米-曼速率过程"></a>(3)米-曼速率过程</h4><p>● 一级与零级动力学相互移行的过程。<br>● 高药浓度时为零级，而低药浓度时为一级。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/20.png"></p>
+<h4 id="3、药物消除速率过程"><a href="#3、药物消除速率过程" class="headerlink" title="3、药物消除速率过程"></a>3、药物消除速率过程</h4><h5 id="1-一级动力学过程"><a href="#1-一级动力学过程" class="headerlink" title="(1)一级动力学过程"></a><font size="4">(1)一级动力学过程</font></h5><p>● 药物消除速率与药量的一次方成正比。<br>● 血药浓度-时间曲线为指数曲线，lnC对T作图为直线。<br>● t1&#x2F;2恒定，与剂量无关。<br>● 血药浓度-时间曲线下面积(area under curve, AUC) 与剂量成正比。<br>● 药物消除取决于t1&#x2F;2，约经5个t1&#x2F;2，药物完全消除。</p>
+<h5 id="2-零级动力学过程"><a href="#2-零级动力学过程" class="headerlink" title="(2)零级动力学过程"></a><font size="4">(2)零级动力学过程</font></h5><p>● 药物消除速率与药量的零次方成正比。<br>● 单位时间消除的药量相等，与药物浓度无关。<br>● 半衰期是一个不恒定的数值。<br>● AUC与剂量不成正比。<br>● 当药物浓度降至最大消除能力以下时，则转为一级动力学消除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/19.png"></p>
+<h5 id="3-米-曼速率过程"><a href="#3-米-曼速率过程" class="headerlink" title="(3)米-曼速率过程"></a><font size="4">(3)米-曼速率过程</font></h5><p>● 一级与零级动力学相互移行的过程。<br>● 高药浓度时为零级，而低药浓度时为一级。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/20.png"></p>
 <h3 id="二、药动学参数"><a href="#二、药动学参数" class="headerlink" title="二、药动学参数"></a>二、药动学参数</h3><h4 id="1、半衰期-half-life-t1-2"><a href="#1、半衰期-half-life-t1-2" class="headerlink" title="1、半衰期 (half-life, t1&#x2F;2)"></a>1、半衰期 (half-life, t1&#x2F;2)</h4><p>血液中药物浓度降低一般所需时间。<br>● 一级动力学，t1&#x2F;2后药物为50%，2个t1&#x2F;2后药物为25%，5个t1&#x2F;2后药物尚有3%。<br>● 零级动力学，药物t1&#x2F;2与药物起始浓度成正比。药量大，t1&#x2F;2长。<br>● 生理意义：给药间隔；消除时间；血药浓度。</p>
 <h4 id="2、表观分布容积-Vd"><a href="#2、表观分布容积-Vd" class="headerlink" title="2、表观分布容积 (Vd)"></a>2、表观分布容积 (Vd)</h4><p>体液总体积，不代表实际的生理空间。<br>● 给药剂量。<br>●  药物分布与摄取程度。</p>
 <h4 id="3、AUC-血液浓度-时间曲线下面积"><a href="#3、AUC-血液浓度-时间曲线下面积" class="headerlink" title="3、AUC, 血液浓度-时间曲线下面积"></a>3、AUC, 血液浓度-时间曲线下面积</h4><p>摄取药物相对量。</p>
@@ -342,6 +342,112 @@
 <h4 id="6、稳态血药浓度"><a href="#6、稳态血药浓度" class="headerlink" title="6、稳态血药浓度"></a>6、稳态血药浓度</h4><p>多次给药达到稳态时，血药最大浓度。<br>● 稳态时药-时曲线浓度的峰值为稳态血药浓度(Css, max)。<br>● 稳态时浓度谷值为最小血药浓度(Css, min)。<br>● 稳态时血药浓度的平均称为稳态平均血药浓度。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/22.png"></p>
 <h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><h2 id="1、药物的体内过程"><a href="#1、药物的体内过程" class="headerlink" title="1、药物的体内过程"></a>1、药物的体内过程</h2><p>（1）转运 (扩散、主动或被动转运)<br><span style="color:red">（2）吸收 (口服给药、首关效应)<br>（3）分布 (细胞膜屏障)<br>（4）代谢 (I 和II相反应，肝药酶)<br>（5）排泄 (肾排泄、胆汁排泄)<br></span></p>
 <h2 id="2、药物的速率过程"><a href="#2、药物的速率过程" class="headerlink" title="2、药物的速率过程"></a>2、药物的速率过程</h2><p>（1）一级一级零级动力学<br>（2）药动学参数</p>
+]]></content>
+      <tags>
+        <tag>生物制药</tag>
+        <tag>学习笔记</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生理药理学第五章</title>
+    <url>/2025/04/02/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E4%BA%94%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第五章-胆碱能系统药物"><a href="#第五章-胆碱能系统药物" class="headerlink" title="第五章 胆碱能系统药物"></a><span style="display:block;text-align:center;color:#00BFFF;">第五章 胆碱能系统药物</span></h1><h2 id="第一节-M型胆碱受体激动药和阻断药"><a href="#第一节-M型胆碱受体激动药和阻断药" class="headerlink" title="第一节 M型胆碱受体激动药和阻断药"></a>第一节 M型胆碱受体激动药和阻断药</h2><h3 id="一、复习几个概念"><a href="#一、复习几个概念" class="headerlink" title="一、复习几个概念"></a>一、复习几个概念</h3><p>1、激动药 (agonist), 拟XX药。<br>2、拮抗药 (antagonist), 阻断药或抗XX药。</p>
+<h3 id="二、胆碱受体激动药"><a href="#二、胆碱受体激动药" class="headerlink" title="二、胆碱受体激动药"></a>二、胆碱受体激动药</h3><p>● 分类：胆碱脂类 (兴奋M与N受体) 与生物碱类 (兴奋M受体为主)。<br>● N受体激动药：烟碱(尼古丁), 无药用价值。</p>
+<h4 id="一-胆碱脂类"><a href="#一-胆碱脂类" class="headerlink" title="(一) 胆碱脂类"></a>(一) 胆碱脂类</h4><p>● 带正电荷季铵，亲水性，不宜口服。<br>● 不易被乙酰胆碱酯酶水解。<br>● 激动M受体为主。<br>1、卡巴胆碱: 作用M与N受体、副作用大、仅适用于治疗青光眼。<br>2、贝胆碱: 选择性作用M受体、可用于术后气胀、胃滞留等。<br>3、醋甲胆碱：无选择性、对心脏的副作用大。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%94%E7%AB%A0/1.png"></p>
+<h4 id="（二）生物碱类"><a href="#（二）生物碱类" class="headerlink" title="（二）生物碱类"></a>（二）生物碱类</h4><p>● 三种天然生物碱：毛果芸香碱、槟榔碱、毒蕈碱。<br>● 不被乙酰胆碱酯酶水解。<br>● 选择性作用于M受体。<br>● 常作为工具药。</p>
+<h5 id="1、毛果芸香碱"><a href="#1、毛果芸香碱" class="headerlink" title="1、毛果芸香碱"></a><font size="4">1、毛果芸香碱</font></h5><p>（1）毛果芸香属植物分离的生物碱。<br>（2）溶脂性高。<br>（3）选择性作用于M受体。<br>（4）作用于副交感神经节后纤维支配的效应器M受体。<br>（5）调节平滑肌收缩，特别是眼内平滑肌。<br>（6）可用于滴眼液，缩瞳、降眼压、调节痉挛。<br>（7）其副作用限制它的长期使用。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%94%E7%AB%A0/2.png"></p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第五章/3.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第五章/4.png" ></td>
+  </tr>
+</table>
+
+<h5 id="2、毒蕈碱"><a href="#2、毒蕈碱" class="headerlink" title="2、毒蕈碱"></a><font size="4">2、毒蕈碱</font></h5><p>（1）工具药。<br>（2）M受体的激动剂。<br>（2）毒蕈碱中毒，可用阿托品治疗。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%94%E7%AB%A0/5.png"></p>
+<h5 id="3、槟榔碱"><a href="#3、槟榔碱" class="headerlink" title="3、槟榔碱"></a><font size="4">3、槟榔碱</font></h5><p>（1）激动M与N型受体。<br>（2）既可用于治疗青光眼，也可对中枢神经产生影响，如带来欣快感和放松感，相当于尼古丁作用。<br>（3）能使绦虫瘫痪，药用作驱绦虫药。<br>（4）可致癌，2B类致癌物。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%94%E7%AB%A0/6.png"></p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第五章/7.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第五章/8.png" ></td>
+  </tr>
+</table>
+
+<h3 id="三、胆碱受体阻断药"><a href="#三、胆碱受体阻断药" class="headerlink" title="三、胆碱受体阻断药"></a>三、胆碱受体阻断药</h3><span style="display:block;text-align:center;">
+<font size="4">
+●分类：M受体阻断药、NN受体阻断药、NM受体阻断药。
+</font>
+</span>
+
+<h4 id="（一）M受体阻断药"><a href="#（一）M受体阻断药" class="headerlink" title="（一）M受体阻断药"></a>（一）M受体阻断药</h4><p>● 阻断神经元节后神经纤维所支配效应器细胞膜上M受体.<br>● 又称节后抗胆碱药、具有抗M样作用。<br>● 选择性高，临床应用广泛。</p>
+<h5 id="1、托品类生物碱"><a href="#1、托品类生物碱" class="headerlink" title="1、托品类生物碱"></a><font size="4">1、托品类生物碱</font></h5><font size="4">
+（1）阿托品 (atropine)
+</font>
+
+<p>● <strong>药动学：</strong>○ 叔胺生物碱，易通过生物膜以及血脑屏障。<br>○ 口服由胃肠道吸收，可通过眼膜。<br>○ 1小时后，血液浓度达最高，对副交感神经拮抗作用维持3-4小时。<br>○ 大部尿液排出。<br>● <strong>药理作用：</strong>○ 选择性M受体阻断剂，但对M受体亚型选择性较差。<br>○ 高剂量对α1和NN受体也有阻断作用。<br>○ 主要作用于心血管、平滑肌、眼、腺体等器官。<br>○ 治疗剂量对中枢影响较小，但大剂量产生神经毒性，如焦虑、亢奋、幻觉、死亡等。</p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第五章/9.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第五章/10.png" ><br><span style="display:block;text-align:center;">
+<font size="6">
+颠茄
+</font>
+</span></td>
+  </tr>
+</table>
+
+<p>● <strong>临床应用：</strong>○ 缓解各种内脏绞痛，解除平滑肌痉挛，如胃痉挛、胆绞痛与肾绞痛 (与镇痛药联用)。<br>○ 眼虹膜睫体炎、儿童验光与检查眼底。<br>○ 麻醉前给药减少呼吸道腺体与唾液腺分泌。<br>○ 缓解心律失常 (解除迷走神经对心脏的抑制作用)。<br>○ 抗休克(解除血管痉挛、扩张血管)。<br>○ 有机磷脂类、蘑菇中毒解救 (到达CNS，阻断乙酰胆碱类物质的作用)。<br>● <strong>不良反应：</strong>○ 对组织选择性不高。<br>○ 剂量大时产生严重的中枢神经毒性。</p>
+<p>● <strong>禁忌症：</strong>青光眼、幽门梗阻以及前列腺肥大症禁用。</p>
+<p>● <strong>中毒解救：</strong>一般不良反应停药后消失，但对中毒症状需通过洗胃等过程。</p>
+<font size="4">
+（2）东崀菪碱 (scopolamine)
+</font>
+
+<p>● 天然生物碱。非选择性的M受体阻断剂，以前用于麻醉剂。<br>● 对中枢神经作用强于阿托品，持续时间长。<br>● 治疗剂量对中枢神经抑制，大剂量又能产生兴奋、欣快、上瘾。<br>● 最近研究表明该药在合适剂量对抑郁症有治疗作用。</p>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第五章/12.png" >
+    <br><span style="display:block;text-align:center;">
+<font size="6">
+东崀菪碱
+</font>
+</span>
+</td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第五章/11.png" ><span style="display:block;text-align:center;"><font size="6">
+天仙子
+</font>
+</span>
+</td>
+  </tr>
+</table>
+
+<font size="4">
+（3）山崀菪碱 (anisodamine) 
+</font>
+
+<p>● 天然生物碱，非选择性M受体和α1去甲肾上腺素受体阻断剂。<br>● 与阿托品相似，具有解除血管平滑肌痉挛和微循环障碍的作用。<br>● 不易通过血脑屏障，无中枢作用。</p>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第五章/12.png" >
+    <br><span style="display:block;text-align:center;">
+<font size="6">
+山崀菪碱
+</font>
+</span>
+</td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第五章/11.png" ><span style="display:block;text-align:center;"><font size="6">
+西藏唐古特莨菪
+</font>
+</span>
+</td>
+  </tr>
+</table>
+
+<h5 id="2、阿托品合成替代品"><a href="#2、阿托品合成替代品" class="headerlink" title="2、阿托品合成替代品"></a><font size="4">2、阿托品合成替代品</font></h5><p>（1）扩瞳药：后马托品、托吡卡按、环喷脱脂等。<br>（2）解痉药：奥芬溴铵、贝那替秦、格隆溴铵等。<br>（3）选择性M受体亚型阻断药：哌仑西平(M1)等。<br>（4）有机磷中毒解毒药：戊乙奎醚等。</p>
 ]]></content>
       <tags>
         <tag>生物制药</tag>
@@ -396,12 +502,12 @@
   </tr>
 </table>
 
-<h3 id="三、传出神经递质的代谢"><a href="#三、传出神经递质的代谢" class="headerlink" title="三、传出神经递质的代谢"></a>三、传出神经递质的代谢</h3><h4 id="1、乙酰胆碱"><a href="#1、乙酰胆碱" class="headerlink" title="1、乙酰胆碱"></a>1、乙酰胆碱</h4><h5 id="1-合成：胆碱-乙酰辅酶A经胆碱乙酰化酶催化。"><a href="#1-合成：胆碱-乙酰辅酶A经胆碱乙酰化酶催化。" class="headerlink" title="(1) 合成：胆碱+乙酰辅酶A经胆碱乙酰化酶催化。"></a>(1) 合成：胆碱+乙酰辅酶A经胆碱乙酰化酶催化。</h5><p>● 胆碱由胆碱转运体从胞外主动摄取。<br>● Ach合成后，储存于囊泡中。</p>
-<h5 id="2-释放：由突触前膜释放于突触间隙。"><a href="#2-释放：由突触前膜释放于突触间隙。" class="headerlink" title="(2) 释放：由突触前膜释放于突触间隙。"></a>(2) 释放：由突触前膜释放于突触间隙。</h5><p>● 神经冲动传导至末梢产生去极化，电压依赖性钙通道开放，钙离子内流，导致囊泡移向前膜。<br>● 量子释放。</p>
-<h5 id="3-消除：由突触间隙中的乙酰胆碱酯酶水解。"><a href="#3-消除：由突触间隙中的乙酰胆碱酯酶水解。" class="headerlink" title="(3) 消除：由突触间隙中的乙酰胆碱酯酶水解。"></a>(3) 消除：由突触间隙中的乙酰胆碱酯酶水解。</h5><p>● ACh作用于后膜受体产生效应。<br>● ACh 被水解成胆碱和乙酸。<br>● 胆碱经胆碱转运体再摄取回到前神经元。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%9B%9B%E7%AB%A0/14.png"></p>
-<h4 id="2、去甲肾上腺素"><a href="#2、去甲肾上腺素" class="headerlink" title="2、去甲肾上腺素"></a>2、去甲肾上腺素</h4><h5 id="1-合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。"><a href="#1-合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。" class="headerlink" title="(1) 合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。"></a>(1) 合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。</h5><p>● 多巴胺进入囊泡。<br>● 在囊泡中经多巴胺β-羟化酶生成NA，储存于囊泡中。</p>
-<h5 id="2-释放：由突触前膜释放于突触间隙。-1"><a href="#2-释放：由突触前膜释放于突触间隙。-1" class="headerlink" title="(2) 释放：由突触前膜释放于突触间隙。"></a>(2) 释放：由突触前膜释放于突触间隙。</h5><p>● 神经冲动传导至末梢产生去极化，电压依赖性钙通道开放，钙离子内流，导致囊泡移向前膜。<br>● 量子释放。</p>
-<h5 id="3-消除：由摄取和降解失活。"><a href="#3-消除：由摄取和降解失活。" class="headerlink" title="(3) 消除：由摄取和降解失活。"></a>(3) 消除：由摄取和降解失活。</h5><p>● NA经其再摄取转运蛋白返回前神经元，或储存于囊泡或氧化灭活。<br>● 少量NA扩散至血液中，被儿茶酚氧位甲基转移酶(COMT)破坏。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%9B%9B%E7%AB%A0/15.png"></p>
+<h3 id="三、传出神经递质的代谢"><a href="#三、传出神经递质的代谢" class="headerlink" title="三、传出神经递质的代谢"></a>三、传出神经递质的代谢</h3><h4 id="1、乙酰胆碱"><a href="#1、乙酰胆碱" class="headerlink" title="1、乙酰胆碱"></a>1、乙酰胆碱</h4><h5 id="1-合成：胆碱-乙酰辅酶A经胆碱乙酰化酶催化。"><a href="#1-合成：胆碱-乙酰辅酶A经胆碱乙酰化酶催化。" class="headerlink" title="(1) 合成：胆碱+乙酰辅酶A经胆碱乙酰化酶催化。"></a><font size="4">(1) 合成：胆碱+乙酰辅酶A经胆碱乙酰化酶催化。</font></h5><p>● 胆碱由胆碱转运体从胞外主动摄取。<br>● Ach合成后，储存于囊泡中。</p>
+<h5 id="2-释放：由突触前膜释放于突触间隙。"><a href="#2-释放：由突触前膜释放于突触间隙。" class="headerlink" title="(2) 释放：由突触前膜释放于突触间隙。"></a><font size="4">(2) 释放：由突触前膜释放于突触间隙。</font></h5><p>● 神经冲动传导至末梢产生去极化，电压依赖性钙通道开放，钙离子内流，导致囊泡移向前膜。<br>● 量子释放。</p>
+<h5 id="3-消除：由突触间隙中的乙酰胆碱酯酶水解。"><a href="#3-消除：由突触间隙中的乙酰胆碱酯酶水解。" class="headerlink" title="(3) 消除：由突触间隙中的乙酰胆碱酯酶水解。"></a><font size="4">(3) 消除：由突触间隙中的乙酰胆碱酯酶水解。</font></h5><p>● ACh作用于后膜受体产生效应。<br>● ACh 被水解成胆碱和乙酸。<br>● 胆碱经胆碱转运体再摄取回到前神经元。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%9B%9B%E7%AB%A0/14.png"></p>
+<h4 id="2、去甲肾上腺素"><a href="#2、去甲肾上腺素" class="headerlink" title="2、去甲肾上腺素"></a>2、去甲肾上腺素</h4><h5 id="1-合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。"><a href="#1-合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。" class="headerlink" title="(1) 合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。"></a><font size="4">(1) 合成：酪氨酸经酪氨酸羟化酶催化生成多巴，再经多巴脱羧酶生成多巴胺。</font></h5><p>● 多巴胺进入囊泡。<br>● 在囊泡中经多巴胺β-羟化酶生成NA，储存于囊泡中。</p>
+<h5 id="2-释放：由突触前膜释放于突触间隙。-1"><a href="#2-释放：由突触前膜释放于突触间隙。-1" class="headerlink" title="(2) 释放：由突触前膜释放于突触间隙。"></a><font size="4">(2) 释放：由突触前膜释放于突触间隙。</font></h5><p>● 神经冲动传导至末梢产生去极化，电压依赖性钙通道开放，钙离子内流，导致囊泡移向前膜。<br>● 量子释放。</p>
+<h5 id="3-消除：由摄取和降解失活。"><a href="#3-消除：由摄取和降解失活。" class="headerlink" title="(3) 消除：由摄取和降解失活。"></a><font size="4">(3) 消除：由摄取和降解失活。</font></h5><p>● NA经其再摄取转运蛋白返回前神经元，或储存于囊泡或氧化灭活。<br>● 少量NA扩散至血液中，被儿茶酚氧位甲基转移酶(COMT)破坏。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%9B%9B%E7%AB%A0/15.png"></p>
 <h2 id="第三节-传出神经系统的受体"><a href="#第三节-传出神经系统的受体" class="headerlink" title="第三节 传出神经系统的受体"></a>第三节 传出神经系统的受体</h2><h3 id="一、胆碱受体"><a href="#一、胆碱受体" class="headerlink" title="一、胆碱受体"></a>一、胆碱受体</h3><h4 id="1、M型受体-mAChR"><a href="#1、M型受体-mAChR" class="headerlink" title="1、M型受体 (mAChR)"></a>1、M型受体 (mAChR)</h4><p>(1) 毒蕈 (xùn) 碱乙酰胆碱受体 (Muscarinic acetylcholine receptor, M receptor)。<br>(2) 毒蕈碱为一种毒性的天然生物碱，可结合乙酰胆碱受体，产生类似的效应。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%9B%9B%E7%AB%A0/16.png"></p>
 <p>(3) G蛋白偶联蛋白。<br>(4) 分布于胆碱能神经节后纤维所支配的效应器。<br>(5) 5种亚型。<br>● M1受体<br>● M2受体<br>● M3受体<br>● M4受体<br>● M5受体<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%9B%9B%E7%AB%A0/17.png"></p>
 <h4 id="2、N型受体-nAChR"><a href="#2、N型受体-nAChR" class="headerlink" title="2、N型受体 (nAChR)"></a>2、N型受体 (nAChR)</h4><p>(1) 烟碱乙酰胆碱受体 (nicotinic acetylcholine receptor, N receptor)。<br>(2) 烟碱(尼古丁) 是一种有毒生物碱，烟草主要成分，可结合乙酰胆碱受体，产生类似的效应。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%9B%9B%E7%AB%A0/18.png"></p>

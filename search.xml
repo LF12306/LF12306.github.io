@@ -31,55 +31,6 @@
       </tags>
   </entry>
   <entry>
-    <title>微信图片自动保存工具</title>
-    <url>/2025/04/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%BF%9D%E5%AD%98%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="🚀-微信图片自动保存工具"><a href="#🚀-微信图片自动保存工具" class="headerlink" title="🚀 微信图片自动保存工具"></a>🚀 微信图片自动保存工具</h1><p><img src="/../img/Wechat-image-save/screenshot.png" alt="软件截图"> <!-- --></p>
-<h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><ul>
-<li>我对于代码什么的其实完全是一知半解，开发这么个小工具纯粹是被wx的幽默机制干急眼了（）因为我专业是生物这块的，同学们经常在微信群里发实验细胞的图片，然后往往因为我没点开导致图片已过期（现在好像手机端点开了也会过期了），写实验报告的时候还得求爷爷告奶奶的问他们要图片，我也找过其他人的工具，但基本上要么不能保存原图，要么就是收费，也不知道为什么wx自己不搞自动下载图片的功能（恼）</li>
-<li>于是一气之下花了一个星期用ds搓出来这么个玩意（）</li>
-<li>由于我真的只是小菜鸡，这里面所有的代码都是基于ds（ds，超我的ai！）给出来的代码进行修改得到的，如果有大佬愿意帮忙完善那自然是最好的</li>
-<li>目前已知有个小bug是会跟鼠标抢控制权，如果遇到了一般来说就重启工具就行了</li>
-<li>不支持微信4.0以上的版本，因为wxauto没适配</li>
-<li>还有，我的电脑是白天一直开机的，所以我基本上没考虑历史消息的情况，我也试过了获取历史消息，但是ds给的代码有点抽风，于是就放弃了。</li>
-</ul>
-<h2 id="📦-功能特性"><a href="#📦-功能特性" class="headerlink" title="📦 功能特性"></a>📦 功能特性</h2><ul>
-<li>实时监控并保存微信聊天图片</li>
-<li>按联系人自动分类保存</li>
-<li>支持自定义保存路径</li>
-<li>低内存占用后台运行（但多开微信聊天窗口的内存会变高）</li>
-</ul>
-<h2 id="🛠️-安装使用"><a href="#🛠️-安装使用" class="headerlink" title="🛠️ 安装使用"></a>🛠️ 安装使用</h2><h3 id="直接运行（推荐）"><a href="#直接运行（推荐）" class="headerlink" title="直接运行（推荐）"></a>直接运行（推荐）</h3><ol>
-<li>前往 <a href="https://github.com/LF12306/WeChat-Image-Saver/releases">Releases</a> 下载最新版exe<br>或者<a href="https://pan.baidu.com/s/1DWf3oyv4qKbng4pdOUaS-Q">百度网盘</a>提取码：w7c2</li>
-<li>打开微信（不打开就无法接收）</li>
-<li>双击运行<code>微信图片自动保存工具.exe</code></li>
-</ol>
-<h3 id="从源码运行"><a href="#从源码运行" class="headerlink" title="从源码运行"></a>从源码运行</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/LF12306/WeChat-Image-Saver.git</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">python 自动保存工具.py</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>⚙️ 配置说明</p>
-<h3 id="功能和操作方法"><a href="#功能和操作方法" class="headerlink" title="功能和操作方法"></a>功能和操作方法</h3><ul>
-<li>添加监听对象：	   输入联系人名称 → 点击添加</li>
-<li>修改保存路径：	   点击”修改路径”选择新位置</li>
-</ul>
-<h2 id="❓-常见问题"><a href="#❓-常见问题" class="headerlink" title="❓ 常见问题"></a>❓ 常见问题</h2><h3 id="无法检测到微信窗口？"><a href="#无法检测到微信窗口？" class="headerlink" title="无法检测到微信窗口？"></a>无法检测到微信窗口？</h3><ol>
-<li>确保微信客户端已登录</li>
-<li>以管理员身份运行本程序</li>
-</ol>
-<h3 id="如何更新配置？"><a href="#如何更新配置？" class="headerlink" title="如何更新配置？"></a>如何更新配置？</h3><p>直接编辑<code>wx_config.json</code>或通过界面修改后会自动保存</p>
-<h3 id="为什么没开机自启动？"><a href="#为什么没开机自启动？" class="headerlink" title="为什么没开机自启动？"></a>为什么没开机自启动？</h3><p>好问题，因为微信不能自启动（因为要打开到聊天界面，而不是打开到“进入微信”，还得手动点一下才能进入微信，我觉得这设计纯***），虽然我写了脚本能自启动微信，但很不稳定，于是就先把这个工具发出来。</p>
-<hr>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><h4 id="v1-1"><a href="#v1-1" class="headerlink" title="v1.1"></a>v1.1</h4><p>解决了多张图片同时发送会导致只能保存一张的命名bug，改为使用毫秒级命名，避免重复命名多张图片。</p>
-<h4 id="v1-2"><a href="#v1-2" class="headerlink" title="v1.2"></a>v1.2</h4><p>增加年月日目录分类，在聊天对象目录下创建以年月日命名的文件夹，分时间存放图片</p>
-<h2 id="🙏-致谢"><a href="#🙏-致谢" class="headerlink" title="🙏 致谢"></a>🙏 致谢</h2><p>特别感谢以下项目的开发者：</p>
-<ul>
-<li><a href="https://github.com/cluic/wxauto">wxauto</a> 提供了微信自动化控制的核心功能</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生物技术制药</title>
     <url>/2025/03/26/%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%88%B6%E8%8D%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a><span style="display:block;text-align:center;color:#00BFFF;">第一章</span></h1><h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><p>1.生物药物：是指运用微生物学、生物学、医学、生物化学等的研究成果，从生物体、生物组织、细胞、体液等，综合利用微生物学、化学、生物化学、生物技术、药学等科学的原理和方法制造的一类用于预防、治疗和诊断的制品。<br>2.生物技术药物：一般来说，采用DNA重组技术或其他生物新技术研制的蛋白质或核酸类药物。<br>3.生物技术制药：采用现代生物技术，借助某些微生物、植物、动物生产医药品。<br>生物技术药物的类型、特性及功能用途</p>
@@ -140,6 +91,55 @@
       <tags>
         <tag>生物制药</tag>
         <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微信图片自动保存工具</title>
+    <url>/2025/04/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%BF%9D%E5%AD%98%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="🚀-微信图片自动保存工具"><a href="#🚀-微信图片自动保存工具" class="headerlink" title="🚀 微信图片自动保存工具"></a>🚀 微信图片自动保存工具</h1><p><img src="/../img/Wechat-image-save/screenshot.png" alt="软件截图"> <!-- --></p>
+<h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><ul>
+<li>我对于代码什么的其实完全是一知半解，开发这么个小工具纯粹是被wx的幽默机制干急眼了（）因为我专业是生物这块的，同学们经常在微信群里发实验细胞的图片，然后往往因为我没点开导致图片已过期（现在好像手机端点开了也会过期了），写实验报告的时候还得求爷爷告奶奶的问他们要图片，我也找过其他人的工具，但基本上要么不能保存原图，要么就是收费，也不知道为什么wx自己不搞自动下载图片的功能（恼）</li>
+<li>于是一气之下花了一个星期用ds搓出来这么个玩意（）</li>
+<li>由于我真的只是小菜鸡，这里面所有的代码都是基于ds（ds，超我的ai！）给出来的代码进行修改得到的，如果有大佬愿意帮忙完善那自然是最好的</li>
+<li>目前已知有个小bug是会跟鼠标抢控制权，如果遇到了一般来说就重启工具就行了</li>
+<li>不支持微信4.0以上的版本，因为wxauto没适配</li>
+<li>还有，我的电脑是白天一直开机的，所以我基本上没考虑历史消息的情况，我也试过了获取历史消息，但是ds给的代码有点抽风，于是就放弃了。</li>
+</ul>
+<h2 id="📦-功能特性"><a href="#📦-功能特性" class="headerlink" title="📦 功能特性"></a>📦 功能特性</h2><ul>
+<li>实时监控并保存微信聊天图片</li>
+<li>按联系人自动分类保存</li>
+<li>支持自定义保存路径</li>
+<li>低内存占用后台运行（但多开微信聊天窗口的内存会变高）</li>
+</ul>
+<h2 id="🛠️-安装使用"><a href="#🛠️-安装使用" class="headerlink" title="🛠️ 安装使用"></a>🛠️ 安装使用</h2><h3 id="直接运行（推荐）"><a href="#直接运行（推荐）" class="headerlink" title="直接运行（推荐）"></a>直接运行（推荐）</h3><ol>
+<li>前往 <a href="https://github.com/LF12306/WeChat-Image-Saver/releases">Releases</a> 下载最新版exe<br>或者<a href="https://pan.baidu.com/s/1DWf3oyv4qKbng4pdOUaS-Q">百度网盘</a>提取码：w7c2</li>
+<li>打开微信（不打开就无法接收）</li>
+<li>双击运行<code>微信图片自动保存工具.exe</code></li>
+</ol>
+<h3 id="从源码运行"><a href="#从源码运行" class="headerlink" title="从源码运行"></a>从源码运行</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/LF12306/WeChat-Image-Saver.git</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">python 自动保存工具.py</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>⚙️ 配置说明</p>
+<h3 id="功能和操作方法"><a href="#功能和操作方法" class="headerlink" title="功能和操作方法"></a>功能和操作方法</h3><ul>
+<li>添加监听对象：	   输入联系人名称 → 点击添加</li>
+<li>修改保存路径：	   点击”修改路径”选择新位置</li>
+</ul>
+<h2 id="❓-常见问题"><a href="#❓-常见问题" class="headerlink" title="❓ 常见问题"></a>❓ 常见问题</h2><h3 id="无法检测到微信窗口？"><a href="#无法检测到微信窗口？" class="headerlink" title="无法检测到微信窗口？"></a>无法检测到微信窗口？</h3><ol>
+<li>确保微信客户端已登录</li>
+<li>以管理员身份运行本程序</li>
+</ol>
+<h3 id="如何更新配置？"><a href="#如何更新配置？" class="headerlink" title="如何更新配置？"></a>如何更新配置？</h3><p>直接编辑<code>wx_config.json</code>或通过界面修改后会自动保存</p>
+<h3 id="为什么没开机自启动？"><a href="#为什么没开机自启动？" class="headerlink" title="为什么没开机自启动？"></a>为什么没开机自启动？</h3><p>好问题，因为微信不能自启动（因为要打开到聊天界面，而不是打开到“进入微信”，还得手动点一下才能进入微信，我觉得这设计纯***），虽然我写了脚本能自启动微信，但很不稳定，于是就先把这个工具发出来。</p>
+<hr>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><h4 id="v1-1"><a href="#v1-1" class="headerlink" title="v1.1"></a>v1.1</h4><p>解决了多张图片同时发送会导致只能保存一张的命名bug，改为使用毫秒级命名，避免重复命名多张图片。</p>
+<h4 id="v1-2"><a href="#v1-2" class="headerlink" title="v1.2"></a>v1.2</h4><p>增加年月日目录分类，在聊天对象目录下创建以年月日命名的文件夹，分时间存放图片</p>
+<h2 id="🙏-致谢"><a href="#🙏-致谢" class="headerlink" title="🙏 致谢"></a>🙏 致谢</h2><p>特别感谢以下项目的开发者：</p>
+<ul>
+<li><a href="https://github.com/cluic/wxauto">wxauto</a> 提供了微信自动化控制的核心功能</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
       </tags>
   </entry>
   <entry>
@@ -1302,86 +1302,6 @@ gamma-Aminobutyric acid
       </tags>
   </entry>
   <entry>
-    <title>生理药理学第十三章</title>
-    <url>/2025/04/14/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十二章-抗高血压药"><a href="#第十二章-抗高血压药" class="headerlink" title="第十二章 抗高血压药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十二章 抗高血压药</span></h1><h2 id="第一节-血管生理学"><a href="#第一节-血管生理学" class="headerlink" title="第一节 血管生理学"></a>第一节 血管生理学</h2><h3 id="一、血液循环"><a href="#一、血液循环" class="headerlink" title="一、血液循环"></a>一、血液循环</h3><h4 id="1、心血管系统"><a href="#1、心血管系统" class="headerlink" title="1、心血管系统"></a><font size="4">1、心血管系统</font></h4><p>血管：动脉(红)、毛细血管、静脉(蓝)。<br>心血管系统：血管与心脏。<br>血液流动：心房、心室、动脉、毛细血管、静脉、心房…<br>血液分布：体循环系统84%，其中静脉64%，动脉13%，毛细血管7%。另心腔7%，肺9%。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/1.png"></p>
-<h4 id="2、血管"><a href="#2、血管" class="headerlink" title="2、血管"></a><font size="4">2、血管</font></h4><p><span style="color:#D81C2F">血管生理功能：血液运输与物质交换。</span><br>静、动脉管壁：三层(内、中、外膜)。</p>
-<p>● 内膜：内皮细胞 (选择性通透屏障以及合成与分泌物质)与内皮下层组织。<br>● 中膜：血管平滑肌、弹性纤维、胶原纤维。<br>● 外膜：疏松结缔组织，如弹性纤维、胶原纤维等。</p>
-<p>弹性动脉：1.5公分<br>肌肉动脉：约6毫米<br>小动脉：约37微米<br>毛细血管：约9微米<br>小静脉：20微米<br>静脉：5毫米<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/2.png"></p>
-<h4 id="3、血压"><a href="#3、血压" class="headerlink" title="3、血压"></a><span style="color:#D81C2F"><font size="4">3、血压</font></span></h4><p><span style="color:#D81C2F">血管内血液对血管侧壁的压强。<br><br><br><br>● 血压在各段血管不同。<br><br>● 主动脉和大动脉段，血压相对稳定。<br><br>● 小动脉与微动脉，血流阻力大，血压下降幅度大。<br><br>● 静脉回流至腔静脉、右心房时，血压接近于0。<br><br></span></p>
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/3.png"></p>
-<h4 id="4、动脉血压"><a href="#4、动脉血压" class="headerlink" title="4、动脉血压"></a><font size="4"><span style="color:#D81C2F">4、动脉血压</span></font></h4><h5 id="（1）形成原因"><a href="#（1）形成原因" class="headerlink" title="（1）形成原因"></a><span style="color:#D81C2F"><font size="4">（1）形成原因</font><br></h5><p>● 血液充盈<br><br>● 心脏射血：收缩射血能量转化为血液流动的动能以及大动脉扩张存储的势能。<br><br>● 外周阻力：小动脉与微动脉阻力大。<br><br></span></p>
-<h5 id="（2）血压-动脉血压"><a href="#（2）血压-动脉血压" class="headerlink" title="（2）血压 (动脉血压)"></a><span style="color:#D81C2F"><font size="4">（2）血压 (动脉血压)</font><br></h5><p>● 收缩压(高压)<br><br>● 舒张压(低压)<br><br></span></p>
-<h5 id="（3）高血压"><a href="#（3）高血压" class="headerlink" title="（3）高血压"></a><font size="4">（3）高血压</font></h5><p>● 高血压易引起心、脑、肾、血管病变。<br>● 脑卒、冠心病、动脉硬化、脑血栓等的主要原因。<br>● 我国高血压患病率达25.5%。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/4.png"></p>
-<h3 id="二、心血管的神经调节"><a href="#二、心血管的神经调节" class="headerlink" title="二、心血管的神经调节"></a><span style="color:#D81C2F">二、心血管的神经调节</span></h3><h4 id="1、心脏的神经支配"><a href="#1、心脏的神经支配" class="headerlink" title="1、心脏的神经支配"></a><font size="4">1、心脏的神经支配</font></h4><p>● 心脏受心交感神经(交感神经系统，1-5胸段脊髓中间外侧)与心迷走神经(副交感神经系统)双重支配。<br>●心交感神经兴奋增强心脏活动，心迷走神经兴奋则抑制。</p>
-<h5 id="（1）心交感神经"><a href="#（1）心交感神经" class="headerlink" title="（1）心交感神经"></a><font size="4">（1）心交感神经</font></h5><p><span style="color:#D81C2F">● 心交感神经节前末梢释放Ach激活M1受体，更换神经元，节后末梢释放NE，激活β1受体，引起心肌收缩，心率加大，支配心脏各个部位。(正性变)。</span><br>● 两侧心交感神经对心脏支配不同，左侧支配房室交界和心肌室，兴奋引起心肌收缩，而右侧则支配窦房结，兴奋引起心率加快。</p>
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/5.png"></p>
-<p>● 迷走神经属混合性神经，出延髓，沿着食道两旁，纵贯颈部和胸腔。支配呼吸、消化、和心脏等器官的感觉、运动和腺体的分泌，因此迷走神经损伤引起循环、呼吸、消化等功能失调。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/6.png"></p>
-<p><em><strong><span style="color:#D81C2F">激活β1受体如何兴奋交感神经并引起心脏收缩的？</span></strong></em><br>● NE激活β1受体。<br>● 通过G蛋白活化AC，产生cAMP，激活PKA。<br>● 磷酸化并激活心肌细胞膜L型钙通道。<br>● 增加钙离子内流。<br>● 激活肌质网(SR)膜上的兰尼碱受体(RYR), 触发钙离子释放。<br>● 钙离子作用于心肌蛋白，促进心肌滑行。</p>
-<p>● PKA也可磷酸化受磷蛋白PLB。<br>● PLB与纵行肌质网膜上钙泵(SERCA)解离。<br>● 钙泵与钙离子亲和力加强，活性增加。<br>● 加快钙离子的回收。<br>● 胞质内钙离子浓度下降。<br>● 心肌舒张速度加快。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/7.png"></p>
-<h5 id="（2）心迷走神经"><a href="#（2）心迷走神经" class="headerlink" title="（2）心迷走神经"></a><font size="4">（2）心迷走神经</font></h5><p><font size="4">● 节前神经末梢释放Ach，作用于节后神经元体膜的N1受体。<br><br>● 节后末梢也释放Ach，作用于心肌细胞膜的M受体。<br><br>● 引起心房肌收缩减弱、心率减慢、房室传导减慢。<br><br>● 负性变。<br><br></font></p>
-<p><em><strong><span style="color:#D81C2F">交感神经与迷走神经对心脏具有相反的效应。</span></strong></em><br>● Ach激活M受体，通过G蛋白阻碍AC活性，导致cAMP水平下降。<br>● PKA激酶活性降低。<br>● 表现出与β1受体激活相反的效应。</p>
-<p><strong>负性变的原因</strong><br>● PKA活性下降，L型钙通道被抑制，钙离子内流减少。<br>● K+离子外流加速呈复极化，也导致钙离子内流减少。<br>● 心肌收缩力减弱，心率减慢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/8.png"></p>
-<h4 id="2、血管的神经支配"><a href="#2、血管的神经支配" class="headerlink" title="2、血管的神经支配"></a><font size="4">2、血管的神经支配</font></h4><p>● 支配血管平滑肌的神经分为缩血管神经与舒血管神经(交感神经)。<br>● 大部分血管平滑肌仅受缩血管神经纤维支配，少部分受两方支配。</p>
-<h5 id="（1）缩血管神经纤维-交感神经"><a href="#（1）缩血管神经纤维-交感神经" class="headerlink" title="（1）缩血管神经纤维 (交感神经)"></a><font size="4"><span style="color:#D81C2F">（1）缩血管神经纤维 (交感神经)</span></font></h5><p>● 节后纤维末端释放NE。<br>● 血管有α和β2两类NE受体。<br>● 激动α引起血管平滑肌收缩，而激活β2则引起血管舒张。<br>● NE与α受体结合能力较强，与β2结合较弱。故主要效应为α受体。</p>
-<h5 id="（2）舒血管神经纤维-交感神经"><a href="#（2）舒血管神经纤维-交感神经" class="headerlink" title="（2）舒血管神经纤维 (交感神经)"></a><font size="4">（2）舒血管神经纤维 (交感神经)</font></h5><p>● 神经节后末梢释放Ach，作用于血管M受体。<br>● 激动M受体引起血管舒张，血流量增加。</p>
-<h5 id="（3）副交感舒血管神经"><a href="#（3）副交感舒血管神经" class="headerlink" title="（3）副交感舒血管神经"></a><font size="4"><span style="color:#D81C2F">（3）副交感舒血管神经</span></font></h5><p>● 神经节后末梢释放Ach, 作用于血管M受体。<br>● 引起血管舒张。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/9.png"></p>
-<h3 id="三、体液调节"><a href="#三、体液调节" class="headerlink" title="三、体液调节"></a><span style="color:#D81C2F">三、体液调节</span></h3><p>● 血液和组织液的化学物质对心肌和血管平滑肌活动的调节。<br>● 组织液：血浆经毛细血管滤过到组织间隙的物质，呈胶冻状，不能自由流动。但可以与血液和细胞液进行物质交换。</p>
-<h4 id="1、肾素-血管紧张素系统"><a href="#1、肾素-血管紧张素系统" class="headerlink" title="1、肾素-血管紧张素系统"></a><font size="4"><span style="color:#D81C2F">1、肾素-血管紧张素系统</span></font></h4><h5 id="（1）Renin-angiotensin-system-RAS-的构成"><a href="#（1）Renin-angiotensin-system-RAS-的构成" class="headerlink" title="（1）Renin-angiotensin system (RAS)的构成"></a><font size="4"><span style="color:#D81C2F">（1）Renin-angiotensin system (RAS)的构成</span></font></h5><p>● 肾素：肾脏分泌的酸性蛋白，经肾静脉进入血液循环。<br>● RAS链式反应。</p>
-<p>● 肾素水解它的底物血管紧张素原为十肽 (血管紧张素I, Ang I)。<br>● <span style="color:#D81C2F">血管紧张素转化酶(ACE)</span>水解Ang I为八肽的Ang II。<br>● Ang II 进一步水解为7肽的Ang III。<br>● Ang III经氨基肽酶水解为6肽的Ang IV。<br>● 进一步水解为无生物活性的氨基酸。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/10.png"></p>
-<h5 id="（2）血管紧张素成员的生理作用"><a href="#（2）血管紧张素成员的生理作用" class="headerlink" title="（2）血管紧张素成员的生理作用"></a><font size="4">（2）血管紧张素成员的生理作用</font></h5><p>● 血管紧张素与它们在膜上的受体(angiotensin receptor, AT receptor) 结合产生生物学效应。<br>● AT受体有多种亚型，如AT1, AT2, AT3, AT4, AT1a, AT1b等。<br>● AT受体表达部位不同，生物效应也不同。<br><strong><span style="color:#D81C2F">Ang II 的生理作用</span></strong><br><span style="color:#D81C2F"><br>● 与AT1受体结合产生效应。<br><br>● 缩血管作用，血压升高，血流量增加。<br><br>● 促进交感神经末梢释放递质，如NE。<br><br>● 作用中枢神经元，释放血管升压素和缩宫素。<br><br>● 促进醛固酮的合成与释放。<br><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/11.png"></p>
-<h4 id="2、肾上腺素与去甲肾上腺素"><a href="#2、肾上腺素与去甲肾上腺素" class="headerlink" title="2、肾上腺素与去甲肾上腺素"></a><font size="4">2、肾上腺素与去甲肾上腺素</font></h4><p>● 循环血液中的肾上腺素与去甲肾上腺素来自肾上腺髓质。<br>● 肾上腺素占80%，去甲肾上腺素约为20%。</p>
-<h5 id="（1）肾上腺素"><a href="#（1）肾上腺素" class="headerlink" title="（1）肾上腺素"></a><font size="4">（1）肾上腺素</font></h5><p>● 心脏：肾上腺素与β1受体产生正性变。<br>● 血管：取决于血管平滑肌上α和β2受体的分布。α优势：皮肤、肾、肠胃道；β2占优：骨骼肌、肝血管等。小剂量兴奋β2为主，血管舒张；大剂量也兴奋α，血管收缩。</p>
-<h5 id="（2）去甲肾上腺素"><a href="#（2）去甲肾上腺素" class="headerlink" title="（2）去甲肾上腺素"></a><font size="4">（2）去甲肾上腺素</font></h5><p>● 心脏：与β1结合，正性变。<br>● 血管：平滑肌α受体结合，收缩血管，而与β2结合能力弱。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/12.png"></p>
-<h4 id="3、体液中其它物质"><a href="#3、体液中其它物质" class="headerlink" title="3、体液中其它物质"></a><font size="4">3、体液中其它物质</font></h4><h5 id="（1）血管升压素"><a href="#（1）血管升压素" class="headerlink" title="（1）血管升压素"></a><font size="4">（1）血管升压素</font></h5><p>● Vasopressin (VP)，九肽激素。与V2受体结合促进水的重吸收，又称抗利尿激素。<br>● VP也可作用于血管平滑肌V1受体引起血管收缩，血压升高。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/13.png"></p>
-<h5 id="（2）血管内皮生成舒血物质"><a href="#（2）血管内皮生成舒血物质" class="headerlink" title="（2）血管内皮生成舒血物质"></a><font size="4">（2）血管内皮生成舒血物质</font></h5><p>● NO、前列环素、内皮超极化因子等。<br>● NO为内皮舒张因子。</p>
-<p>● L-精氨酸在内皮细胞经NOS作用产生NO。<br>● NO高脂溶性扩散至血管平滑肌细胞。<br>● 激活sGC产生cGMP。<br>● 活化PKG激酶。<br>● 降低胞质内钙离子的浓度。<br>● 血管舒张。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/14.png"></p>
-<h5 id="（3）血管内皮生成的缩血管物质"><a href="#（3）血管内皮生成的缩血管物质" class="headerlink" title="（3）血管内皮生成的缩血管物质"></a><font size="4">（3）血管内皮生成的缩血管物质</font></h5><p>● 内皮素，ET，21肽。<br>● 经内皮素受体产生作用，血管收缩。</p>
-<h5 id="（4）其它活性多肽"><a href="#（4）其它活性多肽" class="headerlink" title="（4）其它活性多肽"></a><font size="4">（4）其它活性多肽</font></h5><p>● 30余种，起心血管调节作用。<br>● 心房钠尿肽(机体水盐平衡、血压稳定等)。<br>● 肾上腺髓皮素。<br>● 阿片肽。<br>● 尾升压素。</p>
-<h2 id="第二节-抗高血压药物"><a href="#第二节-抗高血压药物" class="headerlink" title="第二节 抗高血压药物"></a>第二节 抗高血压药物</h2><h3 id="一、分类"><a href="#一、分类" class="headerlink" title="一、分类"></a>一、分类</h3><p>（1）交感神经抑制药<br>●中枢N受体抑制药<br>●神经节阻断药<br>●去甲肾上腺素能末梢阻滞药<br>●肾上腺素受体阻断药(β阻断药、α阻断药、α和β阻断药)<br>（2）钙通道阻滞药<br>（3）血管扩张药<br>（4）利尿药<br>（5）肾素-血管紧张素系统抑制药<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/15.png"></p>
-<h3 id="二、常见的抗高血压药"><a href="#二、常见的抗高血压药" class="headerlink" title="二、常见的抗高血压药"></a>二、常见的抗高血压药</h3><h4 id="1、肾素-血管紧张素系统抑制药"><a href="#1、肾素-血管紧张素系统抑制药" class="headerlink" title="1、肾素-血管紧张素系统抑制药"></a><font size="4"><span style="color:#D81C2F">1、肾素-血管紧张素系统抑制药</span></font></h4><p><span style="color:#D81C2F">● 血管紧张素I转化酶(ACE) 抑制药<br><br>● 血管紧张素II受体阻断药<br><br>● 肾素抑制药<br><br></span></p>
-<h5 id="（1）血管紧张素I转化酶抑制药"><a href="#（1）血管紧张素I转化酶抑制药" class="headerlink" title="（1）血管紧张素I转化酶抑制药"></a><font size="4">（1）血管紧张素I转化酶抑制药</font></h5><p>● 卡托普利<br>● 阿拉普利<br>● 依那普利<br>● 赖诺普利<br>● 喹那普利<br>● 培哚普利<br>● 雷米普利<br>● 福辛普利</p>
-<p><strong>药动学与临床应用</strong><br>● 药物结构不同，吸收不同。<br>● 肾脏排出。<br>● 适用于各型高血压，对肾性以及原发性高血压均有效。<br>● 高血钾、肾功能损害、咳嗽、血管神经性水肿等副作用。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/16.png"></p>
-<h5 id="（2）血管紧张素II受体阻断药"><a href="#（2）血管紧张素II受体阻断药" class="headerlink" title="（2）血管紧张素II受体阻断药"></a><font size="4">（2）血管紧张素II受体阻断药</font></h5><p>● 氯沙坦<br>● 厄贝沙坦<br>● 坎地沙坦<br>● 替米沙坦<br>● 缬沙坦</p>
-<p><strong>药理作用</strong><br>● AT1受体阻断药，抑制AngII的心血管作用。</p>
-<p><strong>临床应用及不良反应</strong><br>● 轻、中度高血压。<br>● 伴有糖尿病、肾病、慢性心功能不全者有良好疗效。<br>● 不良反应较ACE抑制剂少。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/17.png"></p>
-<h4 id="2、钙通道阻滞药"><a href="#2、钙通道阻滞药" class="headerlink" title="2、钙通道阻滞药"></a><font size="4"><span style="color:#D81C2F">2、钙通道阻滞药</span></font></h4><p>● 可用于心律失常、高血压、心绞痛、慢性心功能不全。<br>● 选择性阻断电压门控Ca2+通道，抑制细胞外Ca2+内流，以松弛血管平滑肌降压。<br>● 各类药物对心脏和血管选择性不同。</p>
-<p><strong>常见钙离子通道阻滞药</strong><br>● 硝苯地平<br>● 尼群地平<br>● 氨氯地平<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/18.png"></p>
-<h4 id="3、肾上腺素受体阻断药"><a href="#3、肾上腺素受体阻断药" class="headerlink" title="3、肾上腺素受体阻断药"></a><font size="4"><span style="color:#D81C2F">3、肾上腺素受体阻断药</span></font></h4><h5 id="（1）β受体阻断药"><a href="#（1）β受体阻断药" class="headerlink" title="（1）β受体阻断药"></a><font size="4"><span style="color:#D81C2F">（1）β受体阻断药</span></font></h5><p><strong><span style="color:#D81C2F">药理作用</span></strong><br><span style="color:#D81C2F">● 阻断β1受体，降低心排血量与外周阻力，从而产生降压效应。</span></p>
-<p><strong>临床应用</strong><br>● 安全、有效、价廉。<br>● 各型高血压。<br>● 最常见的药物。</p>
-<p><strong>常见药物</strong><br>● 普萘洛尔<br>● 美托洛尔</p>
-<h5 id="（2）α受体阻断药"><a href="#（2）α受体阻断药" class="headerlink" title="（2）α受体阻断药"></a><font size="4"><span style="color:#D81C2F">（2）α受体阻断药</span></font></h5><p><strong><span style="color:#D81C2F">药理作用</span></strong><br>● 阻断血管平滑肌的收缩，产生小动脉舒张和降压效应。</p>
-<p><strong>临床应用</strong><br>● 适合各型高血压。</p>
-<p><strong>常见药物</strong><br>● 哌唑嗪<br>● 特拉唑嗪<br>● 多沙唑嗪<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/19.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/12.png"></p>
-<h5 id="（3）α和β受体阻断药"><a href="#（3）α和β受体阻断药" class="headerlink" title="（3）α和β受体阻断药"></a><font size="4">（3）α和β受体阻断药</font></h5><p>拉贝洛尔与卡维地洛<br>● 阻断β和α1受体，降低心排血量与外周血管阻力，产生降压效应。<br>● 降压温和，副作用小。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/20.png"></p>
-<h4 id="4、利尿药"><a href="#4、利尿药" class="headerlink" title="4、利尿药"></a><font size="4"><span style="color:#D81C2F">4、利尿药</span></font></h4><p><strong>药理作用</strong><br>● 血液容量影响心排血量以及外周阻力。<br>● 限制Na+摄入、排Na+、降低血管平滑肌胞内Na+浓度，通过Na+-Ca2+交换泵，使胞内Ca2+减少。<br>● 利尿药通过排钠利尿，减少细胞外液和血容量，导致心排血量降低，也可诱导血管壁产生扩血管物质。</p>
-<p><strong>常用于降压的利尿药</strong><br>● 噻嗪类利尿药<br>● 作用于远曲小管，抑制Na+-Cl-的同向转运重吸收。<br>● 脂溶性高，易吸收，温和，持久，副作用小。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/21.png"></p>
-<table>
-  <tr>
-<span style="display:block;text-align:center;">
-<font size="4">
-噻嗪环
-</font>
-    </span>
-    <td height="50%">
-    <img src="/../img/生理药理学/第十章/25.png" ><span style="display:block;text-align:center;">
-<font size="4">
-氢氯噻嗪，氯噻酮，吲达帕胺
-</font>
-    </span>
-    </td>
-  </tr>
-</table>
-
-<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E7%AC%AC%E4%B8%80%E8%8A%82-%E8%A1%80%E7%AE%A1%E7%94%9F%E7%90%86%E5%AD%A6">血管生理学</a><br>2、<a href="#%E4%BA%8C%E3%80%81%E5%BF%83%E8%A1%80%E7%AE%A1%E7%9A%84%E7%A5%9E%E7%BB%8F%E8%B0%83%E8%8A%82">心血管的神经调节</a><br>3、<a href="#%E4%B8%89%E3%80%81%E4%BD%93%E6%B6%B2%E8%B0%83%E8%8A%82">心血管的体液调节</a><br>4、<a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E6%8A%97%E9%AB%98%E8%A1%80%E5%8E%8B%E8%8D%AF%E7%89%A9">抗高血压药物</a>（血管紧张素I 转化酶抑制药、血管紧张素II受体阻断药、钙通道阻滞药、β受体阻断药、以及利尿药）</p>
-]]></content>
-      <tags>
-        <tag>生物制药</tag>
-        <tag>学习笔记</tag>
-        <tag>生理药理学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生理药理学第十一章</title>
     <url>/2025/04/13/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十一章-镇痛药"><a href="#第十一章-镇痛药" class="headerlink" title="第十一章 镇痛药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十一章 镇痛药</span></h1><h2 id="第一节-阿片受体-opioid-receptors"><a href="#第一节-阿片受体-opioid-receptors" class="headerlink" title="第一节 阿片受体 (opioid receptors)"></a>第一节 <span style="color:#D81C2F">阿片受体 (opioid receptors)</span></h2><h3 id="1、分类"><a href="#1、分类" class="headerlink" title="1、分类"></a>1、分类</h3><p><span style="color:#D81C2F">● 三种：μ、δ、κ。</span><br>● 每种有不同的亚型： μ1、 μ2、δ1、 δ2、 δ3、κ1、κ2、κ3。<br><span style="color:#D81C2F">● 均为G蛋白偶联受体。</span></p>
@@ -1510,6 +1430,86 @@ gamma-Aminobutyric acid
 
 <h3 id="阿片类药物成瘾以及戒断反应的机制"><a href="#阿片类药物成瘾以及戒断反应的机制" class="headerlink" title="阿片类药物成瘾以及戒断反应的机制"></a>阿片类药物成瘾以及戒断反应的机制</h3><p>● 阿片受体表达密度最高的脑区：边缘系统以及蓝斑<br>● 蓝斑核为阿片类成瘾的重要调节部位<br>● 发生戒断反应时蓝斑放电频率增高<br>● 蓝斑核去甲肾上腺素能神经元的变化与成瘾以及戒断反应存在关联<br><span style="color:#D81C2F">● 吗啡与蓝斑核μ受体结合，激活钾通道和抑制钙通道，进而抑制去甲肾上腺素能神经元<br><br>● 吗啡戒断时受抑制的蓝斑核突然活泼，放电增强，增加去甲肾上腺素释放，导致戒断反应<br></span></p>
 <h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E9%98%BF%E7%89%87%E7%B1%BB%E8%8D%AF%E7%89%A9%E9%95%87%E7%97%9B%E7%9A%84%E4%BD%9C%E7%94%A8%E6%9C%BA%E5%88%B6">阿片类镇痛药以及作用机制。</a><br>2、<a href="#%E9%98%BF%E7%89%87%E7%B1%BB%E8%8D%AF%E7%89%A9%E6%88%90%E7%98%BE%E4%BB%A5%E5%8F%8A%E6%88%92%E6%96%AD%E5%8F%8D%E5%BA%94%E7%9A%84%E6%9C%BA%E5%88%B6">阿片类药物成瘾以及戒断反应的机制。</a></p>
+]]></content>
+      <tags>
+        <tag>生物制药</tag>
+        <tag>学习笔记</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生理药理学第十三章</title>
+    <url>/2025/04/14/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十二章-抗高血压药"><a href="#第十二章-抗高血压药" class="headerlink" title="第十二章 抗高血压药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十二章 抗高血压药</span></h1><h2 id="第一节-血管生理学"><a href="#第一节-血管生理学" class="headerlink" title="第一节 血管生理学"></a>第一节 血管生理学</h2><h3 id="一、血液循环"><a href="#一、血液循环" class="headerlink" title="一、血液循环"></a>一、血液循环</h3><h4 id="1、心血管系统"><a href="#1、心血管系统" class="headerlink" title="1、心血管系统"></a><font size="4">1、心血管系统</font></h4><p>血管：动脉(红)、毛细血管、静脉(蓝)。<br>心血管系统：血管与心脏。<br>血液流动：心房、心室、动脉、毛细血管、静脉、心房…<br>血液分布：体循环系统84%，其中静脉64%，动脉13%，毛细血管7%。另心腔7%，肺9%。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/1.png"></p>
+<h4 id="2、血管"><a href="#2、血管" class="headerlink" title="2、血管"></a><font size="4">2、血管</font></h4><p><span style="color:#D81C2F">血管生理功能：血液运输与物质交换。</span><br>静、动脉管壁：三层(内、中、外膜)。</p>
+<p>● 内膜：内皮细胞 (选择性通透屏障以及合成与分泌物质)与内皮下层组织。<br>● 中膜：血管平滑肌、弹性纤维、胶原纤维。<br>● 外膜：疏松结缔组织，如弹性纤维、胶原纤维等。</p>
+<p>弹性动脉：1.5公分<br>肌肉动脉：约6毫米<br>小动脉：约37微米<br>毛细血管：约9微米<br>小静脉：20微米<br>静脉：5毫米<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/2.png"></p>
+<h4 id="3、血压"><a href="#3、血压" class="headerlink" title="3、血压"></a><span style="color:#D81C2F"><font size="4">3、血压</font></span></h4><p><span style="color:#D81C2F">血管内血液对血管侧壁的压强。<br><br><br><br>● 血压在各段血管不同。<br><br>● 主动脉和大动脉段，血压相对稳定。<br><br>● 小动脉与微动脉，血流阻力大，血压下降幅度大。<br><br>● 静脉回流至腔静脉、右心房时，血压接近于0。<br><br></span></p>
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/3.png"></p>
+<h4 id="4、动脉血压"><a href="#4、动脉血压" class="headerlink" title="4、动脉血压"></a><font size="4"><span style="color:#D81C2F">4、动脉血压</span></font></h4><h5 id="（1）形成原因"><a href="#（1）形成原因" class="headerlink" title="（1）形成原因"></a><span style="color:#D81C2F"><font size="4">（1）形成原因</font><br></h5><p>● 血液充盈<br><br>● 心脏射血：收缩射血能量转化为血液流动的动能以及大动脉扩张存储的势能。<br><br>● 外周阻力：小动脉与微动脉阻力大。<br><br></span></p>
+<h5 id="（2）血压-动脉血压"><a href="#（2）血压-动脉血压" class="headerlink" title="（2）血压 (动脉血压)"></a><span style="color:#D81C2F"><font size="4">（2）血压 (动脉血压)</font><br></h5><p>● 收缩压(高压)<br><br>● 舒张压(低压)<br><br></span></p>
+<h5 id="（3）高血压"><a href="#（3）高血压" class="headerlink" title="（3）高血压"></a><font size="4">（3）高血压</font></h5><p>● 高血压易引起心、脑、肾、血管病变。<br>● 脑卒、冠心病、动脉硬化、脑血栓等的主要原因。<br>● 我国高血压患病率达25.5%。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/4.png"></p>
+<h3 id="二、心血管的神经调节"><a href="#二、心血管的神经调节" class="headerlink" title="二、心血管的神经调节"></a><span style="color:#D81C2F">二、心血管的神经调节</span></h3><h4 id="1、心脏的神经支配"><a href="#1、心脏的神经支配" class="headerlink" title="1、心脏的神经支配"></a><font size="4">1、心脏的神经支配</font></h4><p>● 心脏受心交感神经(交感神经系统，1-5胸段脊髓中间外侧)与心迷走神经(副交感神经系统)双重支配。<br>●心交感神经兴奋增强心脏活动，心迷走神经兴奋则抑制。</p>
+<h5 id="（1）心交感神经"><a href="#（1）心交感神经" class="headerlink" title="（1）心交感神经"></a><font size="4">（1）心交感神经</font></h5><p><span style="color:#D81C2F">● 心交感神经节前末梢释放Ach激活M1受体，更换神经元，节后末梢释放NE，激活β1受体，引起心肌收缩，心率加大，支配心脏各个部位。(正性变)。</span><br>● 两侧心交感神经对心脏支配不同，左侧支配房室交界和心肌室，兴奋引起心肌收缩，而右侧则支配窦房结，兴奋引起心率加快。</p>
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/5.png"></p>
+<p>● 迷走神经属混合性神经，出延髓，沿着食道两旁，纵贯颈部和胸腔。支配呼吸、消化、和心脏等器官的感觉、运动和腺体的分泌，因此迷走神经损伤引起循环、呼吸、消化等功能失调。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/6.png"></p>
+<p><em><strong><span style="color:#D81C2F">激活β1受体如何兴奋交感神经并引起心脏收缩的？</span></strong></em><br>● NE激活β1受体。<br>● 通过G蛋白活化AC，产生cAMP，激活PKA。<br>● 磷酸化并激活心肌细胞膜L型钙通道。<br>● 增加钙离子内流。<br>● 激活肌质网(SR)膜上的兰尼碱受体(RYR), 触发钙离子释放。<br>● 钙离子作用于心肌蛋白，促进心肌滑行。</p>
+<p>● PKA也可磷酸化受磷蛋白PLB。<br>● PLB与纵行肌质网膜上钙泵(SERCA)解离。<br>● 钙泵与钙离子亲和力加强，活性增加。<br>● 加快钙离子的回收。<br>● 胞质内钙离子浓度下降。<br>● 心肌舒张速度加快。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/7.png"></p>
+<h5 id="（2）心迷走神经"><a href="#（2）心迷走神经" class="headerlink" title="（2）心迷走神经"></a><font size="4">（2）心迷走神经</font></h5><p><font size="4">● 节前神经末梢释放Ach，作用于节后神经元体膜的N1受体。<br><br>● 节后末梢也释放Ach，作用于心肌细胞膜的M受体。<br><br>● 引起心房肌收缩减弱、心率减慢、房室传导减慢。<br><br>● 负性变。<br><br></font></p>
+<p><em><strong><span style="color:#D81C2F">交感神经与迷走神经对心脏具有相反的效应。</span></strong></em><br>● Ach激活M受体，通过G蛋白阻碍AC活性，导致cAMP水平下降。<br>● PKA激酶活性降低。<br>● 表现出与β1受体激活相反的效应。</p>
+<p><strong>负性变的原因</strong><br>● PKA活性下降，L型钙通道被抑制，钙离子内流减少。<br>● K+离子外流加速呈复极化，也导致钙离子内流减少。<br>● 心肌收缩力减弱，心率减慢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/8.png"></p>
+<h4 id="2、血管的神经支配"><a href="#2、血管的神经支配" class="headerlink" title="2、血管的神经支配"></a><font size="4">2、血管的神经支配</font></h4><p>● 支配血管平滑肌的神经分为缩血管神经与舒血管神经(交感神经)。<br>● 大部分血管平滑肌仅受缩血管神经纤维支配，少部分受两方支配。</p>
+<h5 id="（1）缩血管神经纤维-交感神经"><a href="#（1）缩血管神经纤维-交感神经" class="headerlink" title="（1）缩血管神经纤维 (交感神经)"></a><font size="4"><span style="color:#D81C2F">（1）缩血管神经纤维 (交感神经)</span></font></h5><p>● 节后纤维末端释放NE。<br>● 血管有α和β2两类NE受体。<br>● 激动α引起血管平滑肌收缩，而激活β2则引起血管舒张。<br>● NE与α受体结合能力较强，与β2结合较弱。故主要效应为α受体。</p>
+<h5 id="（2）舒血管神经纤维-交感神经"><a href="#（2）舒血管神经纤维-交感神经" class="headerlink" title="（2）舒血管神经纤维 (交感神经)"></a><font size="4">（2）舒血管神经纤维 (交感神经)</font></h5><p>● 神经节后末梢释放Ach，作用于血管M受体。<br>● 激动M受体引起血管舒张，血流量增加。</p>
+<h5 id="（3）副交感舒血管神经"><a href="#（3）副交感舒血管神经" class="headerlink" title="（3）副交感舒血管神经"></a><font size="4"><span style="color:#D81C2F">（3）副交感舒血管神经</span></font></h5><p>● 神经节后末梢释放Ach, 作用于血管M受体。<br>● 引起血管舒张。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/9.png"></p>
+<h3 id="三、体液调节"><a href="#三、体液调节" class="headerlink" title="三、体液调节"></a><span style="color:#D81C2F">三、体液调节</span></h3><p>● 血液和组织液的化学物质对心肌和血管平滑肌活动的调节。<br>● 组织液：血浆经毛细血管滤过到组织间隙的物质，呈胶冻状，不能自由流动。但可以与血液和细胞液进行物质交换。</p>
+<h4 id="1、肾素-血管紧张素系统"><a href="#1、肾素-血管紧张素系统" class="headerlink" title="1、肾素-血管紧张素系统"></a><font size="4"><span style="color:#D81C2F">1、肾素-血管紧张素系统</span></font></h4><h5 id="（1）Renin-angiotensin-system-RAS-的构成"><a href="#（1）Renin-angiotensin-system-RAS-的构成" class="headerlink" title="（1）Renin-angiotensin system (RAS)的构成"></a><font size="4"><span style="color:#D81C2F">（1）Renin-angiotensin system (RAS)的构成</span></font></h5><p>● 肾素：肾脏分泌的酸性蛋白，经肾静脉进入血液循环。<br>● RAS链式反应。</p>
+<p>● 肾素水解它的底物血管紧张素原为十肽 (血管紧张素I, Ang I)。<br>● <span style="color:#D81C2F">血管紧张素转化酶(ACE)</span>水解Ang I为八肽的Ang II。<br>● Ang II 进一步水解为7肽的Ang III。<br>● Ang III经氨基肽酶水解为6肽的Ang IV。<br>● 进一步水解为无生物活性的氨基酸。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/10.png"></p>
+<h5 id="（2）血管紧张素成员的生理作用"><a href="#（2）血管紧张素成员的生理作用" class="headerlink" title="（2）血管紧张素成员的生理作用"></a><font size="4">（2）血管紧张素成员的生理作用</font></h5><p>● 血管紧张素与它们在膜上的受体(angiotensin receptor, AT receptor) 结合产生生物学效应。<br>● AT受体有多种亚型，如AT1, AT2, AT3, AT4, AT1a, AT1b等。<br>● AT受体表达部位不同，生物效应也不同。<br><strong><span style="color:#D81C2F">Ang II 的生理作用</span></strong><br><span style="color:#D81C2F"><br>● 与AT1受体结合产生效应。<br><br>● 缩血管作用，血压升高，血流量增加。<br><br>● 促进交感神经末梢释放递质，如NE。<br><br>● 作用中枢神经元，释放血管升压素和缩宫素。<br><br>● 促进醛固酮的合成与释放。<br><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/11.png"></p>
+<h4 id="2、肾上腺素与去甲肾上腺素"><a href="#2、肾上腺素与去甲肾上腺素" class="headerlink" title="2、肾上腺素与去甲肾上腺素"></a><font size="4">2、肾上腺素与去甲肾上腺素</font></h4><p>● 循环血液中的肾上腺素与去甲肾上腺素来自肾上腺髓质。<br>● 肾上腺素占80%，去甲肾上腺素约为20%。</p>
+<h5 id="（1）肾上腺素"><a href="#（1）肾上腺素" class="headerlink" title="（1）肾上腺素"></a><font size="4">（1）肾上腺素</font></h5><p>● 心脏：肾上腺素与β1受体产生正性变。<br>● 血管：取决于血管平滑肌上α和β2受体的分布。α优势：皮肤、肾、肠胃道；β2占优：骨骼肌、肝血管等。小剂量兴奋β2为主，血管舒张；大剂量也兴奋α，血管收缩。</p>
+<h5 id="（2）去甲肾上腺素"><a href="#（2）去甲肾上腺素" class="headerlink" title="（2）去甲肾上腺素"></a><font size="4">（2）去甲肾上腺素</font></h5><p>● 心脏：与β1结合，正性变。<br>● 血管：平滑肌α受体结合，收缩血管，而与β2结合能力弱。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/12.png"></p>
+<h4 id="3、体液中其它物质"><a href="#3、体液中其它物质" class="headerlink" title="3、体液中其它物质"></a><font size="4">3、体液中其它物质</font></h4><h5 id="（1）血管升压素"><a href="#（1）血管升压素" class="headerlink" title="（1）血管升压素"></a><font size="4">（1）血管升压素</font></h5><p>● Vasopressin (VP)，九肽激素。与V2受体结合促进水的重吸收，又称抗利尿激素。<br>● VP也可作用于血管平滑肌V1受体引起血管收缩，血压升高。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/13.png"></p>
+<h5 id="（2）血管内皮生成舒血物质"><a href="#（2）血管内皮生成舒血物质" class="headerlink" title="（2）血管内皮生成舒血物质"></a><font size="4">（2）血管内皮生成舒血物质</font></h5><p>● NO、前列环素、内皮超极化因子等。<br>● NO为内皮舒张因子。</p>
+<p>● L-精氨酸在内皮细胞经NOS作用产生NO。<br>● NO高脂溶性扩散至血管平滑肌细胞。<br>● 激活sGC产生cGMP。<br>● 活化PKG激酶。<br>● 降低胞质内钙离子的浓度。<br>● 血管舒张。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/14.png"></p>
+<h5 id="（3）血管内皮生成的缩血管物质"><a href="#（3）血管内皮生成的缩血管物质" class="headerlink" title="（3）血管内皮生成的缩血管物质"></a><font size="4">（3）血管内皮生成的缩血管物质</font></h5><p>● 内皮素，ET，21肽。<br>● 经内皮素受体产生作用，血管收缩。</p>
+<h5 id="（4）其它活性多肽"><a href="#（4）其它活性多肽" class="headerlink" title="（4）其它活性多肽"></a><font size="4">（4）其它活性多肽</font></h5><p>● 30余种，起心血管调节作用。<br>● 心房钠尿肽(机体水盐平衡、血压稳定等)。<br>● 肾上腺髓皮素。<br>● 阿片肽。<br>● 尾升压素。</p>
+<h2 id="第二节-抗高血压药物"><a href="#第二节-抗高血压药物" class="headerlink" title="第二节 抗高血压药物"></a>第二节 抗高血压药物</h2><h3 id="一、分类"><a href="#一、分类" class="headerlink" title="一、分类"></a>一、分类</h3><p>（1）交感神经抑制药<br>●中枢N受体抑制药<br>●神经节阻断药<br>●去甲肾上腺素能末梢阻滞药<br>●肾上腺素受体阻断药(β阻断药、α阻断药、α和β阻断药)<br>（2）钙通道阻滞药<br>（3）血管扩张药<br>（4）利尿药<br>（5）肾素-血管紧张素系统抑制药<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/15.png"></p>
+<h3 id="二、常见的抗高血压药"><a href="#二、常见的抗高血压药" class="headerlink" title="二、常见的抗高血压药"></a>二、常见的抗高血压药</h3><h4 id="1、肾素-血管紧张素系统抑制药"><a href="#1、肾素-血管紧张素系统抑制药" class="headerlink" title="1、肾素-血管紧张素系统抑制药"></a><font size="4"><span style="color:#D81C2F">1、肾素-血管紧张素系统抑制药</span></font></h4><p><span style="color:#D81C2F">● 血管紧张素I转化酶(ACE) 抑制药<br><br>● 血管紧张素II受体阻断药<br><br>● 肾素抑制药<br><br></span></p>
+<h5 id="（1）血管紧张素I转化酶抑制药"><a href="#（1）血管紧张素I转化酶抑制药" class="headerlink" title="（1）血管紧张素I转化酶抑制药"></a><font size="4">（1）血管紧张素I转化酶抑制药</font></h5><p>● 卡托普利<br>● 阿拉普利<br>● 依那普利<br>● 赖诺普利<br>● 喹那普利<br>● 培哚普利<br>● 雷米普利<br>● 福辛普利</p>
+<p><strong>药动学与临床应用</strong><br>● 药物结构不同，吸收不同。<br>● 肾脏排出。<br>● 适用于各型高血压，对肾性以及原发性高血压均有效。<br>● 高血钾、肾功能损害、咳嗽、血管神经性水肿等副作用。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/16.png"></p>
+<h5 id="（2）血管紧张素II受体阻断药"><a href="#（2）血管紧张素II受体阻断药" class="headerlink" title="（2）血管紧张素II受体阻断药"></a><font size="4">（2）血管紧张素II受体阻断药</font></h5><p>● 氯沙坦<br>● 厄贝沙坦<br>● 坎地沙坦<br>● 替米沙坦<br>● 缬沙坦</p>
+<p><strong>药理作用</strong><br>● AT1受体阻断药，抑制AngII的心血管作用。</p>
+<p><strong>临床应用及不良反应</strong><br>● 轻、中度高血压。<br>● 伴有糖尿病、肾病、慢性心功能不全者有良好疗效。<br>● 不良反应较ACE抑制剂少。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/17.png"></p>
+<h4 id="2、钙通道阻滞药"><a href="#2、钙通道阻滞药" class="headerlink" title="2、钙通道阻滞药"></a><font size="4"><span style="color:#D81C2F">2、钙通道阻滞药</span></font></h4><p>● 可用于心律失常、高血压、心绞痛、慢性心功能不全。<br>● 选择性阻断电压门控Ca2+通道，抑制细胞外Ca2+内流，以松弛血管平滑肌降压。<br>● 各类药物对心脏和血管选择性不同。</p>
+<p><strong>常见钙离子通道阻滞药</strong><br>● 硝苯地平<br>● 尼群地平<br>● 氨氯地平<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/18.png"></p>
+<h4 id="3、肾上腺素受体阻断药"><a href="#3、肾上腺素受体阻断药" class="headerlink" title="3、肾上腺素受体阻断药"></a><font size="4"><span style="color:#D81C2F">3、肾上腺素受体阻断药</span></font></h4><h5 id="（1）β受体阻断药"><a href="#（1）β受体阻断药" class="headerlink" title="（1）β受体阻断药"></a><font size="4"><span style="color:#D81C2F">（1）β受体阻断药</span></font></h5><p><strong><span style="color:#D81C2F">药理作用</span></strong><br><span style="color:#D81C2F">● 阻断β1受体，降低心排血量与外周阻力，从而产生降压效应。</span></p>
+<p><strong>临床应用</strong><br>● 安全、有效、价廉。<br>● 各型高血压。<br>● 最常见的药物。</p>
+<p><strong>常见药物</strong><br>● 普萘洛尔<br>● 美托洛尔</p>
+<h5 id="（2）α受体阻断药"><a href="#（2）α受体阻断药" class="headerlink" title="（2）α受体阻断药"></a><font size="4"><span style="color:#D81C2F">（2）α受体阻断药</span></font></h5><p><strong><span style="color:#D81C2F">药理作用</span></strong><br>● 阻断血管平滑肌的收缩，产生小动脉舒张和降压效应。</p>
+<p><strong>临床应用</strong><br>● 适合各型高血压。</p>
+<p><strong>常见药物</strong><br>● 哌唑嗪<br>● 特拉唑嗪<br>● 多沙唑嗪<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/19.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/12.png"></p>
+<h5 id="（3）α和β受体阻断药"><a href="#（3）α和β受体阻断药" class="headerlink" title="（3）α和β受体阻断药"></a><font size="4">（3）α和β受体阻断药</font></h5><p>拉贝洛尔与卡维地洛<br>● 阻断β和α1受体，降低心排血量与外周血管阻力，产生降压效应。<br>● 降压温和，副作用小。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/20.png"></p>
+<h4 id="4、利尿药"><a href="#4、利尿药" class="headerlink" title="4、利尿药"></a><font size="4"><span style="color:#D81C2F">4、利尿药</span></font></h4><p><strong>药理作用</strong><br>● 血液容量影响心排血量以及外周阻力。<br>● 限制Na+摄入、排Na+、降低血管平滑肌胞内Na+浓度，通过Na+-Ca2+交换泵，使胞内Ca2+减少。<br>● 利尿药通过排钠利尿，减少细胞外液和血容量，导致心排血量降低，也可诱导血管壁产生扩血管物质。</p>
+<p><strong>常用于降压的利尿药</strong><br>● 噻嗪类利尿药<br>● 作用于远曲小管，抑制Na+-Cl-的同向转运重吸收。<br>● 脂溶性高，易吸收，温和，持久，副作用小。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/21.png"></p>
+<table>
+  <tr>
+<span style="display:block;text-align:center;">
+<font size="4">
+噻嗪环
+</font>
+    </span>
+    <td height="50%">
+    <img src="/../img/生理药理学/第十章/25.png" ><span style="display:block;text-align:center;">
+<font size="4">
+氢氯噻嗪，氯噻酮，吲达帕胺
+</font>
+    </span>
+    </td>
+  </tr>
+</table>
+
+<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E7%AC%AC%E4%B8%80%E8%8A%82-%E8%A1%80%E7%AE%A1%E7%94%9F%E7%90%86%E5%AD%A6">血管生理学</a><br>2、<a href="#%E4%BA%8C%E3%80%81%E5%BF%83%E8%A1%80%E7%AE%A1%E7%9A%84%E7%A5%9E%E7%BB%8F%E8%B0%83%E8%8A%82">心血管的神经调节</a><br>3、<a href="#%E4%B8%89%E3%80%81%E4%BD%93%E6%B6%B2%E8%B0%83%E8%8A%82">心血管的体液调节</a><br>4、<a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E6%8A%97%E9%AB%98%E8%A1%80%E5%8E%8B%E8%8D%AF%E7%89%A9">抗高血压药物</a>（血管紧张素I 转化酶抑制药、血管紧张素II受体阻断药、钙通道阻滞药、β受体阻断药、以及利尿药）</p>
 ]]></content>
       <tags>
         <tag>生物制药</tag>
@@ -2173,25 +2173,28 @@ GABAA receptor: : γ-氨基丁酸受体
 <p>现在，补丁的文件就做好了<br>接下来就是替换问题了，直接做成压缩包让粉丝们解压然后替换就行了<br>再往下的这一步是使得粉丝们打补丁更加便利，直接做成自解压exe，可以不做，但我纯抖m，还是做了<br>使用的是<a href="https://www.osssr.com/16459.html">7z sfx builder汉化版</a><br>然后写了一个ps1的脚本，自动查找本地的游戏exe文件和利用注册表查询steam的appId来确定游戏文件夹的位置，再自动把自解压出来的文件覆盖过去。因此，学习版和steam正版都能使用该汉化补丁。</p>
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 错误处理函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Show-Error</span></span> &#123;</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;===========================================&quot;</span> <span class="literal">-ForegroundColor</span> Red</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;错误：文件复制失败！&quot;</span> <span class="literal">-ForegroundColor</span> Red</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;可能原因：&quot;</span> <span class="literal">-ForegroundColor</span> Yellow</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;1. 游戏正在运行 → 请完全退出游戏后重试&quot;</span> <span class="literal">-ForegroundColor</span> Yellow</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;2. 杀毒软件拦截 → 暂时关闭杀毒软件&quot;</span> <span class="literal">-ForegroundColor</span> Yellow</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;3. 路径权限不足 → 检查文件夹权限&quot;</span> <span class="literal">-ForegroundColor</span> Yellow</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;4. 找不到游戏or游戏未安装 → 请把补丁放入游戏根目录后再次尝试&quot;</span> <span class="literal">-ForegroundColor</span> Yellow</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;===========================================&quot;</span> <span class="literal">-ForegroundColor</span> Red</span><br><span class="line">    <span class="variable">$null</span> = <span class="variable">$Host</span>.UI.RawUI.ReadKey(<span class="string">&quot;NoEcho,IncludeKeyDown&quot;</span>)</span><br><span class="line">    <span class="keyword">exit</span> <span class="number">5</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 主程序</span></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment"># 设置参数</span></span><br><span class="line">    <span class="variable">$appId</span> = <span class="string">&quot;3213690&quot;</span></span><br><span class="line">    <span class="variable">$sourceRoot</span> = <span class="built_in">Join-Path</span> <span class="variable">$PSScriptRoot</span> <span class="string">&quot;虹之咲字幕组汉化补丁&quot;</span></span><br><span class="line">    <span class="variable">$global:errorOccurred</span> = <span class="variable">$false</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 检测本地游戏文件</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">Test-Path</span> (<span class="built_in">Join-Path</span> <span class="variable">$PSScriptRoot</span> <span class="string">&quot;nijichizu.exe&quot;</span>)) &#123;</span><br><span class="line">        <span class="variable">$gamePath</span> = <span class="variable">$PSScriptRoot</span></span><br><span class="line">        <span class="variable">$found</span> = <span class="variable">$true</span></span><br><span class="line">        <span class="built_in">Write-Host</span> <span class="string">&quot;[INFO] 检测到本地游戏文件，将应用补丁到当前目录：<span class="variable">$gamePath</span>&quot;</span> <span class="literal">-ForegroundColor</span> Cyan</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment"># 未检测到本地文件时搜索Steam路径</span></span><br><span class="line">        <span class="variable">$steamPath</span> = (<span class="built_in">Get-ItemProperty</span> <span class="literal">-Path</span> <span class="string">&quot;HKCU:\Software\Valve\Steam&quot;</span>).SteamPath</span><br><span class="line">        <span class="variable">$libraryVdfPath</span> = <span class="built_in">Join-Path</span> <span class="string">&quot;<span class="variable">$steamPath</span>\steamapps&quot;</span> <span class="string">&quot;libraryfolders.vdf&quot;</span></span><br><span class="line"></span><br><span class="line">        <span class="variable">$libraryFolders</span> = <span class="selector-tag">@</span>(<span class="string">&quot;<span class="variable">$steamPath</span>\steamapps&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">Test-Path</span> <span class="variable">$libraryVdfPath</span>) &#123;</span><br><span class="line">            <span class="variable">$lines</span> = <span class="built_in">Get-Content</span> <span class="variable">$libraryVdfPath</span></span><br><span class="line">            <span class="keyword">foreach</span> (<span class="variable">$line</span> <span class="keyword">in</span> <span class="variable">$lines</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (<span class="variable">$line</span> <span class="operator">-match</span> <span class="string">&#x27;&quot;path&quot;\s+&quot;([^&quot;]+)&quot;&#x27;</span>) &#123;</span><br><span class="line">                    <span class="variable">$libPath</span> = <span class="variable">$matches</span>[<span class="number">1</span>]</span><br><span class="line">                    <span class="variable">$libraryFolders</span> += <span class="string">&quot;<span class="variable">$libPath</span>\steamapps&quot;</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="variable">$found</span> = <span class="variable">$false</span></span><br><span class="line">        <span class="keyword">foreach</span> (<span class="variable">$folder</span> <span class="keyword">in</span> <span class="variable">$libraryFolders</span>) &#123;</span><br><span class="line">            <span class="variable">$manifestPath</span> = <span class="built_in">Join-Path</span> <span class="variable">$folder</span> <span class="string">&quot;appmanifest_<span class="variable">$appId</span>.acf&quot;</span></span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">Test-Path</span> <span class="variable">$manifestPath</span>) &#123;</span><br><span class="line">                <span class="variable">$content</span> = <span class="built_in">Get-Content</span> <span class="variable">$manifestPath</span> <span class="literal">-Raw</span></span><br><span class="line">                <span class="keyword">if</span> (<span class="variable">$content</span> <span class="operator">-match</span> <span class="string">&#x27;&quot;installdir&quot;\s+&quot;([^&quot;]+)&quot;&#x27;</span>) &#123;</span><br><span class="line">                    <span class="variable">$installDir</span> = <span class="variable">$matches</span>[<span class="number">1</span>]</span><br><span class="line">                    <span class="variable">$gamePath</span> = <span class="built_in">Join-Path</span> <span class="variable">$folder</span> <span class="string">&quot;common\<span class="variable">$installDir</span>&quot;</span></span><br><span class="line">                    <span class="built_in">Write-Output</span> <span class="string">&quot;检测到Steam游戏安装路径：<span class="variable">$gamePath</span>&quot;</span></span><br><span class="line">                    <span class="variable">$found</span> = <span class="variable">$true</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 如果没有找到游戏安装目录，显示错误并退出</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="operator">-not</span> <span class="variable">$found</span>) &#123;</span><br><span class="line">        <span class="built_in">Write-Host</span> <span class="string">&quot;[ERROR] 未能找到游戏安装目录，请确认游戏已安装&quot;</span> <span class="literal">-ForegroundColor</span> Red</span><br><span class="line">        <span class="built_in">Show-Error</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 文件复制逻辑</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="operator">-not</span> (<span class="built_in">Test-Path</span> <span class="variable">$sourceRoot</span>)) &#123;</span><br><span class="line">        <span class="built_in">Write-Host</span> <span class="string">&quot;[ERROR] 找不到汉化补丁文件夹&quot;</span> <span class="literal">-ForegroundColor</span> Red</span><br><span class="line">        <span class="built_in">Write-Host</span> <span class="string">&quot;请把补丁放入游戏根目录后再次尝试&quot;</span> <span class="literal">-ForegroundColor</span> Red</span><br><span class="line">        <span class="built_in">Write-Host</span> <span class="string">&quot;按任意键继续...&quot;</span></span><br><span class="line">        <span class="variable">$null</span> = <span class="variable">$Host</span>.UI.RawUI.ReadKey(<span class="string">&quot;NoEcho,IncludeKeyDown&quot;</span>)</span><br><span class="line">        <span class="keyword">exit</span> <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">Get-ChildItem</span> <span class="literal">-Path</span> <span class="variable">$sourceRoot</span> <span class="literal">-Recurse</span> <span class="operator">-File</span> | <span class="built_in">ForEach-Object</span> &#123;</span><br><span class="line">        <span class="variable">$relativePath</span> = <span class="variable">$_</span>.FullName.Substring(<span class="variable">$sourceRoot</span>.Length + <span class="number">1</span>)</span><br><span class="line">        <span class="variable">$targetPath</span> = <span class="built_in">Join-Path</span> <span class="variable">$gamePath</span> <span class="variable">$relativePath</span></span><br><span class="line">        <span class="variable">$targetDir</span> = <span class="built_in">Split-Path</span> <span class="variable">$targetPath</span> <span class="literal">-Parent</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (<span class="operator">-not</span> (<span class="built_in">Test-Path</span> <span class="variable">$targetDir</span>)) &#123;</span><br><span class="line">            <span class="built_in">New-Item</span> <span class="literal">-ItemType</span> Directory <span class="literal">-Path</span> <span class="variable">$targetDir</span> <span class="literal">-Force</span> | <span class="built_in">Out-Null</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="built_in">Copy-Item</span> <span class="literal">-Path</span> <span class="variable">$_</span>.FullName <span class="literal">-Destination</span> <span class="variable">$targetPath</span> <span class="literal">-Force</span></span><br><span class="line">            <span class="built_in">Write-Output</span> <span class="string">&quot;已更新：<span class="variable">$relativePath</span>&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">catch</span> &#123;</span><br><span class="line">            <span class="variable">$global:errorOccurred</span> = <span class="variable">$true</span></span><br><span class="line">            <span class="built_in">Write-Host</span> <span class="string">&quot;[ERROR] 更新失败：<span class="variable">$relativePath</span> → <span class="variable">$</span>(<span class="variable">$_</span>.Exception.Message)&quot;</span> <span class="literal">-ForegroundColor</span> Red</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 最终错误检查</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$global:errorOccurred</span>) &#123; <span class="built_in">Show-Error</span> &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">catch</span> &#123;</span><br><span class="line">    <span class="built_in">Show-Error</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 成功提示</span></span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">&quot;`n&quot;</span> <span class="literal">-NoNewline</span></span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">&quot;===========================================&quot;</span> <span class="literal">-ForegroundColor</span> Green</span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">&quot; 虹组汉化补丁安装成功！按 Enter 键退出！&quot;</span> <span class="literal">-ForegroundColor</span> Green</span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">&quot;           璃奈板「TOKIMEKI！！！」         &quot;</span> <span class="literal">-ForegroundColor</span> Magenta</span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">&quot;===========================================&quot;</span> <span class="literal">-ForegroundColor</span> Green</span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动游戏</span></span><br><span class="line"><span class="variable">$exePath</span> = <span class="built_in">Join-Path</span> <span class="variable">$gamePath</span> <span class="string">&quot;nijichizu.exe&quot;</span></span><br><span class="line"><span class="keyword">if</span> (<span class="built_in">Test-Path</span> <span class="variable">$exePath</span>) &#123;</span><br><span class="line">    <span class="built_in">Read-Host</span> <span class="string">&quot;按 Enter 键退出补丁并清除缓存&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;[WARNING] 未找到游戏主程序&quot;</span> <span class="literal">-ForegroundColor</span> Yellow</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">exit</span> <span class="number">0</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>下面做了一个bat</p>
+<p>下面做了一个bat，用来启动上面的的ps1脚本（bat的:: 注释记得上下都隔一行写，不然会有乱码的bug）</p>
 <figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">setlocal</span> enabledelayedexpansion</span><br><span class="line"></span><br><span class="line">&gt;<span class="built_in">nul</span> reg add &quot;HKCU\Console&quot; /v &quot;CodePage&quot; /t REG_DWORD /d <span class="number">65001</span> /f</span><br><span class="line"><span class="built_in">chcp</span> <span class="number">65001</span> &gt;<span class="built_in">nul</span></span><br><span class="line"><span class="built_in">title</span> 虹之咲字幕组未来地图汉化补丁</span><br><span class="line"></span><br><span class="line">:: 主程序</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ===========================================</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 正在应用汉化补丁...</span><br><span class="line">powershell -ExecutionPolicy Bypass -File &quot;%~dp0patch.ps1&quot;</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> ===========================================</span><br><span class="line"></span><br><span class="line">:: 删除 patch.ps1</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 正在删除 patch.ps1...</span><br><span class="line"></span><br><span class="line"><span class="built_in">del</span> /f /q &quot;%~dp0patch.ps1&quot;</span><br><span class="line"></span><br><span class="line">:: 删除文件夹</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 正在删除文件夹：虹之咲字幕组汉化补丁...</span><br><span class="line"></span><br><span class="line"><span class="built_in">rmdir</span> /s /q &quot;%~dp0虹之咲字幕组汉化补丁&quot;</span><br><span class="line"></span><br><span class="line">:: 用 PowerShell 实现自删除</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 正在准备自删除：setup.bat...</span><br><span class="line"></span><br><span class="line">powershell -command &quot;<span class="built_in">Start</span>-Sleep -Seconds <span class="number">1</span>; Remove-Item -LiteralPath &#x27;%~f0&#x27; -Force&quot;</span><br><span class="line"></span><br><span class="line"><span class="keyword">exit</span> /b</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="阶段四：调试优化"><a href="#阶段四：调试优化" class="headerlink" title="阶段四：调试优化"></a>阶段四：调试优化</h3><h4 id="奇奇怪怪的问题"><a href="#奇奇怪怪的问题" class="headerlink" title="奇奇怪怪的问题"></a>奇奇怪怪的问题</h4><ul>
-<li><p>案例1：文本超框问题 → 用Excel做的，能看到字数的，超了就换行呗。游戏文本能用html语言来标记，换行符是<code>&lt;br&gt;</code></p>
+<p><img src="/../img/%E8%99%B9%E5%92%B2%E6%9C%AA%E6%9D%A5%E5%9C%B0%E5%9B%BE%E6%B1%89%E5%8C%96%E8%A1%A5%E4%B8%81/8.png"><br>注意，一定要解压在自解压exe所在的路径，不然学习版就用不了了<br><img src="/../img/%E8%99%B9%E5%92%B2%E6%9C%AA%E6%9D%A5%E5%9C%B0%E5%9B%BE%E6%B1%89%E5%8C%96%E8%A1%A5%E4%B8%81/7.png"></p>
+<h2 id="阶段四：调试优化"><a href="#阶段四：调试优化" class="headerlink" title="阶段四：调试优化"></a>阶段四：调试优化</h2><h3 id="奇奇怪怪的问题"><a href="#奇奇怪怪的问题" class="headerlink" title="奇奇怪怪的问题"></a>奇奇怪怪的问题</h3><ul>
+<li><p>案例1：文本超框问题 → 文本翻译是用Excel做的，能看到字数，超了就换行呗。游戏文本能用html语言来标记，换行符是<code>&lt;br&gt;</code></p>
 </li>
 <li><p>案例2：特殊字符乱码 → 一般是字体导致的，换字体就行，如果有官中一般是可以直接套用官中字体的，但这块是某魏完成的，我没参与就跳过这块<span class="heimu" title="你知道的太多了">单纯偷懒以及是真的不会</span></p>
 </li>
-<li><p>案例3：出现了使用补丁导致CG解锁异常 → 一开始原理不明，仅为个人推测：打包方式存在问题，我们嵌字修改了12张进线的提示图，但是这12张图在包含着CG的adv.hpb里<span class="heimu" title="你知道的太多了">这也是为什么最终补丁会这么大的原因，因为adv这个文件里全是CG，加起来900多M，考虑到要做完全的汉化，只能一起塞进去了</span>，于是重新打包的时候影响了原来的CG的某个序号，导致和保存在system.dat里的数据不一致，当使用回忆查看时，就会导致CG读取错乱（后来在某魏的帮助下证明了确实是有这个bug，并且已经修复了打包方式）这里再赘述一点点，某魏的打包工具是从原先的三位数序号改成四位数，因为正式版变成了2600个文件。如果以后有人遇到了五位数的序号，可能要自己改改工具的代码了（</p>
+<li><p>案例3：出现了使用补丁导致CG解锁异常 → 一开始原理不明，仅为个人推测：打包方式存在问题，我们嵌字修改了12张进线的提示图，但是这12张图在包含着CG的adv.hpb里<span class="heimu" title="你知道的太多了">这也是为什么最终补丁会这么大的原因，因为adv这个文件里全是CG，加起来900多M，考虑到要做完全的汉化，只能一起塞进去了</span><span class="heimu" title="你知道的太多了">其实里面还塞了汉化后带字幕的通关视频</span>，于是重新打包的时候影响了原来的CG的某个序号，导致和保存在system.dat里的数据不一致，当使用回忆查看时，就会导致CG读取错乱（后来在某魏的帮助下证明了确实是有这个bug，并且已经修复了打包方式）这里再赘述一点点，某魏的打包工具是从原先的三位数序号改成四位数，因为正式版变成了2600个文件。如果以后有人遇到了五位数的序号，可能要自己改改工具的代码了（</p>
+</li>
+<li><p>案例4：非Windows用户想用怎么办 → 你都能用其他系统运行官方游戏exe了，就直接运行自解压exe、把解压出来的文件夹手动复制进游戏文件夹呗</p>
 </li>
 </ul>
 <hr>
-<h2 id="成品展示"><a href="#成品展示" class="headerlink" title="成品展示"></a>成品展示</h2><hr>
-<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p><del>又不是写报告哪来的这玩意</del><br>还是很有意思的，至少知道补丁是咋做的，虽然了解到的比较片面就是了。</p>
-<h2 id="避坑指南"><a href="#避坑指南" class="headerlink" title="避坑指南"></a>避坑指南</h2><ul>
-<li>⚠️ 编码陷阱警示</li>
-<li>⚠️ 兼容性问题汇总</li>
-</ul>
+<h2 id="成品展示"><a href="#成品展示" class="headerlink" title="成品展示"></a>成品展示</h2><p><img src="/../img/%E8%99%B9%E5%92%B2%E6%9C%AA%E6%9D%A5%E5%9C%B0%E5%9B%BE%E6%B1%89%E5%8C%96%E8%A1%A5%E4%B8%81/6.png"></p>
 <hr>
-<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><h3 id="Q-A"><a href="#Q-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h3><!-- 预留常见问题解答区 -->]]></content>
+<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p><del>又不是写报告哪来的这玩意</del><br>还是很有意思的，至少知道补丁是咋做的，虽然了解到的比较片面就是了。</p>
+<p>又是专业不对口的一集</p>
+<hr>
+<h2 id="Q-A"><a href="#Q-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><!-- 预留常见问题解答区 -->
+<p>常见问题暂时想不到，先保留吧</p>
+]]></content>
       <tags>
         <tag>代码相关</tag>
         <tag>技术分享</tag>

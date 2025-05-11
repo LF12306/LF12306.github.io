@@ -1,0 +1,7 @@
+/* 调整图标大小和动画 */
+.item-headline img.icon-shake {
+    width: 1.7em;      /* 与字体图标大小一致 */
+    height: 1.7em;
+    margin-right: 0.5em;
+ /*   animation: fa-shake 2s ease-in-out infinite; /* 使用 FontAwesome 的抖动动画 */
+  }

@@ -80,99 +80,6 @@
       </tags>
   </entry>
   <entry>
-    <title>生物制药工艺学复习</title>
-    <url>/2025/06/18/%E7%94%9F%E7%89%A9%E5%88%B6%E8%8D%AF%E5%B7%A5%E8%89%BA%E5%AD%A6%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="生物制药工艺学复习"><a href="#生物制药工艺学复习" class="headerlink" title="生物制药工艺学复习"></a><span style="display:block;text-align:center;color:#00BFFF;">生物制药工艺学复习</span></h1><h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h3 id="生物制药的定义"><a href="#生物制药的定义" class="headerlink" title="生物制药的定义"></a>生物制药的定义</h3><p>生物制药是利用生物体或生物过程在人为设定的条件下生产各种生物药物的技术</p>
-<h3 id="生物制药的研究内容"><a href="#生物制药的研究内容" class="headerlink" title="生物制药的研究内容"></a>生物制药的研究内容</h3><p>1.<strong><span style="color:#485EC6;">各种生物药物的原料来源及其生物学特性</span></strong><br>2.<strong><span style="color:#485EC6;">各种活性物质的结构与性质、结构与疗效之间的相互作用</span></strong><br>3.<strong><span style="color:#485EC6;">生物药物的制备原理、生产工艺及其质量控制等</span></strong></p>
-<h3 id="生物制药工艺学的性质与任务"><a href="#生物制药工艺学的性质与任务" class="headerlink" title="生物制药工艺学的性质与任务"></a>生物制药工艺学的性质与任务</h3><p>性质：是一门从事各种 <strong><span style="color:#485EC6;">生物药物的研究、生产和制剂</span></strong> 的综合性应用技术科学。<br>任务：<br>1.生物药物的 <strong><span style="color:#485EC6;">来源</span></strong> 及其原料药物生产的 <strong><span style="color:#485EC6;">主要途径和工艺过程</span></strong> ；<br>2.生物药物的一般 <strong><span style="color:#485EC6;">提取、分离、纯化、制造原理和生产方法</span></strong> ；<br>3.各类生物药物的 <strong><span style="color:#485EC6;">结构、性质、用途及其工艺和质量控制</span></strong> 。</p>
-<h3 id="生物制药产品的类别有哪些？"><a href="#生物制药产品的类别有哪些？" class="headerlink" title="生物制药产品的类别有哪些？"></a>生物制药产品的类别有哪些？</h3><h4 id="微生物发酵产物"><a href="#微生物发酵产物" class="headerlink" title="微生物发酵产物"></a>微生物发酵产物</h4><p>微生物菌体：真菌、农用菌体<br>微生物酶：糖化酶、葡萄糖氧化酶<br>微生物代谢产物：初级代谢产物、次级代谢产物<br>酶调节剂：酶抑制剂、酶激活剂</p>
-<h4 id="生物转化药物"><a href="#生物转化药物" class="headerlink" title="生物转化药物"></a>生物转化药物</h4><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
-    graph LR
-    A[底物] e1@--&gt; B[微生物代谢转化]
-    e1@{ animate: true }
-    B e2@--&gt; C[产物]
-    e2@{ animate: true }
-
-  </pre></div>
-<p><strong><span style="color:#485EC6;">固定化细胞转化</span></strong><br><strong><span style="color:#485EC6;">分批培养转化</span></strong><br><strong><span style="color:#485EC6;">静止细胞转化</span></strong><br><strong><span style="color:#485EC6;">干细胞转化</span></strong><br><strong><span style="color:#485EC6;">孢子转化</span></strong><br><strong><span style="color:#485EC6;">渗透细胞转化</span></strong></p>
-<h4 id="基因工程药物"><a href="#基因工程药物" class="headerlink" title="基因工程药物"></a>基因工程药物</h4><p>构建工程菌</p>
-<h4 id="动植物组织培养药"><a href="#动植物组织培养药" class="headerlink" title="动植物组织培养药"></a>动植物组织培养药</h4><h4 id="疫苗及抗体药物"><a href="#疫苗及抗体药物" class="headerlink" title="疫苗及抗体药物"></a>疫苗及抗体药物</h4><h3 id="生物制药的工艺过程"><a href="#生物制药的工艺过程" class="headerlink" title="生物制药的工艺过程"></a>生物制药的工艺过程</h3><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
-    graph TD
-    A[菌种：自然界分离+菌种选育保存] e1@--&gt; B[斜面培养：休眠孢子复苏]
-    e1@{ animate: true }
-    B e2@--&gt; C[种子制备：扩大培养]
-    e2@{ animate: true }
-    C e3@--&gt; D[发酵：表达产物]
-    e3@{ animate: true }
-    D e4@--&gt; E[发酵液预处理：发酵液放罐、收集]
-    e4@{ animate: true }
-    E e5@--&gt; F[提取和精制：产物分离、纯化]
-    e5@{ animate: true }
-    F e6@--&gt; G[成品检验：质控评价]
-    e6@{ animate: true }
-    G e7@--&gt; H[成品包装：出厂上市]
-    e7@{ animate: true }
-
-  </pre></div>
-
-<h2 id="第二章-第一节-微生物代谢产物的生物合成与调控"><a href="#第二章-第一节-微生物代谢产物的生物合成与调控" class="headerlink" title="第二章 第一节 微生物代谢产物的生物合成与调控"></a>第二章 第一节 微生物代谢产物的生物合成与调控</h2><h3 id="次级代谢产物多组分的原因？"><a href="#次级代谢产物多组分的原因？" class="headerlink" title="次级代谢产物多组分的原因？"></a>次级代谢产物多组分的原因？</h3><p>① <strong><span style="color:#485EC6;">次级代谢产物合成酶对底物的特异性不强</span></strong><br>② <strong><span style="color:#485EC6;">次级代谢产物合成酶对底物的作用不完全</span></strong><br>③ <strong><span style="color:#485EC6;">同一种底物被多种酶催化进行次级代谢</span></strong></p>
-<h3 id="初级代谢产物、次级代谢产物的关系"><a href="#初级代谢产物、次级代谢产物的关系" class="headerlink" title="初级代谢产物、次级代谢产物的关系"></a>初级代谢产物、次级代谢产物的关系</h3><p><strong><span style="color:#485EC6;">初级代谢产物是次级代谢产物的前体或起始物</span></strong><br>青霉素 &#x3D; α-氨基己二酸 + L半胱氨酸 + L缬氨酸<br>次级代谢产物 &#x3D; 氨基酸 + 糖类 + 脂类 （初级代谢产物相加）</p>
-<p><strong><span style="color:#485EC6;">初级代谢产物的调控影响初级代谢产物的合成</span></strong><br>次级代谢产物来源于初级代谢的中间体，初级代谢的抑制、促进影响次级代谢的进行</p>
-<h3 id="次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。"><a href="#次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。" class="headerlink" title="次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。"></a>次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。</h3><h4 id="1、氨基酸及其衍生物"><a href="#1、氨基酸及其衍生物" class="headerlink" title="1、氨基酸及其衍生物"></a>1、氨基酸及其衍生物</h4><p>天然氨基酸（L-α-氨基酸）、非天然氨基酸（D-氨基酸、β-氨基酸、N-甲基氨基酸）<br>代表产物： **<span style="color:#485EC6;">多肽类抗生素</span>**（达托霉素、万古霉素）</p>
-<h4 id="2、糖及氨基糖"><a href="#2、糖及氨基糖" class="headerlink" title="2、糖及氨基糖"></a>2、糖及氨基糖</h4><p>碳霉糖、竹桃糖、链霉糖、阿卡波糖<br>代表产物： <strong><span style="color:#485EC6;">氨基糖苷类抗生素（链霉素）、大环内酯类抗生素</span></strong></p>
-<h4 id="3、聚酮体及其衍生物"><a href="#3、聚酮体及其衍生物" class="headerlink" title="3、聚酮体及其衍生物"></a>3、聚酮体及其衍生物</h4><p>乙酸、丙酸、丁酸和某些短链脂肪酸缩合反应的产物<br>代表产物： <strong><span style="color:#485EC6;">大环内酯类抗生素、多烯类抗生素、蒽环类抗生素、四环素抗生素</span></strong> 等。</p>
-<h4 id="4、甲羟戊酸及其衍生物"><a href="#4、甲羟戊酸及其衍生物" class="headerlink" title="4、甲羟戊酸及其衍生物"></a>4、甲羟戊酸及其衍生物</h4><p>代表产物：甾醇、赤霉素、类胡萝卜素</p>
-<h4 id="5、环多醇和氨基环多醇"><a href="#5、环多醇和氨基环多醇" class="headerlink" title="5、环多醇和氨基环多醇"></a>5、环多醇和氨基环多醇</h4><p>氨基环多醇：环多醇分子中的一个或多个羟基被氨基取代的衍生物。<br>代表产物： <strong><span style="color:#485EC6;">氨基糖苷类抗生素</span></strong> （ <strong><span style="color:#485EC6;">链霉素、庆大霉素、卡那霉素</span></strong> ）</p>
-<h4 id="6、碱基及其衍生物"><a href="#6、碱基及其衍生物" class="headerlink" title="6、碱基及其衍生物"></a>6、碱基及其衍生物</h4><p><strong><span style="color:#485EC6;">核酸嘌呤碱基、嘧啶碱基</span></strong> ，及其经过化学修饰形成的 <strong><span style="color:#485EC6;">非核酸嘌呤碱基、嘧啶碱基</span></strong> 。<br>代表产物： <strong><span style="color:#485EC6;">嘌呤霉素</span></strong></p>
-<h4 id="7、莽草酸及其衍生物"><a href="#7、莽草酸及其衍生物" class="headerlink" title="7、莽草酸及其衍生物"></a>7、莽草酸及其衍生物</h4><p>代表产物：利福霉素、绿脓菌素、新生霉素、放线菌素、吲哚霉素等。</p>
-<h4 id="8、吩噁嗪酮"><a href="#8、吩噁嗪酮" class="headerlink" title="8、吩噁嗪酮"></a>8、吩噁嗪酮</h4><p>代表产物： <strong><span style="color:#485EC6;">放线菌素</span></strong> 等</p>
-<h3 id="聚酮体及其衍生物合成起始单位与延长单位"><a href="#聚酮体及其衍生物合成起始单位与延长单位" class="headerlink" title="聚酮体及其衍生物合成起始单位与延长单位"></a>聚酮体及其衍生物合成起始单位与延长单位</h3><p>合成起始单位：乙酰辅酶A、丙酰辅酶A、丁酰辅酶A<br>延长单位：丙二酰辅酶A（二碳供体）、甲基丙二酰辅酶A（三碳供体）、乙基丙二酰辅酶A（四碳供体）</p>
-<h3 id="次级代谢产物的生物合成过程"><a href="#次级代谢产物的生物合成过程" class="headerlink" title="次级代谢产物的生物合成过程"></a>次级代谢产物的生物合成过程</h3><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
-    graph TD
-    A[1、构建单位合成] e1@--&gt; B[2、母核合成]
-    e1@{ animate: true }
-    B e2@--&gt; C[3、修饰（氨基化&#x2F;甲基化&#x2F;酰基化&#x2F;羟基化）]
-    e2@{ animate: true }
-    C e3@--&gt; D[活性次级代谢产物]
-    e3@{ animate: true }
-  </pre></div>
-
-<h3 id="次级代谢调节方式有哪些？（8种）"><a href="#次级代谢调节方式有哪些？（8种）" class="headerlink" title="次级代谢调节方式有哪些？（8种）"></a>次级代谢调节方式有哪些？（8种）</h3><p>诱导调节<br>反馈调节<br>磷酸盐调节<br>碳分解产物调节<br>氮分解产物调节<br>菌体生长速率调节<br>化学调节因子调节<br>控制次级代谢产物合成的因素</p>
-<h2 id="第二章-第三节-基因工程制药"><a href="#第二章-第三节-基因工程制药" class="headerlink" title="第二章 第三节 基因工程制药"></a>第二章 第三节 基因工程制药</h2><h3 id="基因工程菌如何获得？"><a href="#基因工程菌如何获得？" class="headerlink" title="基因工程菌如何获得？"></a>基因工程菌如何获得？</h3><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
-    graph TD
-    A[确定目的产物，找出产该产物的细胞。] e1@--&gt; B[将细胞破碎后提纯出全部mRNA。这些mRNA中包含了该细胞内表达的所有蛋白质的合成信息。]
-    e1@{ animate: true }
-    B e2@--&gt; C[利用PCR扩增，找出所需的目的基因。]
-    e2@{ animate: true }
-    C e3@--&gt; D[将目的基因连接到设计好的质粒载体，形成重组DNA分子。]
-    e3@{ animate: true }
-    D e4@--&gt; E[将重组后DNA分子引入到受体细胞内，然后选择合适的培养条件使细胞繁殖。根据选择性标记，从菌落中筛选出目的基因的重组工程菌。]
-    e4@{ animate: true }
-  </pre></div>
-
-
-<h3 id="基因工程菌生物反应过程特点"><a href="#基因工程菌生物反应过程特点" class="headerlink" title="基因工程菌生物反应过程特点"></a>基因工程菌生物反应过程特点</h3><p>1、工程菌发酵的调控与初级代谢产物发酵类似，属于明确代谢途径发酵；<br>2、由于携带有外源基因表达启动子，属于二阶段发酵：先菌体细胞生长，后产物表达形成，与次生代谢发酵类似；<br>3、产物表达常需要诱导，诱因主要有： <strong><span style="color:#485EC6;">温度诱导、乳糖或乳糖结构类似物诱导、</span></strong> 氧饥饿诱导、葡萄糖饥饿诱导，甲醇诱导等；<br>4、发酵过程中菌体比生长速率、代谢副产物积累、限制性基质浓度会对产物表达造成极大的影响；<br>5、对反应器混合和传递特性要求高，否则会造成物料、溶氧、温度、pH在反应器中出现不同梯度区域，引起菌体密度不高或表达异化；<br>6、发酵过程的 <strong><span style="color:#485EC6;">基因不稳定性</span></strong> ，常常需加入选择压力，如抗生素。</p>
-<h3 id="根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。"><a href="#根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。" class="headerlink" title="根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。"></a>根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。</h3><p>Mut<sup>＋</sup>：具有完整的AOX1和AOX2基因，能够在甲醇中以野生型速率生长，为甲醇快利用型如GS115，绝大多数毕赤酵母为Mut<sup>＋</sup>表型。<br>Mut<sup>s</sup>：AOX1基因部分敲除，被酿酒酵母ARG4基因所取代，菌细胞可依赖AOX2基因编码的少量醇氧化酶完成甲醇代谢，因此在甲醇培养基中生长缓慢，胞内表达尽量选择Mut<sup>s</sup>。<br>Mut<sup>-</sup>：此类型毕赤酵母AOX1和AOX2基因均被敲除，菌细胞不能进行甲醇代谢，无法在甲醇中生长，为甲醇不利用型。</p>
-<h3 id="基因工程菌发酵过程中基因不稳定性的原因是什么？"><a href="#基因工程菌发酵过程中基因不稳定性的原因是什么？" class="headerlink" title="基因工程菌发酵过程中基因不稳定性的原因是什么？"></a>基因工程菌发酵过程中基因不稳定性的原因是什么？</h3><p>大量外源蛋白的形成对宿主细胞是有损害的（对细胞本身代谢造成影响），通常是致死的，因而生物体在复制时具有将外源基因甩出体外的趋势，丢失外源基因的菌往往比未丢失的菌生长快得多，从而能替代有生产能力的菌株，这就导致基因的不稳定性。<br>1.分配不稳定：这是由于在细胞分裂过程中质粒缺失分配到子细胞中而导致整个质粒丢失。<br>2.结构性不稳定：由于重组质粒DNA发生缺失、插入或重排引起的质粒结构变化。<br>3.质粒不同拷贝状态</p>
-<h3 id="试述大肠杆菌高效表达实现策略"><a href="#试述大肠杆菌高效表达实现策略" class="headerlink" title="试述大肠杆菌高效表达实现策略"></a>试述大肠杆菌高效表达实现策略</h3><p>1、菌种：<br>● 目前，重组大肠杆菌的工业发酵主要采用温度诱导和IPTG诱导两种方式。<br>● 还有自诱导方式（阿拉伯糖）<br>2、发酵过程控制：<br>高效表达的关键点： <strong><span style="color:#485EC6;">高密度、高表达</span></strong><br>A、高密度培养的措施<br>要实现重组大肠杆菌的高密度培养，最常用和最有效的方法就是 <strong><span style="color:#485EC6;">分批补料流加培养法</span></strong> 。现在常用的是反馈补料培养。<strong>有几种反馈控制</strong>：<br>● 控制基质浓度流加<br>● 恒pH流加<br>● <strong><span style="color:#D81C2F;">恒溶氧流加</span></strong><br>● <strong><span style="color:#D81C2F;">控制比生长速率的葡萄糖流加（指数流加）</span></strong><br>B、生长与表达的影响因素<br>① <strong><span style="color:#485EC6;">溶氧浓度对工程菌发酵的影响</span></strong><br>② <strong><span style="color:#485EC6;">pH值对工程菌生长和表达的影响</span></strong><br>③ <strong><span style="color:#485EC6;">乙酸对生长和表达的影响</span></strong><br>④ <strong><span style="color:#485EC6;">诱导时间对外源蛋白表达的影响</span></strong><br>⑤ <strong><span style="color:#485EC6;">诱导时机对表达的影响</span></strong><br>⑥ <strong><span style="color:#485EC6;">诱导方式对表达的影响</span></strong><br>⑦ <strong><span style="color:#485EC6;">不同诱导剂对表达影响</span></strong></p>
-<p><strong>采用乳糖与其他碳源（葡萄糖或甘油）进行混合发酵过程</strong></p>
-<h3 id="试述诱导型巴斯德毕赤酵母（-P-pastoris-）高效表达实现策略"><a href="#试述诱导型巴斯德毕赤酵母（-P-pastoris-）高效表达实现策略" class="headerlink" title="试述诱导型巴斯德毕赤酵母（ P.pastoris ）高效表达实现策略"></a>试述诱导型巴斯德毕赤酵母（ <em>P.pastoris</em> ）高效表达实现策略</h3><p>1、诱导型表达载体系统及特点<br>常用启动子有P<sub>AOX1</sub>（基因表型Mut<sup>+</sup>）和P<sub>AOX2</sub>（基因表型Mut<sup>s</sup>）<br>2、诱导型毕赤酵母发酵过程控制<br>● 发酵过程分为生长阶段和诱导阶段。<br>● 控制关键是： <strong><span style="color:#485EC6;">甘油、甲醇的流加方式和流加速率。</span></strong><br>① 双碳源单一流加方式：传统方式<br>② 双碳源交替流加方式<br>③ 双碳源混合流加方式</p>
-<p>用葡萄糖代替甘油的发酵<br>3、 <strong><span style="color:#485EC6;">pH值的影响</span></strong><br>4、 <strong><span style="color:#485EC6;">温度的影响</span></strong><br>5、 <strong><span style="color:#485EC6;">溶解氧DO的影响</span></strong><br>6、 <strong><span style="color:#485EC6;">减少外源蛋白的降解</span></strong></p>
-<h3 id="试述组成型巴斯德毕赤酵母（-Pichia-pastoris-）"><a href="#试述组成型巴斯德毕赤酵母（-Pichia-pastoris-）" class="headerlink" title="试述组成型巴斯德毕赤酵母（ Pichia pastoris ）"></a>试述组成型巴斯德毕赤酵母（ <em>Pichia pastoris</em> ）</h3><p>1、组成型表达载体系统及特点<br>● P<sub>GAP</sub>（三磷酸甘油醛脱氢酶启动子）是一种组成型强启动子。使用P<sub>GAP</sub>在发酵时不需要甲醇诱导，不更换碳源，工艺简单。但P<sub>GAP</sub>不宜用于表达对毕赤酵母有毒的蛋白。<br>2、组成型巴斯德毕赤酵母发酵过程控制<br>● 在发酵前期采用 <strong><span style="color:#485EC6;">指数流加方式，根据溶氧控制。</span></strong><br>● 滞后表达有时会出现两个生长峰，这可能受 <strong><span style="color:#485EC6;">三磷酸甘油醛脱氢酶浓度增长速率</span></strong> 的调控。<br>● 对生物反应器性能要求高，反应器设计应主要考虑 <strong><span style="color:#485EC6;">混合</span></strong> 和 <strong><span style="color:#485EC6;">传递</span></strong> 性能，否则放大会出现问题。</p>
-<h2 id="第二章-第四节-生物转化制药"><a href="#第二章-第四节-生物转化制药" class="headerlink" title="第二章 第四节 生物转化制药"></a>第二章 第四节 生物转化制药</h2><h3 id="生物催化剂包括哪些？"><a href="#生物催化剂包括哪些？" class="headerlink" title="生物催化剂包括哪些？"></a>生物催化剂包括哪些？</h3><p>生物催化剂包括：从生物体中提取的各种 <strong><span style="color:#485EC6;">游离酶</span></strong> ，还包括可以直接作为酶源使用的各种 <strong><span style="color:#485EC6;">生物细胞、固定化酶和固定化细胞。</span></strong> </p>
-<h3 id="什么是生物转化或全细胞催化、酶催化，并说明他们的区别。"><a href="#什么是生物转化或全细胞催化、酶催化，并说明他们的区别。" class="headerlink" title="什么是生物转化或全细胞催化、酶催化，并说明他们的区别。"></a>什么是生物转化或全细胞催化、酶催化，并说明他们的区别。</h3><p>生物转化或全细胞催化：若采用活细胞为催化剂时称 <strong><span style="color:#485EC6;">生物转化或全细胞催化。</span></strong><br>酶催化：若采用游离酶或固定化酶时称为 <strong><span style="color:#485EC6;">酶催化。</span></strong><br>区别： <strong><span style="color:#485EC6;">生物转化或全细胞催化</span></strong> 中除得到反应产物外，还可能得到更多的生物细胞，而 <strong><span style="color:#485EC6;">酶反应过程</span></strong> 中，酶则不会增长。</p>
-<h3 id="微生物转化方法有哪些？并简述之。"><a href="#微生物转化方法有哪些？并简述之。" class="headerlink" title="微生物转化方法有哪些？并简述之。"></a>微生物转化方法有哪些？并简述之。</h3><p>生长细胞培养转化法：是在微生物细胞培养前或培养一段时间后，直接将 <strong><span style="color:#D81C2F;">底物</span></strong> 投入到微生物生长培养基中，利用微生物自身繁殖生长的同时对底物进行生物转化。是最简单和最常用的一种方法， <strong><span style="color:#485EC6;">优点是微生物生物转化容易、效率高，缺点是产物的后处理及分离纯化烦琐。</span></strong><br>静息细胞培养转化法：是把微生物细胞在一定的条件下培养一段时间后，经离心收集菌体，将菌体悬浮于水或缓冲溶液中，然后加入底物，在适宜的温度、pH和振荡条件下进行转化的方法。 <strong><span style="color:#485EC6;">是一种将生长影响减至最小情况下进行生物转化的方法。优点是产物后处理简单、没有培养基成分的污染，缺点是增加了额外的菌体收集与重悬过程。</span></strong><br>固定化细胞转化法：是指利用化学或物理手段将 <strong><span style="color:#D81C2F;">游离的细胞</span></strong> 定位于限定的空间区域并使其保持活性及可以反复使用的特性，然后用于催化有机化合物的生物转化得到所需产物的方法。最大优点是 <strong><span style="color:#485EC6;">可以长期反复使用，分离纯化容易</span></strong> ，缺点是固定化细胞的生物转化活性比游离细胞的生物活性低。</p>
-<h2 id="第三章植物细胞制药工艺"><a href="#第三章植物细胞制药工艺" class="headerlink" title="第三章植物细胞制药工艺"></a>第三章植物细胞制药工艺</h2><h3 id="植物细胞培养过程的特点"><a href="#植物细胞培养过程的特点" class="headerlink" title="植物细胞培养过程的特点"></a>植物细胞培养过程的特点</h3><p>1、细胞培养液的特性<br>植物细胞比微生物细胞大 <strong><span style="color:#D81C2F;">50-100倍</span></strong> ，体积大约要 <strong><span style="color:#D81C2F;">膨大10<sup>5</sup>-10<sup>6</sup></span></strong> 倍，在培养液中所占体积可高达 <strong><span style="color:#D81C2F;">40%-50%</span></strong> ，而酵母一般只有5%左右，培养过程中培养液的黏度可 <strong><span style="color:#D81C2F;">增大30倍。</span></strong><br>2、植物细胞培养中的传递状态<br>由于体积较大，比表面积要小得多， <strong><span style="color:#D81C2F;">耗氧速率一般也比微生物小得多，所以K<sub>L</sub>α不必太大。</span></strong></p>
-<h3 id="植物细胞培养反应器有哪些？并简述其特点。"><a href="#植物细胞培养反应器有哪些？并简述其特点。" class="headerlink" title="植物细胞培养反应器有哪些？并简述其特点。"></a>植物细胞培养反应器有哪些？并简述其特点。</h3><p>1、悬浮培养生物反应器<br>（1）机械搅拌式反应器： <strong><span style="color:#485EC6;">剪切力大</span></strong> ，需要筛选出 <strong><span style="color:#485EC6;">抗剪切力的细胞系</span></strong> ，还需要对反应器结构进行改造，尤其是搅拌桨的结构和类型。<br>（2）非机械搅拌式反应器： <strong><span style="color:#485EC6;">剪切力小</span></strong> ，但操作弹性小，低气速时尤其在培养后期植物细胞密度较高时， <strong><span style="color:#485EC6;">混合效果较差</span></strong> 。如果提高通气量又会产生 <strong><span style="color:#485EC6;">大量泡沫</span></strong> ，严重影响植物细胞的生长。<br>2、固定化细胞生物反应器<br>（1）填充床反应器：细胞 <strong><span style="color:#485EC6;">固定于支持物</span></strong> 表面或内部，细胞固定支持物颗粒堆叠成床，培养基在床层间流动，通过培养液流动实现混合和传质。但 <strong><span style="color:#485EC6;">混合效率和传质效率低，以及颗粒或支持物的破碎会阻塞液体流动</span></strong><br>（2）流化床反应器：细胞包裹于胶粒、金属或泡沫颗粒中成为 <strong><span style="color:#485EC6;">固定化植物细胞</span></strong> ，通过培养液自下而上在反应器内的流动使固定化细胞呈流态化悬浮状态，培养液与植物细胞充分接触， <strong><span style="color:#485EC6;">混合程度高，传质传热效果好。</span></strong> 缺点是剪切力和颗粒碰撞会破坏固定化细胞，流体动力学复杂使其放大困难。<br>（3）膜反应器：是采用具有一定孔径和选择透过性的膜固定植物细胞。最常用的是 <strong><span style="color:#485EC6;">中空纤维</span></strong> 和 <strong><span style="color:#485EC6;">螺旋式卷绕反应器</span></strong> 。但传质效率低，易堵塞。</p>
-<h2 id="第四章动物细胞制药工艺"><a href="#第四章动物细胞制药工艺" class="headerlink" title="第四章动物细胞制药工艺"></a>第四章动物细胞制药工艺</h2><h3 id="动物细胞培养方式有哪些？"><a href="#动物细胞培养方式有哪些？" class="headerlink" title="动物细胞培养方式有哪些？"></a>动物细胞培养方式有哪些？</h3><p>1.贴壁培养<br>2.悬浮培养<br>3.固定化培养</p>
-]]></content>
-      <tags>
-        <tag>生物制药</tag>
-        <tag>生物制药工艺学</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生物技术制药</title>
     <url>/2025/03/26/%E7%94%9F%E7%89%A9%E6%8A%80%E6%9C%AF%E5%88%B6%E8%8D%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a><span style="display:block;text-align:center;color:#00BFFF;">第一章</span></h1><h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><p>1.生物药物：是指运用微生物学、生物学、医学、生物化学等的研究成果，从生物体、生物组织、细胞、体液等，综合利用微生物学、化学、生物化学、生物技术、药学等科学的原理和方法制造的一类用于预防、治疗和诊断的制品。<br>2.生物技术药物：一般来说，采用DNA重组技术或其他生物新技术研制的蛋白质或核酸类药物。<br>3.生物技术制药：采用现代生物技术，借助某些微生物、植物、动物生产医药品。<br>生物技术药物的类型、特性及功能用途</p>
@@ -233,6 +140,145 @@
       <tags>
         <tag>生物制药</tag>
         <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生物制药工艺学复习</title>
+    <url>/2025/06/18/%E7%94%9F%E7%89%A9%E5%88%B6%E8%8D%AF%E5%B7%A5%E8%89%BA%E5%AD%A6%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="生物制药工艺学复习"><a href="#生物制药工艺学复习" class="headerlink" title="生物制药工艺学复习"></a><span style="display:block;text-align:center;color:#00BFFF;">生物制药工艺学复习</span></h1><h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h3 id="生物制药的定义"><a href="#生物制药的定义" class="headerlink" title="生物制药的定义"></a>生物制药的定义</h3><p>生物制药是利用生物体或生物过程在人为设定的条件下生产各种生物药物的技术</p>
+<h3 id="生物制药的研究内容"><a href="#生物制药的研究内容" class="headerlink" title="生物制药的研究内容"></a>生物制药的研究内容</h3><p>1.<strong><span style="color:#485EC6;">各种生物药物的原料来源及其生物学特性</span></strong><br>2.<strong><span style="color:#485EC6;">各种活性物质的结构与性质、结构与疗效之间的相互作用</span></strong><br>3.<strong><span style="color:#485EC6;">生物药物的制备原理、生产工艺及其质量控制等</span></strong></p>
+<h3 id="生物制药工艺学的性质与任务"><a href="#生物制药工艺学的性质与任务" class="headerlink" title="生物制药工艺学的性质与任务"></a>生物制药工艺学的性质与任务</h3><p>性质：是一门从事各种 <strong><span style="color:#485EC6;">生物药物的研究、生产和制剂</span></strong> 的综合性应用技术科学。<br>任务：<br>1.生物药物的 <strong><span style="color:#485EC6;">来源</span></strong> 及其原料药物生产的 <strong><span style="color:#485EC6;">主要途径和工艺过程</span></strong> ；<br>2.生物药物的一般 <strong><span style="color:#485EC6;">提取、分离、纯化、制造原理和生产方法</span></strong> ；<br>3.各类生物药物的 <strong><span style="color:#485EC6;">结构、性质、用途及其工艺和质量控制</span></strong> 。</p>
+<h3 id="生物制药产品的类别有哪些？"><a href="#生物制药产品的类别有哪些？" class="headerlink" title="生物制药产品的类别有哪些？"></a>生物制药产品的类别有哪些？</h3><h4 id="微生物发酵产物"><a href="#微生物发酵产物" class="headerlink" title="微生物发酵产物"></a>微生物发酵产物</h4><p>微生物菌体：真菌、农用菌体<br>微生物酶：糖化酶、葡萄糖氧化酶<br>微生物代谢产物：初级代谢产物、次级代谢产物<br>酶调节剂：酶抑制剂、酶激活剂</p>
+<h4 id="生物转化药物"><a href="#生物转化药物" class="headerlink" title="生物转化药物"></a>生物转化药物</h4><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+    graph LR
+    A[底物] e1@--&gt; B[微生物代谢转化]
+    e1@{ animate: true }
+    B e2@--&gt; C[产物]
+    e2@{ animate: true }
+
+  </pre></div>
+<p><strong><span style="color:#485EC6;">固定化细胞转化</span></strong><br><strong><span style="color:#485EC6;">分批培养转化</span></strong><br><strong><span style="color:#485EC6;">静止细胞转化</span></strong><br><strong><span style="color:#485EC6;">干细胞转化</span></strong><br><strong><span style="color:#485EC6;">孢子转化</span></strong><br><strong><span style="color:#485EC6;">渗透细胞转化</span></strong></p>
+<h4 id="基因工程药物"><a href="#基因工程药物" class="headerlink" title="基因工程药物"></a>基因工程药物</h4><p>构建工程菌</p>
+<h4 id="动植物组织培养药"><a href="#动植物组织培养药" class="headerlink" title="动植物组织培养药"></a>动植物组织培养药</h4><h4 id="疫苗及抗体药物"><a href="#疫苗及抗体药物" class="headerlink" title="疫苗及抗体药物"></a>疫苗及抗体药物</h4><h3 id="生物制药的工艺过程"><a href="#生物制药的工艺过程" class="headerlink" title="生物制药的工艺过程"></a>生物制药的工艺过程</h3><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+    graph TD
+    A[菌种：自然界分离+菌种选育保存] e1@--&gt; B[斜面培养：休眠孢子复苏]
+    e1@{ animate: true }
+    B e2@--&gt; C[种子制备：扩大培养]
+    e2@{ animate: true }
+    C e3@--&gt; D[发酵：表达产物]
+    e3@{ animate: true }
+    D e4@--&gt; E[发酵液预处理：发酵液放罐、收集]
+    e4@{ animate: true }
+    E e5@--&gt; F[提取和精制：产物分离、纯化]
+    e5@{ animate: true }
+    F e6@--&gt; G[成品检验：质控评价]
+    e6@{ animate: true }
+    G e7@--&gt; H[成品包装：出厂上市]
+    e7@{ animate: true }
+
+  </pre></div>
+
+<h2 id="第二章-第一节-微生物代谢产物的生物合成与调控"><a href="#第二章-第一节-微生物代谢产物的生物合成与调控" class="headerlink" title="第二章 第一节 微生物代谢产物的生物合成与调控"></a>第二章 第一节 微生物代谢产物的生物合成与调控</h2><h3 id="次级代谢产物多组分的原因？"><a href="#次级代谢产物多组分的原因？" class="headerlink" title="次级代谢产物多组分的原因？"></a>次级代谢产物多组分的原因？</h3><p>① <strong><span style="color:#485EC6;">次级代谢产物合成酶对底物的特异性不强</span></strong><br>② <strong><span style="color:#485EC6;">次级代谢产物合成酶对底物的作用不完全</span></strong><br>③ <strong><span style="color:#485EC6;">同一种底物被多种酶催化进行次级代谢</span></strong></p>
+<h3 id="初级代谢产物、次级代谢产物的关系"><a href="#初级代谢产物、次级代谢产物的关系" class="headerlink" title="初级代谢产物、次级代谢产物的关系"></a>初级代谢产物、次级代谢产物的关系</h3><p><strong><span style="color:#485EC6;">初级代谢产物是次级代谢产物的前体或起始物</span></strong><br>青霉素 &#x3D; α-氨基己二酸 + L半胱氨酸 + L缬氨酸<br>次级代谢产物 &#x3D; 氨基酸 + 糖类 + 脂类 （初级代谢产物相加）</p>
+<p><strong><span style="color:#485EC6;">初级代谢产物的调控影响初级代谢产物的合成</span></strong><br>次级代谢产物来源于初级代谢的中间体，初级代谢的抑制、促进影响次级代谢的进行</p>
+<h3 id="次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。"><a href="#次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。" class="headerlink" title="次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。"></a>次级代谢产物的构建单位的类别有哪些？与其对应的代表产物是什么？各举一个产品。</h3><h4 id="1、氨基酸及其衍生物"><a href="#1、氨基酸及其衍生物" class="headerlink" title="1、氨基酸及其衍生物"></a>1、氨基酸及其衍生物</h4><p>天然氨基酸（L-α-氨基酸）、非天然氨基酸（D-氨基酸、β-氨基酸、N-甲基氨基酸）<br>代表产物： <strong><span style="color:#485EC6;">多肽类抗生素</span></strong> （达托霉素、万古霉素）</p>
+<h4 id="2、糖及氨基糖"><a href="#2、糖及氨基糖" class="headerlink" title="2、糖及氨基糖"></a>2、糖及氨基糖</h4><p>碳霉糖、竹桃糖、链霉糖、阿卡波糖<br>代表产物： <strong><span style="color:#485EC6;">氨基糖苷类抗生素（链霉素）、大环内酯类抗生素</span></strong></p>
+<h4 id="3、聚酮体及其衍生物"><a href="#3、聚酮体及其衍生物" class="headerlink" title="3、聚酮体及其衍生物"></a>3、聚酮体及其衍生物</h4><p>乙酸、丙酸、丁酸和某些短链脂肪酸缩合反应的产物<br>代表产物： <strong><span style="color:#485EC6;">大环内酯类抗生素、多烯类抗生素、蒽环类抗生素、四环素抗生素</span></strong> 等。</p>
+<h4 id="4、甲羟戊酸及其衍生物"><a href="#4、甲羟戊酸及其衍生物" class="headerlink" title="4、甲羟戊酸及其衍生物"></a>4、甲羟戊酸及其衍生物</h4><p>代表产物：甾醇、赤霉素、类胡萝卜素</p>
+<h4 id="5、环多醇和氨基环多醇"><a href="#5、环多醇和氨基环多醇" class="headerlink" title="5、环多醇和氨基环多醇"></a>5、环多醇和氨基环多醇</h4><p>氨基环多醇：环多醇分子中的一个或多个羟基被氨基取代的衍生物。<br>代表产物： <strong><span style="color:#485EC6;">氨基糖苷类抗生素</span></strong> （ <strong><span style="color:#485EC6;">链霉素、庆大霉素、卡那霉素</span></strong> ）</p>
+<h4 id="6、碱基及其衍生物"><a href="#6、碱基及其衍生物" class="headerlink" title="6、碱基及其衍生物"></a>6、碱基及其衍生物</h4><p><strong><span style="color:#485EC6;">核酸嘌呤碱基、嘧啶碱基</span></strong> ，及其经过化学修饰形成的 <strong><span style="color:#485EC6;">非核酸嘌呤碱基、嘧啶碱基</span></strong> 。<br>代表产物： <strong><span style="color:#485EC6;">嘌呤霉素</span></strong></p>
+<h4 id="7、莽草酸及其衍生物"><a href="#7、莽草酸及其衍生物" class="headerlink" title="7、莽草酸及其衍生物"></a>7、莽草酸及其衍生物</h4><p>代表产物：利福霉素、绿脓菌素、新生霉素、放线菌素、吲哚霉素等。</p>
+<h4 id="8、吩噁嗪酮"><a href="#8、吩噁嗪酮" class="headerlink" title="8、吩噁嗪酮"></a>8、吩噁嗪酮</h4><p>代表产物： <strong><span style="color:#485EC6;">放线菌素</span></strong> 等</p>
+<h3 id="聚酮体及其衍生物合成起始单位与延长单位"><a href="#聚酮体及其衍生物合成起始单位与延长单位" class="headerlink" title="聚酮体及其衍生物合成起始单位与延长单位"></a>聚酮体及其衍生物合成起始单位与延长单位</h3><p>合成起始单位：乙酰辅酶A、丙酰辅酶A、丁酰辅酶A<br>延长单位：丙二酰辅酶A（二碳供体）、甲基丙二酰辅酶A（三碳供体）、乙基丙二酰辅酶A（四碳供体）</p>
+<h3 id="次级代谢产物的生物合成过程"><a href="#次级代谢产物的生物合成过程" class="headerlink" title="次级代谢产物的生物合成过程"></a>次级代谢产物的生物合成过程</h3><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+    graph TD
+    A[1、构建单位合成] e1@--&gt; B[2、母核合成]
+    e1@{ animate: true }
+    B e2@--&gt; C[3、修饰（氨基化&#x2F;甲基化&#x2F;酰基化&#x2F;羟基化）]
+    e2@{ animate: true }
+    C e3@--&gt; D[活性次级代谢产物]
+    e3@{ animate: true }
+  </pre></div>
+
+<h3 id="次级代谢调节方式有哪些？（8种）"><a href="#次级代谢调节方式有哪些？（8种）" class="headerlink" title="次级代谢调节方式有哪些？（8种）"></a>次级代谢调节方式有哪些？（8种）</h3><p>诱导调节<br>反馈调节<br>磷酸盐调节<br>碳分解产物调节<br>氮分解产物调节<br>菌体生长速率调节<br>化学调节因子调节<br>控制次级代谢产物合成的因素</p>
+<h2 id="第二章-第三节-基因工程制药"><a href="#第二章-第三节-基因工程制药" class="headerlink" title="第二章 第三节 基因工程制药"></a>第二章 第三节 基因工程制药</h2><h3 id="基因工程菌如何获得？"><a href="#基因工程菌如何获得？" class="headerlink" title="基因工程菌如何获得？"></a>基因工程菌如何获得？</h3><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+    graph TD
+    A[确定目的产物，找出产该产物的细胞。] e1@--&gt; B[将细胞破碎后提纯出全部mRNA。这些mRNA中包含了该细胞内表达的所有蛋白质的合成信息。]
+    e1@{ animate: true }
+    B e2@--&gt; C[利用PCR扩增，找出所需的目的基因。]
+    e2@{ animate: true }
+    C e3@--&gt; D[将目的基因连接到设计好的质粒载体，形成重组DNA分子。]
+    e3@{ animate: true }
+    D e4@--&gt; E[将重组后DNA分子引入到受体细胞内，然后选择合适的培养条件使细胞繁殖。根据选择性标记，从菌落中筛选出目的基因的重组工程菌。]
+    e4@{ animate: true }
+  </pre></div>
+
+
+<h3 id="基因工程菌生物反应过程特点"><a href="#基因工程菌生物反应过程特点" class="headerlink" title="基因工程菌生物反应过程特点"></a>基因工程菌生物反应过程特点</h3><p>1、工程菌发酵的调控与初级代谢产物发酵类似，属于明确代谢途径发酵；<br>2、由于携带有外源基因表达启动子，属于二阶段发酵：先菌体细胞生长，后产物表达形成，与次生代谢发酵类似；<br>3、产物表达常需要诱导，诱因主要有： <strong><span style="color:#485EC6;">温度诱导、乳糖或乳糖结构类似物诱导、</span></strong> 氧饥饿诱导、葡萄糖饥饿诱导，甲醇诱导等；<br>4、发酵过程中菌体比生长速率、代谢副产物积累、限制性基质浓度会对产物表达造成极大的影响；<br>5、对反应器混合和传递特性要求高，否则会造成物料、溶氧、温度、pH在反应器中出现不同梯度区域，引起菌体密度不高或表达异化；<br>6、发酵过程的 <strong><span style="color:#485EC6;">基因不稳定性</span></strong> ，常常需加入选择压力，如抗生素。</p>
+<h3 id="根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。"><a href="#根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。" class="headerlink" title="根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。"></a>根据利用甲醇的能力，巴斯德毕赤酵母的表型类型有哪些？并简述其特点。</h3><p>Mut<sup>＋</sup>：具有完整的AOX1和AOX2基因，能够在甲醇中以野生型速率生长，为甲醇快利用型如GS115，绝大多数毕赤酵母为Mut<sup>＋</sup>表型。<br>Mut<sup>s</sup>：AOX1基因部分敲除，被酿酒酵母ARG4基因所取代，菌细胞可依赖AOX2基因编码的少量醇氧化酶完成甲醇代谢，因此在甲醇培养基中生长缓慢，胞内表达尽量选择Mut<sup>s</sup>。<br>Mut<sup>-</sup>：此类型毕赤酵母AOX1和AOX2基因均被敲除，菌细胞不能进行甲醇代谢，无法在甲醇中生长，为甲醇不利用型。</p>
+<h3 id="基因工程菌发酵过程中基因不稳定性的原因是什么？"><a href="#基因工程菌发酵过程中基因不稳定性的原因是什么？" class="headerlink" title="基因工程菌发酵过程中基因不稳定性的原因是什么？"></a>基因工程菌发酵过程中基因不稳定性的原因是什么？</h3><p>大量外源蛋白的形成对宿主细胞是有损害的（对细胞本身代谢造成影响），通常是致死的，因而生物体在复制时具有将外源基因甩出体外的趋势，丢失外源基因的菌往往比未丢失的菌生长快得多，从而能替代有生产能力的菌株，这就导致基因的不稳定性。<br>1.分配不稳定：这是由于在细胞分裂过程中质粒缺失分配到子细胞中而导致整个质粒丢失。<br>2.结构性不稳定：由于重组质粒DNA发生缺失、插入或重排引起的质粒结构变化。<br>3.质粒不同拷贝状态</p>
+<h3 id="试述大肠杆菌高效表达实现策略"><a href="#试述大肠杆菌高效表达实现策略" class="headerlink" title="试述大肠杆菌高效表达实现策略"></a>试述大肠杆菌高效表达实现策略</h3><p>1、菌种：<br>● 目前，重组大肠杆菌的工业发酵主要采用温度诱导和IPTG诱导两种方式。<br>● 还有自诱导方式（阿拉伯糖）<br>2、发酵过程控制：<br>高效表达的关键点： <strong><span style="color:#485EC6;">高密度、高表达</span></strong><br>A、高密度培养的措施<br>要实现重组大肠杆菌的高密度培养，最常用和最有效的方法就是 <strong><span style="color:#485EC6;">分批补料流加培养法</span></strong> 。现在常用的是反馈补料培养。<strong>有几种反馈控制</strong>：<br>● 控制基质浓度流加<br>● 恒pH流加<br>● <strong><span style="color:#D81C2F;">恒溶氧流加</span></strong><br>● <strong><span style="color:#D81C2F;">控制比生长速率的葡萄糖流加（指数流加）</span></strong><br>B、生长与表达的影响因素<br>① <strong><span style="color:#485EC6;">溶氧浓度对工程菌发酵的影响</span></strong><br>② <strong><span style="color:#485EC6;">pH值对工程菌生长和表达的影响</span></strong><br>③ <strong><span style="color:#485EC6;">乙酸对生长和表达的影响</span></strong><br>④ <strong><span style="color:#485EC6;">诱导时间对外源蛋白表达的影响</span></strong><br>⑤ <strong><span style="color:#485EC6;">诱导时机对表达的影响</span></strong><br>⑥ <strong><span style="color:#485EC6;">诱导方式对表达的影响</span></strong><br>⑦ <strong><span style="color:#485EC6;">不同诱导剂对表达影响</span></strong></p>
+<p><strong>采用乳糖与其他碳源（葡萄糖或甘油）进行混合发酵过程</strong></p>
+<h3 id="试述诱导型巴斯德毕赤酵母（-P-pastoris-）高效表达实现策略"><a href="#试述诱导型巴斯德毕赤酵母（-P-pastoris-）高效表达实现策略" class="headerlink" title="试述诱导型巴斯德毕赤酵母（ P.pastoris ）高效表达实现策略"></a>试述诱导型巴斯德毕赤酵母（ <em>P.pastoris</em> ）高效表达实现策略</h3><p>1、诱导型表达载体系统及特点<br>常用启动子有P<sub>AOX1</sub>（基因表型Mut<sup>+</sup>）和P<sub>AOX2</sub>（基因表型Mut<sup>s</sup>）<br>2、诱导型毕赤酵母发酵过程控制<br>● 发酵过程分为生长阶段和诱导阶段。<br>● 控制关键是： <strong><span style="color:#485EC6;">甘油、甲醇的流加方式和流加速率。</span></strong><br>① 双碳源单一流加方式：传统方式<br>② 双碳源交替流加方式<br>③ 双碳源混合流加方式</p>
+<p>用葡萄糖代替甘油的发酵<br>3、 <strong><span style="color:#485EC6;">pH值的影响</span></strong><br>4、 <strong><span style="color:#485EC6;">温度的影响</span></strong><br>5、 <strong><span style="color:#485EC6;">溶解氧DO的影响</span></strong><br>6、 <strong><span style="color:#485EC6;">减少外源蛋白的降解</span></strong></p>
+<h3 id="试述组成型巴斯德毕赤酵母（-Pichia-pastoris-）"><a href="#试述组成型巴斯德毕赤酵母（-Pichia-pastoris-）" class="headerlink" title="试述组成型巴斯德毕赤酵母（ Pichia pastoris ）"></a>试述组成型巴斯德毕赤酵母（ <em>Pichia pastoris</em> ）</h3><p>1、组成型表达载体系统及特点<br>● P<sub>GAP</sub>（三磷酸甘油醛脱氢酶启动子）是一种组成型强启动子。使用P<sub>GAP</sub>在发酵时不需要甲醇诱导，不更换碳源，工艺简单。但P<sub>GAP</sub>不宜用于表达对毕赤酵母有毒的蛋白。<br>2、组成型巴斯德毕赤酵母发酵过程控制<br>● 在发酵前期采用 <strong><span style="color:#485EC6;">指数流加方式，根据溶氧控制。</span></strong><br>● 滞后表达有时会出现两个生长峰，这可能受 <strong><span style="color:#485EC6;">三磷酸甘油醛脱氢酶浓度增长速率</span></strong> 的调控。<br>● 对生物反应器性能要求高，反应器设计应主要考虑 <strong><span style="color:#485EC6;">混合</span></strong> 和 <strong><span style="color:#485EC6;">传递</span></strong> 性能，否则放大会出现问题。</p>
+<h2 id="第二章-第四节-生物转化制药"><a href="#第二章-第四节-生物转化制药" class="headerlink" title="第二章 第四节 生物转化制药"></a>第二章 第四节 生物转化制药</h2><h3 id="生物催化剂包括哪些？"><a href="#生物催化剂包括哪些？" class="headerlink" title="生物催化剂包括哪些？"></a>生物催化剂包括哪些？</h3><p>生物催化剂包括：从生物体中提取的各种 <strong><span style="color:#485EC6;">游离酶</span></strong> ，还包括可以直接作为酶源使用的各种 <strong><span style="color:#485EC6;">生物细胞、固定化酶和固定化细胞。</span></strong> </p>
+<h3 id="什么是生物转化或全细胞催化、酶催化，并说明他们的区别。"><a href="#什么是生物转化或全细胞催化、酶催化，并说明他们的区别。" class="headerlink" title="什么是生物转化或全细胞催化、酶催化，并说明他们的区别。"></a>什么是生物转化或全细胞催化、酶催化，并说明他们的区别。</h3><p>生物转化或全细胞催化：若采用活细胞为催化剂时称 <strong><span style="color:#485EC6;">生物转化或全细胞催化。</span></strong><br>酶催化：若采用游离酶或固定化酶时称为 <strong><span style="color:#485EC6;">酶催化。</span></strong><br>区别： <strong><span style="color:#485EC6;">生物转化或全细胞催化</span></strong> 中除得到反应产物外，还可能得到更多的生物细胞，而 <strong><span style="color:#485EC6;">酶反应过程</span></strong> 中，酶则不会增长。</p>
+<h3 id="微生物转化方法有哪些？并简述之。"><a href="#微生物转化方法有哪些？并简述之。" class="headerlink" title="微生物转化方法有哪些？并简述之。"></a>微生物转化方法有哪些？并简述之。</h3><p>生长细胞培养转化法：是在微生物细胞培养前或培养一段时间后，直接将 <strong><span style="color:#D81C2F;">底物</span></strong> 投入到微生物生长培养基中，利用微生物自身繁殖生长的同时对底物进行生物转化。是最简单和最常用的一种方法， <strong><span style="color:#485EC6;">优点是微生物生物转化容易、效率高，缺点是产物的后处理及分离纯化烦琐。</span></strong><br>静息细胞培养转化法：是把微生物细胞在一定的条件下培养一段时间后，经离心收集菌体，将菌体悬浮于水或缓冲溶液中，然后加入底物，在适宜的温度、pH和振荡条件下进行转化的方法。 <strong><span style="color:#485EC6;">是一种将生长影响减至最小情况下进行生物转化的方法。优点是产物后处理简单、没有培养基成分的污染，缺点是增加了额外的菌体收集与重悬过程。</span></strong><br>固定化细胞转化法：是指利用化学或物理手段将 <strong><span style="color:#D81C2F;">游离的细胞</span></strong> 定位于限定的空间区域并使其保持活性及可以反复使用的特性，然后用于催化有机化合物的生物转化得到所需产物的方法。最大优点是 <strong><span style="color:#485EC6;">可以长期反复使用，分离纯化容易</span></strong> ，缺点是固定化细胞的生物转化活性比游离细胞的生物活性低。</p>
+<h2 id="第三章植物细胞制药工艺"><a href="#第三章植物细胞制药工艺" class="headerlink" title="第三章植物细胞制药工艺"></a>第三章植物细胞制药工艺</h2><h3 id="植物细胞培养过程的特点"><a href="#植物细胞培养过程的特点" class="headerlink" title="植物细胞培养过程的特点"></a>植物细胞培养过程的特点</h3><p>1、细胞培养液的特性<br>植物细胞比微生物细胞大 <strong><span style="color:#D81C2F;">50-100倍</span></strong> ，体积大约要 <strong><span style="color:#D81C2F;">膨大10<sup>5</sup>-10<sup>6</sup></span></strong> 倍，在培养液中所占体积可高达 <strong><span style="color:#D81C2F;">40%-50%</span></strong> ，而酵母一般只有5%左右，培养过程中培养液的黏度可 <strong><span style="color:#D81C2F;">增大30倍。</span></strong><br>2、植物细胞培养中的传递状态<br>由于体积较大，比表面积要小得多， <strong><span style="color:#D81C2F;">耗氧速率一般也比微生物小得多，所以K<sub>L</sub>α不必太大。</span></strong></p>
+<h3 id="植物细胞培养反应器有哪些？并简述其特点。"><a href="#植物细胞培养反应器有哪些？并简述其特点。" class="headerlink" title="植物细胞培养反应器有哪些？并简述其特点。"></a>植物细胞培养反应器有哪些？并简述其特点。</h3><p>1、悬浮培养生物反应器<br>（1）机械搅拌式反应器： <strong><span style="color:#485EC6;">剪切力大</span></strong> ，需要筛选出 <strong><span style="color:#485EC6;">抗剪切力的细胞系</span></strong> ，还需要对反应器结构进行改造，尤其是搅拌桨的结构和类型。<br>（2）非机械搅拌式反应器： <strong><span style="color:#485EC6;">剪切力小</span></strong> ，但操作弹性小，低气速时尤其在培养后期植物细胞密度较高时， <strong><span style="color:#485EC6;">混合效果较差</span></strong> 。如果提高通气量又会产生 <strong><span style="color:#485EC6;">大量泡沫</span></strong> ，严重影响植物细胞的生长。<br>2、固定化细胞生物反应器<br>（1）填充床反应器：细胞 <strong><span style="color:#485EC6;">固定于支持物</span></strong> 表面或内部，细胞固定支持物颗粒堆叠成床，培养基在床层间流动，通过培养液流动实现混合和传质。但 <strong><span style="color:#485EC6;">混合效率和传质效率低，以及颗粒或支持物的破碎会阻塞液体流动</span></strong><br>（2）流化床反应器：细胞包裹于胶粒、金属或泡沫颗粒中成为 <strong><span style="color:#485EC6;">固定化植物细胞</span></strong> ，通过培养液自下而上在反应器内的流动使固定化细胞呈流态化悬浮状态，培养液与植物细胞充分接触， <strong><span style="color:#485EC6;">混合程度高，传质传热效果好。</span></strong> 缺点是剪切力和颗粒碰撞会破坏固定化细胞，流体动力学复杂使其放大困难。<br>（3）膜反应器：是采用具有一定孔径和选择透过性的膜固定植物细胞。最常用的是 <strong><span style="color:#485EC6;">中空纤维</span></strong> 和 <strong><span style="color:#485EC6;">螺旋式卷绕反应器</span></strong> 。但传质效率低，易堵塞。</p>
+<h2 id="第四章动物细胞制药工艺"><a href="#第四章动物细胞制药工艺" class="headerlink" title="第四章动物细胞制药工艺"></a>第四章动物细胞制药工艺</h2><h3 id="动物细胞培养方式有哪些？"><a href="#动物细胞培养方式有哪些？" class="headerlink" title="动物细胞培养方式有哪些？"></a>动物细胞培养方式有哪些？</h3><p>1、贴壁培养<br>2、悬浮培养<br>3、固定化培养</p>
+<h3 id="动物细胞培养的操作方式有哪些？"><a href="#动物细胞培养的操作方式有哪些？" class="headerlink" title="动物细胞培养的操作方式有哪些？"></a>动物细胞培养的操作方式有哪些？</h3><p>1、分批式操作<br>2、流加式操作<br>3、半连续式操作<br>4、连续操作<br>5、灌注培养</p>
+<h3 id="动物细胞大规模培养反应器有哪些？并简述其特点。"><a href="#动物细胞大规模培养反应器有哪些？并简述其特点。" class="headerlink" title="动物细胞大规模培养反应器有哪些？并简述其特点。"></a>动物细胞大规模培养反应器有哪些？并简述其特点。</h3><p>1、通气搅拌式细胞培养反应器<br> <strong><span style="color:#D81C2F;">要求细胞密度大，因而要求较大通气量，但又不能产生气泡（剪切力）</span></strong><br>2、气升动物细胞培养反应器<br>没有移动部件、完全密封、便于无菌操作、不易污染、设计简单、氧的转换率搞。<br>3、中空纤维细胞培养反应器<br> <strong><span style="color:#D81C2F;">既可培养悬浮生长细胞，又可培养贴壁依赖性细胞。</span></strong><br>4、微囊培养系统<br>细胞密度大、产物单位体积浓度高、分离纯化操作经济方便、抗体活性和纯度高。<br>5、大载体系统<br>由海藻酸钠构成，在钙溶液中形成适宜于附着的网络状凝胶珠。<br>6、微载体培养系统<br>优点：<br>兼有单层培养和悬浮培养的优势，且为均相培养；<br>细胞所处环境均一，放大容易；<br>环境条件容易测量；<br>比表面积大，单位体积培养液的细胞产率高；<br>培养操作可系统化、自动化，减少了污染机会；<br>细胞和培养液易于分离。<br>缺点：<br>接种密度高；<br> <strong><span style="color:#D81C2F;">不能移种操作（开发出崩溃性载体）</span></strong> </p>
+<h2 id="第五章第一节液固分离"><a href="#第五章第一节液固分离" class="headerlink" title="第五章第一节液固分离"></a>第五章第一节液固分离</h2><h3 id="根据基本过滤方程，试述强化过滤速度的措施。"><a href="#根据基本过滤方程，试述强化过滤速度的措施。" class="headerlink" title="根据基本过滤方程，试述强化过滤速度的措施。"></a>根据基本过滤方程，试述强化过滤速度的措施。</h3><p><img src="/../img/%E7%94%9F%E7%89%A9%E5%88%B6%E8%8D%AF%E5%B7%A5%E8%89%BA%E5%AD%A6%E5%A4%8D%E4%B9%A0/1.png"><br>1、降低滤饼比阻力r<sub>0</sub><br><img src="/../img/%E7%94%9F%E7%89%A9%E5%88%B6%E8%8D%AF%E5%B7%A5%E8%89%BA%E5%AD%A6%E5%A4%8D%E4%B9%A0/2.png"><br>增大毛细孔的直径、减少弯曲因子有助于降低滤饼比阻力。<br>1.1添加电解质、絮凝剂、凝固剂<br>悬浮的固形物质的粒度越大，硬度越高，形成的滤饼比阻力越低。<br>1.2添加助滤剂<br>通过凹凸表面吸附悬浮固形物。降低了过滤阻力。<br>1.3调节pH<br>将pH调至滤液的等电点附近，使蛋白质变性凝固。<br>2、加热<br>热处理能使蛋白质变性凝固，从而使过滤速度大大提高。<br>温度升高，液体黏度也会下降，过滤速度也会加快。<br>3、降低悬浮液中固形物的浓度<br>尽可能使培养基配料浓度降低<br>4、提高过滤压力差△P<br>对于r<sub>0</sub>&#x3D;f(△P)，△P增大，r<sub>0</sub>也增大，过滤速度不一定增加。<br>切忌一开始就使△P很大，形成紧密过滤层。<br>原则上：△P开始很小，随后缓慢增加，最大范围2-3kgf&#x2F;cm<sup>2</sup>。</p>
+<h3 id="什么是离心机的离心分离因素，根据离心分离因素的大小不同，离心机可分为几类？"><a href="#什么是离心机的离心分离因素，根据离心分离因素的大小不同，离心机可分为几类？" class="headerlink" title="什么是离心机的离心分离因素，根据离心分离因素的大小不同，离心机可分为几类？"></a>什么是离心机的离心分离因素，根据离心分离因素的大小不同，离心机可分为几类？</h3><p>离心分离因素f是反映离心机分离能力的重要指标，f值越大，离心力越大，分离能力越强。</p>
+<p>表示：在离心场中，微粒可以获得比在重力场中大f倍的作用力。</p>
+<p>在工业上根据离心机f值将离心机分为三类：<br>普通离心机、高速离心机、超速离心机。</p>
+<h3 id="试简述管式离心机和碟式离心机的工作原理"><a href="#试简述管式离心机和碟式离心机的工作原理" class="headerlink" title="试简述管式离心机和碟式离心机的工作原理"></a>试简述管式离心机和碟式离心机的工作原理</h3><p>管式离心机原理：悬浮液从底部进入离心机的转鼓。离心机的转鼓在高速旋转的状态下，在高速旋转的转鼓作用下，转鼓内部的三翼挡板使悬浮液获得一样的旋转速度，并产生高速离心力。离心力使得悬浮液中的物质分离成不同密度的相。重物质部分沉积在转鼓的壁面上，形成固体残渣的沉渣层；轻物质部分则集中在转鼓的中心部分，形成清液层，从中间液管排出。固体残渣在停机后卸除。<br>碟式离心机原理：离心机转鼓内有一组互相套叠在一起的碟形零件————碟片与碟片之间留有很小的间隙。悬浮液由位于转鼓中心的进料管加入转鼓。当碟片间的悬浮液随着碟片高速旋转时，固体颗粒在离心力作用下沉降于碟片的内腹面，并连续向鼓壁沉降，澄清液则被迫反方向移动至转鼓中心的进液管周围，并连续被排出。积聚在转鼓内的固体在分离机停机后拆开转鼓由人工清除，或通过排渣机构在不停机的情况下从转鼓中排出。</p>
+<h3 id="膜分离设备有哪几种形式？试比较它们的优缺点。"><a href="#膜分离设备有哪几种形式？试比较它们的优缺点。" class="headerlink" title="膜分离设备有哪几种形式？试比较它们的优缺点。"></a>膜分离设备有哪几种形式？试比较它们的优缺点。</h3><table>
+<thead>
+<tr>
+<th>设备类型</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>管式</td>
+<td>易清洗，无死角，适宜于处理含固体较多的料液，单根管子可以调换</td>
+<td>保留体积大，单位体积中所含过滤面积较小，压力较大</td>
+</tr>
+<tr>
+<td>中空纤维式</td>
+<td>保留体积小，单位体积所含过滤面积大，可以逆洗，操作压力较低，动力消耗较低</td>
+<td>料液需要预处理，单根纤维损坏时需调换整个模件</td>
+</tr>
+<tr>
+<td>螺旋卷绕式</td>
+<td>单位体积中所含过滤面积大，更换新膜容易</td>
+<td>料液需要预处理，压力较大，易污染，清洗困难</td>
+</tr>
+<tr>
+<td>平板式</td>
+<td>保留体积小，能量消耗界于管式和螺旋卷绕式</td>
+<td>死体积大</td>
+</tr>
+</tbody></table>
+<h2 id="第五章第二节细胞破碎"><a href="#第五章第二节细胞破碎" class="headerlink" title="第五章第二节细胞破碎"></a>第五章第二节细胞破碎</h2><h3 id="细胞破碎的主要目的是什么？根据不同细胞的细胞壁组成与结构，试述细胞破碎的难易程度。"><a href="#细胞破碎的主要目的是什么？根据不同细胞的细胞壁组成与结构，试述细胞破碎的难易程度。" class="headerlink" title="细胞破碎的主要目的是什么？根据不同细胞的细胞壁组成与结构，试述细胞破碎的难易程度。"></a>细胞破碎的主要目的是什么？根据不同细胞的细胞壁组成与结构，试述细胞破碎的难易程度。</h3><p>细胞破碎的主要目的：破坏细胞壁和细胞膜，使细胞内物质释放出来。<br>难易程度为：植物细胞＞真菌＞革兰氏阳性菌＞革兰氏阴性菌＞动物细胞</p>
+<h3 id="机械法破碎细胞的方法有哪几种？并简述其原理及特点。"><a href="#机械法破碎细胞的方法有哪几种？并简述其原理及特点。" class="headerlink" title="机械法破碎细胞的方法有哪几种？并简述其原理及特点。"></a>机械法破碎细胞的方法有哪几种？并简述其原理及特点。</h3><p>1、珠磨法<br>原理：细胞悬浮液与极细的玻璃小珠、石英砂等研磨剂一起快速搅拌或研磨，研磨剂与细胞之间的互相剪切、碰撞，使细胞破碎，释放出内含物。<br>特点：操作过程中会产生热量，需要采取冷却措施</p>
+<p>2、高压匀浆法<br>原理：利用高压迫使悬浮液通过针形阀，由于 <strong><span style="color:#D81C2F;">突然减压</span></strong> 和 <strong><span style="color:#D81C2F;">高速冲撞</span></strong> 、 <strong><span style="color:#D81C2F;">剪切</span></strong> 造成细胞破裂<br>特点：升高压力有利于破碎。破碎性能还随菌体种类和生长环境的不同而不同。</p>
+<p>3、超声破碎法<br>原理： <strong><span style="color:#D81C2F;">空化效应、热效应、机械效应。</span></strong><br>特点：产生的热量不容易驱散，不适于大规模操作，主要用于实验室。</p>
+<h3 id="高速匀浆法是大规模细胞破碎的常用方法，请简述其适用的范围。"><a href="#高速匀浆法是大规模细胞破碎的常用方法，请简述其适用的范围。" class="headerlink" title="高速匀浆法是大规模细胞破碎的常用方法，请简述其适用的范围。"></a>高速匀浆法是大规模细胞破碎的常用方法，请简述其适用的范围。</h3><p>适用范围：酵母和大多数细菌细胞的破碎，料液细胞浓度可以很高，20%左右<br>不适用于：易造成堵塞的团状或丝状真菌、较小的革兰氏阳性菌、含有包含体的基因工程菌</p>
+<h2 id="第五章第三节萃取与色谱分离"><a href="#第五章第三节萃取与色谱分离" class="headerlink" title="第五章第三节萃取与色谱分离"></a>第五章第三节萃取与色谱分离</h2><h3 id="溶剂萃取方式有哪些？生产上宜采用哪种方式操作？为什么？"><a href="#溶剂萃取方式有哪些？生产上宜采用哪种方式操作？为什么？" class="headerlink" title="溶剂萃取方式有哪些？生产上宜采用哪种方式操作？为什么？"></a>溶剂萃取方式有哪些？生产上宜采用哪种方式操作？为什么？</h3><p>萃取方式：单级萃取、多级错流萃取、多级逆流萃取。<br>采用多级逆流萃取，收率最高、溶剂用量最少，是最经济的也是普通采用的流程。</p>
+<h3 id="试述二氧化碳超临界萃取技术的工作原理，以及该技术的优缺点和基本设备组成。"><a href="#试述二氧化碳超临界萃取技术的工作原理，以及该技术的优缺点和基本设备组成。" class="headerlink" title="试述二氧化碳超临界萃取技术的工作原理，以及该技术的优缺点和基本设备组成。"></a>试述二氧化碳超临界萃取技术的工作原理，以及该技术的优缺点和基本设备组成。</h3><p>原理：溶解度大的物质在超临界流体溶解，与不溶解或溶解度小的物质分开，然后通过升高温度或降低压力，使超临界流体变为气态的，而得到所需物质。</p>
+<p>优点：<br>溶解度可调节<br>溶剂与产品易分离<br>无溶剂残留<br>溶剂价格便宜，无毒，来源丰富</p>
+<p>缺点：<br>操作压力较高<br>溶剂的压缩成本<br>设备投资大<br>可供挑选的溶剂种类少</p>
+<p>基本组成：加热器、萃取器、分离器</p>
+<h3 id="试述亚临界流体萃取技术的工作原理。"><a href="#试述亚临界流体萃取技术的工作原理。" class="headerlink" title="试述亚临界流体萃取技术的工作原理。"></a>试述亚临界流体萃取技术的工作原理。</h3>]]></content>
+      <tags>
+        <tag>生物制药</tag>
+        <tag>学习笔记</tag>
+        <tag>生物制药工艺学</tag>
       </tags>
   </entry>
   <entry>

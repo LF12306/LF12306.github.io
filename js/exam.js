@@ -112,8 +112,8 @@ function submitAnswers() {
     let correctCount = 0;
     let totalScore = 0;
     const totalQuestions = document.querySelectorAll('.question').length;
-    
-    // 检查所有单选题
+
+    // 单选题
     const choiceQuestions = document.querySelectorAll('.question[data-type="choice"]');
     choiceQuestions.forEach(question => {
         if (checkChoiceAnswer(question)) {
@@ -121,16 +121,8 @@ function submitAnswers() {
             totalScore += 1;
         }
     });
-    
-    
-    // 检查所有填空题
-    fillQuestions.forEach(question => {
-        if (checkFillAnswer(question)) {
-            correctCount++;
-        }
-    });
-    
-    // 检查所有多选题
+
+    // 多选题
     const multiQuestions = document.querySelectorAll('.question[data-type="multi"]');
     multiQuestions.forEach(question => {
         if (checkMultiAnswer(question)) {
@@ -138,8 +130,8 @@ function submitAnswers() {
             totalScore += 2;
         }
     });
-    
-    // 检查所有判断题
+
+    // 判断题
     const judgeQuestions = document.querySelectorAll('.question[data-type="judge"]');
     judgeQuestions.forEach(question => {
         if (checkJudgeAnswer(question)) {
@@ -147,37 +139,35 @@ function submitAnswers() {
             totalScore += 1;
         }
     });
-    
-    
 
-    
-    // 填空题每题有不同分值
+    // 填空题
+    const fillQuestions = document.querySelectorAll('.question[data-type="fill"]');
     fillQuestions.forEach(question => {
-        const scoreElement = question.querySelector('.question-score');
-        const score = parseInt(scoreElement.textContent);
-        if (checkFillAnswer(question)) {
+        const isCorrect = checkFillAnswer(question);
+        if (isCorrect) {
+            correctCount++;
+            const scoreElement = question.querySelector('.question-score');
+            const score = scoreElement ? parseInt(scoreElement.textContent) : 1;
             totalScore += score;
         }
     });
-
-
-
 
     // 显示结果
     const resultsDiv = document.getElementById('results');
     const scoreSpan = document.getElementById('score');
     const progressBar = document.getElementById('progressBar');
     const resultDetails = document.getElementById('resultDetails');
-    
+
     scoreSpan.textContent = totalScore;
-    const progressPercentage = (totalScore / 100) * 100;
+    const progressPercentage = Math.min((totalScore / 100) * 100, 100);
     progressBar.style.width = `${progressPercentage}%`;
-    
+
     resultDetails.textContent = `您答对了 ${correctCount} 题（共 ${totalQuestions} 题），总分为 ${totalScore} 分`;
-    
+
     resultsDiv.style.display = 'block';
     resultsDiv.scrollIntoView({ behavior: 'smooth' });
 }
+
 
 // 重置所有答案
 function resetForm() {
@@ -231,9 +221,9 @@ document.querySelectorAll('.blank-input').forEach(input => {
     });
 });
 
-// 为多选按钮添加事件监听
-document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-    checkbox.addEventListener('change', function() {
+// 为每道多选题绑定“确定”按钮
+document.querySelectorAll('.question[data-type="multi"] .check-multi-button').forEach(button => {
+    button.addEventListener('click', function () {
         const question = this.closest('.question');
         checkMultiAnswer(question);
     });

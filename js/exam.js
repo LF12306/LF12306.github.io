@@ -152,20 +152,33 @@ function submitAnswers() {
         }
     });
 
-    // 显示结果
-    const resultsDiv = document.getElementById('results');
-    const scoreSpan = document.getElementById('score');
-    const progressBar = document.getElementById('progressBar');
-    const resultDetails = document.getElementById('resultDetails');
+// 显示结果
+const resultsDiv = document.getElementById('results');
+const scoreSpan = document.getElementById('score');
+const progressBar = document.getElementById('progressBar');
+const resultDetails = document.getElementById('resultDetails');
 
-    scoreSpan.textContent = totalScore;
-    const progressPercentage = Math.min((totalScore / 100) * 100, 100);
-    progressBar.style.width = `${progressPercentage}%`;
+// ⬇⬇ 新增动态计算 maxScore ⬇⬇
+let maxScore = 0;
+maxScore += choiceQuestions.length * 1;
+maxScore += multiQuestions.length * 2;
+maxScore += judgeQuestions.length * 1;
+fillQuestions.forEach(question => {
+    const scoreElement = question.querySelector('.question-score');
+    const score = scoreElement ? parseInt(scoreElement.textContent) : 1;
+    maxScore += score;
+});
+// ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆
 
-    resultDetails.textContent = `您答对了 ${correctCount} 题（共 ${totalQuestions} 题），总分为 ${totalScore} 分`;
+scoreSpan.textContent = totalScore;
+const progressPercentage = Math.min((totalScore / maxScore) * 100, 100);
+progressBar.style.width = `${progressPercentage}%`;
 
-    resultsDiv.style.display = 'block';
-    resultsDiv.scrollIntoView({ behavior: 'smooth' });
+resultDetails.textContent = `您答对了 ${correctCount} 题（共 ${totalQuestions} 题），总分为 ${totalScore} 分（满分 ${maxScore} 分）`;
+
+resultsDiv.style.display = 'block';
+resultsDiv.scrollIntoView({ behavior: 'smooth' });
+
 }
 
 

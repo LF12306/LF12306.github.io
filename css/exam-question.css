@@ -290,14 +290,7 @@
             color: #555;
         }
         
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            color: #7a7a7a;
-            font-size: 0.9rem;
-            border-top: 1px solid #eee;
-        }
+
         
         @media (max-width: 768px) {
             .exam-container {

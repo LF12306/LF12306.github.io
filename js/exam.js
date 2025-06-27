@@ -242,4 +242,23 @@ document.querySelectorAll('.question[data-type="multi"] .check-multi-button').fo
     });
 });
 
+// 主观题参考答案
+function toggleSubjectiveAnswer(button) {
+    const question = button.closest('.question');
+    const textarea = question.querySelector('.subjective-answer');
+    const reference = question.querySelector('.reference-answer');
+
+    if (textarea.value.trim() === '') {
+        alert('请先完成作答后再查看参考答案');
+        return;
+    }
+
+    if (reference.style.display === 'none') {
+        reference.style.display = 'block';
+        button.textContent = '隐藏参考答案';
+    } else {
+        reference.style.display = 'none';
+        button.textContent = '查看参考答案';
+    }
+}
 

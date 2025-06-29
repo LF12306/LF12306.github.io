@@ -62,17 +62,34 @@ function checkMultiAnswer(question) {
     const selectedOptions = question.querySelectorAll('input[type="checkbox"]:checked');
     const correctAnswers = JSON.parse(question.getAttribute('data-answer'));
     const feedback = question.querySelector('.feedback');
-    
+
     if (selectedOptions.length === 0) {
         feedback.innerHTML = '';
         return false;
     }
-    
+
     const userAnswers = Array.from(selectedOptions).map(opt => opt.value);
-    const sortedUserAnswers = userAnswers.sort().join(',');
-    const sortedCorrectAnswers = [...correctAnswers].sort().join(',');
-    
-    if (sortedUserAnswers === sortedCorrectAnswers) {
+
+    // 转成Set进行集合判断
+    const userSet = new Set(userAnswers);
+    const correctSet = new Set(correctAnswers);
+
+    // 长度不同，必错
+    if (userSet.size !== correctSet.size) {
+        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswers.join('、')}`;
+        feedback.className = 'feedback incorrect';
+        return false;
+    }
+
+    // 判断集合是否相同
+    let allMatch = true;
+    correctSet.forEach(item => {
+        if (!userSet.has(item)) {
+            allMatch = false;
+        }
+    });
+
+    if (allMatch) {
         feedback.innerHTML = '✓ 回答正确！';
         feedback.className = 'feedback correct';
         return true;
@@ -82,6 +99,7 @@ function checkMultiAnswer(question) {
         return false;
     }
 }
+
 
 // 检查判断题答案
 function checkJudgeAnswer(question) {

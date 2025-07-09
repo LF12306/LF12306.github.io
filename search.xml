@@ -31,22 +31,9 @@
       </tags>
   </entry>
   <entry>
-    <title>在线AI刷题辅助复习使用教程</title>
-    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="在线AI刷题辅助复习使用教程"><a href="#在线AI刷题辅助复习使用教程" class="headerlink" title="在线AI刷题辅助复习使用教程"></a>在线AI刷题辅助复习使用教程</h1><p>本项目教程旨在帮助期末复习的大学生备考，AI生成题目为辅助手段，请不要迷信AI<br>目前支持单选题、填空题、对错题，多选题效果不太完善，建议先在提示词里把生成多选题删掉。感觉生成主观题没什么用，可以当做出题参考<br>该项目的好处是可以快速检查自己的复习有没有漏掉的地方，如果老师没给练习题的话可以当做一个辅助记忆的工具。</p>
-<h1 id="在线食用链接"><a href="#在线食用链接" class="headerlink" title="在线食用链接"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">在线食用链接</a></h1><h2 id="请按照以下步骤操作"><a href="#请按照以下步骤操作" class="headerlink" title="请按照以下步骤操作"></a>请按照以下步骤操作</h2><p><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/1.jpg"><br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/2.jpg"><br>deepseek、GPT、Gemini、grok我都试过，效果都挺不错的<br>复习资料里面最好标记了重点，这样AI可以针对性地出题<br>然后把AI生成的代码复制进<a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">题目生成框</a>里<br>就可以刷生成的题目了<br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/3.jpg"><br>刷完之后只需要让AI再随机生成一下新的题目复制进去就能继续刷新题了</p>
-<p>感觉挺难绷的，从小到大的学习方式都是<del><em><strong>实战派</strong></em></del>小镇做题家，习惯了靠题海战术进行思维锻炼和记忆知识，所以整出来了这么个玩意。</p>
-]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>在线AI刷题辅助复习</title>
     <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="或许是小镇做题家的得力助手"><a href="#或许是小镇做题家的得力助手" class="headerlink" title="或许是小镇做题家的得力助手"></a><del>或许是小镇做题家的得力助手</del></h1><h2 id="请先把提示词和划了重点的复习资料喂给AI生成代码"><a href="#请先把提示词和划了重点的复习资料喂给AI生成代码" class="headerlink" title="请先把提示词和划了重点的复习资料喂给AI生成代码"></a>请先把提示词和划了重点的复习资料喂给AI生成代码</h2><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">模仿以下格式，从复习文件中获取重点（有特殊样式的部分），随机生成知识点不重复的单选题、多选题、填空题、判断题各10道给我，我要用刷题的方式确保自己复习到位并记住了知识点。data-answer内为正确答案，请严格按照复习文件进行题目生成。并严格套用以下样式以html代码的形式输出给我，不可以生成多余的代码，必须完整地输出所有题目：</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 单选题1 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;下列哪种物质最适合使用膜分离技术处理？&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1a&quot;&gt;菌体&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1b&quot;&gt;细胞&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1c&quot;&gt;微颗粒&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1d&quot;&gt;不含固形物的料液&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;多项选择题 (每题2分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 多选题49 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;multi&quot; data-answer=&#x27;[&quot;A&quot;,&quot;D&quot;]&#x27;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;49&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;下列分离方法中不属于初步纯化的是( )&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49a&quot;&gt;发酵液(培养液)的预处理和固液分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49b&quot;&gt;吸附法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49c&quot;&gt;离子交换法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49d&quot;&gt;色层分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;button class=&quot;check-multi-button&quot;&gt;确定&lt;/button&gt; &lt;!-- ✅ 添加这一行 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;填空题 (每题2-3分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        &lt;!-- 填空题34 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;fill&quot; data-answer=&#x27;[&quot;有机&quot;,&quot;无机&quot;]&#x27;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;34.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;&lt;!-- 根据空格数设置分值 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;膜清洗的化学方法中，碱性清洗剂可有效去除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;0&quot;&gt; </span><br><span class="line"></span><br><span class="line">                污染物，酸性清洗剂用于清除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;1&quot;&gt; </span><br><span class="line"></span><br><span class="line">                沉积。</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;!-- 判断题59 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question&quot; data-type=&quot;judge&quot; data-answer=&quot;正确&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-number&quot;&gt;59&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-text&quot;&gt;超声破碎是利用在超声波作用下液体发生空化作用。产生极大的冲击波和剪切力,使细胞破碎。&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;true-false-options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59true&quot; value=&quot;正确&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59true&quot;&gt;正确&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59false&quot; value=&quot;错误&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59false&quot;&gt;错误&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;subjective-section&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;h2 class=&quot;section-title&quot;&gt;主观题 (12分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question&quot; data-type=&quot;subjective&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-number&quot;&gt;79&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-score&quot;&gt;12分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-text&quot;&gt;请设计方案将下列蛋白进行分离纯化，并说出采用方法的原理：&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;textarea class=&quot;subjective-answer&quot; placeholder=&quot;请输入您的答案...&quot;&gt;&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;button class=&quot;show-answer-btn&quot; onclick=&quot;toggleSubjectiveAnswer(this)&quot;&gt;查看参考答案&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;reference-answer&quot; style=&quot;display: none;&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;strong&gt;参考答案：&lt;/strong&gt;  </span><br><span class="line">                        该蛋白分离可采用层析技术（如离子交换层析、分子筛层析等），根据蛋白的等电点、分子量、亲水疏水性质等差异进行分步纯化。原理是利用不同蛋白在流动相和固定相中的相互作用力差异，选择性洗脱目标蛋白，从而实现分离。</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="或许是小镇做题家的得力助手"><a href="#或许是小镇做题家的得力助手" class="headerlink" title="或许是小镇做题家的得力助手"></a><del>或许是小镇做题家的得力助手</del></h1><h2 id="请先把提示词和划了重点的复习资料喂给AI生成代码"><a href="#请先把提示词和划了重点的复习资料喂给AI生成代码" class="headerlink" title="请先把提示词和划了重点的复习资料喂给AI生成代码"></a>请先把提示词和划了重点的复习资料喂给AI生成代码</h2><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">模仿以下格式，从复习文件中获取重点（有特殊样式的部分），随机生成知识点不重复的单选题、多选题、填空题、判断题各10道给我，我要用刷题的方式确保自己复习到位并记住了知识点。data-answer内为正确答案，data-explanation内为答案解析，请严格按照复习文件进行题目生成。并严格套用以下样式以html代码的形式输出给我，不可以生成多余的代码，必须完整地输出所有题目：</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 单选题1 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;D&quot; data-explanation=&quot;膜分离技术适用于分离液体中的溶质或杂质，处理不含固形物的料液效果最佳。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;下列哪种物质最适合使用膜分离技术处理？&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1a&quot;&gt;菌体&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1b&quot;&gt;细胞&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1c&quot;&gt;微颗粒&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1d&quot;&gt;不含固形物的料液&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;多项选择题 (每题2分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 多选题49 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;multi&quot; data-answer=&#x27;[&quot;A&quot;,&quot;D&quot;]&#x27; data-explanation=&quot;发酵液的预处理和色层分离通常用于原料准备或精细纯化阶段，不属于初步纯化。&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;49&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;下列分离方法中不属于初步纯化的是( )&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49a&quot;&gt;发酵液(培养液)的预处理和固液分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49b&quot;&gt;吸附法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49c&quot;&gt;离子交换法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49d&quot;&gt;色层分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;button class=&quot;check-multi-button&quot;&gt;确定&lt;/button&gt; &lt;!-- ✅ 添加这一行 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;填空题 (每题2-3分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        &lt;!-- 填空题34 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;fill&quot; data-answer=&#x27;[&quot;有机&quot;,&quot;无机&quot;]&#x27; data-explanation=&quot;碱性清洗剂能有效去除蛋白质等有机污染物，酸性清洗剂则对钙镁盐等无机沉积物更有效。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;34.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;&lt;!-- 根据空格数设置分值 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;膜清洗的化学方法中，碱性清洗剂可有效去除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;0&quot;&gt; </span><br><span class="line"></span><br><span class="line">                污染物，酸性清洗剂用于清除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;1&quot;&gt; </span><br><span class="line"></span><br><span class="line">                沉积。</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;!-- 判断题59 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question&quot; data-type=&quot;judge&quot; data-answer=&quot;正确&quot; data-explanation=&quot;空化作用是超声波在液体中形成气泡并迅速破裂，从而产生冲击力和剪切力实现细胞破碎。&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-number&quot;&gt;59&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-text&quot;&gt;超声破碎是利用在超声波作用下液体发生空化作用。产生极大的冲击波和剪切力,使细胞破碎。&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;true-false-options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59true&quot; value=&quot;正确&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59true&quot;&gt;正确&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59false&quot; value=&quot;错误&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59false&quot;&gt;错误&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;subjective-section&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;h2 class=&quot;section-title&quot;&gt;主观题 (12分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question&quot; data-type=&quot;subjective&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-number&quot;&gt;79&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-score&quot;&gt;12分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-text&quot;&gt;请设计方案将下列蛋白进行分离纯化，并说出采用方法的原理：&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;textarea class=&quot;subjective-answer&quot; placeholder=&quot;请输入您的答案...&quot;&gt;&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;button class=&quot;show-answer-btn&quot; onclick=&quot;toggleSubjectiveAnswer(this)&quot;&gt;查看参考答案&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;reference-answer&quot; style=&quot;display: none;&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;strong&gt;参考答案：&lt;/strong&gt;  </span><br><span class="line">                        该蛋白分离可采用层析技术（如离子交换层析、分子筛层析等），根据蛋白的等电点、分子量、亲水疏水性质等差异进行分步纯化。原理是利用不同蛋白在流动相和固定相中的相互作用力差异，选择性洗脱目标蛋白，从而实现分离。</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h1 id="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"><a href="#本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考" class="headerlink" title="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"></a><em><strong>本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考</strong></em></h1><h2 id="可选的附加提示词"><a href="#可选的附加提示词" class="headerlink" title="可选的附加提示词"></a>可选的附加提示词</h2><p>以上提示词默认生成单选题、多选题、填空题、判断题，只要在AI聊天框里修改提示词就改变生成的题型。如果有额外需要，可以自行调试或者参考以下提示词。<br>名词解释：<code>名词解释使用填空题样式，但section-title要改为“名词解释”，按照知识点重点尽可能地多挖几个空。</code><br>主观题：<code>生成主观题，并按照下列主观题格式生成参考答案。</code><br>遇到复习资料很长的情况下，建议指定AI生成部分章节的题目，提高复习的覆盖率。例如：<code>从复习资料获取第一到第四章的知识点，随机生成知识点不重复的单选题、多选题、填空题、判断题各10道。</code></p>
 <h2 id="再把代码复制进下面的题目生成框里"><a href="#再把代码复制进下面的题目生成框里" class="headerlink" title="再把代码复制进下面的题目生成框里"></a>再把代码复制进下面的题目生成框里</h2>
 <!DOCTYPE html>
@@ -154,6 +141,19 @@
 
 </body>
 </html>
+]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在线AI刷题辅助复习使用教程</title>
+    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="在线AI刷题辅助复习使用教程"><a href="#在线AI刷题辅助复习使用教程" class="headerlink" title="在线AI刷题辅助复习使用教程"></a>在线AI刷题辅助复习使用教程</h1><p>本项目教程旨在帮助期末复习的大学生备考，AI生成题目为辅助手段，请不要迷信AI<br>目前支持单选题、填空题、对错题，多选题效果不太完善，建议先在提示词里把生成多选题删掉。感觉生成主观题没什么用，可以当做出题参考<br>该项目的好处是可以快速检查自己的复习有没有漏掉的地方，如果老师没给练习题的话可以当做一个辅助记忆的工具。</p>
+<h1 id="在线食用链接"><a href="#在线食用链接" class="headerlink" title="在线食用链接"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">在线食用链接</a></h1><h2 id="请按照以下步骤操作"><a href="#请按照以下步骤操作" class="headerlink" title="请按照以下步骤操作"></a>请按照以下步骤操作</h2><p><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/1.jpg"><br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/2.jpg"><br>deepseek、GPT、Gemini、grok我都试过，效果都挺不错的<br>复习资料里面最好标记了重点，这样AI可以针对性地出题<br>然后把AI生成的代码复制进<a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">题目生成框</a>里<br>就可以刷生成的题目了<br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/3.jpg"><br>刷完之后只需要让AI再随机生成一下新的题目复制进去就能继续刷新题了</p>
+<p>感觉挺难绷的，从小到大的学习方式都是<del><em><strong>实战派</strong></em></del>小镇做题家，习惯了靠题海战术进行思维锻炼和记忆知识，所以整出来了这么个玩意。</p>
 ]]></content>
       <tags>
         <tag>代码相关</tag>
@@ -3793,34 +3793,6 @@
       </tags>
   </entry>
   <entry>
-    <title>生理学知识补充</title>
-    <url>/2025/06/12/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="生理学知识补充"><a href="#生理学知识补充" class="headerlink" title="生理学知识补充"></a><span style="display:block;text-align:center;color:#00BFFF;">生理学知识补充</span></h1><p>一、受体脱敏：在长期使用一种激动药后，组织或细胞对激动药的敏感性和反应性下降的现象。</p>
-<p>二、生物利用度：经任何给药途径给予一定剂量的药物后到达全身血循环内药物的百分率称生物利用度，即生物利用度&#x3D;A&#x2F;D×100%（A为体内药物总量，D为用药剂量）。</p>
-<p>三、肾小球滤过：血液流经肾小球毛细血管，除蛋白外，其余成分均能滤过进入肾小囊腔生成超滤液，是尿生成的第一步。 </p>
-<p>四、胃排空：食物由胃排入十二指肠的过程。</p>
-<p>五、肾单位：由肾小体和肾小管构成，肾小体由肾小球和肾小囊组成。</p>
-<p>六、允许作用：一种激素对其他激素的支持作用。</p>
-<p>七、血细胞比容：血细胞在血液中所占的容积百分比。</p>
-<p>八、小脑对运动的调节：前庭小脑：维持身体平衡；脊髓小脑：协调随意运动、调整肌紧张；皮层小脑：参与编辑随意运动。</p>
-<p>九，骨骼肌神经-肌接头的兴奋传递过程。运动神经末梢动作电位 - 接头前膜去极化 - 电压门控钙通道开放 - 钙内流-接头前膜囊泡出胞释放ACh -  激活接头后膜N2受体离子通道 – 钠通道开放 – 接头后膜钠内流 – 后膜去极化产生终板电位 – 电紧张扩步 – 总和达阈电位 – 激活电压门控钠通道 – 骨骼肌动作电位。</p>
-<p>接头处兴奋的传递<br>● 刺激引发神经末梢产生动作电位 (兴奋)，造成膜的去极化，电压门控Ca2+通道开放，钙离子内流。<br>● 诱导囊泡与前膜融合，ACh的量子释放到间隙中。<br>● ACh与后膜的受体结合，激活阳离子通道开放，Na+内流。<br>● 终板膜产生局部电位，并引发邻接的肌细胞去极化到达阀电位，引发肌细胞膜传导的动作电位。<br>● ACh被胆碱脂酶清除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/1.png"></p>
-<p>十、影响静脉回流的因素：循环血量；心肌收缩力；交感神经；骨骼肌挤压；呼吸运动；体位改变。</p>
-<p>十一、影响动脉血压的因素：1，搏出量：主要影响收缩压；2，心率：主要影响舒张压；3，外周阻力：主要影响舒张压；4，主动脉和大动脉的弹性贮器作用；5，循环血量与血管系统容量的匹配情况。</p>
-<p>十二、利尿药呋塞米：特异性抑制髓袢升支粗段顶质膜上II型Na+-K+-2Cl-同向转运体，减少NaCl重吸收，降低肾脏稀释和浓缩功能，排出接近于等渗的尿液。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/2.png"></p>
-<h2 id="生理性止血（凝血）"><a href="#生理性止血（凝血）" class="headerlink" title="生理性止血（凝血）"></a>生理性止血（凝血）</h2><h3 id="（一）基本过程"><a href="#（一）基本过程" class="headerlink" title="（一）基本过程"></a>（一）基本过程</h3><p>1、血管收缩：受损血管局部血管收缩，血流减少，有助于阻止出血。<br>● 损伤刺激反射性血管收缩<br>● 血管壁损伤引起血管肌源性收缩<br>● 损伤处血小板释放5-HT、TXA2缩血分子，引起血管收缩<br>2、血小板止血栓的形成<br>● 血管内皮组织暴露<br>● 血小板激活 (黏附、聚集、释放ADP与凝血酶)<br>● 血小板止血栓形成 (一期止血)<br>3、血液凝固<br>● 开启凝血系统<br>● 血液凝固 （可溶性纤维蛋白原转变为不溶性纤维蛋白，交织成网，二期止血）<br>● 纤维组织增生，永久性止血<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/3.png"></p>
-<h3 id="（二）血液凝固"><a href="#（二）血液凝固" class="headerlink" title="（二）血液凝固"></a>（二）血液凝固</h3><p>● 血液由流动液体变为不流动的凝胶状态。<br>● 可溶性纤维蛋白原变为不溶性纤维蛋白的过程。<br>● 复杂的酶促反应以及多种凝血因子参与。<br>1、凝血因子：参与凝血的物质。<br>● 共14种<br>● IV为Ca2+，其它为蛋白<br>● 多数为无活性的酶原，需酶活化(激活)<br>● 多数在肝合成<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/4.png"></p>
-<p>2、凝血过程<br>● 凝血因子按一定顺序相继激活，生成凝血酶，作用于纤维蛋白原，形成纤维蛋白<br>● 凝血酶原酶复合物的形成、凝血酶的激活、以及纤维蛋白的生成(三步骤)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/5.png"></p>
-<h2 id="抗凝血药"><a href="#抗凝血药" class="headerlink" title="抗凝血药"></a>抗凝血药</h2><p>1、肝素：氨基葡聚糖，负电荷大分子，组织损伤时释放进入脉管系统。静脉给药。抗凝血作用。抗凝血酶III。<br>2、凝血酶抑制剂：阿加曲班等。 </p>
-<h2 id="抗血小板药"><a href="#抗血小板药" class="headerlink" title="抗血小板药"></a>抗血小板药</h2><p>血小板的聚集、黏附以及释放是血栓形成的重要环节。根据调节血小板功能，抗血小板药主要包括：<br>1，影响血小板代谢酶，如环加氧酶抑制剂：阿司匹林<br>2，TXA2合成酶抑制剂：奥扎格雷<br>3，腺苷酸环化酶活化剂（PGI2）和磷酸二酯酶抑制剂（双嘧达莫）<br>4，ADP拮抗剂：氯吡格雷等。</p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>生物制药</tag>
-        <tag>生理药理学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生理学复习部分</title>
     <url>/2025/06/27/%E7%94%9F%E7%90%86%E5%AD%A6%E5%A4%8D%E4%B9%A0%E9%83%A8%E5%88%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="生理学复习"><a href="#生理学复习" class="headerlink" title="生理学复习"></a><span style="display:block;text-align:center;color:#00BFFF;">生理学复习</span></h1><h2 id="【第二章】"><a href="#【第二章】" class="headerlink" title="【第二章】"></a>【第二章】</h2><h3 id="跨细胞膜物质转运途径："><a href="#跨细胞膜物质转运途径：" class="headerlink" title="跨细胞膜物质转运途径："></a>跨细胞膜物质转运途径：</h3><p>1.单纯扩散<br>2.易化扩散：经通道扩散、经载体扩散<br>3.主动转运：原发性、继发性<br>4.膜泡运输：出胞、入胞</p>
@@ -4071,6 +4043,34 @@
 <p>盐皮质激素-醛固酮生物作用：保钠保水排钾</p>
 <h3 id="醛固酮的分泌调节："><a href="#醛固酮的分泌调节：" class="headerlink" title="醛固酮的分泌调节："></a>醛固酮的分泌调节：</h3><p>（1）肾素-血管紧张素促分泌；<br>（2）高血钾、低血钠促分泌；<br>（3）促肾上腺皮质素促分泌</p>
 <h3 id="肾上腺髓质激素：儿茶酚胺类-–-Adr、NA、DA"><a href="#肾上腺髓质激素：儿茶酚胺类-–-Adr、NA、DA" class="headerlink" title="肾上腺髓质激素：儿茶酚胺类 – Adr、NA、DA"></a>肾上腺髓质激素：儿茶酚胺类 – Adr、NA、DA</h3><p>（一）生物作用：<br>1.调节物质代谢：升血糖、促脂解；<br>2.参与应急反应：正性心肌、呼吸调节<br>（二）分泌调节：<br>1.交感神经：交感节前纤维释放ACh作用N1受体，促释放；<br>2.促肾上腺皮质素和糖皮素：促合成；<br>3.自身调节：负反馈抑制</p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>生物制药</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生理学知识补充</title>
+    <url>/2025/06/12/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="生理学知识补充"><a href="#生理学知识补充" class="headerlink" title="生理学知识补充"></a><span style="display:block;text-align:center;color:#00BFFF;">生理学知识补充</span></h1><p>一、受体脱敏：在长期使用一种激动药后，组织或细胞对激动药的敏感性和反应性下降的现象。</p>
+<p>二、生物利用度：经任何给药途径给予一定剂量的药物后到达全身血循环内药物的百分率称生物利用度，即生物利用度&#x3D;A&#x2F;D×100%（A为体内药物总量，D为用药剂量）。</p>
+<p>三、肾小球滤过：血液流经肾小球毛细血管，除蛋白外，其余成分均能滤过进入肾小囊腔生成超滤液，是尿生成的第一步。 </p>
+<p>四、胃排空：食物由胃排入十二指肠的过程。</p>
+<p>五、肾单位：由肾小体和肾小管构成，肾小体由肾小球和肾小囊组成。</p>
+<p>六、允许作用：一种激素对其他激素的支持作用。</p>
+<p>七、血细胞比容：血细胞在血液中所占的容积百分比。</p>
+<p>八、小脑对运动的调节：前庭小脑：维持身体平衡；脊髓小脑：协调随意运动、调整肌紧张；皮层小脑：参与编辑随意运动。</p>
+<p>九，骨骼肌神经-肌接头的兴奋传递过程。运动神经末梢动作电位 - 接头前膜去极化 - 电压门控钙通道开放 - 钙内流-接头前膜囊泡出胞释放ACh -  激活接头后膜N2受体离子通道 – 钠通道开放 – 接头后膜钠内流 – 后膜去极化产生终板电位 – 电紧张扩步 – 总和达阈电位 – 激活电压门控钠通道 – 骨骼肌动作电位。</p>
+<p>接头处兴奋的传递<br>● 刺激引发神经末梢产生动作电位 (兴奋)，造成膜的去极化，电压门控Ca2+通道开放，钙离子内流。<br>● 诱导囊泡与前膜融合，ACh的量子释放到间隙中。<br>● ACh与后膜的受体结合，激活阳离子通道开放，Na+内流。<br>● 终板膜产生局部电位，并引发邻接的肌细胞去极化到达阀电位，引发肌细胞膜传导的动作电位。<br>● ACh被胆碱脂酶清除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/1.png"></p>
+<p>十、影响静脉回流的因素：循环血量；心肌收缩力；交感神经；骨骼肌挤压；呼吸运动；体位改变。</p>
+<p>十一、影响动脉血压的因素：1，搏出量：主要影响收缩压；2，心率：主要影响舒张压；3，外周阻力：主要影响舒张压；4，主动脉和大动脉的弹性贮器作用；5，循环血量与血管系统容量的匹配情况。</p>
+<p>十二、利尿药呋塞米：特异性抑制髓袢升支粗段顶质膜上II型Na+-K+-2Cl-同向转运体，减少NaCl重吸收，降低肾脏稀释和浓缩功能，排出接近于等渗的尿液。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/2.png"></p>
+<h2 id="生理性止血（凝血）"><a href="#生理性止血（凝血）" class="headerlink" title="生理性止血（凝血）"></a>生理性止血（凝血）</h2><h3 id="（一）基本过程"><a href="#（一）基本过程" class="headerlink" title="（一）基本过程"></a>（一）基本过程</h3><p>1、血管收缩：受损血管局部血管收缩，血流减少，有助于阻止出血。<br>● 损伤刺激反射性血管收缩<br>● 血管壁损伤引起血管肌源性收缩<br>● 损伤处血小板释放5-HT、TXA2缩血分子，引起血管收缩<br>2、血小板止血栓的形成<br>● 血管内皮组织暴露<br>● 血小板激活 (黏附、聚集、释放ADP与凝血酶)<br>● 血小板止血栓形成 (一期止血)<br>3、血液凝固<br>● 开启凝血系统<br>● 血液凝固 （可溶性纤维蛋白原转变为不溶性纤维蛋白，交织成网，二期止血）<br>● 纤维组织增生，永久性止血<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/3.png"></p>
+<h3 id="（二）血液凝固"><a href="#（二）血液凝固" class="headerlink" title="（二）血液凝固"></a>（二）血液凝固</h3><p>● 血液由流动液体变为不流动的凝胶状态。<br>● 可溶性纤维蛋白原变为不溶性纤维蛋白的过程。<br>● 复杂的酶促反应以及多种凝血因子参与。<br>1、凝血因子：参与凝血的物质。<br>● 共14种<br>● IV为Ca2+，其它为蛋白<br>● 多数为无活性的酶原，需酶活化(激活)<br>● 多数在肝合成<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/4.png"></p>
+<p>2、凝血过程<br>● 凝血因子按一定顺序相继激活，生成凝血酶，作用于纤维蛋白原，形成纤维蛋白<br>● 凝血酶原酶复合物的形成、凝血酶的激活、以及纤维蛋白的生成(三步骤)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%94%9F%E7%90%86%E5%AD%A6%E7%9F%A5%E8%AF%86%E8%A1%A5%E5%85%85/5.png"></p>
+<h2 id="抗凝血药"><a href="#抗凝血药" class="headerlink" title="抗凝血药"></a>抗凝血药</h2><p>1、肝素：氨基葡聚糖，负电荷大分子，组织损伤时释放进入脉管系统。静脉给药。抗凝血作用。抗凝血酶III。<br>2、凝血酶抑制剂：阿加曲班等。 </p>
+<h2 id="抗血小板药"><a href="#抗血小板药" class="headerlink" title="抗血小板药"></a>抗血小板药</h2><p>血小板的聚集、黏附以及释放是血栓形成的重要环节。根据调节血小板功能，抗血小板药主要包括：<br>1，影响血小板代谢酶，如环加氧酶抑制剂：阿司匹林<br>2，TXA2合成酶抑制剂：奥扎格雷<br>3，腺苷酸环化酶活化剂（PGI2）和磷酸二酯酶抑制剂（双嘧达莫）<br>4，ADP拮抗剂：氯吡格雷等。</p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -4944,6 +4944,74 @@ GABA<sub>A</sub> 受体
       </tags>
   </entry>
   <entry>
+    <title>生理药理学第二章</title>
+    <url>/2025/03/30/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E4%BA%8C%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第二章-药物代谢动力学"><a href="#第二章-药物代谢动力学" class="headerlink" title="第二章 药物代谢动力学"></a><span style="display:block;text-align:center;color:#00BFFF;">第二章 药物代谢动力学</span></h1><p><font size="4"><span style="color:red">研究药物在体内变化规律。</span></font><br>1、药物在体内的<strong>吸收 (Absorption)、分布 (Distribution)、代谢 (Metabolism)、排泄 (Excretion)，</strong>ADME过程随时间变化的规律。<br>2、定量描述血药浓度随时间的变化以及机体对药物处置速率。</p>
+<h2 id="第一节-药物的体内过程"><a href="#第一节-药物的体内过程" class="headerlink" title="第一节 药物的体内过程"></a>第一节 药物的体内过程</h2><h3 id="一、药物的跨膜转运"><a href="#一、药物的跨膜转运" class="headerlink" title="一、药物的跨膜转运"></a>一、药物的跨膜转运</h3><p>跨膜转运方式<br>A、<strong>被动转运(passive transport)<strong>：不需要能量，按浓度梯度方向(高到低)运输。<br>●</strong>简单扩散</strong>：可通透的脂溶性分子，药物分子溶于脂质膜而被动扩散，最常见的药物转运方式。<br>影响因素: (1) 膜内外浓度差；(2) 药物溶脂性：(3) 药物的解离度；(4) 环境的pH。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/1.png"><br>●<strong>易化扩散</strong>：按浓度梯度，转运不通透的非脂溶性分子，但需要膜转运蛋白介导。存在饱和与竞争性抑制现象。<br>B、<strong>主动转运(active transport)<strong>：需要能量 (通常来自 ATP 水解) 以对抗浓度梯度。<br>● <strong>一级主动</strong>：转运蛋白含ATP 水解酶以产生能量，协助药物分子跨膜转运。原发性主动转运。<br>● <strong>二级主动</strong>：不直接偶合ATPase，而是利用其它一级主动转运蛋白产生的离子梯度。继发性主动转运。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.png"><br><font size="4"><span style="color:red">单转运、共转运、同向转运、反向转运(Uniport, Cotransport, Symport, and Antiport)</span></font><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/3.png"><br>C、</strong>膜动转运(cytosis)</strong>: 多个蛋白分子参与，需要能量。<br><strong>● 入胞(胞吞)：</strong>蛋白质等大分子物质。<br><strong>● 出胞(胞吐)：</strong>液态分子外排。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/4.png"></p>
+<p>D、<strong>药物转运体</strong><br>● ATP水解酶结合转运体 (一级主动)<br>● 溶质载体 (二级主动)<br>● 摄取转运体与外排转运体<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/5.png"></p>
+<h3 id="二、药物的吸收"><a href="#二、药物的吸收" class="headerlink" title="二、药物的吸收"></a>二、药物的吸收</h3><p><span style="color:red">药物由给药部位进入血液循环的过程。</span><br>吸收受药物的理化性质、剂型、血流量、给药途径的影响。</p>
+<h4 id="1、药物的理化性质"><a href="#1、药物的理化性质" class="headerlink" title="1、药物的理化性质"></a><font size="4">1、药物的理化性质</font></h4><p>● 溶脂性：脂溶性药物易被扩散吸收。经主动转运体转运，也易被吸收。<br>● 解离度：易解离的弱酸或弱碱性药物，解离后不易吸收。<br>● 分子量：分子量大，无论脂溶或水溶，不易吸收。</p>
+<h4 id="2、给药途径"><a href="#2、给药途径" class="headerlink" title="2、给药途径"></a><font size="4">2、给药途径</font></h4><p>● 静脉注射直接到血液。<br>● 气雾吸入&gt;腹腔注射&gt;舌下给药&gt;肌肉注射&gt;皮下注射&gt;口服&gt;直肠给药&gt;皮肤给药</p>
+<h5 id="1-消化道内吸收-口服给药的吸收部位"><a href="#1-消化道内吸收-口服给药的吸收部位" class="headerlink" title="(1) 消化道内吸收 (口服给药的吸收部位)"></a><font size="4">(1) <strong>消化道内吸收</strong> (口服给药的吸收部位)</font></h5><p>●  药物的理化性质<br>●  机体方面：肠胃的 pH; 胃排空与肠蠕动；肠胃内容物；药物转运体；首关效应。<br>●  <span style="color:red">首关效应：药物口服后被肠壁或肝脏的酶代谢，进入人体循环系统有效药量减少。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/6.png"></p>
+<h5 id="2-舌下给药"><a href="#2-舌下给药" class="headerlink" title="(2) 舌下给药"></a><font size="4">(2) 舌下给药</font></h5><p>● 血流丰富，吸收快。<br>● 面积小，吸收量有限。</p>
+<h5 id="3-直肠给药"><a href="#3-直肠给药" class="headerlink" title="(3) 直肠给药"></a><font size="4">(3) 直肠给药</font></h5><p>● 防止对上呼吸道的刺激。<br>● 避开肝脏的首关效应。</p>
+<h3 id="三、药物的分布"><a href="#三、药物的分布" class="headerlink" title="三、药物的分布"></a>三、药物的分布</h3><p><span style="color:red">药物吸收后随血液到达各组织器官的过程。</span>药效取决于药物进入靶器官的速度与浓度。</p>
+<h4 id="1、药物与血浆蛋白结合"><a href="#1、药物与血浆蛋白结合" class="headerlink" title="1、药物与血浆蛋白结合"></a><font size="4">1、药物与血浆蛋白结合</font></h4><p>● 结合的饱和性：加大药物用量，血液蛋白结合饱和后，增加游离型药物，药效增强，但也可产生中毒。<br>● 药物间竞争性抑制：联合用药时，药物间发生与血液蛋白结合的竞争抑制现象，使药效增强，但也可产生中毒。<br><em>药物与血浆蛋白结合率 &#x3D; [结合型药物浓度]∕[总药物浓度]</em></p>
+<h4 id="2、细胞膜屏障"><a href="#2、细胞膜屏障" class="headerlink" title="2、细胞膜屏障"></a><font size="4">2、细胞膜屏障</font></h4><h5 id="（1）血脑屏障-blood-brain-barrier-BBB"><a href="#（1）血脑屏障-blood-brain-barrier-BBB" class="headerlink" title="（1）血脑屏障 (blood-brain barrier, BBB)"></a><font size="4">（1）血脑屏障 (blood-brain barrier, BBB)</font></h5><p>● 毛细血管壁的内皮细胞、脑的星形胶质细胞末端和嵌入毛细血管基底膜中的周细胞形成。<br>● 高选择性的内皮细胞半透性边界屏障，可防止血液中的物质非选择性地进入神经元。<br>● 允许一些小分子通过被动扩散通过，以及选择性地主动运输对神经功能至关重要的各种营养物质、离子、有机阴离子和大分子(如葡萄糖和氨基酸)。<br>● 毛细血管壁的内皮细胞表达外排性转运体(P-gp), 使一些高亲脂性药物不能进入血脑屏障。</p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第二章/7.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第二章/8.png" ></td>
+  </tr>
+</table>
+
+<h5 id="2-胎盘屏障"><a href="#2-胎盘屏障" class="headerlink" title="(2)胎盘屏障"></a><font size="4">(2)胎盘屏障</font></h5><p>● 由母体和胎儿双方组织构成、胎盘绒毛组织与子宫血窦间的屏障。绒毛膜、绒毛间隙和基蜕膜构成。<br>● 绒毛膜内含有脐血管分支，存在很多大小不同的绒毛，并分散在母血之中，吸收氧和营养成分，排泄代谢产物。<br>● 胎盘屏障阻止水溶性或解离性药物通过，但可通过脂溶性高的药物，可能导致毒性以及畸胎。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/9.png"></p>
+<h5 id="3-血眼屏障"><a href="#3-血眼屏障" class="headerlink" title="(3)血眼屏障"></a><font size="4">(3)血眼屏障</font></h5><h5 id="4-血-关节囊液屏障"><a href="#4-血-关节囊液屏障" class="headerlink" title="(4)血-关节囊液屏障"></a><font size="4">(4)血-关节囊液屏障</font></h5><h4 id="3、体液pH"><a href="#3、体液pH" class="headerlink" title="3、体液pH"></a><font size="4">3、体液pH</font></h4><p>生理条件下，细胞外液pH为7.4。体液的pH影响药物的离解度，因而对药物的分布也会产生影响。</p>
+<h4 id="4、器官的血流量"><a href="#4、器官的血流量" class="headerlink" title="4、器官的血流量"></a><font size="4">4、器官的血流量</font></h4><p>肝、肾、脑、肺等高血流量的器官，药物分布快且浓度高。皮肤与肌肉等低血流量器官，药物分布慢。</p>
+<h4 id="5、药物与组织的亲和力"><a href="#5、药物与组织的亲和力" class="headerlink" title="5、药物与组织的亲和力"></a><font size="4">5、药物与组织的亲和力</font></h4><p>如甲状腺对碘有高亲和力，碘的浓度在该组织浓度远超其它组织。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/10.png"></p>
+<h4 id="6、药物转运体"><a href="#6、药物转运体" class="headerlink" title="6、药物转运体"></a><font size="4">6、药物转运体</font></h4><h3 id="四、药物的代谢"><a href="#四、药物的代谢" class="headerlink" title="四、药物的代谢"></a>四、药物的代谢</h3><p><span style="color:red">药物在体内发生化学结构改变的过程。代谢主要器官为肝脏。</span>其次为小肠、肾、肺以及脑。</p>
+<h4 id="1、代谢方式"><a href="#1、代谢方式" class="headerlink" title="1、代谢方式"></a><font size="4">1、代谢方式</font></h4><h5 id="1-I相反应"><a href="#1-I相反应" class="headerlink" title="(1)I相反应"></a><font size="4">(1)I相反应</font></h5><p>● 氧化、还原、水解反应。主要由肝微粒体混合功能氧化酶以及非微粒体酶催化。<br>● 混合功能氧化酶不是一种酶，而是一组酶，包括细胞色素P-450，NADPH细胞色素P-450还原酶、细胞色素B-5NADH-细胞色素B-5还原酶、芳烃经化酶、环氧化物水化酶等。<br>● 向药物引入极性基团， 如-OH、-COOH、-NH2、-SH等。</p>
+<h5 id="2-II相反应"><a href="#2-II相反应" class="headerlink" title="(2)II相反应"></a><font size="4">(2)II相反应</font></h5><p>● 药物的极性基团与体内水溶性较大的内源性物质结合反应，如葡萄糖酸、醋酸、硫酸、氨基酸等。<br>● 由非颗粒体专一性酶催化。<br><em><strong>多数药物接受两相反应，生成易溶于水且极性高的代谢物，以迅速排出体外。</strong></em></p>
+<h4 id="2、代谢酶"><a href="#2、代谢酶" class="headerlink" title="2、代谢酶"></a><font size="4">2、代谢酶</font></h4><h5 id="1-特异性酶"><a href="#1-特异性酶" class="headerlink" title="(1)特异性酶"></a><font size="4">(1)特异性酶</font></h5><p>● 具有特异性。<br>● 催化特定的药物或化合物，如胆碱酯酶、单胺氧化酶等。</p>
+<h5 id="2-非特异性酶"><a href="#2-非特异性酶" class="headerlink" title="(2)非特异性酶"></a><font size="4">(2)非特异性酶</font></h5><p>● 细胞色素P450 (cytochrome P450, CYP): 主要存在肝细胞内质网，能催化数百种药物分子的代谢，称为“肝药酶”。<br>● 基因大家族，从人体中已分离出的70余种。<br>● 特性：选择性低；易受多种因素的影响，如遗传、年龄、性别、营养状态等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/11.png"></p>
+<h4 id="3、影响代谢的因素"><a href="#3、影响代谢的因素" class="headerlink" title="3、影响代谢的因素"></a><font size="4">3、影响代谢的因素</font></h4><h5 id="1-遗传因素"><a href="#1-遗传因素" class="headerlink" title="(1)遗传因素"></a><font size="4">(1)遗传因素</font></h5><p>● 突变体的存在。</p>
+<h5 id="2-环境因素"><a href="#2-环境因素" class="headerlink" title="(2)环境因素"></a><font size="4">(2)环境因素</font></h5><p>● 化学分子对CYP酶活性的提高与抑制。</p>
+<h5 id="3-生理因素与营养状态"><a href="#3-生理因素与营养状态" class="headerlink" title="(3)生理因素与营养状态"></a><font size="4">(3)生理因素与营养状态</font></h5><p>● 年龄。新生儿肝药酶活性低，用药要减量。<br>● 性别。女性的CYP2C19及CYP3A4活性高于男性。<br>● 节律。夜间酶活性高，昼间较低。<br>● 食物。</p>
+<h3 id="五、药物的排泄"><a href="#五、药物的排泄" class="headerlink" title="五、药物的排泄"></a>五、药物的排泄</h3><p><span style="color:red">药物以及其代谢物被排出体外的过程。肾脏是主要的排泄器官，由肾脏随尿排出。</span><br>气体与挥发性药物由肺排出，而有些药物从胆汁、乳腺、汗腺、唾液、头发以及皮肤排出。</p>
+<h4 id="1、肾排泄方式"><a href="#1、肾排泄方式" class="headerlink" title="1、肾排泄方式"></a><font size="4">1、肾排泄方式</font></h4><h5 id="1-肾小球滤过"><a href="#1-肾小球滤过" class="headerlink" title="(1)肾小球滤过"></a><font size="4">(1)肾小球滤过</font></h5><p>● 筛状滤过膜，可滤过游离型药物或代谢物。<br>● 血液结合型药物分子量超50000，不能滤过。<br>● 新生儿与老人肾小球滤过率降低。</p>
+<h5 id="2-肾小管重吸收"><a href="#2-肾小管重吸收" class="headerlink" title="(2)肾小管重吸收"></a><font size="4">(2)肾小管重吸收</font></h5><p>● 主动重吸收身体必需品，如葡萄糖、氨基酸、维生素以及电解质等。<br>● 被动重吸收为被动扩散。</p>
+<h5 id="3-肾小管分泌"><a href="#3-肾小管分泌" class="headerlink" title="(3)肾小管分泌"></a><font size="4">(3)肾小管分泌</font></h5><p>● 主动转运有机酸和有机碱系统。<br>● 新生儿与老人的肾小管分泌功能较低。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/12.png"><br><em>药物肾排泄&#x3D;滤过-重吸收+分泌；或药物肾排泄率&#x3D;(1-FR) (过滤率+分泌率)</em><br><em>FR为重吸收比例分数。</em></p>
+<h4 id="2、胆汁排泄"><a href="#2、胆汁排泄" class="headerlink" title="2、胆汁排泄"></a><font size="4">2、胆汁排泄</font></h4><h5 id="1-极性强水溶性代谢物可自胆汁排出。"><a href="#1-极性强水溶性代谢物可自胆汁排出。" class="headerlink" title="(1)极性强水溶性代谢物可自胆汁排出。"></a><font size="4">(1)极性强水溶性代谢物可自胆汁排出。</font></h5><p>主动转运过程需要能量。分子量大于500、小于5000的极性代谢物。由胆汁排入小肠、从粪便排出。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/13.png"></p>
+<h5 id="2-肝肠循环"><a href="#2-肝肠循环" class="headerlink" title="(2)肝肠循环"></a><font size="4">(2)肝肠循环</font></h5><p>● 肠黏膜上皮细胞重吸收，经门静脉、肝脏重新进入体循环。<br>● 肝肠循环延迟药物的排泄。<br>● 肝肠循环的药物血液浓度与时间的关系呈双峰。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/14.png"></p>
+<h4 id="3、其它排泄途径"><a href="#3、其它排泄途径" class="headerlink" title="3、其它排泄途径"></a><font size="4">3、其它排泄途径</font></h4><p>● 肠道排泄<br>● 乳汁排泄<br>● 汗液、唾液、泪液、皮肤、肺等。</p>
+<h2 id="第二节-药物代谢动力学的数学模型"><a href="#第二节-药物代谢动力学的数学模型" class="headerlink" title="第二节 药物代谢动力学的数学模型"></a>第二节 药物代谢动力学的数学模型</h2><h3 id="一、数学模型"><a href="#一、数学模型" class="headerlink" title="一、数学模型"></a>一、数学模型</h3><h4 id="1、房室模型"><a href="#1、房室模型" class="headerlink" title="1、房室模型"></a><font size="4">1、房室模型</font></h4><p>机体由若干个房室组成。<br>● 开放性一室模型：给药后药物立即均匀地分布整个身体。药时曲线呈直线。<br>● 开放性二室模型: 中央室与周边室，药物仅从中央室消除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/15.png"></p>
+<h4 id="2、非房室模型"><a href="#2、非房室模型" class="headerlink" title="2、非房室模型"></a><font size="4">2、非房室模型</font></h4><p>数学的概率论与统计学为理论根据，统计每个药物分子在体内滞留时间。药时曲线为随机变量的总和，概率的统计曲线。</p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第二章/16.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第二章/17.png" ></td>    <td height="50%"><img src="/../img/生理药理学/第二章/18.png" ></td>
+  </tr>
+</table>
+
+<h4 id="3、药物消除速率过程"><a href="#3、药物消除速率过程" class="headerlink" title="3、药物消除速率过程"></a><font size="4">3、药物消除速率过程</font></h4><h5 id="1-一级动力学过程"><a href="#1-一级动力学过程" class="headerlink" title="(1)一级动力学过程"></a><font size="4">(1)一级动力学过程</font></h5><p>● 药物消除速率与药量的一次方成正比。<br>● 血药浓度-时间曲线为指数曲线，lnC对T作图为直线。<br>● t1&#x2F;2恒定，与剂量无关。<br>● 血药浓度-时间曲线下面积(area under curve, AUC) 与剂量成正比。<br>● 药物消除取决于t1&#x2F;2，约经5个t1&#x2F;2，药物完全消除。</p>
+<h5 id="2-零级动力学过程"><a href="#2-零级动力学过程" class="headerlink" title="(2)零级动力学过程"></a><font size="4">(2)零级动力学过程</font></h5><p>● 药物消除速率与药量的零次方成正比。<br>● 单位时间消除的药量相等，与药物浓度无关。<br>● 半衰期是一个不恒定的数值。<br>● AUC与剂量不成正比。<br>● 当药物浓度降至最大消除能力以下时，则转为一级动力学消除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/19.png"></p>
+<h5 id="3-米-曼速率过程"><a href="#3-米-曼速率过程" class="headerlink" title="(3)米-曼速率过程"></a><font size="4">(3)米-曼速率过程</font></h5><p>● 一级与零级动力学相互移行的过程。<br>● 高药浓度时为零级，而低药浓度时为一级。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/20.png"></p>
+<h3 id="二、药动学参数"><a href="#二、药动学参数" class="headerlink" title="二、药动学参数"></a>二、药动学参数</h3><h4 id="1、半衰期-half-life-t1-2"><a href="#1、半衰期-half-life-t1-2" class="headerlink" title="1、半衰期 (half-life, t1&#x2F;2)"></a><font size="4">1、半衰期 (half-life, t1&#x2F;2)</font></h4><p>血液中药物浓度降低一般所需时间。<br>● 一级动力学，t1&#x2F;2后药物为50%，2个t1&#x2F;2后药物为25%，5个t1&#x2F;2后药物尚有3%。<br>● 零级动力学，药物t1&#x2F;2与药物起始浓度成正比。药量大，t1&#x2F;2长。<br>● 生理意义：给药间隔；消除时间；血药浓度。</p>
+<h4 id="2、表观分布容积-Vd"><a href="#2、表观分布容积-Vd" class="headerlink" title="2、表观分布容积 (Vd)"></a><font size="4">2、表观分布容积 (Vd)</font></h4><p>体液总体积，不代表实际的生理空间。<br>● 给药剂量。<br>●  药物分布与摄取程度。</p>
+<h4 id="3、AUC-血液浓度-时间曲线下面积"><a href="#3、AUC-血液浓度-时间曲线下面积" class="headerlink" title="3、AUC, 血液浓度-时间曲线下面积"></a><font size="4">3、AUC, 血液浓度-时间曲线下面积</font></h4><p>摄取药物相对量。</p>
+<h4 id="4、生物利用度-bioavailability-F"><a href="#4、生物利用度-bioavailability-F" class="headerlink" title="4、生物利用度(bioavailability, F)"></a><font size="4">4、生物利用度(bioavailability, F)</font></h4><p>药物进入血液的程度和速度。<br>● 静脉注射设为100%，其它途径给药的AUC与静脉注射的AUC比较计算。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/21.png"></p>
+<h4 id="5、总体清除率-Cltot"><a href="#5、总体清除率-Cltot" class="headerlink" title="5、总体清除率(Cltot)"></a><font size="4">5、总体清除率(Cltot)</font></h4><p>单位时间内清除含有药物的血浆体积。<br>● 血浆清除率。<br>● 肝、肾、其它途径清除率的总和。</p>
+<h4 id="6、稳态血药浓度"><a href="#6、稳态血药浓度" class="headerlink" title="6、稳态血药浓度"></a><font size="4">6、稳态血药浓度</font></h4><p>多次给药达到稳态时，血药最大浓度。<br>● 稳态时药-时曲线浓度的峰值为稳态血药浓度(Css, max)。<br>● 稳态时浓度谷值为最小血药浓度(Css, min)。<br>● 稳态时血药浓度的平均称为稳态平均血药浓度。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/22.png"></p>
+<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a><span style="display:block;text-align:center;color:#00BFFF;">本章小结</span></h1><h2 id="1、药物的体内过程"><a href="#1、药物的体内过程" class="headerlink" title="1、药物的体内过程"></a>1、药物的体内过程</h2><p>（1）转运 (扩散、主动或被动转运)<br><span style="color:red">（2）吸收 (口服给药、首关效应)<br>（3）分布 (细胞膜屏障)<br>（4）代谢 (I 和II相反应，肝药酶)<br>（5）排泄 (肾排泄、胆汁排泄)<br></span></p>
+<h2 id="2、药物的速率过程"><a href="#2、药物的速率过程" class="headerlink" title="2、药物的速率过程"></a>2、药物的速率过程</h2><p>（1）<a href="#(1)%E4%B8%80%E7%BA%A7%E5%8A%A8%E5%8A%9B%E5%AD%A6%E8%BF%87%E7%A8%8B">一级动力学</a>、<a href="#(2)%E9%9B%B6%E7%BA%A7%E5%8A%A8%E5%8A%9B%E5%AD%A6%E8%BF%87%E7%A8%8B">零级动力学</a><br>（2）<a href="#%E4%BA%8C%E3%80%81%E8%8D%AF%E5%8A%A8%E5%AD%A6%E5%8F%82%E6%95%B0">药动学参数</a></p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>生物制药</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生理药理学第五章</title>
     <url>/2025/04/02/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E4%BA%94%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第五章-胆碱能系统药物"><a href="#第五章-胆碱能系统药物" class="headerlink" title="第五章 胆碱能系统药物"></a><span style="display:block;text-align:center;color:#00BFFF;">第五章 胆碱能系统药物</span></h1><h2 id="第一节-M型胆碱受体激动药和阻断药"><a href="#第一节-M型胆碱受体激动药和阻断药" class="headerlink" title="第一节 M型胆碱受体激动药和阻断药"></a>第一节 M型胆碱受体激动药和阻断药</h2><h3 id="一、复习几个概念"><a href="#一、复习几个概念" class="headerlink" title="一、复习几个概念"></a>一、复习几个概念</h3><p>1、激动药 (agonist), 拟XX药。<br>2、拮抗药 (antagonist), 阻断药或抗XX药。</p>
@@ -5186,74 +5254,6 @@ GABA<sub>A</sub> 受体
 <h4 id="（二）非除极化型肌松药"><a href="#（二）非除极化型肌松药" class="headerlink" title="（二）非除极化型肌松药"></a><font size="4">（二）非除极化型肌松药</font></h4><p>● 与ACh竞争性地结合NM受体，又称竞争型肌松药。<br>● 本身无内在活性激活受体，不产生除极化。<br>● 无肌肉震颤现象。<br>● 阻断ACh与受体结合并产生除极化作用，使骨骼松弛。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%94%E7%AB%A0/32.png"></p>
 <h5 id="font-size-”4”-1、阿曲库铵"><a href="#font-size-”4”-1、阿曲库铵" class="headerlink" title="font size&#x3D;”4”&gt;1、阿曲库铵"></a>font size&#x3D;”4”&gt;1、阿曲库铵</font></h5><p>● 非除极化型肌松药。<br>● 起效快，持续时间短。<br>● 临床用于手术时需肌肉松弛或控制呼机情况。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%94%E7%AB%A0/33.png"></p>
 <h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a><span style="display:block;text-align:center;color:#00BFFF;">本章小结</span></h1><p>1、M受体药物（<span style="color:#D81C2F"><a href="#1%E3%80%81%E6%89%98%E5%93%81%E7%B1%BB%E7%94%9F%E7%89%A9%E7%A2%B1">阿托品</a></span>）<br>2、抗乙酰胆碱酯酶药（<span style="color:#D81C2F"><a href="#%EF%BC%882%EF%BC%89%E4%B8%B4%E5%BA%8A%E5%BA%94%E7%94%A8">新斯的明</a></span>）<br>3、<a href="#2%E3%80%81%E9%9A%BE%E9%80%86%E6%80%A7%E6%8A%97AChE%E8%8D%AF">有机磷酸酯类药物中毒以及解毒机制</a></p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>生物制药</tag>
-        <tag>生理药理学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>生理药理学第二章</title>
-    <url>/2025/03/30/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E4%BA%8C%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第二章-药物代谢动力学"><a href="#第二章-药物代谢动力学" class="headerlink" title="第二章 药物代谢动力学"></a><span style="display:block;text-align:center;color:#00BFFF;">第二章 药物代谢动力学</span></h1><p><font size="4"><span style="color:red">研究药物在体内变化规律。</span></font><br>1、药物在体内的<strong>吸收 (Absorption)、分布 (Distribution)、代谢 (Metabolism)、排泄 (Excretion)，</strong>ADME过程随时间变化的规律。<br>2、定量描述血药浓度随时间的变化以及机体对药物处置速率。</p>
-<h2 id="第一节-药物的体内过程"><a href="#第一节-药物的体内过程" class="headerlink" title="第一节 药物的体内过程"></a>第一节 药物的体内过程</h2><h3 id="一、药物的跨膜转运"><a href="#一、药物的跨膜转运" class="headerlink" title="一、药物的跨膜转运"></a>一、药物的跨膜转运</h3><p>跨膜转运方式<br>A、<strong>被动转运(passive transport)<strong>：不需要能量，按浓度梯度方向(高到低)运输。<br>●</strong>简单扩散</strong>：可通透的脂溶性分子，药物分子溶于脂质膜而被动扩散，最常见的药物转运方式。<br>影响因素: (1) 膜内外浓度差；(2) 药物溶脂性：(3) 药物的解离度；(4) 环境的pH。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/1.png"><br>●<strong>易化扩散</strong>：按浓度梯度，转运不通透的非脂溶性分子，但需要膜转运蛋白介导。存在饱和与竞争性抑制现象。<br>B、<strong>主动转运(active transport)<strong>：需要能量 (通常来自 ATP 水解) 以对抗浓度梯度。<br>● <strong>一级主动</strong>：转运蛋白含ATP 水解酶以产生能量，协助药物分子跨膜转运。原发性主动转运。<br>● <strong>二级主动</strong>：不直接偶合ATPase，而是利用其它一级主动转运蛋白产生的离子梯度。继发性主动转运。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.png"><br><font size="4"><span style="color:red">单转运、共转运、同向转运、反向转运(Uniport, Cotransport, Symport, and Antiport)</span></font><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/3.png"><br>C、</strong>膜动转运(cytosis)</strong>: 多个蛋白分子参与，需要能量。<br><strong>● 入胞(胞吞)：</strong>蛋白质等大分子物质。<br><strong>● 出胞(胞吐)：</strong>液态分子外排。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/4.png"></p>
-<p>D、<strong>药物转运体</strong><br>● ATP水解酶结合转运体 (一级主动)<br>● 溶质载体 (二级主动)<br>● 摄取转运体与外排转运体<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/5.png"></p>
-<h3 id="二、药物的吸收"><a href="#二、药物的吸收" class="headerlink" title="二、药物的吸收"></a>二、药物的吸收</h3><p><span style="color:red">药物由给药部位进入血液循环的过程。</span><br>吸收受药物的理化性质、剂型、血流量、给药途径的影响。</p>
-<h4 id="1、药物的理化性质"><a href="#1、药物的理化性质" class="headerlink" title="1、药物的理化性质"></a><font size="4">1、药物的理化性质</font></h4><p>● 溶脂性：脂溶性药物易被扩散吸收。经主动转运体转运，也易被吸收。<br>● 解离度：易解离的弱酸或弱碱性药物，解离后不易吸收。<br>● 分子量：分子量大，无论脂溶或水溶，不易吸收。</p>
-<h4 id="2、给药途径"><a href="#2、给药途径" class="headerlink" title="2、给药途径"></a><font size="4">2、给药途径</font></h4><p>● 静脉注射直接到血液。<br>● 气雾吸入&gt;腹腔注射&gt;舌下给药&gt;肌肉注射&gt;皮下注射&gt;口服&gt;直肠给药&gt;皮肤给药</p>
-<h5 id="1-消化道内吸收-口服给药的吸收部位"><a href="#1-消化道内吸收-口服给药的吸收部位" class="headerlink" title="(1) 消化道内吸收 (口服给药的吸收部位)"></a><font size="4">(1) <strong>消化道内吸收</strong> (口服给药的吸收部位)</font></h5><p>●  药物的理化性质<br>●  机体方面：肠胃的 pH; 胃排空与肠蠕动；肠胃内容物；药物转运体；首关效应。<br>●  <span style="color:red">首关效应：药物口服后被肠壁或肝脏的酶代谢，进入人体循环系统有效药量减少。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/6.png"></p>
-<h5 id="2-舌下给药"><a href="#2-舌下给药" class="headerlink" title="(2) 舌下给药"></a><font size="4">(2) 舌下给药</font></h5><p>● 血流丰富，吸收快。<br>● 面积小，吸收量有限。</p>
-<h5 id="3-直肠给药"><a href="#3-直肠给药" class="headerlink" title="(3) 直肠给药"></a><font size="4">(3) 直肠给药</font></h5><p>● 防止对上呼吸道的刺激。<br>● 避开肝脏的首关效应。</p>
-<h3 id="三、药物的分布"><a href="#三、药物的分布" class="headerlink" title="三、药物的分布"></a>三、药物的分布</h3><p><span style="color:red">药物吸收后随血液到达各组织器官的过程。</span>药效取决于药物进入靶器官的速度与浓度。</p>
-<h4 id="1、药物与血浆蛋白结合"><a href="#1、药物与血浆蛋白结合" class="headerlink" title="1、药物与血浆蛋白结合"></a><font size="4">1、药物与血浆蛋白结合</font></h4><p>● 结合的饱和性：加大药物用量，血液蛋白结合饱和后，增加游离型药物，药效增强，但也可产生中毒。<br>● 药物间竞争性抑制：联合用药时，药物间发生与血液蛋白结合的竞争抑制现象，使药效增强，但也可产生中毒。<br><em>药物与血浆蛋白结合率 &#x3D; [结合型药物浓度]∕[总药物浓度]</em></p>
-<h4 id="2、细胞膜屏障"><a href="#2、细胞膜屏障" class="headerlink" title="2、细胞膜屏障"></a><font size="4">2、细胞膜屏障</font></h4><h5 id="（1）血脑屏障-blood-brain-barrier-BBB"><a href="#（1）血脑屏障-blood-brain-barrier-BBB" class="headerlink" title="（1）血脑屏障 (blood-brain barrier, BBB)"></a><font size="4">（1）血脑屏障 (blood-brain barrier, BBB)</font></h5><p>● 毛细血管壁的内皮细胞、脑的星形胶质细胞末端和嵌入毛细血管基底膜中的周细胞形成。<br>● 高选择性的内皮细胞半透性边界屏障，可防止血液中的物质非选择性地进入神经元。<br>● 允许一些小分子通过被动扩散通过，以及选择性地主动运输对神经功能至关重要的各种营养物质、离子、有机阴离子和大分子(如葡萄糖和氨基酸)。<br>● 毛细血管壁的内皮细胞表达外排性转运体(P-gp), 使一些高亲脂性药物不能进入血脑屏障。</p>
-<table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第二章/7.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第二章/8.png" ></td>
-  </tr>
-</table>
-
-<h5 id="2-胎盘屏障"><a href="#2-胎盘屏障" class="headerlink" title="(2)胎盘屏障"></a><font size="4">(2)胎盘屏障</font></h5><p>● 由母体和胎儿双方组织构成、胎盘绒毛组织与子宫血窦间的屏障。绒毛膜、绒毛间隙和基蜕膜构成。<br>● 绒毛膜内含有脐血管分支，存在很多大小不同的绒毛，并分散在母血之中，吸收氧和营养成分，排泄代谢产物。<br>● 胎盘屏障阻止水溶性或解离性药物通过，但可通过脂溶性高的药物，可能导致毒性以及畸胎。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/9.png"></p>
-<h5 id="3-血眼屏障"><a href="#3-血眼屏障" class="headerlink" title="(3)血眼屏障"></a><font size="4">(3)血眼屏障</font></h5><h5 id="4-血-关节囊液屏障"><a href="#4-血-关节囊液屏障" class="headerlink" title="(4)血-关节囊液屏障"></a><font size="4">(4)血-关节囊液屏障</font></h5><h4 id="3、体液pH"><a href="#3、体液pH" class="headerlink" title="3、体液pH"></a><font size="4">3、体液pH</font></h4><p>生理条件下，细胞外液pH为7.4。体液的pH影响药物的离解度，因而对药物的分布也会产生影响。</p>
-<h4 id="4、器官的血流量"><a href="#4、器官的血流量" class="headerlink" title="4、器官的血流量"></a><font size="4">4、器官的血流量</font></h4><p>肝、肾、脑、肺等高血流量的器官，药物分布快且浓度高。皮肤与肌肉等低血流量器官，药物分布慢。</p>
-<h4 id="5、药物与组织的亲和力"><a href="#5、药物与组织的亲和力" class="headerlink" title="5、药物与组织的亲和力"></a><font size="4">5、药物与组织的亲和力</font></h4><p>如甲状腺对碘有高亲和力，碘的浓度在该组织浓度远超其它组织。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/10.png"></p>
-<h4 id="6、药物转运体"><a href="#6、药物转运体" class="headerlink" title="6、药物转运体"></a><font size="4">6、药物转运体</font></h4><h3 id="四、药物的代谢"><a href="#四、药物的代谢" class="headerlink" title="四、药物的代谢"></a>四、药物的代谢</h3><p><span style="color:red">药物在体内发生化学结构改变的过程。代谢主要器官为肝脏。</span>其次为小肠、肾、肺以及脑。</p>
-<h4 id="1、代谢方式"><a href="#1、代谢方式" class="headerlink" title="1、代谢方式"></a><font size="4">1、代谢方式</font></h4><h5 id="1-I相反应"><a href="#1-I相反应" class="headerlink" title="(1)I相反应"></a><font size="4">(1)I相反应</font></h5><p>● 氧化、还原、水解反应。主要由肝微粒体混合功能氧化酶以及非微粒体酶催化。<br>● 混合功能氧化酶不是一种酶，而是一组酶，包括细胞色素P-450，NADPH细胞色素P-450还原酶、细胞色素B-5NADH-细胞色素B-5还原酶、芳烃经化酶、环氧化物水化酶等。<br>● 向药物引入极性基团， 如-OH、-COOH、-NH2、-SH等。</p>
-<h5 id="2-II相反应"><a href="#2-II相反应" class="headerlink" title="(2)II相反应"></a><font size="4">(2)II相反应</font></h5><p>● 药物的极性基团与体内水溶性较大的内源性物质结合反应，如葡萄糖酸、醋酸、硫酸、氨基酸等。<br>● 由非颗粒体专一性酶催化。<br><em><strong>多数药物接受两相反应，生成易溶于水且极性高的代谢物，以迅速排出体外。</strong></em></p>
-<h4 id="2、代谢酶"><a href="#2、代谢酶" class="headerlink" title="2、代谢酶"></a><font size="4">2、代谢酶</font></h4><h5 id="1-特异性酶"><a href="#1-特异性酶" class="headerlink" title="(1)特异性酶"></a><font size="4">(1)特异性酶</font></h5><p>● 具有特异性。<br>● 催化特定的药物或化合物，如胆碱酯酶、单胺氧化酶等。</p>
-<h5 id="2-非特异性酶"><a href="#2-非特异性酶" class="headerlink" title="(2)非特异性酶"></a><font size="4">(2)非特异性酶</font></h5><p>● 细胞色素P450 (cytochrome P450, CYP): 主要存在肝细胞内质网，能催化数百种药物分子的代谢，称为“肝药酶”。<br>● 基因大家族，从人体中已分离出的70余种。<br>● 特性：选择性低；易受多种因素的影响，如遗传、年龄、性别、营养状态等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/11.png"></p>
-<h4 id="3、影响代谢的因素"><a href="#3、影响代谢的因素" class="headerlink" title="3、影响代谢的因素"></a><font size="4">3、影响代谢的因素</font></h4><h5 id="1-遗传因素"><a href="#1-遗传因素" class="headerlink" title="(1)遗传因素"></a><font size="4">(1)遗传因素</font></h5><p>● 突变体的存在。</p>
-<h5 id="2-环境因素"><a href="#2-环境因素" class="headerlink" title="(2)环境因素"></a><font size="4">(2)环境因素</font></h5><p>● 化学分子对CYP酶活性的提高与抑制。</p>
-<h5 id="3-生理因素与营养状态"><a href="#3-生理因素与营养状态" class="headerlink" title="(3)生理因素与营养状态"></a><font size="4">(3)生理因素与营养状态</font></h5><p>● 年龄。新生儿肝药酶活性低，用药要减量。<br>● 性别。女性的CYP2C19及CYP3A4活性高于男性。<br>● 节律。夜间酶活性高，昼间较低。<br>● 食物。</p>
-<h3 id="五、药物的排泄"><a href="#五、药物的排泄" class="headerlink" title="五、药物的排泄"></a>五、药物的排泄</h3><p><span style="color:red">药物以及其代谢物被排出体外的过程。肾脏是主要的排泄器官，由肾脏随尿排出。</span><br>气体与挥发性药物由肺排出，而有些药物从胆汁、乳腺、汗腺、唾液、头发以及皮肤排出。</p>
-<h4 id="1、肾排泄方式"><a href="#1、肾排泄方式" class="headerlink" title="1、肾排泄方式"></a><font size="4">1、肾排泄方式</font></h4><h5 id="1-肾小球滤过"><a href="#1-肾小球滤过" class="headerlink" title="(1)肾小球滤过"></a><font size="4">(1)肾小球滤过</font></h5><p>● 筛状滤过膜，可滤过游离型药物或代谢物。<br>● 血液结合型药物分子量超50000，不能滤过。<br>● 新生儿与老人肾小球滤过率降低。</p>
-<h5 id="2-肾小管重吸收"><a href="#2-肾小管重吸收" class="headerlink" title="(2)肾小管重吸收"></a><font size="4">(2)肾小管重吸收</font></h5><p>● 主动重吸收身体必需品，如葡萄糖、氨基酸、维生素以及电解质等。<br>● 被动重吸收为被动扩散。</p>
-<h5 id="3-肾小管分泌"><a href="#3-肾小管分泌" class="headerlink" title="(3)肾小管分泌"></a><font size="4">(3)肾小管分泌</font></h5><p>● 主动转运有机酸和有机碱系统。<br>● 新生儿与老人的肾小管分泌功能较低。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/12.png"><br><em>药物肾排泄&#x3D;滤过-重吸收+分泌；或药物肾排泄率&#x3D;(1-FR) (过滤率+分泌率)</em><br><em>FR为重吸收比例分数。</em></p>
-<h4 id="2、胆汁排泄"><a href="#2、胆汁排泄" class="headerlink" title="2、胆汁排泄"></a><font size="4">2、胆汁排泄</font></h4><h5 id="1-极性强水溶性代谢物可自胆汁排出。"><a href="#1-极性强水溶性代谢物可自胆汁排出。" class="headerlink" title="(1)极性强水溶性代谢物可自胆汁排出。"></a><font size="4">(1)极性强水溶性代谢物可自胆汁排出。</font></h5><p>主动转运过程需要能量。分子量大于500、小于5000的极性代谢物。由胆汁排入小肠、从粪便排出。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/13.png"></p>
-<h5 id="2-肝肠循环"><a href="#2-肝肠循环" class="headerlink" title="(2)肝肠循环"></a><font size="4">(2)肝肠循环</font></h5><p>● 肠黏膜上皮细胞重吸收，经门静脉、肝脏重新进入体循环。<br>● 肝肠循环延迟药物的排泄。<br>● 肝肠循环的药物血液浓度与时间的关系呈双峰。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/14.png"></p>
-<h4 id="3、其它排泄途径"><a href="#3、其它排泄途径" class="headerlink" title="3、其它排泄途径"></a><font size="4">3、其它排泄途径</font></h4><p>● 肠道排泄<br>● 乳汁排泄<br>● 汗液、唾液、泪液、皮肤、肺等。</p>
-<h2 id="第二节-药物代谢动力学的数学模型"><a href="#第二节-药物代谢动力学的数学模型" class="headerlink" title="第二节 药物代谢动力学的数学模型"></a>第二节 药物代谢动力学的数学模型</h2><h3 id="一、数学模型"><a href="#一、数学模型" class="headerlink" title="一、数学模型"></a>一、数学模型</h3><h4 id="1、房室模型"><a href="#1、房室模型" class="headerlink" title="1、房室模型"></a><font size="4">1、房室模型</font></h4><p>机体由若干个房室组成。<br>● 开放性一室模型：给药后药物立即均匀地分布整个身体。药时曲线呈直线。<br>● 开放性二室模型: 中央室与周边室，药物仅从中央室消除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/15.png"></p>
-<h4 id="2、非房室模型"><a href="#2、非房室模型" class="headerlink" title="2、非房室模型"></a><font size="4">2、非房室模型</font></h4><p>数学的概率论与统计学为理论根据，统计每个药物分子在体内滞留时间。药时曲线为随机变量的总和，概率的统计曲线。</p>
-<table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第二章/16.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第二章/17.png" ></td>    <td height="50%"><img src="/../img/生理药理学/第二章/18.png" ></td>
-  </tr>
-</table>
-
-<h4 id="3、药物消除速率过程"><a href="#3、药物消除速率过程" class="headerlink" title="3、药物消除速率过程"></a><font size="4">3、药物消除速率过程</font></h4><h5 id="1-一级动力学过程"><a href="#1-一级动力学过程" class="headerlink" title="(1)一级动力学过程"></a><font size="4">(1)一级动力学过程</font></h5><p>● 药物消除速率与药量的一次方成正比。<br>● 血药浓度-时间曲线为指数曲线，lnC对T作图为直线。<br>● t1&#x2F;2恒定，与剂量无关。<br>● 血药浓度-时间曲线下面积(area under curve, AUC) 与剂量成正比。<br>● 药物消除取决于t1&#x2F;2，约经5个t1&#x2F;2，药物完全消除。</p>
-<h5 id="2-零级动力学过程"><a href="#2-零级动力学过程" class="headerlink" title="(2)零级动力学过程"></a><font size="4">(2)零级动力学过程</font></h5><p>● 药物消除速率与药量的零次方成正比。<br>● 单位时间消除的药量相等，与药物浓度无关。<br>● 半衰期是一个不恒定的数值。<br>● AUC与剂量不成正比。<br>● 当药物浓度降至最大消除能力以下时，则转为一级动力学消除。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/19.png"></p>
-<h5 id="3-米-曼速率过程"><a href="#3-米-曼速率过程" class="headerlink" title="(3)米-曼速率过程"></a><font size="4">(3)米-曼速率过程</font></h5><p>● 一级与零级动力学相互移行的过程。<br>● 高药浓度时为零级，而低药浓度时为一级。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/20.png"></p>
-<h3 id="二、药动学参数"><a href="#二、药动学参数" class="headerlink" title="二、药动学参数"></a>二、药动学参数</h3><h4 id="1、半衰期-half-life-t1-2"><a href="#1、半衰期-half-life-t1-2" class="headerlink" title="1、半衰期 (half-life, t1&#x2F;2)"></a><font size="4">1、半衰期 (half-life, t1&#x2F;2)</font></h4><p>血液中药物浓度降低一般所需时间。<br>● 一级动力学，t1&#x2F;2后药物为50%，2个t1&#x2F;2后药物为25%，5个t1&#x2F;2后药物尚有3%。<br>● 零级动力学，药物t1&#x2F;2与药物起始浓度成正比。药量大，t1&#x2F;2长。<br>● 生理意义：给药间隔；消除时间；血药浓度。</p>
-<h4 id="2、表观分布容积-Vd"><a href="#2、表观分布容积-Vd" class="headerlink" title="2、表观分布容积 (Vd)"></a><font size="4">2、表观分布容积 (Vd)</font></h4><p>体液总体积，不代表实际的生理空间。<br>● 给药剂量。<br>●  药物分布与摄取程度。</p>
-<h4 id="3、AUC-血液浓度-时间曲线下面积"><a href="#3、AUC-血液浓度-时间曲线下面积" class="headerlink" title="3、AUC, 血液浓度-时间曲线下面积"></a><font size="4">3、AUC, 血液浓度-时间曲线下面积</font></h4><p>摄取药物相对量。</p>
-<h4 id="4、生物利用度-bioavailability-F"><a href="#4、生物利用度-bioavailability-F" class="headerlink" title="4、生物利用度(bioavailability, F)"></a><font size="4">4、生物利用度(bioavailability, F)</font></h4><p>药物进入血液的程度和速度。<br>● 静脉注射设为100%，其它途径给药的AUC与静脉注射的AUC比较计算。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/21.png"></p>
-<h4 id="5、总体清除率-Cltot"><a href="#5、总体清除率-Cltot" class="headerlink" title="5、总体清除率(Cltot)"></a><font size="4">5、总体清除率(Cltot)</font></h4><p>单位时间内清除含有药物的血浆体积。<br>● 血浆清除率。<br>● 肝、肾、其它途径清除率的总和。</p>
-<h4 id="6、稳态血药浓度"><a href="#6、稳态血药浓度" class="headerlink" title="6、稳态血药浓度"></a><font size="4">6、稳态血药浓度</font></h4><p>多次给药达到稳态时，血药最大浓度。<br>● 稳态时药-时曲线浓度的峰值为稳态血药浓度(Css, max)。<br>● 稳态时浓度谷值为最小血药浓度(Css, min)。<br>● 稳态时血药浓度的平均称为稳态平均血药浓度。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/22.png"></p>
-<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a><span style="display:block;text-align:center;color:#00BFFF;">本章小结</span></h1><h2 id="1、药物的体内过程"><a href="#1、药物的体内过程" class="headerlink" title="1、药物的体内过程"></a>1、药物的体内过程</h2><p>（1）转运 (扩散、主动或被动转运)<br><span style="color:red">（2）吸收 (口服给药、首关效应)<br>（3）分布 (细胞膜屏障)<br>（4）代谢 (I 和II相反应，肝药酶)<br>（5）排泄 (肾排泄、胆汁排泄)<br></span></p>
-<h2 id="2、药物的速率过程"><a href="#2、药物的速率过程" class="headerlink" title="2、药物的速率过程"></a>2、药物的速率过程</h2><p>（1）<a href="#(1)%E4%B8%80%E7%BA%A7%E5%8A%A8%E5%8A%9B%E5%AD%A6%E8%BF%87%E7%A8%8B">一级动力学</a>、<a href="#(2)%E9%9B%B6%E7%BA%A7%E5%8A%A8%E5%8A%9B%E5%AD%A6%E8%BF%87%E7%A8%8B">零级动力学</a><br>（2）<a href="#%E4%BA%8C%E3%80%81%E8%8D%AF%E5%8A%A8%E5%AD%A6%E5%8F%82%E6%95%B0">药动学参数</a></p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -6073,244 +6073,6 @@ gamma-Aminobutyric acid
       </tags>
   </entry>
   <entry>
-    <title>生理药理学第十五章</title>
-    <url>/2025/05/08/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十五章-抗心律失常、抗动脉硬化药"><a href="#第十五章-抗心律失常、抗动脉硬化药" class="headerlink" title="第十五章 抗心律失常、抗动脉硬化药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十五章 抗心律失常、抗动脉硬化药</span></h1><h2 id="第一节-抗心律失常药"><a href="#第一节-抗心律失常药" class="headerlink" title="第一节 抗心律失常药"></a>第一节 抗心律失常药</h2><h3 id="一、膜电位的基本知识"><a href="#一、膜电位的基本知识" class="headerlink" title="一、膜电位的基本知识"></a>一、膜电位的基本知识</h3><p>● 双层磷脂。<br>● 高电阻，构成绝缘层，隔绝细胞内外。<br>● 不通透离子和水溶性分子。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/1.png"><br>● 细胞内外均为导电的盐溶液，构成膜电容。<br>● 磷脂双层含有协助离子以及物质通过的蛋白，如离子通道和转运蛋白。<br>● 膜电路。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/2.png"></p>
-<h4 id="1、静息电位-Resting-Potential-RP"><a href="#1、静息电位-Resting-Potential-RP" class="headerlink" title="1、静息电位 (Resting Potential, RP)"></a><font size="4"><span style="color:#D81C2F">1、静息电位 (Resting Potential, RP)</span></font></h4><p><span style="color:#D81C2F">未受刺激时膜内外电位差（稳态）。</span>神经元静息电位在-30 ⁓ -90 mV之间。<span style="color:#D81C2F">外正内负。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/3.png"><br><span style="color:#D81C2F"><br>极化状态 (polarization)<br>● 去极化 (Depolarization)，负值减少<br>● 复极化 (Repolarization)，恢复极化状态<br>● 超极化 (Hyperpolarization)，负值增加<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/4.png"><br>静息电位的离子机制</p>
-<p>● 细胞内外离子分布不平衡<br>● 离子的扩散 (K+&gt;Na+)<br>● 钠-钾交换泵的作用<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/5.png"><br>正常情况下，细胞内K+&gt;&gt;细胞外，而Na+浓度则相反。离子具有向低浓度方向扩散的趋势。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/6.png"></p>
-<h4 id="2、动作电位-Action-Potential-AP"><a href="#2、动作电位-Action-Potential-AP" class="headerlink" title="2、动作电位 (Action Potential, AP)"></a><font size="4"><span style="color:#D81C2F">2、动作电位 (Action Potential, AP)</span></font></h4><p>静息电位，稳定态<br>局部电位，过渡态<br>动作电位，电信号传导</p>
-<h5 id="（1）局部电位：由兴奋引起的电紧张电位。"><a href="#（1）局部电位：由兴奋引起的电紧张电位。" class="headerlink" title="（1）局部电位：由兴奋引起的电紧张电位。"></a><font size="4">（1）局部电位：由兴奋引起的电紧张电位。</font></h5><p>局部电位的离子机制</p>
-<p>● 兴奋产生电紧张电位激活电压门控Na+通道。<br>● 少量Na+内流，引起部分去极化反应。<br>● Na+内流不足以克服K+外流的作用。<br>● Na+内流产生紧张电位成为局部电位。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/7.png"></p>
-<h5 id="（2）动作电位-Action-Potential-AP"><a href="#（2）动作电位-Action-Potential-AP" class="headerlink" title="（2）动作电位 (Action Potential, AP)"></a><font size="4"><span style="color:#D81C2F">（2）动作电位 (Action Potential, AP)</span></font></h5><p><strong><span style="color:#D81C2F">细胞活动的标志，信息传导的基本单元。电信号分去极化和超极化。</span></strong><br><span style="color:#D81C2F">● 去极化：极化的减弱，代表兴奋性升高或激活。<br>● 超极化：极化的增强，代表兴奋性降低或抑制。<br></span><br>AP的过程：静息电位 (Resting Potential)<br>阀电位(Threshold Potential)<br>锋电位 (Spike Potential)<br>后电位 (After-spike Potential), 复极化后电位和超极化后电位<br>反极化或超射(Overshoot)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/8.png"><br><span style="color:#D81C2F">动作电位的离子机制<br>● 刺激诱发电压门控Na+通道开放Na+内流克服K+外流。<br>● Na+内流，K+通道关闭。<br>● Na+通道失活与K+通道激活达到新的平衡（锋电位）。<br>● K+通道开启外流，Na+通道关闭。<br>● 锋电位上升一般Na+通道介导，但电压门控Ca2+通道也发挥重要作用。<br><br>后电位的离子机制<br>●大量K+外流导致细胞外K+积蓄，延缓复极化过程。<br>● Na+-K+泵协调电位回复。<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/9.png"> </p>
-<h3 id="二、心脏的电生理"><a href="#二、心脏的电生理" class="headerlink" title="二、心脏的电生理"></a>二、心脏的电生理</h3><p>根据电生理特性分类：<br><span style="color:#D81C2F">● 工作细胞(心房肌与心室肌，机械收缩作用)。<br>● 自律细胞(窦房结细胞与浦肯野细胞)。<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/10.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/11.png"><br>跨膜电位以及形成机制<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/12.png"><br><span style="color:#D81C2F"><br>● 动作电位：5个阶段。0期为去极化，1-4为复极化。<br>1、快速复极初期<br>2、平台期<br>3、快速复极末期<br>4、恢复期<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/13.png"></p>
-<span style="display:block;text-align:center;">
-<font size="4">
-体表心电图(Electrocardiogram, ECG)
-</font>
-</span>
-<table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第十五章/14.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第十五章/15.png" ></td>
-  </tr>
-</table>
-
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/16.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/17.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/18.png"></p>
-<h3 id="三、心律失常的发生机制"><a href="#三、心律失常的发生机制" class="headerlink" title="三、心律失常的发生机制"></a>三、心律失常的发生机制</h3><p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/19.png"></p>
-<h4 id="1、自律性升高"><a href="#1、自律性升高" class="headerlink" title="1、自律性升高"></a><font size="4">1、自律性升高</font></h4><p><strong>本来有自律性的组织自律性升高。本来无自律性的组织产生自律性。</strong></p>
-<h5 id="（1）自律性"><a href="#（1）自律性" class="headerlink" title="（1）自律性"></a><font size="4">（1）自律性</font></h5><p>● 心肌在无外来刺激下能自动产生节律性兴奋的能力。<br>● 仅小部分心脏细胞具有自律性，如窦房结的起搏细胞 (100次&#x2F;分钟)。<br>● 窦房结为心脏活动正常起搏点，自律性最高，依次传导至其它组织细胞。</p>
-<h5 id="（2）影响自律性的因素"><a href="#（2）影响自律性的因素" class="headerlink" title="（2）影响自律性的因素"></a><font size="4">（2）影响自律性的因素</font></h5><p>● 4期去极化速度<br>● 最大复极电位<br>● 阀电位高低</p>
-<h5 id="（3）自律性升高原因"><a href="#（3）自律性升高原因" class="headerlink" title="（3）自律性升高原因"></a><font size="4">（3）自律性升高原因</font></h5><p>● 电解质紊乱<br>● 心肌缺血缺氧</p>
-<table>
-  <tr>
-    <td width="40%">
-    <span>
-<font size="4"><br>
-A：速度由a到b时，自律性下降<br><br><br><br>
-B：最大复极电位由a到d，或阀电位由TP-1升至TP-2时，自律性降低。
-</font>
-    </span>
-    </td>
-    <td width="60%">
-    <img src="/../img/生理药理学/第十五章/20.png" >
-    </td>
-  </tr>
-</table>
-
-<h4 id="2、触发活动"><a href="#2、触发活动" class="headerlink" title="2、触发活动"></a><font size="4">2、触发活动</font></h4><p>（1）早后除极<br>（2）迟后除极<br>●频率快，振幅小<br>●震荡性波动，膜电位不稳定<br>（3）原因<br>● 低血钾 (早后除极)<br>● 强心苷中毒、胞外高钙及低钾(迟后除极)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/21.png"></p>
-<h4 id="3、冲动传导障碍-折返激动"><a href="#3、冲动传导障碍-折返激动" class="headerlink" title="3、冲动传导障碍 (折返激动)"></a><font size="4">3、冲动传导障碍 (折返激动)</font></h4><table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第十五章/22.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第十五章/23.png" ></td>
-  </tr>
-</table>
-● 钠通道抑制作用强的药物易诱发折返激动。
-
-<h3 id="四、心律失常治疗策略"><a href="#四、心律失常治疗策略" class="headerlink" title="四、心律失常治疗策略"></a>四、心律失常治疗策略</h3><h4 id="1、非药物治疗"><a href="#1、非药物治疗" class="headerlink" title="1、非药物治疗"></a><font size="4">1、非药物治疗</font></h4><h5 id="（1）起搏器"><a href="#（1）起搏器" class="headerlink" title="（1）起搏器"></a><font size="4">（1）起搏器</font></h5><p>● 植入体内，发放电脉冲，刺激电极所接触的心肌，使心脏激动和收缩，从而治疗心律失常所致的心脏功能障碍。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/24.png"></p>
-<h5 id="（2）导管消融和手术"><a href="#（2）导管消融和手术" class="headerlink" title="（2）导管消融和手术"></a><font size="4">（2）导管消融和手术</font></h5><p>● 电极导管插入心脏确定的引起心动过速的异常结构的位置，然后局部释放高频电流，在小的范围内产生很高的温度，通过热效能，使局部组织内水分蒸发，干燥坏死，达到治疗目的。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/25.png"></p>
-<h5 id="（3）电复律-心脏电除颤"><a href="#（3）电复律-心脏电除颤" class="headerlink" title="（3）电复律(心脏电除颤)"></a><font size="4">（3）电复律(心脏电除颤)</font></h5><p>● 严重心律失常时，用短暂高压强电流通过心脏，使全部或大部分心肌细胞在瞬间同时除极，造成心脏短暂的电活动停止，然后重新主导心脏节律的治疗过程。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/26.png"></p>
-<h4 id="2、药物治疗-双刃剑"><a href="#2、药物治疗-双刃剑" class="headerlink" title="2、药物治疗 (双刃剑)"></a><font size="4">2、药物治疗 (双刃剑)</font></h4><h5 id="（1）降低自律性"><a href="#（1）降低自律性" class="headerlink" title="（1）降低自律性"></a><font size="4">（1）降低自律性</font></h5><p>● 降低动作电位4相斜率<br>● 提高动作电位阈值(钠通道阻碍药)<br>● 延长动作电位时程 (钾通道阻碍药)<br>● 增加静息电位绝对值(钙通道阻碍药)</p>
-<h5 id="（2）减少后除极"><a href="#（2）减少后除极" class="headerlink" title="（2）减少后除极"></a><font size="4">（2）减少后除极</font></h5><p>● 减少迟后除极( 钙通道阻碍药)<br>● 抑制迟后除极0相去极化(钠通道阻碍药)</p>
-<h5 id="（3）消除折返"><a href="#（3）消除折返" class="headerlink" title="（3）消除折返"></a><font size="4">（3）消除折返</font></h5><p>● 改变传导(钙通道阻碍药和β受体阻断药)<br>● 延长有效不应期(钠、钾、钙通道阻碍药)</p>
-<h3 id="五、常见抗心律失常药物"><a href="#五、常见抗心律失常药物" class="headerlink" title="五、常见抗心律失常药物"></a>五、常见抗心律失常药物</h3><h4 id="（一）钠通道阻滞药-I类"><a href="#（一）钠通道阻滞药-I类" class="headerlink" title="（一）钠通道阻滞药 (I类)"></a><font size="4">（一）钠通道阻滞药 (I类)</font></h4><p><strong>抑制钠通道，降低0相上升速率，膜稳定剂或快通道阻滞剂。</strong></p>
-<p><strong>IA类，复活时间(τrecovery) 1-10s，适度阻滞钠通道。</strong></p>
-<p>● 影响传导速度，延长电位时程。<br>● 奎尼丁、普鲁卡因胺。</p>
-<p><strong>IB类，&lt;1s，轻度阻滞钠通道。</strong></p>
-<p>● 减慢传导速度，动作电位缩短或不变。<br>● 利多卡因、苯妥英钠、美西律等。</p>
-<p><strong>IC类，&gt;10s，显著阻滞钠通道。</strong></p>
-<p>● 明显阻滞传导速度，延长动作电位。<br>● 普罗帕酮。</p>
-<p><strong>适用于快速型心率失常、室性心动过速</strong></p>
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/27.png"></p>
-<h4 id="（二）β肾上腺素受体阻断药"><a href="#（二）β肾上腺素受体阻断药" class="headerlink" title="（二）β肾上腺素受体阻断药"></a><font size="4">（二）β肾上腺素受体阻断药</font></h4><p>●阻断β受体，同时具有阻滞钠通道和缩短复极过程作用。<br>●减慢4相除极速率而降低自律性，降低动作电位0相上升速率而减慢传导。<br>● 室上性心律失常、中枢性心律失常。</p>
-<h4 id="（三）延长动作电位时程药"><a href="#（三）延长动作电位时程药" class="headerlink" title="（三）延长动作电位时程药"></a><font size="4">（三）延长动作电位时程药</font></h4><p>● 阻滞钾通道，减少钾离子外流。<br>● 延长动作电位时程，但对动作电位幅度和去极化速率影响较小。<br>● 室性心律失常、心房颤动、心动过速。</p>
-<h4 id="（四）钙通道阻滞剂"><a href="#（四）钙通道阻滞剂" class="headerlink" title="（四）钙通道阻滞剂"></a><font size="4">（四）钙通道阻滞剂</font></h4><p>● 阻滞L-型钙通道，减少钙电流。<br>● 降低窦房结、房室细胞自律性，减慢房室传导速度，延长不应期。<br>● 室上性和房室折返心律失常</p>
-<h3 id="六、抗心律失常用药原则"><a href="#六、抗心律失常用药原则" class="headerlink" title="六、抗心律失常用药原则"></a>六、抗心律失常用药原则</h3><p>1、先单独用药，后联合用药。</p>
-<p>2、用有临床效果的最小剂量。</p>
-<p>3、考虑危险性优先，</p>
-<p>4、减少致心律失常等副作用。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/28.png"></p>
-<h2 id="第二节-抗动脉硬化药"><a href="#第二节-抗动脉硬化药" class="headerlink" title="第二节 抗动脉硬化药"></a>第二节 抗动脉硬化药</h2><h3 id="一、血脂代谢生理学"><a href="#一、血脂代谢生理学" class="headerlink" title="一、血脂代谢生理学"></a>一、血脂代谢生理学</h3><span style="color:#D81C2F">
-血脂<br>
-● 甘油三酯(TG)<br>
-● 胆固醇(CH)<br>
-● 胆固醇酯(CE)<br>
-● 脂肪酸(FA)<br>
-● 磷脂(PL)<br>
-</span>
-<table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第十五章/29.png" ><span style="display:block;text-align:center;">
-<font size="4">
-磷脂
-</font>
-    </span>
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第十五章/30.png" ><span style="display:block;text-align:center;">
-<font size="4">
-甘油三酯
-</font>
-    </span>
-    </td>
-  </tr>
-</table>
-<table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第十五章/31.png" ><span style="display:block;text-align:center;">
-<font size="4">
-胆固醇
-</font>
-    </span>
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第十五章/32.png" ><span style="display:block;text-align:center;">
-<font size="4">
-胆固醇酯
-</font>
-    </span>
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第十五章/33.png" ><span style="display:block;text-align:center;">
-<font size="4">
-脂肪酸
-</font>
-    </span>
-    </td>
-  </tr>
-</table>
-<span style="color:#D81C2F">
-脂蛋白<br>
-● 球形。<br>
-● 内部脂类分子。<br>
-● 外部磷脂，胆固醇，载脂蛋白 (apolipoproteins, apo)。<br>
-● 脂类分子在血液存在、运输、代谢的形式。
-</span>
-
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/34.png"><br>载脂蛋白<br>● 水溶性多肽。<br>● 已知多类具有不同功能的apo存在。<br>● 参与脂蛋白的代谢调节。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/35.png"><br><span style="color:#D81C2F"><br>脂蛋白种类<br>● 乳糜微粒 (CM)。<br>● 极低密度脂蛋白 (VLDL)。<br>● 低密度脂蛋白 (LDL)。<br>● 中间密度脂蛋白 (IDL)。<br>● 高密度脂蛋白 (HDL)。<br>● 脂蛋白(a) (LP(a))。<br></span><br><span style="color:#D81C2F"><br>脂蛋白生理功能<br>● 运输与代谢脂质。<br>● CM&#x2F;VLDL，甘油三酯，直径大，不易透过血管内膜，无致血管硬化。<br>● VLDL&#x2F;LDL&#x2F;IDL，富含胆固醇，运输肝脏合成的胆固醇到各处，部分可被血管壁摄取。<br>● HDL，最小颗粒，运输血管胆固醇至肝脏代谢，保护血管，“血管清道夫”。<br>● LP(a)，与LDL类似，增加动脉硬化。<br></span></p>
-<table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第十五章/36.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第十五章/37.png" ></td>
-  </tr>
-</table>
-
-<p><em><strong>Good Cholesterol vs Bad Cholesterol</strong></em><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/38.png"></p>
-<h3 id="二、血脂异常与动脉硬化"><a href="#二、血脂异常与动脉硬化" class="headerlink" title="二、血脂异常与动脉硬化"></a>二、血脂异常与动脉硬化</h3><h4 id="1、原发性与继发性"><a href="#1、原发性与继发性" class="headerlink" title="1、原发性与继发性"></a><font size="4">1、原发性与继发性</font></h4><p><strong><span style="display:block;text-align:center;"><font size="4">原发性高脂血症的类型</font></span></strong></p>
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>升高的脂蛋白</th>
-<th>CH</th>
-<th>TG</th>
-<th>致动脉粥样硬化的作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>I</td>
-<td>CM</td>
-<td>+</td>
-<td>+++</td>
-<td>–</td>
-</tr>
-<tr>
-<td>IIa</td>
-<td>LDL</td>
-<td>++</td>
-<td>–</td>
-<td>高度</td>
-</tr>
-<tr>
-<td>IIb</td>
-<td>LDL, VLDL</td>
-<td>++</td>
-<td>++</td>
-<td>高度</td>
-</tr>
-<tr>
-<td>III</td>
-<td>IDL</td>
-<td>+</td>
-<td>++</td>
-<td>中度</td>
-</tr>
-<tr>
-<td>IV</td>
-<td>VLDL</td>
-<td>+</td>
-<td>++</td>
-<td>中度</td>
-</tr>
-<tr>
-<td>V</td>
-<td>CM, VLDL</td>
-<td>+</td>
-<td>+++</td>
-<td>–</td>
-</tr>
-</tbody></table>
-<p><strong>注：“+”代表轻度升高，“++”代表中度升高，“+++”代表重度升高，“–”代表没变化。</strong></p>
-<h4 id="2、动脉硬化的影响因素"><a href="#2、动脉硬化的影响因素" class="headerlink" title="2、动脉硬化的影响因素"></a><font size="4">2、动脉硬化的影响因素</font></h4><p>● 高血脂：甘油三酯和胆固醇<br>● 高血压：损伤血管内膜壁<br>● 抽烟：升高脂肪酸与胆固醇含量<br>● 糖尿病：脂质代谢紊乱<br>● 其它：年龄、肥胖、饮酒等<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/39.png"><br><span style="display:block;text-align:center;"><br><font size="4"><br>Saturated and unsaturated fatty acids<br></font><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/40.png"></p>
-<span style="display:block;text-align:center;">
-<font size="4">
-trans or cis unsaturated fatty acids
-</font>
-</span>
-
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/41.png"></p>
-<h3 id="三、抗动脉硬化药"><a href="#三、抗动脉硬化药" class="headerlink" title="三、抗动脉硬化药"></a>三、抗动脉硬化药</h3><h4 id="（一）治疗策略"><a href="#（一）治疗策略" class="headerlink" title="（一）治疗策略"></a><font size="4">（一）治疗策略</font></h4><p>● 降血脂<br>● 阻滞胆汁酸的肝肠循环<br>● 肠道胆固醇到肝转运抑制剂<br>● 阻断脂质过氧化<br>● 增加脂蛋白酯酶活性<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/42.png"></p>
-<h4 id="（二）降血脂药"><a href="#（二）降血脂药" class="headerlink" title="（二）降血脂药"></a><font size="4"><span style="color:#D81C2F">（二）降血脂药</span></font></h4><h5 id="1、他汀类药物"><a href="#1、他汀类药物" class="headerlink" title="1、他汀类药物"></a><font size="4"><span style="color:#D81C2F">1、他汀类药物</span></font></h5><span style="color:#D81C2F">
-抑制羟甲基戊二酸单酰辅酶A (HMG-CoA)还原酶，减少内源性胆固醇的合成。
-</span>
-
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/43.png"><br>● 洛伐他汀<br>● 辛伐他汀<br>● 普伐他汀<br>● 氟伐他汀<br>● 阿托伐他汀<br>● 瑞舒伐他汀<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/44.png"></p>
-<h5 id="2、胆汁酸结合树脂"><a href="#2、胆汁酸结合树脂" class="headerlink" title="2、胆汁酸结合树脂"></a><font size="4">2、胆汁酸结合树脂</font></h5><p>● 肠道内吸附胆汁酸，阻滞肝脏重吸收。<br>● 促进内源性胆固醇肝脏内代谢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/46.png"><br>● 不溶于水，不良作用多。<br>● 考来烯胺 (cholestyramine)。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/45.png"></p>
-<h5 id="3、胆固醇吸收抑制剂"><a href="#3、胆固醇吸收抑制剂" class="headerlink" title="3、胆固醇吸收抑制剂"></a><font size="4">3、胆固醇吸收抑制剂</font></h5><p>● 抑制小肠细胞表达的NPC1L1胆固醇转运蛋白。<br>● 选择性抑制饮食和胆汁中的胆固醇跨小肠壁转运到肝脏。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/48.png"></p>
-<table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第十五章/47.png" ><span style="display:block;text-align:center;">
-<font size="4">
-依折麦布
-</font>
-    </span>
-    </td>
-  </tr>
-</table>
-
-<h5 id="4、抗氧化剂"><a href="#4、抗氧化剂" class="headerlink" title="4、抗氧化剂"></a><font size="4">4、抗氧化剂</font></h5><p>● 阻断血管脂质过氧化。<br>● 减少脂质过氧化物引起的血管内细胞粘附、内皮细胞损伤等。<br>● 清除氧自由基。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/49.png"></p>
-<h5 id="5、PCSK9抑制剂"><a href="#5、PCSK9抑制剂" class="headerlink" title="5、PCSK9抑制剂"></a><font size="4">5、PCSK9抑制剂</font></h5><p>● PCSK9为前蛋白转移酶<br>● 肝脏、小肠、肾表达<br>● 抑制剂阻滞PCSK与LDL受体的结合<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/50.png"><br><strong>抑制PCSK9结合</strong><br>● LDL受体接受血管内LDL结合<br>● 摄取LDL到细胞内并代谢分解<br>● LDL受体再利用<br><strong>PCSK9结合</strong><br>● PCSK9特异结合LDL受体<br>● 移至溶酶体<br>● 受体被降解<br>● LDLR无法再利用<br>● 血液中LDL浓度升高<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/51.png"></p>
-<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E4%BA%8C%E3%80%81%E5%BF%83%E8%84%8F%E7%9A%84%E7%94%B5%E7%94%9F%E7%90%86">心脏电生理</a><br>2、<a href="#%E4%B8%89%E3%80%81%E5%BF%83%E5%BE%8B%E5%A4%B1%E5%B8%B8%E7%9A%84%E5%8F%91%E7%94%9F%E6%9C%BA%E5%88%B6">心律失常发生的机制</a><br>3、<a href="#%E4%BA%94%E3%80%81%E5%B8%B8%E8%A7%81%E6%8A%97%E5%BF%83%E5%BE%8B%E5%A4%B1%E5%B8%B8%E8%8D%AF%E7%89%A9">抗心律失常药物分类以及作用机制</a> </p>
-<p>4、<a href="#%E4%B8%80%E3%80%81%E8%A1%80%E8%84%82%E4%BB%A3%E8%B0%A2%E7%94%9F%E7%90%86%E5%AD%A6">血脂</a>、<a href="#%E4%B8%80%E3%80%81%E8%A1%80%E8%84%82%E4%BB%A3%E8%B0%A2%E7%94%9F%E7%90%86%E5%AD%A6">脂蛋白</a>、以及它们的生理功能<br>5、动脉硬化的<a href="#2%E3%80%81%E5%8A%A8%E8%84%89%E7%A1%AC%E5%8C%96%E7%9A%84%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0">影响因素</a>以及<a href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%B2%BB%E7%96%97%E7%AD%96%E7%95%A5">治疗策略</a><br>6、<a href="#1%E3%80%81%E4%BB%96%E6%B1%80%E7%B1%BB%E8%8D%AF%E7%89%A9">他汀类降血脂药的作用机制</a></p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>生物制药</tag>
-        <tag>生理药理学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生理药理学第十八章</title>
     <url>/2025/06/12/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十八章-胰岛素及降血糖药"><a href="#第十八章-胰岛素及降血糖药" class="headerlink" title="第十八章 胰岛素及降血糖药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十八章 胰岛素及降血糖药</span></h1><p><strong><span style="display:block;text-align:center;color:#D81C2F;"><font size="4">糖尿病</font></span></strong></p>
@@ -6819,6 +6581,244 @@ LTE4
 
 <p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0/18.png"></p>
 <h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E4%B8%80%E3%80%81%E5%86%A0%E8%84%89%E5%BE%AA%E7%8E%AF%E7%9A%84%E7%94%9F%E7%90%86%E5%AD%A6">冠脉循环生理学</a>以及<a href="#%E4%BA%8C%E3%80%81%E5%BF%83%E7%BB%9E%E7%97%9B%E7%9A%84%E7%97%85%E7%90%86%E7%94%9F%E7%90%86%E5%AD%A6">心绞痛的病理学</a><br>2、<a href="#%E4%B8%89%E3%80%81%E6%8A%97%E5%BF%83%E7%BB%9E%E7%97%9B%E8%8D%AF%E7%89%A9%E4%BD%9C%E7%94%A8%E6%9C%BA%E7%90%86">抗心绞痛药物作用机理</a>（降低胞内钙离子浓度为中心）<br>3、<a href="#%E7%A1%9D%E9%85%B8%E7%94%98%E6%B2%B9">硝酸甘油</a>、<a href="#2%E3%80%81%E9%92%99%E9%80%9A%E9%81%93%E9%98%BB%E6%BB%9E%E8%8D%AF%EF%BC%88%E6%8A%97%E9%AB%98%E8%A1%80%E5%8E%8B%E8%8D%AF%EF%BC%89">钙通道阻滞药</a>、以及<a href="#3%E3%80%81%CE%B2%E5%8F%97%E4%BD%93%E9%98%BB%E6%96%AD%E8%8D%AF%EF%BC%88%E6%8A%97%E9%AB%98%E8%A1%80%E5%8E%8B%E8%8D%AF%EF%BC%89">β受体阻断药</a><br>4、<a href="#%E4%B8%80%E3%80%81%E5%85%85%E8%A1%80%E6%80%A7%E5%BF%83%E5%8A%9B%E8%A1%B0%E7%AB%AD%E7%97%85%E7%90%86%E7%94%9F%E7%90%86%E5%AD%A6">充血性心力衰竭病理生理学</a><br>5、<a href="#%E4%BA%8C%E3%80%81%E6%B2%BB%E7%96%97%E8%8D%AF%E7%89%A9%E5%88%86%E7%B1%BB">抗充血性心力衰竭药物</a>（β受体阻断药与减负荷药）</p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>生物制药</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生理药理学第十五章</title>
+    <url>/2025/05/08/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十五章-抗心律失常、抗动脉硬化药"><a href="#第十五章-抗心律失常、抗动脉硬化药" class="headerlink" title="第十五章 抗心律失常、抗动脉硬化药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十五章 抗心律失常、抗动脉硬化药</span></h1><h2 id="第一节-抗心律失常药"><a href="#第一节-抗心律失常药" class="headerlink" title="第一节 抗心律失常药"></a>第一节 抗心律失常药</h2><h3 id="一、膜电位的基本知识"><a href="#一、膜电位的基本知识" class="headerlink" title="一、膜电位的基本知识"></a>一、膜电位的基本知识</h3><p>● 双层磷脂。<br>● 高电阻，构成绝缘层，隔绝细胞内外。<br>● 不通透离子和水溶性分子。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/1.png"><br>● 细胞内外均为导电的盐溶液，构成膜电容。<br>● 磷脂双层含有协助离子以及物质通过的蛋白，如离子通道和转运蛋白。<br>● 膜电路。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/2.png"></p>
+<h4 id="1、静息电位-Resting-Potential-RP"><a href="#1、静息电位-Resting-Potential-RP" class="headerlink" title="1、静息电位 (Resting Potential, RP)"></a><font size="4"><span style="color:#D81C2F">1、静息电位 (Resting Potential, RP)</span></font></h4><p><span style="color:#D81C2F">未受刺激时膜内外电位差（稳态）。</span>神经元静息电位在-30 ⁓ -90 mV之间。<span style="color:#D81C2F">外正内负。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/3.png"><br><span style="color:#D81C2F"><br>极化状态 (polarization)<br>● 去极化 (Depolarization)，负值减少<br>● 复极化 (Repolarization)，恢复极化状态<br>● 超极化 (Hyperpolarization)，负值增加<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/4.png"><br>静息电位的离子机制</p>
+<p>● 细胞内外离子分布不平衡<br>● 离子的扩散 (K+&gt;Na+)<br>● 钠-钾交换泵的作用<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/5.png"><br>正常情况下，细胞内K+&gt;&gt;细胞外，而Na+浓度则相反。离子具有向低浓度方向扩散的趋势。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/6.png"></p>
+<h4 id="2、动作电位-Action-Potential-AP"><a href="#2、动作电位-Action-Potential-AP" class="headerlink" title="2、动作电位 (Action Potential, AP)"></a><font size="4"><span style="color:#D81C2F">2、动作电位 (Action Potential, AP)</span></font></h4><p>静息电位，稳定态<br>局部电位，过渡态<br>动作电位，电信号传导</p>
+<h5 id="（1）局部电位：由兴奋引起的电紧张电位。"><a href="#（1）局部电位：由兴奋引起的电紧张电位。" class="headerlink" title="（1）局部电位：由兴奋引起的电紧张电位。"></a><font size="4">（1）局部电位：由兴奋引起的电紧张电位。</font></h5><p>局部电位的离子机制</p>
+<p>● 兴奋产生电紧张电位激活电压门控Na+通道。<br>● 少量Na+内流，引起部分去极化反应。<br>● Na+内流不足以克服K+外流的作用。<br>● Na+内流产生紧张电位成为局部电位。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/7.png"></p>
+<h5 id="（2）动作电位-Action-Potential-AP"><a href="#（2）动作电位-Action-Potential-AP" class="headerlink" title="（2）动作电位 (Action Potential, AP)"></a><font size="4"><span style="color:#D81C2F">（2）动作电位 (Action Potential, AP)</span></font></h5><p><strong><span style="color:#D81C2F">细胞活动的标志，信息传导的基本单元。电信号分去极化和超极化。</span></strong><br><span style="color:#D81C2F">● 去极化：极化的减弱，代表兴奋性升高或激活。<br>● 超极化：极化的增强，代表兴奋性降低或抑制。<br></span><br>AP的过程：静息电位 (Resting Potential)<br>阀电位(Threshold Potential)<br>锋电位 (Spike Potential)<br>后电位 (After-spike Potential), 复极化后电位和超极化后电位<br>反极化或超射(Overshoot)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/8.png"><br><span style="color:#D81C2F">动作电位的离子机制<br>● 刺激诱发电压门控Na+通道开放Na+内流克服K+外流。<br>● Na+内流，K+通道关闭。<br>● Na+通道失活与K+通道激活达到新的平衡（锋电位）。<br>● K+通道开启外流，Na+通道关闭。<br>● 锋电位上升一般Na+通道介导，但电压门控Ca2+通道也发挥重要作用。<br><br>后电位的离子机制<br>●大量K+外流导致细胞外K+积蓄，延缓复极化过程。<br>● Na+-K+泵协调电位回复。<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/9.png"> </p>
+<h3 id="二、心脏的电生理"><a href="#二、心脏的电生理" class="headerlink" title="二、心脏的电生理"></a>二、心脏的电生理</h3><p>根据电生理特性分类：<br><span style="color:#D81C2F">● 工作细胞(心房肌与心室肌，机械收缩作用)。<br>● 自律细胞(窦房结细胞与浦肯野细胞)。<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/10.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/11.png"><br>跨膜电位以及形成机制<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/12.png"><br><span style="color:#D81C2F"><br>● 动作电位：5个阶段。0期为去极化，1-4为复极化。<br>1、快速复极初期<br>2、平台期<br>3、快速复极末期<br>4、恢复期<br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/13.png"></p>
+<span style="display:block;text-align:center;">
+<font size="4">
+体表心电图(Electrocardiogram, ECG)
+</font>
+</span>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第十五章/14.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第十五章/15.png" ></td>
+  </tr>
+</table>
+
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/16.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/17.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/18.png"></p>
+<h3 id="三、心律失常的发生机制"><a href="#三、心律失常的发生机制" class="headerlink" title="三、心律失常的发生机制"></a>三、心律失常的发生机制</h3><p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/19.png"></p>
+<h4 id="1、自律性升高"><a href="#1、自律性升高" class="headerlink" title="1、自律性升高"></a><font size="4">1、自律性升高</font></h4><p><strong>本来有自律性的组织自律性升高。本来无自律性的组织产生自律性。</strong></p>
+<h5 id="（1）自律性"><a href="#（1）自律性" class="headerlink" title="（1）自律性"></a><font size="4">（1）自律性</font></h5><p>● 心肌在无外来刺激下能自动产生节律性兴奋的能力。<br>● 仅小部分心脏细胞具有自律性，如窦房结的起搏细胞 (100次&#x2F;分钟)。<br>● 窦房结为心脏活动正常起搏点，自律性最高，依次传导至其它组织细胞。</p>
+<h5 id="（2）影响自律性的因素"><a href="#（2）影响自律性的因素" class="headerlink" title="（2）影响自律性的因素"></a><font size="4">（2）影响自律性的因素</font></h5><p>● 4期去极化速度<br>● 最大复极电位<br>● 阀电位高低</p>
+<h5 id="（3）自律性升高原因"><a href="#（3）自律性升高原因" class="headerlink" title="（3）自律性升高原因"></a><font size="4">（3）自律性升高原因</font></h5><p>● 电解质紊乱<br>● 心肌缺血缺氧</p>
+<table>
+  <tr>
+    <td width="40%">
+    <span>
+<font size="4"><br>
+A：速度由a到b时，自律性下降<br><br><br><br>
+B：最大复极电位由a到d，或阀电位由TP-1升至TP-2时，自律性降低。
+</font>
+    </span>
+    </td>
+    <td width="60%">
+    <img src="/../img/生理药理学/第十五章/20.png" >
+    </td>
+  </tr>
+</table>
+
+<h4 id="2、触发活动"><a href="#2、触发活动" class="headerlink" title="2、触发活动"></a><font size="4">2、触发活动</font></h4><p>（1）早后除极<br>（2）迟后除极<br>●频率快，振幅小<br>●震荡性波动，膜电位不稳定<br>（3）原因<br>● 低血钾 (早后除极)<br>● 强心苷中毒、胞外高钙及低钾(迟后除极)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/21.png"></p>
+<h4 id="3、冲动传导障碍-折返激动"><a href="#3、冲动传导障碍-折返激动" class="headerlink" title="3、冲动传导障碍 (折返激动)"></a><font size="4">3、冲动传导障碍 (折返激动)</font></h4><table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第十五章/22.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第十五章/23.png" ></td>
+  </tr>
+</table>
+● 钠通道抑制作用强的药物易诱发折返激动。
+
+<h3 id="四、心律失常治疗策略"><a href="#四、心律失常治疗策略" class="headerlink" title="四、心律失常治疗策略"></a>四、心律失常治疗策略</h3><h4 id="1、非药物治疗"><a href="#1、非药物治疗" class="headerlink" title="1、非药物治疗"></a><font size="4">1、非药物治疗</font></h4><h5 id="（1）起搏器"><a href="#（1）起搏器" class="headerlink" title="（1）起搏器"></a><font size="4">（1）起搏器</font></h5><p>● 植入体内，发放电脉冲，刺激电极所接触的心肌，使心脏激动和收缩，从而治疗心律失常所致的心脏功能障碍。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/24.png"></p>
+<h5 id="（2）导管消融和手术"><a href="#（2）导管消融和手术" class="headerlink" title="（2）导管消融和手术"></a><font size="4">（2）导管消融和手术</font></h5><p>● 电极导管插入心脏确定的引起心动过速的异常结构的位置，然后局部释放高频电流，在小的范围内产生很高的温度，通过热效能，使局部组织内水分蒸发，干燥坏死，达到治疗目的。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/25.png"></p>
+<h5 id="（3）电复律-心脏电除颤"><a href="#（3）电复律-心脏电除颤" class="headerlink" title="（3）电复律(心脏电除颤)"></a><font size="4">（3）电复律(心脏电除颤)</font></h5><p>● 严重心律失常时，用短暂高压强电流通过心脏，使全部或大部分心肌细胞在瞬间同时除极，造成心脏短暂的电活动停止，然后重新主导心脏节律的治疗过程。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/26.png"></p>
+<h4 id="2、药物治疗-双刃剑"><a href="#2、药物治疗-双刃剑" class="headerlink" title="2、药物治疗 (双刃剑)"></a><font size="4">2、药物治疗 (双刃剑)</font></h4><h5 id="（1）降低自律性"><a href="#（1）降低自律性" class="headerlink" title="（1）降低自律性"></a><font size="4">（1）降低自律性</font></h5><p>● 降低动作电位4相斜率<br>● 提高动作电位阈值(钠通道阻碍药)<br>● 延长动作电位时程 (钾通道阻碍药)<br>● 增加静息电位绝对值(钙通道阻碍药)</p>
+<h5 id="（2）减少后除极"><a href="#（2）减少后除极" class="headerlink" title="（2）减少后除极"></a><font size="4">（2）减少后除极</font></h5><p>● 减少迟后除极( 钙通道阻碍药)<br>● 抑制迟后除极0相去极化(钠通道阻碍药)</p>
+<h5 id="（3）消除折返"><a href="#（3）消除折返" class="headerlink" title="（3）消除折返"></a><font size="4">（3）消除折返</font></h5><p>● 改变传导(钙通道阻碍药和β受体阻断药)<br>● 延长有效不应期(钠、钾、钙通道阻碍药)</p>
+<h3 id="五、常见抗心律失常药物"><a href="#五、常见抗心律失常药物" class="headerlink" title="五、常见抗心律失常药物"></a>五、常见抗心律失常药物</h3><h4 id="（一）钠通道阻滞药-I类"><a href="#（一）钠通道阻滞药-I类" class="headerlink" title="（一）钠通道阻滞药 (I类)"></a><font size="4">（一）钠通道阻滞药 (I类)</font></h4><p><strong>抑制钠通道，降低0相上升速率，膜稳定剂或快通道阻滞剂。</strong></p>
+<p><strong>IA类，复活时间(τrecovery) 1-10s，适度阻滞钠通道。</strong></p>
+<p>● 影响传导速度，延长电位时程。<br>● 奎尼丁、普鲁卡因胺。</p>
+<p><strong>IB类，&lt;1s，轻度阻滞钠通道。</strong></p>
+<p>● 减慢传导速度，动作电位缩短或不变。<br>● 利多卡因、苯妥英钠、美西律等。</p>
+<p><strong>IC类，&gt;10s，显著阻滞钠通道。</strong></p>
+<p>● 明显阻滞传导速度，延长动作电位。<br>● 普罗帕酮。</p>
+<p><strong>适用于快速型心率失常、室性心动过速</strong></p>
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/27.png"></p>
+<h4 id="（二）β肾上腺素受体阻断药"><a href="#（二）β肾上腺素受体阻断药" class="headerlink" title="（二）β肾上腺素受体阻断药"></a><font size="4">（二）β肾上腺素受体阻断药</font></h4><p>●阻断β受体，同时具有阻滞钠通道和缩短复极过程作用。<br>●减慢4相除极速率而降低自律性，降低动作电位0相上升速率而减慢传导。<br>● 室上性心律失常、中枢性心律失常。</p>
+<h4 id="（三）延长动作电位时程药"><a href="#（三）延长动作电位时程药" class="headerlink" title="（三）延长动作电位时程药"></a><font size="4">（三）延长动作电位时程药</font></h4><p>● 阻滞钾通道，减少钾离子外流。<br>● 延长动作电位时程，但对动作电位幅度和去极化速率影响较小。<br>● 室性心律失常、心房颤动、心动过速。</p>
+<h4 id="（四）钙通道阻滞剂"><a href="#（四）钙通道阻滞剂" class="headerlink" title="（四）钙通道阻滞剂"></a><font size="4">（四）钙通道阻滞剂</font></h4><p>● 阻滞L-型钙通道，减少钙电流。<br>● 降低窦房结、房室细胞自律性，减慢房室传导速度，延长不应期。<br>● 室上性和房室折返心律失常</p>
+<h3 id="六、抗心律失常用药原则"><a href="#六、抗心律失常用药原则" class="headerlink" title="六、抗心律失常用药原则"></a>六、抗心律失常用药原则</h3><p>1、先单独用药，后联合用药。</p>
+<p>2、用有临床效果的最小剂量。</p>
+<p>3、考虑危险性优先，</p>
+<p>4、减少致心律失常等副作用。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/28.png"></p>
+<h2 id="第二节-抗动脉硬化药"><a href="#第二节-抗动脉硬化药" class="headerlink" title="第二节 抗动脉硬化药"></a>第二节 抗动脉硬化药</h2><h3 id="一、血脂代谢生理学"><a href="#一、血脂代谢生理学" class="headerlink" title="一、血脂代谢生理学"></a>一、血脂代谢生理学</h3><span style="color:#D81C2F">
+血脂<br>
+● 甘油三酯(TG)<br>
+● 胆固醇(CH)<br>
+● 胆固醇酯(CE)<br>
+● 脂肪酸(FA)<br>
+● 磷脂(PL)<br>
+</span>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第十五章/29.png" ><span style="display:block;text-align:center;">
+<font size="4">
+磷脂
+</font>
+    </span>
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第十五章/30.png" ><span style="display:block;text-align:center;">
+<font size="4">
+甘油三酯
+</font>
+    </span>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第十五章/31.png" ><span style="display:block;text-align:center;">
+<font size="4">
+胆固醇
+</font>
+    </span>
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第十五章/32.png" ><span style="display:block;text-align:center;">
+<font size="4">
+胆固醇酯
+</font>
+    </span>
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第十五章/33.png" ><span style="display:block;text-align:center;">
+<font size="4">
+脂肪酸
+</font>
+    </span>
+    </td>
+  </tr>
+</table>
+<span style="color:#D81C2F">
+脂蛋白<br>
+● 球形。<br>
+● 内部脂类分子。<br>
+● 外部磷脂，胆固醇，载脂蛋白 (apolipoproteins, apo)。<br>
+● 脂类分子在血液存在、运输、代谢的形式。
+</span>
+
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/34.png"><br>载脂蛋白<br>● 水溶性多肽。<br>● 已知多类具有不同功能的apo存在。<br>● 参与脂蛋白的代谢调节。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/35.png"><br><span style="color:#D81C2F"><br>脂蛋白种类<br>● 乳糜微粒 (CM)。<br>● 极低密度脂蛋白 (VLDL)。<br>● 低密度脂蛋白 (LDL)。<br>● 中间密度脂蛋白 (IDL)。<br>● 高密度脂蛋白 (HDL)。<br>● 脂蛋白(a) (LP(a))。<br></span><br><span style="color:#D81C2F"><br>脂蛋白生理功能<br>● 运输与代谢脂质。<br>● CM&#x2F;VLDL，甘油三酯，直径大，不易透过血管内膜，无致血管硬化。<br>● VLDL&#x2F;LDL&#x2F;IDL，富含胆固醇，运输肝脏合成的胆固醇到各处，部分可被血管壁摄取。<br>● HDL，最小颗粒，运输血管胆固醇至肝脏代谢，保护血管，“血管清道夫”。<br>● LP(a)，与LDL类似，增加动脉硬化。<br></span></p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第十五章/36.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第十五章/37.png" ></td>
+  </tr>
+</table>
+
+<p><em><strong>Good Cholesterol vs Bad Cholesterol</strong></em><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/38.png"></p>
+<h3 id="二、血脂异常与动脉硬化"><a href="#二、血脂异常与动脉硬化" class="headerlink" title="二、血脂异常与动脉硬化"></a>二、血脂异常与动脉硬化</h3><h4 id="1、原发性与继发性"><a href="#1、原发性与继发性" class="headerlink" title="1、原发性与继发性"></a><font size="4">1、原发性与继发性</font></h4><p><strong><span style="display:block;text-align:center;"><font size="4">原发性高脂血症的类型</font></span></strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>升高的脂蛋白</th>
+<th>CH</th>
+<th>TG</th>
+<th>致动脉粥样硬化的作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I</td>
+<td>CM</td>
+<td>+</td>
+<td>+++</td>
+<td>–</td>
+</tr>
+<tr>
+<td>IIa</td>
+<td>LDL</td>
+<td>++</td>
+<td>–</td>
+<td>高度</td>
+</tr>
+<tr>
+<td>IIb</td>
+<td>LDL, VLDL</td>
+<td>++</td>
+<td>++</td>
+<td>高度</td>
+</tr>
+<tr>
+<td>III</td>
+<td>IDL</td>
+<td>+</td>
+<td>++</td>
+<td>中度</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>VLDL</td>
+<td>+</td>
+<td>++</td>
+<td>中度</td>
+</tr>
+<tr>
+<td>V</td>
+<td>CM, VLDL</td>
+<td>+</td>
+<td>+++</td>
+<td>–</td>
+</tr>
+</tbody></table>
+<p><strong>注：“+”代表轻度升高，“++”代表中度升高，“+++”代表重度升高，“–”代表没变化。</strong></p>
+<h4 id="2、动脉硬化的影响因素"><a href="#2、动脉硬化的影响因素" class="headerlink" title="2、动脉硬化的影响因素"></a><font size="4">2、动脉硬化的影响因素</font></h4><p>● 高血脂：甘油三酯和胆固醇<br>● 高血压：损伤血管内膜壁<br>● 抽烟：升高脂肪酸与胆固醇含量<br>● 糖尿病：脂质代谢紊乱<br>● 其它：年龄、肥胖、饮酒等<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/39.png"><br><span style="display:block;text-align:center;"><br><font size="4"><br>Saturated and unsaturated fatty acids<br></font><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/40.png"></p>
+<span style="display:block;text-align:center;">
+<font size="4">
+trans or cis unsaturated fatty acids
+</font>
+</span>
+
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/41.png"></p>
+<h3 id="三、抗动脉硬化药"><a href="#三、抗动脉硬化药" class="headerlink" title="三、抗动脉硬化药"></a>三、抗动脉硬化药</h3><h4 id="（一）治疗策略"><a href="#（一）治疗策略" class="headerlink" title="（一）治疗策略"></a><font size="4">（一）治疗策略</font></h4><p>● 降血脂<br>● 阻滞胆汁酸的肝肠循环<br>● 肠道胆固醇到肝转运抑制剂<br>● 阻断脂质过氧化<br>● 增加脂蛋白酯酶活性<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/42.png"></p>
+<h4 id="（二）降血脂药"><a href="#（二）降血脂药" class="headerlink" title="（二）降血脂药"></a><font size="4"><span style="color:#D81C2F">（二）降血脂药</span></font></h4><h5 id="1、他汀类药物"><a href="#1、他汀类药物" class="headerlink" title="1、他汀类药物"></a><font size="4"><span style="color:#D81C2F">1、他汀类药物</span></font></h5><span style="color:#D81C2F">
+抑制羟甲基戊二酸单酰辅酶A (HMG-CoA)还原酶，减少内源性胆固醇的合成。
+</span>
+
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/43.png"><br>● 洛伐他汀<br>● 辛伐他汀<br>● 普伐他汀<br>● 氟伐他汀<br>● 阿托伐他汀<br>● 瑞舒伐他汀<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/44.png"></p>
+<h5 id="2、胆汁酸结合树脂"><a href="#2、胆汁酸结合树脂" class="headerlink" title="2、胆汁酸结合树脂"></a><font size="4">2、胆汁酸结合树脂</font></h5><p>● 肠道内吸附胆汁酸，阻滞肝脏重吸收。<br>● 促进内源性胆固醇肝脏内代谢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/46.png"><br>● 不溶于水，不良作用多。<br>● 考来烯胺 (cholestyramine)。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/45.png"></p>
+<h5 id="3、胆固醇吸收抑制剂"><a href="#3、胆固醇吸收抑制剂" class="headerlink" title="3、胆固醇吸收抑制剂"></a><font size="4">3、胆固醇吸收抑制剂</font></h5><p>● 抑制小肠细胞表达的NPC1L1胆固醇转运蛋白。<br>● 选择性抑制饮食和胆汁中的胆固醇跨小肠壁转运到肝脏。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/48.png"></p>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第十五章/47.png" ><span style="display:block;text-align:center;">
+<font size="4">
+依折麦布
+</font>
+    </span>
+    </td>
+  </tr>
+</table>
+
+<h5 id="4、抗氧化剂"><a href="#4、抗氧化剂" class="headerlink" title="4、抗氧化剂"></a><font size="4">4、抗氧化剂</font></h5><p>● 阻断血管脂质过氧化。<br>● 减少脂质过氧化物引起的血管内细胞粘附、内皮细胞损伤等。<br>● 清除氧自由基。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/49.png"></p>
+<h5 id="5、PCSK9抑制剂"><a href="#5、PCSK9抑制剂" class="headerlink" title="5、PCSK9抑制剂"></a><font size="4">5、PCSK9抑制剂</font></h5><p>● PCSK9为前蛋白转移酶<br>● 肝脏、小肠、肾表达<br>● 抑制剂阻滞PCSK与LDL受体的结合<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/50.png"><br><strong>抑制PCSK9结合</strong><br>● LDL受体接受血管内LDL结合<br>● 摄取LDL到细胞内并代谢分解<br>● LDL受体再利用<br><strong>PCSK9结合</strong><br>● PCSK9特异结合LDL受体<br>● 移至溶酶体<br>● 受体被降解<br>● LDLR无法再利用<br>● 血液中LDL浓度升高<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/51.png"></p>
+<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E4%BA%8C%E3%80%81%E5%BF%83%E8%84%8F%E7%9A%84%E7%94%B5%E7%94%9F%E7%90%86">心脏电生理</a><br>2、<a href="#%E4%B8%89%E3%80%81%E5%BF%83%E5%BE%8B%E5%A4%B1%E5%B8%B8%E7%9A%84%E5%8F%91%E7%94%9F%E6%9C%BA%E5%88%B6">心律失常发生的机制</a><br>3、<a href="#%E4%BA%94%E3%80%81%E5%B8%B8%E8%A7%81%E6%8A%97%E5%BF%83%E5%BE%8B%E5%A4%B1%E5%B8%B8%E8%8D%AF%E7%89%A9">抗心律失常药物分类以及作用机制</a> </p>
+<p>4、<a href="#%E4%B8%80%E3%80%81%E8%A1%80%E8%84%82%E4%BB%A3%E8%B0%A2%E7%94%9F%E7%90%86%E5%AD%A6">血脂</a>、<a href="#%E4%B8%80%E3%80%81%E8%A1%80%E8%84%82%E4%BB%A3%E8%B0%A2%E7%94%9F%E7%90%86%E5%AD%A6">脂蛋白</a>、以及它们的生理功能<br>5、动脉硬化的<a href="#2%E3%80%81%E5%8A%A8%E8%84%89%E7%A1%AC%E5%8C%96%E7%9A%84%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0">影响因素</a>以及<a href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%B2%BB%E7%96%97%E7%AD%96%E7%95%A5">治疗策略</a><br>6、<a href="#1%E3%80%81%E4%BB%96%E6%B1%80%E7%B1%BB%E8%8D%AF%E7%89%A9">他汀类降血脂药的作用机制</a></p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>

@@ -2,31 +2,34 @@
 function checkChoiceAnswer(question) {
     const selectedOption = question.querySelector('input[type="radio"]:checked');
     const correctAnswer = question.getAttribute('data-answer');
+    const explanation = question.getAttribute('data-explanation');
     const feedback = question.querySelector('.feedback');
-    
+
     if (!selectedOption) {
         feedback.innerHTML = '';
         return false;
     }
-    
+
     const userAnswer = selectedOption.value;
-    
+
     if (userAnswer === correctAnswer) {
-        feedback.innerHTML = '回答正确！';
+        feedback.innerHTML = '✓ 回答正确！' + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback correct';
         return true;
     } else {
-        feedback.innerHTML = `回答错误！正确答案是：${correctAnswer}`;
+        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswer}` + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback incorrect';
         return false;
     }
 }
+
 
 // 检查填空题答案
 function checkFillAnswer(question) {
     const inputs = question.querySelectorAll('.blank-input');
     const answers = JSON.parse(question.getAttribute('data-answer'));
     const feedback = question.querySelector('.feedback');
+    const explanation = question.getAttribute('data-explanation');
     let allCorrect = true;
     let allFilled = true;
     
@@ -47,11 +50,11 @@ function checkFillAnswer(question) {
     }
     
     if (allCorrect) {
-        feedback.innerHTML = '✓ 回答正确！';
+        feedback.innerHTML = '✓ 回答正确！' + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback correct';
         return true;
     } else {
-        feedback.innerHTML = `✗ 回答错误！正确答案是：${answers.join('、')}`;
+        feedback.innerHTML = `✗ 回答错误！正确答案是：${answers.join('、')}` + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback incorrect';
         return false;
     }
@@ -62,6 +65,7 @@ function checkMultiAnswer(question) {
     const selectedOptions = question.querySelectorAll('input[type="checkbox"]:checked');
     const correctAnswers = JSON.parse(question.getAttribute('data-answer'));
     const feedback = question.querySelector('.feedback');
+    const explanation = question.getAttribute('data-explanation');
 
     if (selectedOptions.length === 0) {
         feedback.innerHTML = '';
@@ -76,7 +80,7 @@ function checkMultiAnswer(question) {
 
     // 长度不同，必错
     if (userSet.size !== correctSet.size) {
-        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswers.join('、')}`;
+        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswers.join('、')}` + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback incorrect';
         return false;
     }
@@ -90,11 +94,11 @@ function checkMultiAnswer(question) {
     });
 
     if (allMatch) {
-        feedback.innerHTML = '✓ 回答正确！';
+        feedback.innerHTML = '✓ 回答正确！' + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback correct';
         return true;
     } else {
-        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswers.join('、')}`;
+        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswers.join('、')}` + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback incorrect';
         return false;
     }
@@ -106,7 +110,8 @@ function checkJudgeAnswer(question) {
     const selectedOption = question.querySelector('input[type="radio"]:checked');
     const correctAnswer = question.getAttribute('data-answer');
     const feedback = question.querySelector('.feedback');
-    
+    const explanation = question.getAttribute('data-explanation');
+
     if (!selectedOption) {
         feedback.innerHTML = '';
         return false;
@@ -115,11 +120,11 @@ function checkJudgeAnswer(question) {
     const userAnswer = selectedOption.value;
     
     if (userAnswer === correctAnswer) {
-        feedback.innerHTML = '✓ 回答正确！';
+        feedback.innerHTML = '✓ 回答正确！' + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback correct';
         return true;
     } else {
-        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswer}`;
+        feedback.innerHTML = `✗ 回答错误！正确答案是：${correctAnswer}` + (explanation ? `<br><strong>解析：</strong>${explanation}` : '');
         feedback.className = 'feedback incorrect';
         return false;
     }

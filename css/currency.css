@@ -1,0 +1,90 @@
+/* 货币转换器小工具 */
+#currency-converter {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+#currency-converter .item-headline {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+#currency-converter .item-headline i {
+  margin-right: 8px;
+  color: #49b1f5;
+}
+
+.currency-converter-container {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+}
+
+/* 小工具内部样式 */
+#wc8808907ce2483e3b39325779c309c812 {
+  width: 100% !important;
+  min-height: 350px !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#w8808907ce2483e3b39325779c309c812 {
+  width: 100% !important;
+  height: 350px !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+#wc8808907ce2483e3b39325779c309c812 > div {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(5px) !important;
+  z-index: 10;
+}
+
+#wc8808907ce2483e3b39325779c309c812 a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  transition: opacity 0.3s !important;
+}
+
+#wc8808907ce2483e3b39325779c309c812 a:hover {
+  opacity: 0.8 !important;
+}
+
+/* 深色模式适配 */
+[data-theme="dark"] #currency-converter {
+  background: #2a2a2a;
+}
+
+[data-theme="dark"] #wc8808907ce2483e3b39325779c309c812 > div {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  #currency-converter {
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .currency-converter-container {
+    min-height: 300px;
+  }
+  
+  #wc8808907ce2483e3b39325779c309c812,
+  #w8808907ce2483e3b39325779c309c812 {
+    height: 300px !important;
+    min-height: 300px !important;
+  }
+}

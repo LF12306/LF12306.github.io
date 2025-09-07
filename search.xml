@@ -4,7 +4,7 @@
     <title>JLPT备战语法刷题</title>
     <url>/2025/09/06/JLPT%E5%A4%87%E6%88%98%E8%AF%AD%E6%B3%95%E5%88%B7%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="请先把提示词和划了重点的复习资料喂给AI生成代码"><a href="#请先把提示词和划了重点的复习资料喂给AI生成代码" class="headerlink" title="请先把提示词和划了重点的复习资料喂给AI生成代码"></a>请先把提示词和划了重点的复习资料喂给AI生成代码</h2><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a></h1><h1 id="每次生成前记得修改随机种子"><a href="#每次生成前记得修改随机种子" class="headerlink" title="每次生成前记得修改随机种子"></a>每次生成前记得修改随机种子</h1><p>随便乱填就行，让ai生成不一样的题目</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"># AI出题指令 </span><br><span class="line"></span><br><span class="line"> ## 核心任务 </span><br><span class="line"> 模仿以下HTML格式，从复习资料中抽取随机的语法知识，生成知识点尽量不重复的单选题、排序题、词汇题各10道。（#可以选择语法单选题、排序题、词汇题）</span><br><span class="line"></span><br><span class="line"> ## 本次生成规则 (请每次修改此处以确保题目多样性，每次都请根据随机种子随机生成完全不一样的题目) </span><br><span class="line"> 1.  **随机种子**: 本次生成的随机种子是 [9566645657]（#可以使用任何数字字母或汉字）。</span><br><span class="line"> 2.  **出题侧重点**: 本次请侧重于 [JLPT的考试风格] 进行出题。 </span><br><span class="line"> 3.  **题目难度与角度**: 请将题目难度设定为 [中等和困难]（#可以选择简单中等困难）。 </span><br><span class="line"> 4.  **排除的知识点**: 请避免生成与 [暂无] 相关的题目。 </span><br><span class="line"> 5.  **每道题给出翻译**: 请给出每道题的句意以便于理解，译文禁止出现在题干里。</span><br><span class="line"> </span><br><span class="line"> ## 输出要求 </span><br><span class="line"> - 题干要严格根据随机种子进行随意输出，不能过度使用已有的考试题目，必须根据随机这种进行原创，原创的题干内容是自由不受限制的，只与随机种子对应。 </span><br><span class="line"> - data-answer内为正确答案，data-explanation内为答案解析。 </span><br><span class="line"> - 答案解析内的引号必须使用中文引号 `“”`，以避免破坏HTML结构。 </span><br><span class="line"> - 必须严格根据复习文件内容出题，并严格套用下方提供的HTML代码样式。 </span><br><span class="line"> - 不可以生成任何多余的代码或解释性文字，直接输出完整的HTML代码块。 </span><br><span class="line"> - 注意输出格式，用```HTML代码块```的格式框起来。</span><br><span class="line"> - 注意答案使用换行符&lt;br&gt;。</span><br><span class="line"></span><br><span class="line"> ## HTML格式模板 </span><br><span class="line">&lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (简单难度示例) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;B&quot; data-explanation=&quot;答案：B。&lt;br&gt;</span><br><span class="line">【解析】「～てからでないと」表示“如果不先做完前面的事，就不能……”的条件关系，后面通常跟否定形式。&lt;br&gt;</span><br><span class="line">选项A是意志形，选项C是肯定形式，都不符合。&lt;br&gt;</span><br><span class="line">选项D虽然是否定，但“不能决定”比“不决定”更符合逻辑。&lt;br&gt;</span><br><span class="line">【译文】如果不和家人商量好，就无法决定是否要买这个房子。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;2.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;この家を買うかどうかは、家族でよく話し合ってからでないと（  ）。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q2a&quot;&gt;決めよう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q2b&quot;&gt;決められない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q2c&quot;&gt;決める&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q2d&quot;&gt;決めない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (中等难度示例，语法的用法会比较相近) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;答案：B&lt;br&gt;</span><br><span class="line">【解析】四个选项均表示“无法……”“不能……”。&lt;br&gt;</span><br><span class="line">选项A「行き得ない」，「得ない」接在一般动词后时表示“没有……的可能性”。&lt;br&gt;</span><br><span class="line">选项C「行きかねる」，「かねる」一般用于自己可以办到，但不愿意去做的事情，而本句中无法去是因为客观条件原因。&lt;br&gt;</span><br><span class="line">选项D「行きがたい」，「がたい」强调的是自己的感觉和此事没有可行性。&lt;br&gt;</span><br><span class="line">只有选项B「行けない」直接用动词可能形的否定表示“无法去”，所以是正确答案。&lt;br&gt;</span><br><span class="line">【译文】今天这天气是没法儿去远足了。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;もう少し早く家を出れば、電車に間に合った（  ）。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;行き得ない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;行けない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;行きかねる&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;行きがたい&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (困难难度示例，语法的用法会非常相近，非常难区分) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;答案：选A&lt;br&gt;</span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">选项2表示“即使在靠近但也不过……”，有台风即使靠近了危害也不大的语气；&lt;br&gt;</span><br><span class="line">选项3表示“虽然台风在靠近……”，后半句的主语也应该是台风；&lt;br&gt;</span><br><span class="line">选项4表示“一边……一边……”，或是动作的持续。&lt;br&gt;</span><br><span class="line">只有选项1「近づいているにもかかわらず」能表达“尽管正在靠近，但不管这个事情，庙会还是继续”的意思，所以是正确答案。&lt;br&gt;</span><br><span class="line">【译文】尽管台风正在靠近，但庙会活动还在继续进行。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;台風が（　）、祭りは続けられている。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;近づいているにもかかわらず&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;近づいているといっても&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;近づきながらも&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;近づきつつ&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (排序题示例，以多段短语的语法排列为考点，请注意：生成题目时先生成完整的句子，再把句子有语法点的部分根据JLPT的考察方式切割成四段，其中的★是该题的正确选项) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：4&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】他在这部电影里，以其扎实的演技将单纯而笨拙的主人公完美地表演了出来。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】正确顺序：2-1-4-3&lt;br&gt;</span><br><span class="line">“見事なまでに”为惯用表达，表示“完全地，近乎完美地”，故3放最后一空。題目中“不器用な”后面应该接名词，1后面应该也要接名词，根据句意，2放在第一空，1，4放一起。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;彼はこの映画で、純粋で不器用な__  __  ★  __までに演じきった。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1.その確かな&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2.主人公を&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3.見事な&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4.表現力で&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例1，以词汇的读音为主要考点，选项全为假名) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：3&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】队伍选手都敬仰教练。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1.労わる（いたわる）：慰劳，安慰；同情。部下を労わる。慰劳部下。&lt;br&gt;</span><br><span class="line">2.敬う（うやまう）：尊敬。先生を敬う。尊敬老师&lt;br&gt;</span><br><span class="line">3.慕う（したう）：爱慕，怀念；敬慕，敬仰。母国を慕う。怀念祖国。&lt;br&gt;</span><br><span class="line">4.庇う（かばう）：庇护；保护。過失を庇う。包庇过错。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;チームの多くの選手が監督を「慕って」いるようだ。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. いたわって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. うやまって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. したって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. かばって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例2，重点考察词汇的用法，题型有两种：选项全是汉字或选项全是假名，但都是考用法) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：3&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】要使用这个系统的话，必须要用连接着网络的电脑。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1.到達（とうたつ）：到达&lt;br&gt;</span><br><span class="line">2.付属（ふぞく）：附属&lt;br&gt;</span><br><span class="line">3.接続（せつぞく）：连接、接续&lt;br&gt;</span><br><span class="line">4.密着（みっちゃく）：紧贴&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;このシステムを利用するには、インターネットに（　　）しているパソコンが必要です。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. 到達&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. 付属&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. 接続&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. 密着&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例3，重点考察词汇的用法，题型有两种：选项全是汉字或选项全是假名，但都是考用法。以下为考察该词在句中是否合适) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：2&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】议会为了盘活城镇经济，决定招揽一些工厂。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">誘致：招徕，招揽，吸引&lt;br&gt;</span><br><span class="line">1.应该用：誘導（ゆうどう）：引导，诱导，导航&lt;br&gt;</span><br><span class="line">3.应该用：募集（ぼしゅう）：募集；征募；招募。&lt;br&gt;</span><br><span class="line">4.应该用：導入（どうにゅう）：导入，引进，引入，输入。</span><br><span class="line">&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;駐車場で、係員が車を何台も誘致している&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;議会は町の経済を活性化させるために、工場を誘致することを決めた。&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;人材が不足しているため、今年は100人以上の新入社員を誘致した。&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;あの学校は新しい教授方法を誘致したことで、人々の関心を集めている。&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例4，重点考察词汇的意思，题型有两种：选项全是汉字或选项全是假名，但都是考意思。考察方式为同义替换) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：2&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】如果车站前建大型超市的话就没办法了&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1.大歓迎だ：非常欢迎&lt;br&gt;</span><br><span class="line">2.どうしようもない：没办法，只能放弃&lt;br&gt;</span><br><span class="line">3.ぜひ働きたい：特别想（在那里）工作&lt;br&gt;</span><br><span class="line">4.驚きだ：惊讶&lt;br&gt;</span><br><span class="line">&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;駅前に巨大スーパーができたら「お手上げ」だ。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;大歓迎&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;どうしようもない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;ぜひ働きたい&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;驚きだ&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例5，以词汇的读音为主要考点，选项全为假名。从词汇文件中获取词汇时排除没有读音的词汇) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：1&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】比想象中还要险峻。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1．けわしい（険しい）：险峻，陡峭&lt;br&gt;</span><br><span class="line">2．まぶしい（眩しい）：晃眼、耀眼，目眩&lt;br&gt;</span><br><span class="line">3．おそろしい（恐ろしい）：可怕、惊人&lt;br&gt;</span><br><span class="line">4．はげしい（激しい·烈しい）：激烈，强烈，猛烈&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;思った以上「険しかった」。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. けわしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. まぶしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. おそろしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. はげしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例5，以词汇的读音为主要考点，选项全为假名。从词汇文件中获取词汇时排除没有读音的词汇) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：2&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】新社长表示要延续以往的经营方针。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1. とうしょう（凍傷）：冻伤&lt;br&gt;</span><br><span class="line">2. とうしゅう （踏襲）：承袭，继承&lt;br&gt;</span><br><span class="line">3. としょう（渡渉）：徒涉，跋涉&lt;br&gt;</span><br><span class="line">4. 干扰项&lt;br&gt;</span><br><span class="line">&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;新社長は、これまでの経営方針を「踏襲」すると述べた。。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. とうしょう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. とうしゅう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. としょう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. としゅう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"># AI出题指令 </span><br><span class="line"></span><br><span class="line"> ## 核心任务 </span><br><span class="line"> 模仿以下HTML格式，从复习资料中抽取随机的语法知识，生成知识点尽量不重复的单选题、排序题、词汇题各10道。（#可以选择语法单选题、排序题、词汇题）</span><br><span class="line"></span><br><span class="line"> ## 本次生成规则 (请每次修改此处以确保题目多样性，每次都请根据随机种子随机生成完全不一样的题目) </span><br><span class="line"> 1.  **随机种子**: 本次生成的随机种子是 [9566645657]（#可以使用任何数字字母或汉字）。</span><br><span class="line"> 2.  **出题侧重点**: 本次请侧重于 [JLPT的考试风格] 进行出题。 </span><br><span class="line"> 3.  **题目难度与角度**: 请将题目难度设定为 [中等和困难]（#可以选择简单中等困难）。 </span><br><span class="line"> 4.  **排除的知识点**: 请避免生成与 [暂无] 相关的题目。 </span><br><span class="line"> 5.  **每道题给出翻译**: 请给出每道题的句意以便于理解，译文禁止出现在题干里。</span><br><span class="line"> </span><br><span class="line"> ## 输出要求 </span><br><span class="line"> - 题干要严格根据随机种子进行随意输出，不能过度使用已有的考试题目，必须根据随机这种进行原创，原创的题干内容是自由不受限制的，只与随机种子对应。 </span><br><span class="line"> - data-answer内为正确答案，data-explanation内为答案解析。 </span><br><span class="line"> - 答案解析内的引号必须使用中文引号 `“”`，以避免破坏HTML结构。 </span><br><span class="line"> - 必须严格根据复习文件内容出题，并严格套用下方提供的HTML代码样式。 </span><br><span class="line"> - 不可以生成任何多余的代码或解释性文字，直接输出完整的HTML代码块。 </span><br><span class="line"> - 注意输出格式，用```HTML代码块```的格式框起来。</span><br><span class="line"> - 注意答案使用换行符&lt;br&gt;。</span><br><span class="line"></span><br><span class="line"> ## HTML格式模板 </span><br><span class="line">&lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (简单难度示例) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;B&quot; data-explanation=&quot;答案：B。&lt;br&gt;</span><br><span class="line">【解析】「～てからでないと」表示“如果不先做完前面的事，就不能……”的条件关系，后面通常跟否定形式。&lt;br&gt;</span><br><span class="line">选项A是意志形，选项C是肯定形式，都不符合。&lt;br&gt;</span><br><span class="line">选项D虽然是否定，但“不能决定”比“不决定”更符合逻辑。&lt;br&gt;</span><br><span class="line">【译文】如果不和家人商量好，就无法决定是否要买这个房子。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;2.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;この家を買うかどうかは、家族でよく話し合ってからでないと（  ）。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q2a&quot;&gt;決めよう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q2b&quot;&gt;決められない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q2c&quot;&gt;決める&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q2&quot; id=&quot;q2d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q2d&quot;&gt;決めない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (中等难度示例，语法的用法会比较相近) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;答案：B&lt;br&gt;</span><br><span class="line">【解析】四个选项均表示“无法……”“不能……”。&lt;br&gt;</span><br><span class="line">选项A「行き得ない」，「得ない」接在一般动词后时表示“没有……的可能性”。&lt;br&gt;</span><br><span class="line">选项C「行きかねる」，「かねる」一般用于自己可以办到，但不愿意去做的事情，而本句中无法去是因为客观条件原因。&lt;br&gt;</span><br><span class="line">选项D「行きがたい」，「がたい」强调的是自己的感觉和此事没有可行性。&lt;br&gt;</span><br><span class="line">只有选项B「行けない」直接用动词可能形的否定表示“无法去”，所以是正确答案。&lt;br&gt;</span><br><span class="line">【译文】今天这天气是没法儿去远足了。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;もう少し早く家を出れば、電車に間に合った（  ）。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;行き得ない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;行けない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;行きかねる&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;行きがたい&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (困难难度示例，语法的用法会非常相近，非常难区分) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;答案：选A&lt;br&gt;</span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">选项2表示“即使在靠近但也不过……”，有台风即使靠近了危害也不大的语气；&lt;br&gt;</span><br><span class="line">选项3表示“虽然台风在靠近……”，后半句的主语也应该是台风；&lt;br&gt;</span><br><span class="line">选项4表示“一边……一边……”，或是动作的持续。&lt;br&gt;</span><br><span class="line">只有选项1「近づいているにもかかわらず」能表达“尽管正在靠近，但不管这个事情，庙会还是继续”的意思，所以是正确答案。&lt;br&gt;</span><br><span class="line">【译文】尽管台风正在靠近，但庙会活动还在继续进行。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;台風が（　）、祭りは続けられている。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;近づいているにもかかわらず&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;近づいているといっても&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;近づきながらも&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;近づきつつ&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (排序题示例，以多段短语的语法排列为考点，请注意：生成题目时先生成完整的句子，再把句子有语法点的部分根据JLPT的考察方式切割成四段，其中的★是该题的正确选项) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：4&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】他在这部电影里，以其扎实的演技将单纯而笨拙的主人公完美地表演了出来。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】正确顺序：2-1-4-3&lt;br&gt;</span><br><span class="line">“見事なまでに”为惯用表达，表示“完全地，近乎完美地”，故3放最后一空。題目中“不器用な”后面应该接名词，1后面应该也要接名词，根据句意，2放在第一空，1，4放一起。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;彼はこの映画で、純粋で不器用な__  __  ★  __までに演じきった。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1.その確かな&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2.主人公を&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3.見事な&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4.表現力で&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例1，以词汇的读音为主要考点，选项全为假名) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：3&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】队伍选手都敬仰教练。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1.労わる（いたわる）：慰劳，安慰；同情。部下を労わる。慰劳部下。&lt;br&gt;</span><br><span class="line">2.敬う（うやまう）：尊敬。先生を敬う。尊敬老师&lt;br&gt;</span><br><span class="line">3.慕う（したう）：爱慕，怀念；敬慕，敬仰。母国を慕う。怀念祖国。&lt;br&gt;</span><br><span class="line">4.庇う（かばう）：庇护；保护。過失を庇う。包庇过错。&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;チームの多くの選手が監督を「慕って」いるようだ。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. いたわって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. うやまって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. したって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. かばって&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例2，重点考察词汇的用法，题型有两种：选项全是汉字或选项全是假名，但都是考用法) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：3&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】要使用这个系统的话，必须要用连接着网络的电脑。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1.到達（とうたつ）：到达&lt;br&gt;</span><br><span class="line">2.付属（ふぞく）：附属&lt;br&gt;</span><br><span class="line">3.接続（せつぞく）：连接、接续&lt;br&gt;</span><br><span class="line">4.密着（みっちゃく）：紧贴&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;このシステムを利用するには、インターネットに（　　）しているパソコンが必要です。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. 到達&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. 付属&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. 接続&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. 密着&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例3，重点考察词汇的用法，题型有两种：选项全是汉字或选项全是假名，但都是考用法。以下为考察该词在句中是否合适) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：2&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】议会为了盘活城镇经济，决定招揽一些工厂。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">誘致：招徕，招揽，吸引&lt;br&gt;</span><br><span class="line">1.应该用：誘導（ゆうどう）：引导，诱导，导航&lt;br&gt;</span><br><span class="line">3.应该用：募集（ぼしゅう）：募集；征募；招募。&lt;br&gt;</span><br><span class="line">4.应该用：導入（どうにゅう）：导入，引进，引入，输入。</span><br><span class="line">&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;次の言葉の使い方として最もよいものを、１・２・３・４から一つ選びなさい。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;駐車場で、係員が車を何台も誘致している&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;議会は町の経済を活性化させるために、工場を誘致することを決めた。&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;人材が不足しているため、今年は100人以上の新入社員を誘致した。&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;あの学校は新しい教授方法を誘致したことで、人々の関心を集めている。&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例4，重点考察词汇的意思，题型有两种：选项全是汉字或选项全是假名，但都是考意思。考察方式为同义替换) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：2&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】如果车站前建大型超市的话就没办法了&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1.大歓迎だ：非常欢迎&lt;br&gt;</span><br><span class="line">2.どうしようもない：没办法，只能放弃&lt;br&gt;</span><br><span class="line">3.ぜひ働きたい：特别想（在那里）工作&lt;br&gt;</span><br><span class="line">4.驚きだ：惊讶&lt;br&gt;</span><br><span class="line">&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;駅前に巨大スーパーができたら「お手上げ」だ。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;大歓迎&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;どうしようもない&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;ぜひ働きたい&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;驚きだ&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例5，以词汇的读音为主要考点，选项全为假名。从词汇文件中获取词汇时排除没有读音的词汇。) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：1&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】比想象中还要险峻。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1．けわしい（険しい）：险峻，陡峭&lt;br&gt;</span><br><span class="line">2．まぶしい（眩しい）：晃眼、耀眼，目眩&lt;br&gt;</span><br><span class="line">3．おそろしい（恐ろしい）：可怕、惊人&lt;br&gt;</span><br><span class="line">4．はげしい（激しい·烈しい）：激烈，强烈，猛烈&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;思った以上「険しかった」。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. けわしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. まぶしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. おそろしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. はげしかった&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- (词汇题示例5，以词汇容易混淆的读音为主要考点，选项全为假名。从词汇文件中获取词汇时排除没有读音的词汇。) --&gt;</span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;C&quot; data-explanation=&quot;正解：2&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【译文】新社长表示要延续以往的经营方针。&lt;br&gt;</span><br><span class="line"></span><br><span class="line">【解析】&lt;br&gt;</span><br><span class="line">1. とうしょう（凍傷）：冻伤&lt;br&gt;</span><br><span class="line">2. とうしゅう （踏襲）：承袭，继承&lt;br&gt;</span><br><span class="line">3. としょう（渡渉）：徒涉，跋涉&lt;br&gt;</span><br><span class="line">4. 干扰项&lt;br&gt;</span><br><span class="line">&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;新社長は、これまでの経営方針を「踏襲」すると述べた。。&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;&lt;label for=&quot;q1a&quot;&gt;1. とうしょう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;&lt;label for=&quot;q1b&quot;&gt;2. とうしゅう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;&lt;label for=&quot;q1c&quot;&gt;3. としょう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;option&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;&lt;label for=&quot;q1d&quot;&gt;4. としゅう&lt;/label&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <h1 id="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"><a href="#本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考" class="headerlink" title="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"></a><em><strong>本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考</strong></em></h1><h1 id="直接把下面链接里的复习资料文件喂给ai"><a href="#直接把下面链接里的复习资料文件喂给ai" class="headerlink" title="直接把下面链接里的复习资料文件喂给ai"></a>直接把下面链接里的复习资料文件喂给ai</h1><h2 id="下载N1词汇"><a href="#下载N1词汇" class="headerlink" title="下载N1词汇"></a><a href="/files/N1词汇.xlsx" download="N1词汇.xlsx">下载N1词汇</a></h2><h2 id="下载N1语法知识点文件"><a href="#下载N1语法知识点文件" class="headerlink" title="下载N1语法知识点文件"></a><a href="/files/N1语法.md" download="N1语法.md">下载N1语法知识点文件</a></h2><h2 id="下载N2词汇"><a href="#下载N2词汇" class="headerlink" title="下载N2词汇"></a><a href="/files/N2词汇.xlsx" download="N2词汇.xlsx">下载N2词汇</a></h2><h2 id="下载N2语法知识点文件"><a href="#下载N2语法知识点文件" class="headerlink" title="下载N2语法知识点文件"></a><a href="/files/N2语法.md" download="N2语法.md">下载N2语法知识点文件</a></h2><h2 id="再把代码复制进下面的题目生成框里"><a href="#再把代码复制进下面的题目生成框里" class="headerlink" title="再把代码复制进下面的题目生成框里"></a>再把代码复制进下面的题目生成框里</h2>
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -148,6 +148,137 @@
         <tag>技术分享</tag>
         <tag>WinNAS</tag>
         <tag>经验记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在线AI刷题辅助复习</title>
+    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="或许是小镇做题家的得力助手"><a href="#或许是小镇做题家的得力助手" class="headerlink" title="或许是小镇做题家的得力助手"></a><del>或许是小镇做题家的得力助手</del></h1><h2 id="请先把提示词和划了重点的复习资料喂给AI生成代码"><a href="#请先把提示词和划了重点的复习资料喂给AI生成代码" class="headerlink" title="请先把提示词和划了重点的复习资料喂给AI生成代码"></a>请先把提示词和划了重点的复习资料喂给AI生成代码</h2><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">模仿以下格式，从复习文件中获取重点（有特殊样式的部分），随机生成知识点不重复的单选题、多选题、填空题、判断题各10道给我，我要用刷题的方式确保自己复习到位并记住了知识点。data-answer内为正确答案，data-explanation内为答案解析，答案解析内如果有引号则一定要使用中文引号，避免影响html。请严格按照复习文件进行题目生成。并严格套用以下样式以html代码的形式输出给我，不可以生成多余的代码，必须完整地输出所有题目：</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 单选题1 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;D&quot; data-explanation=&quot;膜分离技术适用于分离液体中的溶质或杂质，处理不含固形物的料液效果最佳。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;下列哪种物质最适合使用膜分离技术处理？&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1a&quot;&gt;菌体&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1b&quot;&gt;细胞&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1c&quot;&gt;微颗粒&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1d&quot;&gt;不含固形物的料液&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;多项选择题 (每题2分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 多选题49 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;multi&quot; data-answer=&#x27;[&quot;A&quot;,&quot;D&quot;]&#x27; data-explanation=&quot;发酵液的预处理和色层分离通常用于原料准备或精细纯化阶段，不属于初步纯化。&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;49&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;下列分离方法中不属于初步纯化的是( )&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49a&quot;&gt;发酵液(培养液)的预处理和固液分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49b&quot;&gt;吸附法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49c&quot;&gt;离子交换法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49d&quot;&gt;色层分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;button class=&quot;check-multi-button&quot;&gt;确定&lt;/button&gt; &lt;!-- ✅ 添加这一行 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;填空题 (每题2-3分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        &lt;!-- 填空题34 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;fill&quot; data-answer=&#x27;[&quot;有机&quot;,&quot;无机&quot;]&#x27; data-explanation=&quot;碱性清洗剂能有效去除蛋白质等有机污染物，酸性清洗剂则对钙镁盐等无机沉积物更有效。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;34.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;&lt;!-- 根据空格数设置分值 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;膜清洗的化学方法中，碱性清洗剂可有效去除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;0&quot;&gt; </span><br><span class="line"></span><br><span class="line">                污染物，酸性清洗剂用于清除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;1&quot;&gt; </span><br><span class="line"></span><br><span class="line">                沉积。</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;!-- 判断题59 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question&quot; data-type=&quot;judge&quot; data-answer=&quot;正确&quot; data-explanation=&quot;空化作用是超声波在液体中形成气泡并迅速破裂，从而产生冲击力和剪切力实现细胞破碎。&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-number&quot;&gt;59&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-text&quot;&gt;超声破碎是利用在超声波作用下液体发生空化作用。产生极大的冲击波和剪切力,使细胞破碎。&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;true-false-options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59true&quot; value=&quot;正确&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59true&quot;&gt;正确&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59false&quot; value=&quot;错误&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59false&quot;&gt;错误&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;subjective-section&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;h2 class=&quot;section-title&quot;&gt;主观题 (12分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question&quot; data-type=&quot;subjective&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-number&quot;&gt;79&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-score&quot;&gt;12分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-text&quot;&gt;请设计方案将下列蛋白进行分离纯化，并说出采用方法的原理：&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;textarea class=&quot;subjective-answer&quot; placeholder=&quot;请输入您的答案...&quot;&gt;&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;button class=&quot;show-answer-btn&quot; onclick=&quot;toggleSubjectiveAnswer(this)&quot;&gt;查看参考答案&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;reference-answer&quot; style=&quot;display: none;&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;strong&gt;参考答案：&lt;/strong&gt;  </span><br><span class="line">                        该蛋白分离可采用层析技术（如离子交换层析、分子筛层析等），根据蛋白的等电点、分子量、亲水疏水性质等差异进行分步纯化。原理是利用不同蛋白在流动相和固定相中的相互作用力差异，选择性洗脱目标蛋白，从而实现分离。</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"><a href="#本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考" class="headerlink" title="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"></a><em><strong>本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考</strong></em></h1><h2 id="可选的附加提示词"><a href="#可选的附加提示词" class="headerlink" title="可选的附加提示词"></a>可选的附加提示词</h2><p>以上提示词默认生成单选题、多选题、填空题、判断题，只要在AI聊天框里修改提示词就改变生成的题型。如果有额外需要，可以自行调试或者参考以下提示词。<br>名词解释：<code>名词解释使用填空题样式，但section-title要改为“名词解释”，按照知识点重点尽可能地多挖几个空。</code><br>主观题：<code>生成主观题，并按照下列主观题格式生成参考答案。</code><br>遇到复习资料很长的情况下，建议指定AI生成部分章节的题目，提高复习的覆盖率。例如：<code>从复习资料获取第一到第四章的知识点，随机生成知识点不重复的单选题、多选题、填空题、判断题各10道。</code></p>
+<h2 id="再把代码复制进下面的题目生成框里"><a href="#再把代码复制进下面的题目生成框里" class="headerlink" title="再把代码复制进下面的题目生成框里"></a>再把代码复制进下面的题目生成框里</h2>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/exam-question.css" />
+  <style>
+    #input-area {
+      margin: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      font-size: 14px;
+      padding: 10px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    green-button {
+      margin-top: 10px;
+      padding: 10px 24px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    green-button:hover {
+      background-color: #45a049;
+    }
+    
+    #exam-content {
+      margin: 20px;
+    }
+    .check-multi-button {
+      margin-top: 8px;
+      padding: 6px 14px;
+      font-size: 14px;
+      background-color: #3a82f7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .check-multi-button:hover {
+      background-color: #2e6ed0;
+    }
+  </style>
+</head>
+<body>
+  <div id="input-area">
+    <h3>粘贴 HTML 试题内容：</h3>
+    <textarea id="html-input" placeholder="请将 HTML 代码粘贴到这里..."></textarea>
+    <br />
+    <green-button onclick="loadQuestions()">确定</green-button>
+  </div>
+
+  <div id="exam-content"></div>
+<div style="text-align: center; margin: 30px;">
+  <green-button onclick="submitAnswers()" style="padding: 12px 24px; font-size: 16px; background-color: #2196f3; color: white; border: none; border-radius: 6px; cursor: pointer;">
+    提交试卷
+  </green-button>
+</div>
+
+<div id="results" style="display: none; margin: 30px; text-align: center;">
+  <h3>得分结果</h3>
+  <div style="font-size: 18px; margin: 10px 0;">
+    您的得分：<span id="score" style="font-weight: bold;"></span> 分
+  </div>
+  <div style="width: 80%; margin: 10px auto; background: #ddd; height: 20px; border-radius: 10px;">
+    <div id="progressBar" style="height: 20px; background: #4caf50; border-radius: 10px; width: 0%; transition: width 0.5s;"></div>
+  </div>
+  <div id="resultDetails" style="margin-top: 10px; color: #555;"></div>
+</div>
+
+  <script>
+    function loadQuestions() {
+      const htmlContent = document.getElementById('html-input').value.trim();
+      if (!htmlContent) {
+        alert('请输入内容！');
+        return;
+      }
+
+      const container = document.getElementById('exam-content');
+      container.innerHTML = htmlContent;
+
+      // 延迟 100ms 确保 DOM 渲染完成后加载 JS（也可用 MutationObserver）
+      setTimeout(() => {
+        const oldScript = document.getElementById('exam-script');
+        if (oldScript) oldScript.remove();
+
+        const script = document.createElement('script');
+        script.src = '/js/exam.js';
+        script.id = 'exam-script';
+        script.defer = true; // 保证 DOM 可操作
+        document.body.appendChild(script);
+      }, 100);
+    }
+  </script>
+
+</body>
+</html>
+]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在线AI刷题辅助复习使用教程</title>
+    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="在线AI刷题辅助复习使用教程"><a href="#在线AI刷题辅助复习使用教程" class="headerlink" title="在线AI刷题辅助复习使用教程"></a>在线AI刷题辅助复习使用教程</h1><p>本项目教程旨在帮助期末复习的大学生备考，AI生成题目为辅助手段，请不要迷信AI<br>目前支持单选题、填空题、对错题，多选题效果不太完善，建议先在提示词里把生成多选题删掉。感觉生成主观题没什么用，可以当做出题参考<br>该项目的好处是可以快速检查自己的复习有没有漏掉的地方，如果老师没给练习题的话可以当做一个辅助记忆的工具。</p>
+<h1 id="在线食用链接"><a href="#在线食用链接" class="headerlink" title="在线食用链接"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">在线食用链接</a></h1><h2 id="请按照以下步骤操作"><a href="#请按照以下步骤操作" class="headerlink" title="请按照以下步骤操作"></a>请按照以下步骤操作</h2><p><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/1.jpg"><br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/2.jpg"><br>deepseek、GPT、Gemini、grok我都试过，效果都挺不错的<br>复习资料里面最好标记了重点，这样AI可以针对性地出题<br>然后把AI生成的代码复制进<a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">题目生成框</a>里<br>就可以刷生成的题目了<br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/3.jpg"><br>刷完之后只需要让AI再随机生成一下新的题目复制进去就能继续刷新题了</p>
+<p>感觉挺难绷的，从小到大的学习方式都是<del><em><strong>实战派</strong></em></del>小镇做题家，习惯了靠题海战术进行思维锻炼和记忆知识，所以整出来了这么个玩意。</p>
+]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -2966,6 +3097,55 @@
         <tag>语言学习</tag>
         <tag>日语</tag>
         <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微信图片自动保存工具</title>
+    <url>/2025/04/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%BF%9D%E5%AD%98%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="🚀-微信图片自动保存工具"><a href="#🚀-微信图片自动保存工具" class="headerlink" title="🚀 微信图片自动保存工具"></a>🚀 微信图片自动保存工具</h1><p><img src="/../img/Wechat-image-save/screenshot.png" alt="软件截图"> <!-- --></p>
+<h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><ul>
+<li>我对于代码什么的其实完全是一知半解，开发这么个小工具纯粹是被wx的幽默机制干急眼了（）因为我专业是生物这块的，同学们经常在微信群里发实验细胞的图片，然后往往因为我没点开导致图片已过期（现在好像手机端点开了也会过期了），写实验报告的时候还得求爷爷告奶奶的问他们要图片，我也找过其他人的工具，但基本上要么不能保存原图，要么就是收费，也不知道为什么wx自己不搞自动下载图片的功能（恼）</li>
+<li>于是一气之下花了一个星期用ds搓出来这么个玩意（）</li>
+<li>由于我真的只是小菜鸡，这里面所有的代码都是基于ds（ds，超我的ai！）给出来的代码进行修改得到的，如果有大佬愿意帮忙完善那自然是最好的</li>
+<li>目前已知有个小bug是会跟鼠标抢控制权，如果遇到了一般来说就重启工具就行了</li>
+<li>不支持微信4.0以上的版本，因为wxauto没适配</li>
+<li>还有，我的电脑是白天一直开机的，所以我基本上没考虑历史消息的情况，我也试过了获取历史消息，但是ds给的代码有点抽风，于是就放弃了。</li>
+</ul>
+<h2 id="📦-功能特性"><a href="#📦-功能特性" class="headerlink" title="📦 功能特性"></a>📦 功能特性</h2><ul>
+<li>实时监控并保存微信聊天图片</li>
+<li>按联系人自动分类保存</li>
+<li>支持自定义保存路径</li>
+<li>低内存占用后台运行（但多开微信聊天窗口的内存会变高）</li>
+</ul>
+<h2 id="🛠️-安装使用"><a href="#🛠️-安装使用" class="headerlink" title="🛠️ 安装使用"></a>🛠️ 安装使用</h2><h3 id="直接运行（推荐）"><a href="#直接运行（推荐）" class="headerlink" title="直接运行（推荐）"></a>直接运行（推荐）</h3><ol>
+<li>前往 <a href="https://github.com/LF12306/WeChat-Image-Saver/releases">Releases</a> 下载最新版exe<br>或者<a href="https://pan.baidu.com/s/1DWf3oyv4qKbng4pdOUaS-Q">百度网盘</a>提取码：w7c2</li>
+<li>打开微信（不打开就无法接收）</li>
+<li>双击运行<code>微信图片自动保存工具.exe</code></li>
+</ol>
+<h3 id="从源码运行"><a href="#从源码运行" class="headerlink" title="从源码运行"></a>从源码运行</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/LF12306/WeChat-Image-Saver.git</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">python 自动保存工具.py</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>⚙️ 配置说明</p>
+<h3 id="功能和操作方法"><a href="#功能和操作方法" class="headerlink" title="功能和操作方法"></a>功能和操作方法</h3><ul>
+<li>添加监听对象：	   输入联系人名称 → 点击添加</li>
+<li>修改保存路径：	   点击”修改路径”选择新位置</li>
+</ul>
+<h2 id="❓-常见问题"><a href="#❓-常见问题" class="headerlink" title="❓ 常见问题"></a>❓ 常见问题</h2><h3 id="无法检测到微信窗口？"><a href="#无法检测到微信窗口？" class="headerlink" title="无法检测到微信窗口？"></a>无法检测到微信窗口？</h3><ol>
+<li>确保微信客户端已登录</li>
+<li>以管理员身份运行本程序</li>
+</ol>
+<h3 id="如何更新配置？"><a href="#如何更新配置？" class="headerlink" title="如何更新配置？"></a>如何更新配置？</h3><p>直接编辑<code>wx_config.json</code>或通过界面修改后会自动保存</p>
+<h3 id="为什么没开机自启动？"><a href="#为什么没开机自启动？" class="headerlink" title="为什么没开机自启动？"></a>为什么没开机自启动？</h3><p>好问题，因为微信不能自启动（因为要打开到聊天界面，而不是打开到“进入微信”，还得手动点一下才能进入微信，我觉得这设计纯***），虽然我写了脚本能自启动微信，但很不稳定，于是就先把这个工具发出来。</p>
+<hr>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><h4 id="v1-1"><a href="#v1-1" class="headerlink" title="v1.1"></a>v1.1</h4><p>解决了多张图片同时发送会导致只能保存一张的命名bug，改为使用毫秒级命名，避免重复命名多张图片。</p>
+<h4 id="v1-2"><a href="#v1-2" class="headerlink" title="v1.2"></a>v1.2</h4><p>增加年月日目录分类，在聊天对象目录下创建以年月日命名的文件夹，分时间存放图片</p>
+<h2 id="🙏-致谢"><a href="#🙏-致谢" class="headerlink" title="🙏 致谢"></a>🙏 致谢</h2><p>特别感谢以下项目的开发者：</p>
+<ul>
+<li><a href="https://github.com/cluic/wxauto">wxauto</a> 提供了微信自动化控制的核心功能</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
       </tags>
   </entry>
   <entry>
@@ -8700,186 +8880,6 @@
       </tags>
   </entry>
   <entry>
-    <title>在线AI刷题辅助复习</title>
-    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="或许是小镇做题家的得力助手"><a href="#或许是小镇做题家的得力助手" class="headerlink" title="或许是小镇做题家的得力助手"></a><del>或许是小镇做题家的得力助手</del></h1><h2 id="请先把提示词和划了重点的复习资料喂给AI生成代码"><a href="#请先把提示词和划了重点的复习资料喂给AI生成代码" class="headerlink" title="请先把提示词和划了重点的复习资料喂给AI生成代码"></a>请先把提示词和划了重点的复习资料喂给AI生成代码</h2><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">模仿以下格式，从复习文件中获取重点（有特殊样式的部分），随机生成知识点不重复的单选题、多选题、填空题、判断题各10道给我，我要用刷题的方式确保自己复习到位并记住了知识点。data-answer内为正确答案，data-explanation内为答案解析，答案解析内如果有引号则一定要使用中文引号，避免影响html。请严格按照复习文件进行题目生成。并严格套用以下样式以html代码的形式输出给我，不可以生成多余的代码，必须完整地输出所有题目：</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 单选题1 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;D&quot; data-explanation=&quot;膜分离技术适用于分离液体中的溶质或杂质，处理不含固形物的料液效果最佳。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;下列哪种物质最适合使用膜分离技术处理？&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1a&quot;&gt;菌体&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1b&quot;&gt;细胞&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1c&quot;&gt;微颗粒&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1d&quot;&gt;不含固形物的料液&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;多项选择题 (每题2分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 多选题49 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;multi&quot; data-answer=&#x27;[&quot;A&quot;,&quot;D&quot;]&#x27; data-explanation=&quot;发酵液的预处理和色层分离通常用于原料准备或精细纯化阶段，不属于初步纯化。&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;49&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;下列分离方法中不属于初步纯化的是( )&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49a&quot;&gt;发酵液(培养液)的预处理和固液分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49b&quot;&gt;吸附法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49c&quot;&gt;离子交换法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49d&quot;&gt;色层分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;button class=&quot;check-multi-button&quot;&gt;确定&lt;/button&gt; &lt;!-- ✅ 添加这一行 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;填空题 (每题2-3分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        &lt;!-- 填空题34 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;fill&quot; data-answer=&#x27;[&quot;有机&quot;,&quot;无机&quot;]&#x27; data-explanation=&quot;碱性清洗剂能有效去除蛋白质等有机污染物，酸性清洗剂则对钙镁盐等无机沉积物更有效。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;34.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;&lt;!-- 根据空格数设置分值 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;膜清洗的化学方法中，碱性清洗剂可有效去除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;0&quot;&gt; </span><br><span class="line"></span><br><span class="line">                污染物，酸性清洗剂用于清除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;1&quot;&gt; </span><br><span class="line"></span><br><span class="line">                沉积。</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;!-- 判断题59 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question&quot; data-type=&quot;judge&quot; data-answer=&quot;正确&quot; data-explanation=&quot;空化作用是超声波在液体中形成气泡并迅速破裂，从而产生冲击力和剪切力实现细胞破碎。&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-number&quot;&gt;59&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-text&quot;&gt;超声破碎是利用在超声波作用下液体发生空化作用。产生极大的冲击波和剪切力,使细胞破碎。&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;true-false-options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59true&quot; value=&quot;正确&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59true&quot;&gt;正确&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59false&quot; value=&quot;错误&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59false&quot;&gt;错误&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;subjective-section&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;h2 class=&quot;section-title&quot;&gt;主观题 (12分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question&quot; data-type=&quot;subjective&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-number&quot;&gt;79&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-score&quot;&gt;12分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-text&quot;&gt;请设计方案将下列蛋白进行分离纯化，并说出采用方法的原理：&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;textarea class=&quot;subjective-answer&quot; placeholder=&quot;请输入您的答案...&quot;&gt;&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;button class=&quot;show-answer-btn&quot; onclick=&quot;toggleSubjectiveAnswer(this)&quot;&gt;查看参考答案&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;reference-answer&quot; style=&quot;display: none;&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;strong&gt;参考答案：&lt;/strong&gt;  </span><br><span class="line">                        该蛋白分离可采用层析技术（如离子交换层析、分子筛层析等），根据蛋白的等电点、分子量、亲水疏水性质等差异进行分步纯化。原理是利用不同蛋白在流动相和固定相中的相互作用力差异，选择性洗脱目标蛋白，从而实现分离。</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"><a href="#本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考" class="headerlink" title="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"></a><em><strong>本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考</strong></em></h1><h2 id="可选的附加提示词"><a href="#可选的附加提示词" class="headerlink" title="可选的附加提示词"></a>可选的附加提示词</h2><p>以上提示词默认生成单选题、多选题、填空题、判断题，只要在AI聊天框里修改提示词就改变生成的题型。如果有额外需要，可以自行调试或者参考以下提示词。<br>名词解释：<code>名词解释使用填空题样式，但section-title要改为“名词解释”，按照知识点重点尽可能地多挖几个空。</code><br>主观题：<code>生成主观题，并按照下列主观题格式生成参考答案。</code><br>遇到复习资料很长的情况下，建议指定AI生成部分章节的题目，提高复习的覆盖率。例如：<code>从复习资料获取第一到第四章的知识点，随机生成知识点不重复的单选题、多选题、填空题、判断题各10道。</code></p>
-<h2 id="再把代码复制进下面的题目生成框里"><a href="#再把代码复制进下面的题目生成框里" class="headerlink" title="再把代码复制进下面的题目生成框里"></a>再把代码复制进下面的题目生成框里</h2>
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" type="text/css" href="/css/exam-question.css" />
-  <style>
-    #input-area {
-      margin: 20px;
-    }
-    textarea {
-      width: 100%;
-      height: 200px;
-      font-size: 14px;
-      padding: 10px;
-      box-sizing: border-box;
-      resize: vertical;
-    }
-    green-button {
-      margin-top: 10px;
-      padding: 10px 24px;
-      font-size: 16px;
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    green-button:hover {
-      background-color: #45a049;
-    }
-    
-    #exam-content {
-      margin: 20px;
-    }
-    .check-multi-button {
-      margin-top: 8px;
-      padding: 6px 14px;
-      font-size: 14px;
-      background-color: #3a82f7;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .check-multi-button:hover {
-      background-color: #2e6ed0;
-    }
-  </style>
-</head>
-<body>
-  <div id="input-area">
-    <h3>粘贴 HTML 试题内容：</h3>
-    <textarea id="html-input" placeholder="请将 HTML 代码粘贴到这里..."></textarea>
-    <br />
-    <green-button onclick="loadQuestions()">确定</green-button>
-  </div>
-
-  <div id="exam-content"></div>
-<div style="text-align: center; margin: 30px;">
-  <green-button onclick="submitAnswers()" style="padding: 12px 24px; font-size: 16px; background-color: #2196f3; color: white; border: none; border-radius: 6px; cursor: pointer;">
-    提交试卷
-  </green-button>
-</div>
-
-<div id="results" style="display: none; margin: 30px; text-align: center;">
-  <h3>得分结果</h3>
-  <div style="font-size: 18px; margin: 10px 0;">
-    您的得分：<span id="score" style="font-weight: bold;"></span> 分
-  </div>
-  <div style="width: 80%; margin: 10px auto; background: #ddd; height: 20px; border-radius: 10px;">
-    <div id="progressBar" style="height: 20px; background: #4caf50; border-radius: 10px; width: 0%; transition: width 0.5s;"></div>
-  </div>
-  <div id="resultDetails" style="margin-top: 10px; color: #555;"></div>
-</div>
-
-  <script>
-    function loadQuestions() {
-      const htmlContent = document.getElementById('html-input').value.trim();
-      if (!htmlContent) {
-        alert('请输入内容！');
-        return;
-      }
-
-      const container = document.getElementById('exam-content');
-      container.innerHTML = htmlContent;
-
-      // 延迟 100ms 确保 DOM 渲染完成后加载 JS（也可用 MutationObserver）
-      setTimeout(() => {
-        const oldScript = document.getElementById('exam-script');
-        if (oldScript) oldScript.remove();
-
-        const script = document.createElement('script');
-        script.src = '/js/exam.js';
-        script.id = 'exam-script';
-        script.defer = true; // 保证 DOM 可操作
-        document.body.appendChild(script);
-      }, 100);
-    }
-  </script>
-
-</body>
-</html>
-]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在线AI刷题辅助复习使用教程</title>
-    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="在线AI刷题辅助复习使用教程"><a href="#在线AI刷题辅助复习使用教程" class="headerlink" title="在线AI刷题辅助复习使用教程"></a>在线AI刷题辅助复习使用教程</h1><p>本项目教程旨在帮助期末复习的大学生备考，AI生成题目为辅助手段，请不要迷信AI<br>目前支持单选题、填空题、对错题，多选题效果不太完善，建议先在提示词里把生成多选题删掉。感觉生成主观题没什么用，可以当做出题参考<br>该项目的好处是可以快速检查自己的复习有没有漏掉的地方，如果老师没给练习题的话可以当做一个辅助记忆的工具。</p>
-<h1 id="在线食用链接"><a href="#在线食用链接" class="headerlink" title="在线食用链接"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">在线食用链接</a></h1><h2 id="请按照以下步骤操作"><a href="#请按照以下步骤操作" class="headerlink" title="请按照以下步骤操作"></a>请按照以下步骤操作</h2><p><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/1.jpg"><br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/2.jpg"><br>deepseek、GPT、Gemini、grok我都试过，效果都挺不错的<br>复习资料里面最好标记了重点，这样AI可以针对性地出题<br>然后把AI生成的代码复制进<a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0">题目生成框</a>里<br>就可以刷生成的题目了<br><img src="/../img/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/3.jpg"><br>刷完之后只需要让AI再随机生成一下新的题目复制进去就能继续刷新题了</p>
-<p>感觉挺难绷的，从小到大的学习方式都是<del><em><strong>实战派</strong></em></del>小镇做题家，习惯了靠题海战术进行思维锻炼和记忆知识，所以整出来了这么个玩意。</p>
-]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微信图片自动保存工具</title>
-    <url>/2025/04/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%BF%9D%E5%AD%98%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="🚀-微信图片自动保存工具"><a href="#🚀-微信图片自动保存工具" class="headerlink" title="🚀 微信图片自动保存工具"></a>🚀 微信图片自动保存工具</h1><p><img src="/../img/Wechat-image-save/screenshot.png" alt="软件截图"> <!-- --></p>
-<h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><ul>
-<li>我对于代码什么的其实完全是一知半解，开发这么个小工具纯粹是被wx的幽默机制干急眼了（）因为我专业是生物这块的，同学们经常在微信群里发实验细胞的图片，然后往往因为我没点开导致图片已过期（现在好像手机端点开了也会过期了），写实验报告的时候还得求爷爷告奶奶的问他们要图片，我也找过其他人的工具，但基本上要么不能保存原图，要么就是收费，也不知道为什么wx自己不搞自动下载图片的功能（恼）</li>
-<li>于是一气之下花了一个星期用ds搓出来这么个玩意（）</li>
-<li>由于我真的只是小菜鸡，这里面所有的代码都是基于ds（ds，超我的ai！）给出来的代码进行修改得到的，如果有大佬愿意帮忙完善那自然是最好的</li>
-<li>目前已知有个小bug是会跟鼠标抢控制权，如果遇到了一般来说就重启工具就行了</li>
-<li>不支持微信4.0以上的版本，因为wxauto没适配</li>
-<li>还有，我的电脑是白天一直开机的，所以我基本上没考虑历史消息的情况，我也试过了获取历史消息，但是ds给的代码有点抽风，于是就放弃了。</li>
-</ul>
-<h2 id="📦-功能特性"><a href="#📦-功能特性" class="headerlink" title="📦 功能特性"></a>📦 功能特性</h2><ul>
-<li>实时监控并保存微信聊天图片</li>
-<li>按联系人自动分类保存</li>
-<li>支持自定义保存路径</li>
-<li>低内存占用后台运行（但多开微信聊天窗口的内存会变高）</li>
-</ul>
-<h2 id="🛠️-安装使用"><a href="#🛠️-安装使用" class="headerlink" title="🛠️ 安装使用"></a>🛠️ 安装使用</h2><h3 id="直接运行（推荐）"><a href="#直接运行（推荐）" class="headerlink" title="直接运行（推荐）"></a>直接运行（推荐）</h3><ol>
-<li>前往 <a href="https://github.com/LF12306/WeChat-Image-Saver/releases">Releases</a> 下载最新版exe<br>或者<a href="https://pan.baidu.com/s/1DWf3oyv4qKbng4pdOUaS-Q">百度网盘</a>提取码：w7c2</li>
-<li>打开微信（不打开就无法接收）</li>
-<li>双击运行<code>微信图片自动保存工具.exe</code></li>
-</ol>
-<h3 id="从源码运行"><a href="#从源码运行" class="headerlink" title="从源码运行"></a>从源码运行</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/LF12306/WeChat-Image-Saver.git</span><br><span class="line">pip install -r requirements.txt</span><br><span class="line">python 自动保存工具.py</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>⚙️ 配置说明</p>
-<h3 id="功能和操作方法"><a href="#功能和操作方法" class="headerlink" title="功能和操作方法"></a>功能和操作方法</h3><ul>
-<li>添加监听对象：	   输入联系人名称 → 点击添加</li>
-<li>修改保存路径：	   点击”修改路径”选择新位置</li>
-</ul>
-<h2 id="❓-常见问题"><a href="#❓-常见问题" class="headerlink" title="❓ 常见问题"></a>❓ 常见问题</h2><h3 id="无法检测到微信窗口？"><a href="#无法检测到微信窗口？" class="headerlink" title="无法检测到微信窗口？"></a>无法检测到微信窗口？</h3><ol>
-<li>确保微信客户端已登录</li>
-<li>以管理员身份运行本程序</li>
-</ol>
-<h3 id="如何更新配置？"><a href="#如何更新配置？" class="headerlink" title="如何更新配置？"></a>如何更新配置？</h3><p>直接编辑<code>wx_config.json</code>或通过界面修改后会自动保存</p>
-<h3 id="为什么没开机自启动？"><a href="#为什么没开机自启动？" class="headerlink" title="为什么没开机自启动？"></a>为什么没开机自启动？</h3><p>好问题，因为微信不能自启动（因为要打开到聊天界面，而不是打开到“进入微信”，还得手动点一下才能进入微信，我觉得这设计纯***），虽然我写了脚本能自启动微信，但很不稳定，于是就先把这个工具发出来。</p>
-<hr>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><h4 id="v1-1"><a href="#v1-1" class="headerlink" title="v1.1"></a>v1.1</h4><p>解决了多张图片同时发送会导致只能保存一张的命名bug，改为使用毫秒级命名，避免重复命名多张图片。</p>
-<h4 id="v1-2"><a href="#v1-2" class="headerlink" title="v1.2"></a>v1.2</h4><p>增加年月日目录分类，在聊天对象目录下创建以年月日命名的文件夹，分时间存放图片</p>
-<h2 id="🙏-致谢"><a href="#🙏-致谢" class="headerlink" title="🙏 致谢"></a>🙏 致谢</h2><p>特别感谢以下项目的开发者：</p>
-<ul>
-<li><a href="https://github.com/cluic/wxauto">wxauto</a> 提供了微信自动化控制的核心功能</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生物制药工艺学复习</title>
     <url>/2025/06/18/%E7%94%9F%E7%89%A9%E5%88%B6%E8%8D%AF%E5%B7%A5%E8%89%BA%E5%AD%A6%E5%A4%8D%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="生物制药工艺学复习"><a href="#生物制药工艺学复习" class="headerlink" title="生物制药工艺学复习"></a><span style="display:block;text-align:center;color:#00BFFF;">生物制药工艺学复习</span></h1><h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h3 id="生物制药的定义"><a href="#生物制药的定义" class="headerlink" title="生物制药的定义"></a>生物制药的定义</h3><p>生物制药是利用生物体或生物过程在人为设定的条件下生产各种生物药物的技术</p>
@@ -9195,6 +9195,52 @@
       <tags>
         <tag>学习笔记</tag>
         <tag>生物制药</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生物药物分离工程复习</title>
+    <url>/2025/06/25/%E7%94%9F%E7%89%A9%E8%8D%AF%E7%89%A9%E5%88%86%E7%A6%BB%E5%B7%A5%E7%A8%8B%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Cohn方程式"><a href="#Cohn方程式" class="headerlink" title="Cohn方程式"></a>Cohn方程式</h1><p>$ lgS&#x3D;β-K_sI $<br>S为蛋白质的溶解度（g&#x2F;L）<br>I为离子强度， $ I&#x3D; \frac{1}{2}Σm_iz_i^2 $ ；<br>m<sub>i</sub>为离子i的摩尔浓度；z<sub>i</sub>为所带电荷<br>β为常数，与盐的种类无关，与温度、pH和蛋白质种类有关；<br>K<sub>s</sub>为解析常数，与温度和pH无关，但与蛋白质和盐的种类有关。<br>有时可以简单地用浓度代替离子强度。<br>$ lgS&#x3D;β’-K_s’m $<br>m为盐的摩尔浓度。</p>
+<h1 id="Ks盐析法："><a href="#Ks盐析法：" class="headerlink" title="Ks盐析法："></a>Ks盐析法：</h1><p>在一定pH和温度下，改变体系离子强度进行盐析的方法</p>
+<h1 id="β盐析法："><a href="#β盐析法：" class="headerlink" title="β盐析法："></a>β盐析法：</h1><p>在一定离子强度下，改变pH和温度进行盐析的方法</p>
+<h1 id="凝聚的原理："><a href="#凝聚的原理：" class="headerlink" title="凝聚的原理："></a>凝聚的原理：</h1><p>在发酵液中加入具有 <strong>相反电性</strong> 的电解质</p>
+<h1 id="絮凝："><a href="#絮凝：" class="headerlink" title="絮凝："></a>絮凝：</h1><p>指在某些高分子絮凝剂存在下，基于桥架作用，使胶粒形成 <strong>粗大絮凝团</strong> 的过程。</p>
+<h1 id="破碎细胞的方法："><a href="#破碎细胞的方法：" class="headerlink" title="破碎细胞的方法："></a>破碎细胞的方法：</h1><p>高压匀浆法、超声破碎法、珠磨法、X-挤压器</p>
+<h1 id="混合分离器的操作方式："><a href="#混合分离器的操作方式：" class="headerlink" title="混合分离器的操作方式："></a>混合分离器的操作方式：</h1><p>单级萃取和多级萃取</p>
+<h1 id="晶核的形成机理："><a href="#晶核的形成机理：" class="headerlink" title="晶核的形成机理："></a>晶核的形成机理：</h1><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+    graph LR
+    A[**没有晶种引入**：初级成核] e1@--&gt; B[无固体异物：均相]
+    e1@{ animate: true }
+    A[**没有晶种引入**：初级成核] e2@--&gt; C[存在固体异物（有助于晶核形成）：非均相]
+    e2@{ animate: true }
+    B e3@--&gt; D[根据饱和溶液中有无自生或外来的微粒划分]
+    e3@{ animate: true }
+    C e4@--&gt; D[根据饱和溶液中有无自生或外来的微粒划分]
+    e4@{ animate: true }
+  </pre></div>
+
+<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
+    graph LR
+    A[**有晶种引入**：二级成核] e1@--&gt; B[剪切力成核]
+    e1@{ animate: true }
+    A[**有晶种引入**：二级成核] e2@--&gt; C[接触成核]
+    e2@{ animate: true }
+  </pre></div>
+<p><strong>本质：外力导致晶体上的碎粒掉落，形成了新的晶核</strong></p>
+<h1 id="晶核的形成过程："><a href="#晶核的形成过程：" class="headerlink" title="晶核的形成过程："></a>晶核的形成过程：</h1><p>晶核的形成是一个新相产生的过程，需要消耗一定的能量才能形成固液界面； 结晶过程中，体系总的自由能变化分为两部分，即：表面过剩吉布斯自由能（△Gv）和体积过剩吉布斯自由能（△Gs）<br>晶核的形成必须满足：<br>△G&#x3D;△Gs+△Gv＜0<br> 通常△Gs＞0，阻碍晶核形成；△Gv＜0</p>
+<h1 id="晶核的成核速度"><a href="#晶核的成核速度" class="headerlink" title="晶核的成核速度"></a>晶核的成核速度</h1><p><strong>定义</strong>：单位时间内在单位体积溶液中生成新核的速度<br> 是决定结晶产品粒度分布的首要动力学因素；<br> 成核速度大→成核数目多→晶体粒径小：导致细小晶体生成<br> 因此，需要避免过量成核</p>
+<h1 id="盐析："><a href="#盐析：" class="headerlink" title="盐析："></a>盐析：</h1><p>蛋白质在高离子强度的溶液中溶解度降低、 发生沉淀的现象称为盐析。</p>
+<h1 id="盐溶："><a href="#盐溶：" class="headerlink" title="盐溶："></a>盐溶：</h1><p>蛋白质的活度系数降低，溶解度增大</p>
+<h1 id="乳浊液的稳定性："><a href="#乳浊液的稳定性：" class="headerlink" title="乳浊液的稳定性："></a>乳浊液的稳定性：</h1><p>1、界面上保护膜是否形成<br>2、液滴是否带电<br>3、介质的粘度</p>
+<h1 id="乳化现象定义："><a href="#乳化现象定义：" class="headerlink" title="乳化现象定义："></a>乳化现象定义：</h1><p>一种液体以细小液滴（分散相）的形式分散在另一个互不相溶的 液体（连续相）中的现象称为乳化现象。</p>
+<h1 id="解决乳化现象的方法："><a href="#解决乳化现象的方法：" class="headerlink" title="解决乳化现象的方法："></a>解决乳化现象的方法：</h1><p>1、过滤和离心分离<br>2、加热<br>3、稀释法<br>4、加电解质<br>5、吸附法<br>6、顶替法<br>7、转型法</p>
+<h1 id="吸附柱层析因素："><a href="#吸附柱层析因素：" class="headerlink" title="吸附柱层析因素："></a>吸附柱层析因素：</h1><p>解离常数Kp和分离因素α<br>阻滞因素或Rf值</p>
+<h1 id="离子交换层析过程："><a href="#离子交换层析过程：" class="headerlink" title="离子交换层析过程："></a>离子交换层析过程：</h1><p>依据不同组分所带电荷量的不同，将解离基团引入到惰性支持物上形成离子交换层析中的固定相。 </p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>生物制药</tag>
+        <tag>药物分离工程</tag>
       </tags>
   </entry>
   <entry>
@@ -10269,52 +10315,6 @@
 </body>
 </html>
 
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>生物制药</tag>
-        <tag>药物分离工程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>生物药物分离工程复习</title>
-    <url>/2025/06/25/%E7%94%9F%E7%89%A9%E8%8D%AF%E7%89%A9%E5%88%86%E7%A6%BB%E5%B7%A5%E7%A8%8B%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Cohn方程式"><a href="#Cohn方程式" class="headerlink" title="Cohn方程式"></a>Cohn方程式</h1><p>$ lgS&#x3D;β-K_sI $<br>S为蛋白质的溶解度（g&#x2F;L）<br>I为离子强度， $ I&#x3D; \frac{1}{2}Σm_iz_i^2 $ ；<br>m<sub>i</sub>为离子i的摩尔浓度；z<sub>i</sub>为所带电荷<br>β为常数，与盐的种类无关，与温度、pH和蛋白质种类有关；<br>K<sub>s</sub>为解析常数，与温度和pH无关，但与蛋白质和盐的种类有关。<br>有时可以简单地用浓度代替离子强度。<br>$ lgS&#x3D;β’-K_s’m $<br>m为盐的摩尔浓度。</p>
-<h1 id="Ks盐析法："><a href="#Ks盐析法：" class="headerlink" title="Ks盐析法："></a>Ks盐析法：</h1><p>在一定pH和温度下，改变体系离子强度进行盐析的方法</p>
-<h1 id="β盐析法："><a href="#β盐析法：" class="headerlink" title="β盐析法："></a>β盐析法：</h1><p>在一定离子强度下，改变pH和温度进行盐析的方法</p>
-<h1 id="凝聚的原理："><a href="#凝聚的原理：" class="headerlink" title="凝聚的原理："></a>凝聚的原理：</h1><p>在发酵液中加入具有 <strong>相反电性</strong> 的电解质</p>
-<h1 id="絮凝："><a href="#絮凝：" class="headerlink" title="絮凝："></a>絮凝：</h1><p>指在某些高分子絮凝剂存在下，基于桥架作用，使胶粒形成 <strong>粗大絮凝团</strong> 的过程。</p>
-<h1 id="破碎细胞的方法："><a href="#破碎细胞的方法：" class="headerlink" title="破碎细胞的方法："></a>破碎细胞的方法：</h1><p>高压匀浆法、超声破碎法、珠磨法、X-挤压器</p>
-<h1 id="混合分离器的操作方式："><a href="#混合分离器的操作方式：" class="headerlink" title="混合分离器的操作方式："></a>混合分离器的操作方式：</h1><p>单级萃取和多级萃取</p>
-<h1 id="晶核的形成机理："><a href="#晶核的形成机理：" class="headerlink" title="晶核的形成机理："></a>晶核的形成机理：</h1><div class="mermaid-wrap"><pre class="mermaid-src" hidden>
-    graph LR
-    A[**没有晶种引入**：初级成核] e1@--&gt; B[无固体异物：均相]
-    e1@{ animate: true }
-    A[**没有晶种引入**：初级成核] e2@--&gt; C[存在固体异物（有助于晶核形成）：非均相]
-    e2@{ animate: true }
-    B e3@--&gt; D[根据饱和溶液中有无自生或外来的微粒划分]
-    e3@{ animate: true }
-    C e4@--&gt; D[根据饱和溶液中有无自生或外来的微粒划分]
-    e4@{ animate: true }
-  </pre></div>
-
-<div class="mermaid-wrap"><pre class="mermaid-src" hidden>
-    graph LR
-    A[**有晶种引入**：二级成核] e1@--&gt; B[剪切力成核]
-    e1@{ animate: true }
-    A[**有晶种引入**：二级成核] e2@--&gt; C[接触成核]
-    e2@{ animate: true }
-  </pre></div>
-<p><strong>本质：外力导致晶体上的碎粒掉落，形成了新的晶核</strong></p>
-<h1 id="晶核的形成过程："><a href="#晶核的形成过程：" class="headerlink" title="晶核的形成过程："></a>晶核的形成过程：</h1><p>晶核的形成是一个新相产生的过程，需要消耗一定的能量才能形成固液界面； 结晶过程中，体系总的自由能变化分为两部分，即：表面过剩吉布斯自由能（△Gv）和体积过剩吉布斯自由能（△Gs）<br>晶核的形成必须满足：<br>△G&#x3D;△Gs+△Gv＜0<br> 通常△Gs＞0，阻碍晶核形成；△Gv＜0</p>
-<h1 id="晶核的成核速度"><a href="#晶核的成核速度" class="headerlink" title="晶核的成核速度"></a>晶核的成核速度</h1><p><strong>定义</strong>：单位时间内在单位体积溶液中生成新核的速度<br> 是决定结晶产品粒度分布的首要动力学因素；<br> 成核速度大→成核数目多→晶体粒径小：导致细小晶体生成<br> 因此，需要避免过量成核</p>
-<h1 id="盐析："><a href="#盐析：" class="headerlink" title="盐析："></a>盐析：</h1><p>蛋白质在高离子强度的溶液中溶解度降低、 发生沉淀的现象称为盐析。</p>
-<h1 id="盐溶："><a href="#盐溶：" class="headerlink" title="盐溶："></a>盐溶：</h1><p>蛋白质的活度系数降低，溶解度增大</p>
-<h1 id="乳浊液的稳定性："><a href="#乳浊液的稳定性：" class="headerlink" title="乳浊液的稳定性："></a>乳浊液的稳定性：</h1><p>1、界面上保护膜是否形成<br>2、液滴是否带电<br>3、介质的粘度</p>
-<h1 id="乳化现象定义："><a href="#乳化现象定义：" class="headerlink" title="乳化现象定义："></a>乳化现象定义：</h1><p>一种液体以细小液滴（分散相）的形式分散在另一个互不相溶的 液体（连续相）中的现象称为乳化现象。</p>
-<h1 id="解决乳化现象的方法："><a href="#解决乳化现象的方法：" class="headerlink" title="解决乳化现象的方法："></a>解决乳化现象的方法：</h1><p>1、过滤和离心分离<br>2、加热<br>3、稀释法<br>4、加电解质<br>5、吸附法<br>6、顶替法<br>7、转型法</p>
-<h1 id="吸附柱层析因素："><a href="#吸附柱层析因素：" class="headerlink" title="吸附柱层析因素："></a>吸附柱层析因素：</h1><p>解离常数Kp和分离因素α<br>阻滞因素或Rf值</p>
-<h1 id="离子交换层析过程："><a href="#离子交换层析过程：" class="headerlink" title="离子交换层析过程："></a>离子交换层析过程：</h1><p>依据不同组分所带电荷量的不同，将解离基团引入到惰性支持物上形成离子交换层析中的固定相。 </p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -12998,6 +12998,26 @@
       </tags>
   </entry>
   <entry>
+    <title>生理药理学第一章</title>
+    <url>/2025/03/28/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E4%B8%80%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第一章-药理学总论"><a href="#第一章-药理学总论" class="headerlink" title="第一章 药理学总论"></a><span style="display:block;text-align:center;color:#00BFFF;">第一章 药理学总论</span></h1><p><strong>药理学</strong>：研究药物在人体或动物体内的作用、机制、以及规律的学科。<br><strong>药物</strong>：对机体生理、生化、病理过程产生影响，并用于治疗的化学分子。</p>
+<h2 id="第一节-药理学的研究内容与研究方法"><a href="#第一节-药理学的研究内容与研究方法" class="headerlink" title="第一节  药理学的研究内容与研究方法"></a>第一节  药理学的研究内容与研究方法</h2><h3 id="1、药理学是一门综合学科"><a href="#1、药理学是一门综合学科" class="headerlink" title="1、药理学是一门综合学科"></a>1、药理学是一门综合学科</h3><p>● <strong>学科基础</strong>：生理学、生物化学、细胞生物学、微生物学、病理学、免疫学、以及其它相关学科。<br>● <strong>所处地位</strong>：基础医学与临床医学之间的桥梁。</p>
+<h3 id="2、研究内容"><a href="#2、研究内容" class="headerlink" title="2、研究内容"></a>2、研究内容</h3><p>● <strong>药物效应动力学(Pharmacodynamics)：</strong> 药物对机体的作用与作用机制。<br>● <strong>药物代谢动力学 (Pharmacokinetics)：</strong>机体对药物的代谢过程。<br>● <strong>常见的术语</strong>：<br><span style="color:#D81C2F">副作用 (side effects or adverse effects)<br>毒性 (toxicity)<br>阴性对照 (vehicle or placebo)<br>阳性对照 (positive control)<br>作用机理 (mechanism of action)<br>药物 (drug)<br>激动剂(agonist)<br>拮抗剂(antagonist)</span></p>
+<h3 id="3、研究方法"><a href="#3、研究方法" class="headerlink" title="3、研究方法"></a>3、研究方法</h3><p>● <strong>体外实验</strong>(in vitro)<br>● <strong>体内实验</strong>(in vivo)<br>● <strong>离体实验</strong>(ex vivo)</p>
+<h3 id="研究层次"><a href="#研究层次" class="headerlink" title="研究层次"></a>研究层次</h3><p>● <strong>细胞与分子水平的研究</strong>：药物与靶基因、靶蛋白相互作用、对细胞增殖与分化、信号传导、物质跨膜转运等的影响。<br>● <strong>器官和系统水平的研究</strong>：药物对机体相应器官和系统功能的调节作用。<br>● <strong>整体水平的研究</strong>：以系统生物学为基础，研究药物对机体整体功能的协调作用以及代谢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.png"></p>
+<h3 id="研究对象"><a href="#研究对象" class="headerlink" title="研究对象"></a>研究对象</h3><p>● 细胞<br>● 动物<br>● 人体</p>
+<h2 id="第二节-新药研发过程的药理学研究"><a href="#第二节-新药研发过程的药理学研究" class="headerlink" title="第二节 新药研发过程的药理学研究"></a>第二节 新药研发过程的药理学研究</h2><h3 id="1、药物研发过程"><a href="#1、药物研发过程" class="headerlink" title="1、药物研发过程"></a>1、药物研发过程</h3><p>● <strong>基础研究</strong>：细胞生物学、生理学、病理学为基础，药物靶点的发现与评估。<br>● <strong>药物发现</strong>：化合物筛选、先导化合物的发现，化合物结构的优化与评估、作用机制。<br>● 临床研究与规模化生产。</p>
+<h3 id="药物学研究：临床前研究与临床研究。"><a href="#药物学研究：临床前研究与临床研究。" class="headerlink" title="药物学研究：临床前研究与临床研究。"></a>药物学研究：临床前研究与临床研究。</h3><p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%AB%A0/2.png"></p>
+<h3 id="2、临床前药理学研究"><a href="#2、临床前药理学研究" class="headerlink" title="2、临床前药理学研究"></a>2、临床前药理学研究</h3><p>● <strong>药效学研究</strong>：发现与评价药物候补的化学分子，<br>● <strong>药理学研究</strong>：探讨药物分子对生理功能的影响以及作用机理。<br>● <strong>代谢动力学研究</strong>：动物体内动态变化规律，包括吸收、分布、转化、排泄等。<br>● <strong>毒理实验</strong>：新药安全性评价，如毒性实验。</p>
+<h3 id="3、临床试验"><a href="#3、临床试验" class="headerlink" title="3、临床试验"></a>3、临床试验</h3><p>● <code>I期：健康志愿者20-30人，安全性与剂量。</code><br>● <code>II期：临床效果的初步试验。患者200-300人，疗效与安全性。</code><br>● <code>III期：全面评价，药物与安慰剂对比，400人以上。</code><br>● <code>IV期：销售后临床监视，药效与安全性。</code><br><em><strong>2018年FDA统计：约54%新药失败在第3期临床试验，其中57%不具有足够的药效，17%安全性不足，22%后续资金不足。</strong></em><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%AB%A0/3.png"></p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>生物制药</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生理药理学汇总</title>
     <url>/2025/06/22/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E6%B1%87%E6%80%BB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="药理学汇总"><a href="#药理学汇总" class="headerlink" title="药理学汇总"></a><span style="display:block;text-align:center;color:#00BFFF;">药理学汇总</span></h1><h2 id="【第二章】"><a href="#【第二章】" class="headerlink" title="【第二章】"></a>【第二章】</h2><p>药物的体内过程ADME，包括：吸收、分布、代谢、排泄</p>
@@ -13251,26 +13271,6 @@
 <p>4.吡嗪酰胺<br>抗菌作用：分枝杆菌缓慢繁殖菌群<br>耐药机制：巨噬细胞的吡嗪酰胺酶基因突变</p>
 <p>5.链霉素<br>抗菌作用：分枝杆菌快速繁殖菌群。<br>不良反应：耳毒性</p>
 <h3 id="二、其他抗结核病药-p461"><a href="#二、其他抗结核病药-p461" class="headerlink" title="二、其他抗结核病药 p461"></a>二、其他抗结核病药 p461</h3><h3 id="三、抗麻风病药"><a href="#三、抗麻风病药" class="headerlink" title="三、抗麻风病药"></a>三、抗麻风病药</h3><p>1.氨苯砜：<br>抗菌作用：麻风病首选药。抑制二氢蝶酸合酶影响叶酸合成<br>2.其他：氯法齐明、沙利度胺</p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>生物制药</tag>
-        <tag>生理药理学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>生理药理学第一章</title>
-    <url>/2025/03/28/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E4%B8%80%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第一章-药理学总论"><a href="#第一章-药理学总论" class="headerlink" title="第一章 药理学总论"></a><span style="display:block;text-align:center;color:#00BFFF;">第一章 药理学总论</span></h1><p><strong>药理学</strong>：研究药物在人体或动物体内的作用、机制、以及规律的学科。<br><strong>药物</strong>：对机体生理、生化、病理过程产生影响，并用于治疗的化学分子。</p>
-<h2 id="第一节-药理学的研究内容与研究方法"><a href="#第一节-药理学的研究内容与研究方法" class="headerlink" title="第一节  药理学的研究内容与研究方法"></a>第一节  药理学的研究内容与研究方法</h2><h3 id="1、药理学是一门综合学科"><a href="#1、药理学是一门综合学科" class="headerlink" title="1、药理学是一门综合学科"></a>1、药理学是一门综合学科</h3><p>● <strong>学科基础</strong>：生理学、生物化学、细胞生物学、微生物学、病理学、免疫学、以及其它相关学科。<br>● <strong>所处地位</strong>：基础医学与临床医学之间的桥梁。</p>
-<h3 id="2、研究内容"><a href="#2、研究内容" class="headerlink" title="2、研究内容"></a>2、研究内容</h3><p>● <strong>药物效应动力学(Pharmacodynamics)：</strong> 药物对机体的作用与作用机制。<br>● <strong>药物代谢动力学 (Pharmacokinetics)：</strong>机体对药物的代谢过程。<br>● <strong>常见的术语</strong>：<br><span style="color:#D81C2F">副作用 (side effects or adverse effects)<br>毒性 (toxicity)<br>阴性对照 (vehicle or placebo)<br>阳性对照 (positive control)<br>作用机理 (mechanism of action)<br>药物 (drug)<br>激动剂(agonist)<br>拮抗剂(antagonist)</span></p>
-<h3 id="3、研究方法"><a href="#3、研究方法" class="headerlink" title="3、研究方法"></a>3、研究方法</h3><p>● <strong>体外实验</strong>(in vitro)<br>● <strong>体内实验</strong>(in vivo)<br>● <strong>离体实验</strong>(ex vivo)</p>
-<h3 id="研究层次"><a href="#研究层次" class="headerlink" title="研究层次"></a>研究层次</h3><p>● <strong>细胞与分子水平的研究</strong>：药物与靶基因、靶蛋白相互作用、对细胞增殖与分化、信号传导、物质跨膜转运等的影响。<br>● <strong>器官和系统水平的研究</strong>：药物对机体相应器官和系统功能的调节作用。<br>● <strong>整体水平的研究</strong>：以系统生物学为基础，研究药物对机体整体功能的协调作用以及代谢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.png"></p>
-<h3 id="研究对象"><a href="#研究对象" class="headerlink" title="研究对象"></a>研究对象</h3><p>● 细胞<br>● 动物<br>● 人体</p>
-<h2 id="第二节-新药研发过程的药理学研究"><a href="#第二节-新药研发过程的药理学研究" class="headerlink" title="第二节 新药研发过程的药理学研究"></a>第二节 新药研发过程的药理学研究</h2><h3 id="1、药物研发过程"><a href="#1、药物研发过程" class="headerlink" title="1、药物研发过程"></a>1、药物研发过程</h3><p>● <strong>基础研究</strong>：细胞生物学、生理学、病理学为基础，药物靶点的发现与评估。<br>● <strong>药物发现</strong>：化合物筛选、先导化合物的发现，化合物结构的优化与评估、作用机制。<br>● 临床研究与规模化生产。</p>
-<h3 id="药物学研究：临床前研究与临床研究。"><a href="#药物学研究：临床前研究与临床研究。" class="headerlink" title="药物学研究：临床前研究与临床研究。"></a>药物学研究：临床前研究与临床研究。</h3><p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%AB%A0/2.png"></p>
-<h3 id="2、临床前药理学研究"><a href="#2、临床前药理学研究" class="headerlink" title="2、临床前药理学研究"></a>2、临床前药理学研究</h3><p>● <strong>药效学研究</strong>：发现与评价药物候补的化学分子，<br>● <strong>药理学研究</strong>：探讨药物分子对生理功能的影响以及作用机理。<br>● <strong>代谢动力学研究</strong>：动物体内动态变化规律，包括吸收、分布、转化、排泄等。<br>● <strong>毒理实验</strong>：新药安全性评价，如毒性实验。</p>
-<h3 id="3、临床试验"><a href="#3、临床试验" class="headerlink" title="3、临床试验"></a>3、临床试验</h3><p>● <code>I期：健康志愿者20-30人，安全性与剂量。</code><br>● <code>II期：临床效果的初步试验。患者200-300人，疗效与安全性。</code><br>● <code>III期：全面评价，药物与安慰剂对比，400人以上。</code><br>● <code>IV期：销售后临床监视，药效与安全性。</code><br><em><strong>2018年FDA统计：约54%新药失败在第3期临床试验，其中57%不具有足够的药效，17%安全性不足，22%后续资金不足。</strong></em><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%AB%A0/3.png"></p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -13931,180 +13931,6 @@ GABA<sub>A</sub> 受体
       </tags>
   </entry>
   <entry>
-    <title>生理药理学第八章</title>
-    <url>/2025/04/07/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%85%AB%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第八章-中枢神经系统-CNS"><a href="#第八章-中枢神经系统-CNS" class="headerlink" title="第八章 中枢神经系统(CNS)"></a><span style="display:block;text-align:center;color:#00BFFF;">第八章 中枢神经系统(CNS)</span></h1><h2 id="第一节-中枢神经系统"><a href="#第一节-中枢神经系统" class="headerlink" title="第一节 中枢神经系统"></a>第一节 中枢神经系统</h2><p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/1.png"><br>人的行为以及精神活动均由脑的活动控制。</p>
-<table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第八章/2.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第八章/3.png" ></td>
-  </tr>
-</table>
-
-<span style="display:block;text-align:center;">
-Health means that a person is in good physical and mental conditions. 
-</span>
-
-<h3 id="一、神经元"><a href="#一、神经元" class="headerlink" title="一、神经元"></a>一、神经元</h3><p><span style="color:#D81C2F">神经系统中最小活性单位，由胞体、树突与轴突构成。</span></p>
-<p><strong>胞体(soma)</strong><br><strong>树突(dendrite)</strong><br><strong>轴突(axon)</strong><br>成人大脑约有1千亿个神经元。<br>● 轴突为细胞体的延伸，由轴丘 (axon hillock) 分出。<br>● 髓鞘为包裹在轴突外面的一层绝缘膜。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/4.png"><br>形态与大小千变万化<br>通常有一个轴突<br>形态由树突决定<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/5.png"></p>
-<h4 id="1、神经元胞体"><a href="#1、神经元胞体" class="headerlink" title="1、神经元胞体"></a><font size="4">1、神经元胞体</font></h4><p>（质膜、线粒体、高尔基体、核、核糖体、内质网、溶酶体）<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/6.png"></p>
-<h4 id="2、神经元的突起"><a href="#2、神经元的突起" class="headerlink" title="2、神经元的突起"></a><font size="4">2、神经元的突起</font></h4><p><strong>● 树突：</strong><br>胞体的延续，内容物和胞体一致。<br><span style="color:#D81C2F">功能：接受信息，并传向胞体，经整合后由轴突传出。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/7.png"></p>
-<p><strong>● 轴突：</strong><br>主干均匀一致，与胞体细胞质连接，轴浆运输。<br><span style="color:#D81C2F">功能：传导信号。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/8.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/Saltatory_Conduction.gif"></p>
-<h3 id="二、胶质细胞-（神经元的10-50倍数量）"><a href="#二、胶质细胞-（神经元的10-50倍数量）" class="headerlink" title="二、胶质细胞 （神经元的10-50倍数量）"></a>二、胶质细胞 （神经元的10-50倍数量）</h3><p><strong>功能：</strong><br>1、支持作用（星形细胞）<br>2、绝缘屏障（少突细胞）<br>3、保护、修复和再生（小胶质细胞）<br>4、物质代谢与营养 （星形）</p>
-<p>5、免疫应答反应（星形、小胶质）<br>6、维持离子平衡<br>7、调节神经递质<br>8、神经递质合成</p>
-<p>9、神经干细胞<br>10、调节神经元功能<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/9.png"></p>
-<h3 id="三、突触-Synapse"><a href="#三、突触-Synapse" class="headerlink" title="三、突触 (Synapse)"></a>三、突触 (Synapse)</h3><p><span style="color:#D81C2F">突触：神经元之间进行信号传递的接触部位。</span></p>
-<p><span style="color:#D81C2F">神经元学说：借助于突触，神经元相互联系构成神经系统。</span></p>
-<table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第八章/10.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第八章/11.png" ></td>
-  </tr>
-</table>
-
-<p><strong>突触连接构成的分类 （轴-体、轴-树、轴-轴、树-树）</strong><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/12.png"></p>
-<p><strong>信息传递机制分类 （化学突触、电突触、混合突触）</strong><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/13.png"></p>
-<h4 id="1、化学突触"><a href="#1、化学突触" class="headerlink" title="1、化学突触"></a><font size="4">1、化学突触</font></h4><p><span style="color:#D81C2F">通过神经递质（化学分子）在神经元之间传递信息</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/14.png"></p>
-<p><span style="color:#D81C2F">前神经元（轴突，囊泡与质膜）、突触间隙、后神经元（树突，质膜）</span></p>
-<h4 id="2、电突触"><a href="#2、电突触" class="headerlink" title="2、电突触"></a><font size="4">2、电突触</font></h4><p>突触前膜、间隙、突触后膜</p>
-<p>圆柱状亲水性半通道（6个相同蛋白质亚基围成，连接子）</p>
-<p>两侧半通道相互准确对接（缝隙连接通道）</p>
-<p>突触一侧电位变化时，通过电突触直接传到下一级神经元</p>
-<p>双向<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/15.png"></p>
-<h3 id="四、化学突触传递"><a href="#四、化学突触传递" class="headerlink" title="四、化学突触传递"></a>四、化学突触传递</h3><p>1、突触前膜产生动作电位引起去极化<br>2、激活前膜电压门控Ca2+通道<br>3、细胞外Ca2+进入前神经元末梢内<br>4、Ca2+浓度升高，信号传至突触囊胞</p>
-<p>5、突触囊胞移至突触前膜并融合<br>6、胞吐释放化学递质到突触间隙<br>7、递质结合于突触后膜受体或门控离子通道<br>8、激活突触后膜的受体或离子通道，进行化学或电信号传导<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/16.png"></p>
-<h4 id="1、神经递质的释放过程-胞吐"><a href="#1、神经递质的释放过程-胞吐" class="headerlink" title="1、神经递质的释放过程 (胞吐)"></a><font size="4">1、神经递质的释放过程 (胞吐)</font></h4><p>1）突触囊胞停靠前膜活动区，停靠 (docking)<br>2）囊胞靠近突触栅栏结构 (ATP提供能量), 启动 (priming)<br>3）Ca2+介导囊胞与前膜融合 (fusion) 并释放递质，胞吐 (exocytosis)<br>4）囊胞膜回收成为包被囊胞，胞吞 (endocytosis)<br>5）包被囊胞脱去包被，释出空的囊胞，并重新装载神经递质，再生 (recycling)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/17.png"></p>
-<span style="display:block;text-align:center;">
-<font size="4">
-神经递质的释放是Ca2+依赖型的，而且为量子释放。
-</font>
-</span>
-
-<p>1、神经递质以囊胞为单位进行释放，一个囊胞被称为一个量子 (quantum)。每个囊胞所含神经递质分子数大致相同 (如，运动神经末梢囊胞含约7000个Ach分子)。</p>
-<p>2、<span style="color:#D81C2F">一次动作电位可以诱发成批的囊胞释放，故释放方式为量子式释放(quantal release)。</span></p>
-<p>3、<span style="color:#D81C2F">释放的囊胞数为量子含量，每个囊胞所含神经递质分子为量子大小。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/18.png"></p>
-<h4 id="2、突触后电位"><a href="#2、突触后电位" class="headerlink" title="2、突触后电位"></a><font size="4">2、突触后电位</font></h4><p><span style="color:#D81C2F">化学突触传递在突触后膜产生的突触反应。膜电位偏离静息电位的变化。</span></p>
-<p><span style="color:#D81C2F">1、兴奋性突触后电位 (excitatory postsynaptic potential, EPSP)：去极化，Na+内流</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/19.png"><br><span style="color:#D81C2F">2、抑制性突触后电位 (inhibitory postsynaptic potential, IPSP)：超极化，Cl-内流</span></p>
-<h4 id="3、突触后电位的整合"><a href="#3、突触后电位的整合" class="headerlink" title="3、突触后电位的整合"></a><font size="4">3、突触后电位的整合</font></h4><p><span style="color:#D81C2F">中枢神经系统中，每个神经元接受千计的突触前末梢与之形成突触联系，且具多样性质，如兴奋性或抑制性，时间不一等。动作电位取决于这些突触后电位在性质、空间、时间上的相互作用。</span></p>
-<h3 id="五、递质灭活"><a href="#五、递质灭活" class="headerlink" title="五、递质灭活"></a>五、递质灭活</h3><p><strong>递质灭活为终止突触传递的必需步骤。</strong><br>● 酶解<br>● 摄取<br>● 弥散</p>
-<h4 id="1、乙酰胆碱"><a href="#1、乙酰胆碱" class="headerlink" title="1、乙酰胆碱"></a><font size="4">1、乙酰胆碱</font></h4><p>● 酶解与摄取。<br>● 由乙酰胆碱酯酶酶解 (AChE)。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/20.png"></p>
-<h4 id="2、单胺与氨基酸"><a href="#2、单胺与氨基酸" class="headerlink" title="2、单胺与氨基酸"></a><font size="4">2、单胺与氨基酸</font></h4><p>● 摄取。<br>● 再摄取转运体 (neurotransmitter transporters)。<br>● 单胺氧化酶 (MAO)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/21.png"></p>
-<h3 id="六、血脑屏障-blood-brain-barrier-BBB"><a href="#六、血脑屏障-blood-brain-barrier-BBB" class="headerlink" title="六、血脑屏障 (blood brain barrier, BBB)"></a>六、血脑屏障 (blood brain barrier, BBB)</h3><p><span style="color:#D81C2F">血液-脑组织间液和血液-脑脊液间的屏障。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/22.png"></p>
-<h2 id="第二节-中枢神经系统的递质与受体"><a href="#第二节-中枢神经系统的递质与受体" class="headerlink" title="第二节 中枢神经系统的递质与受体"></a>第二节 中枢神经系统的递质与受体</h2><h3 id="一、去甲肾上腺素-NA-NE"><a href="#一、去甲肾上腺素-NA-NE" class="headerlink" title="一、去甲肾上腺素 (NA, NE)"></a>一、<span style="color:#D81C2F">去甲肾上腺素 (NA, NE)</span></h3><h4 id="1、分布"><a href="#1、分布" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 蓝斑 (Locus coeruleus) 。<br>● 蓝斑约1万2千个神经元，但可形成与25万个突触，形成弥散的神经纤维联系。<br>●蓝斑神经突触经几条通路投射到脑的皮层 (neocortex)、丘脑(thalamus)、下丘脑 (hypothalamus)、小脑 (cerebellum)、颞叶 (temporal lobe)、以及脊髓 (spinal cord)。</p>
-<h4 id="2、受体"><a href="#2、受体" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● <span style="color:#D81C2F">α受体与β受体。</span><br>● <span style="color:#D81C2F">G蛋白偶联型受体</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/23.png"></p>
-<h4 id="3、蓝斑-LC-的调控功能"><a href="#3、蓝斑-LC-的调控功能" class="headerlink" title="3、蓝斑(LC) 的调控功能"></a><font size="4">3、蓝斑(LC) 的调控功能</font></h4><p>● 应激反应<br>● 情绪<br>● 学习与记忆<br>● 注意力<br>● 脑代谢<br>● 疼痛<br>● 唤醒和睡眠-觉醒<br>● 心血管调节<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/24.png"></p>
-<h4 id="4、代表性相关疾病"><a href="#4、代表性相关疾病" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 情感性精神障碍<br>● 疼痛<br>● 阿片戒断症状<br>● 中枢高血压</p>
-<h3 id="二、去多巴胺-DA"><a href="#二、去多巴胺-DA" class="headerlink" title="二、去多巴胺 (DA)"></a>二、<span style="color:#D81C2F">去多巴胺 (DA)</span></h3><h4 id="1、分布-1"><a href="#1、分布-1" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 黑质(substantial nigra, SN) 和 腹侧被盖区 (ventral tegmental area, VT)。<br>● 弥散型神经递质，通过多个通路投射到整个脑区。<br>● 中皮层通路 (neocortical pathway)，参与认知控制、动机和情绪反应。<br>● 中边缘通路 (mesolimbic pathway)，参与奖赏、愿望、愉悦感、适应性行为 、药物成瘾等。<br>● 结节漏斗通路 (tuberoinfundibular pathway)，下丘脑结节区域的弓状核 (漏斗核) 投射到垂体 (pituitary gland) ，调节垂体前叶分泌催乳素 (prolactin)。<br>● 黑质-纹状体通路 (nigrostriatal pathway) 投射到背侧纹状体(dorsal striatum)、丘脑(thalamus)、壳核 (putamen)。随意运动的发动。黑质DA神经元退化导致帕金森病。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/25.png"></p>
-<h4 id="2、受体-1"><a href="#2、受体-1" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● D1-D5，五个亚型。<br>● G蛋白偶联受体。</p>
-<h4 id="3、DA的调节功能"><a href="#3、DA的调节功能" class="headerlink" title="3、DA的调节功能"></a><font size="4">3、DA的调节功能</font></h4><p>● 欲望<br>● 奖赏<br>● 情绪<br>● 注意力<br>● 成瘾</p>
-<h4 id="4、代表性相关疾病-1"><a href="#4、代表性相关疾病-1" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 药物成瘾<br>● 注意力缺陷型多动症<br>● 精神分裂症<br>● 帕金森病<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/26.png"></p>
-<h3 id="三、5-羟色胺-5-HT"><a href="#三、5-羟色胺-5-HT" class="headerlink" title="三、5-羟色胺 (5-HT)"></a>三、<span style="color:#D81C2F">5-羟色胺 (5-HT)</span></h3><h4 id="1、分布-2"><a href="#1、分布-2" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 脑干9个中缝核群 (raphe nuclei)。<br>● 弥散性神经递质。<br>● 尾端中缝核投射至脊髓，调节疼痛有关的信号。<br>● 前端的投射到脑区的大部区域，参与睡眠-觉醒、学习与记忆、情绪与情感、认知功能等的调节。</p>
-<h4 id="2、受体-2"><a href="#2、受体-2" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● 5-HT1-7，七个亚型。<br>● 5-HT1受体又分5各亚型；5-HT2有3各亚型；5-HT5有两个亚型。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/27.png"></p>
-<h4 id="3、5-HT的调节功能"><a href="#3、5-HT的调节功能" class="headerlink" title="3、5-HT的调节功能"></a><font size="4">3、5-HT的调节功能</font></h4><p>● 情绪<br>● 感觉<br>● 认知<br>● 睡眠<br>● 性欲<br>● 饮食<br>● 神经内分泌<br>● 肠胃<br>● 心血管</p>
-<h4 id="4、代表性相关疾病-2"><a href="#4、代表性相关疾病-2" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 抑郁<br>● 精神分裂<br>● 癫痫<br>● 偏头痛<br>● 厌食<br>● 紧张<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/28.png"><br><span style="display:block;text-align:center;"><br><font size="4"><br>Happy Hormone<br></font><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/29.png"></p>
-<h3 id="四、谷氨酸-Glu"><a href="#四、谷氨酸-Glu" class="headerlink" title="四、谷氨酸 (Glu)"></a>四、<span style="color:#D81C2F">谷氨酸 (Glu)</span></h3><h4 id="1、分布-3"><a href="#1、分布-3" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 各脑区。无特定核团。<br>● 谷氨酸神经元超总数的50%。<br>● 投射神经元。<br>● 兴奋性神经递质。</p>
-<table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/30.png" ><span style="display:block;text-align:center;">
-<font size="4">
-N-methyl-D-aspartate0(NMDA)
-</font>
-    </span>
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/31.png" ><span style="display:block;text-align:center;">
-<font size="4">
-AMPA
-</font>
-    </span>
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/34.png" ><span style="display:block;text-align:center;">
-<font size="4">
-kainic acid
-</font>
-    </span>
-    </td>
-  </tr>
-</table>
-
-<h4 id="2、受体-3"><a href="#2、受体-3" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><h5 id="（1）离子型受体"><a href="#（1）离子型受体" class="headerlink" title="（1）离子型受体"></a><font size="4">（1）离子型受体</font></h5><p>● 谷氨酸门控阳离子通道。<br>● 激动剂：NMDA、AMPA、KA(海人藻酸, kainic acid)。<br>● 谷氨酸结合开启阳离子通道，使神经元去极化，产生兴奋性动作电位。</p>
-<h5 id="（2）代谢型受体"><a href="#（2）代谢型受体" class="headerlink" title="（2）代谢型受体"></a><font size="4">（2）代谢型受体</font></h5><p>● G蛋白偶合受体。<br>● 分为三组：第一组，mGluR1,5；第二组，2, 3; 第三组，4, 6, 7, 8。<br>● 代谢型分布在前神经元和周边，控制递质释放。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/32.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/33.png"></p>
-<h4 id="3、代表性相关疾病"><a href="#3、代表性相关疾病" class="headerlink" title="3、代表性相关疾病"></a><font size="4">3、代表性相关疾病</font></h4><p>● 神经退行性疾病<br>● 认知功能障碍<br>● 精神分裂症<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/35.png"></p>
-<h3 id="五、γ-氨基丁酸-GABA"><a href="#五、γ-氨基丁酸-GABA" class="headerlink" title="五、γ-氨基丁酸 (GABA)"></a>五、<span style="color:#D81C2F">γ-氨基丁酸 (GABA)</span></h3><table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/36.png" ><span style="display:block;text-align:center;">
-<font size="4">
-gamma-Aminobutyric acid
-</font>
-    </span>
-    </td>
-  </tr>
-</table>
-
-<h4 id="1、分布-4"><a href="#1、分布-4" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 抑制型神经递质<br>● 约占神经元总数的20%。<br>● 多数为中间神经元，一部为投射神经元。</p>
-<h4 id="2、受体-4"><a href="#2、受体-4" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● 三种：GABA<sub>A</sub>, GABA<sub>B</sub>, GABA<sub>C</sub>。<br>● A和B分布大部分脑区。<br>● A和C为配体门控氯离子通道；B为代谢型受体。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/37.png"></p>
-<table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/38.png" >
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/39.png" >
-    </td>
-  </tr>
-</table>
-
-<h4 id="3、GABA的调节功能"><a href="#3、GABA的调节功能" class="headerlink" title="3、GABA的调节功能"></a><font size="4">3、GABA的调节功能</font></h4><p>● 疼痛<br>● 食欲<br>● 心血管<br>● 通过与其它递质合作，间接参与：运动、性行为、体温、肌紧张、睡眠、应激。</p>
-<h4 id="4、代表性相关疾病-3"><a href="#4、代表性相关疾病-3" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 惊厥<br>● 癫痫<br>● 阿尔兹海默症(AD)、帕金森氏症 (PD)、亨廷顿病(HD)。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/40.png"></p>
-<h3 id="六、乙酰胆碱-ACh"><a href="#六、乙酰胆碱-ACh" class="headerlink" title="六、乙酰胆碱 (ACh)"></a>六、<span style="color:#D81C2F">乙酰胆碱 (ACh)</span></h3><h4 id="1、分布-5"><a href="#1、分布-5" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 内侧隔核 (medial septal nuclei)、Meynert氏基底核 (basal nucleus of Meynert)、脑桥-中脑被盖复合体 (Ponto mesencephalic tegmentum complex)。<br>● Meynert氏基底核投射到大脑皮层，参与兴奋性的调节、唤醒、睡眠-觉醒周期、学习与记忆等。<br>● 内侧隔核投射到海马区，参与认知功能。</p>
-<h4 id="2、受体-5"><a href="#2、受体-5" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p><span style="color:#D81C2F">● M受体与N受体。</span><br>● M受体为毒蕈碱激活受体，代谢性受体，1-5亚型。<br>● N受体为烟碱激活受体，离子通道，4个亚型。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/41.png"></p>
-<h4 id="3、Ach的调节功能"><a href="#3、Ach的调节功能" class="headerlink" title="3、Ach的调节功能"></a><font size="4">3、Ach的调节功能</font></h4><p>● 学习与记忆<br>● 警觉<br>● 内脏活动</p>
-<h4 id="4、代表性相关疾病-4"><a href="#4、代表性相关疾病-4" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 阿尔兹海默症 (AD)<br>● 帕金森症 (PD)</p>
-<table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/42.png" >
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/43.png" >
-    </td>
-  </tr>
-</table>
-
-<h3 id="七、其它递质"><a href="#七、其它递质" class="headerlink" title="七、其它递质"></a>七、其它递质</h3><h4 id="1、神经肽"><a href="#1、神经肽" class="headerlink" title="1、神经肽"></a><font size="4">1、神经肽</font></h4><p>● 主要以神经激素形式，通过弥散作用于靶细胞。<br><strong>阿片肽 （与阿片受体结合的神经肽）</strong><br>● 阿片肽家族：脑啡肽、强啡肽、β内啡肽、孤啡肽。<br>● 脑啡肽、强啡肽、β内啡肽对阿片受体有高亲和力。<br>● 阿片肽受体调节痛觉。<br>● 吗啡、芬太尼与阿片受体结合，激动受体而兴奋、止痛。</p>
-<table>
-  <tr>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/44.png" ><span style="display:block;text-align:center;">
-<font size="4">
-吗啡 (morphine)
-</font>
-    </span>
-    </td>
-    <td height="50%">
-    <img src="/../img/生理药理学/第八章/45.png" ><span style="display:block;text-align:center;">
-<font size="4">
-芬太尼 (fentanyl)
-</font>
-    </span>
-    </td>
-  </tr>
-</table>
-
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/46.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/47.png"></p>
-<h4 id="2、神经营养因子"><a href="#2、神经营养因子" class="headerlink" title="2、神经营养因子"></a><font size="4">2、神经营养因子</font></h4><p>● 调节神经系统发育、成熟，维持神经细胞功能的多肽。<br><strong>NGF以及其受体</strong><br>● NGF (never growth factor)。<br>● NGF有两类受体：<br>高亲和力受体，Trk受体，包括TrkA、TrkB、TrkC。<br>低亲和力受体，TNF受体，p75受体。<br>●NGF家族以及受体参与神经元生长、发育、分化、凋亡、存活、损伤后修复。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/48.png"></p>
-<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p><span style="color:#D81C2F">1、<a href="#%E4%B8%80%E3%80%81%E7%A5%9E%E7%BB%8F%E5%85%83">神经元</a>、<a href="#%E4%B8%89%E3%80%81%E7%AA%81%E8%A7%A6">突触</a>、<a href="#1%E3%80%81%E5%8C%96%E5%AD%A6%E7%AA%81%E8%A7%A6">化学突触</a><br><br>2、<a href="#1%E3%80%81%E7%A5%9E%E7%BB%8F%E9%80%92%E8%B4%A8%E7%9A%84%E9%87%8A%E6%94%BE%E8%BF%87%E7%A8%8B-%E8%83%9E%E5%90%90">神经递质的释放与灭活</a><br><br>3、<a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%92%E8%B4%A8%E4%B8%8E%E5%8F%97%E4%BD%93">中枢神经系统重要的神经递质</a><br><br>4、<a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%92%E8%B4%A8%E4%B8%8E%E5%8F%97%E4%BD%93">中枢神经递质的受体</a><br></span></p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>生物制药</tag>
-        <tag>生理药理学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>生理药理学第六章</title>
     <url>/2025/04/05/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%85%AD%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第六章-肾上腺素能系统药物"><a href="#第六章-肾上腺素能系统药物" class="headerlink" title="第六章 肾上腺素能系统药物 "></a><span style="display:block;text-align:center;color:#00BFFF;">第六章 肾上腺素能系统药物 </span></h1><h2 id="第一节-外周肾上腺素能系统"><a href="#第一节-外周肾上腺素能系统" class="headerlink" title="第一节 外周肾上腺素能系统"></a>第一节 外周肾上腺素能系统</h2><p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AD%E7%AB%A0/1.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AD%E7%AB%A0/2.png"></p>
@@ -14573,6 +14399,180 @@ gamma-Aminobutyric acid
       </tags>
   </entry>
   <entry>
+    <title>生理药理学第八章</title>
+    <url>/2025/04/07/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%85%AB%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第八章-中枢神经系统-CNS"><a href="#第八章-中枢神经系统-CNS" class="headerlink" title="第八章 中枢神经系统(CNS)"></a><span style="display:block;text-align:center;color:#00BFFF;">第八章 中枢神经系统(CNS)</span></h1><h2 id="第一节-中枢神经系统"><a href="#第一节-中枢神经系统" class="headerlink" title="第一节 中枢神经系统"></a>第一节 中枢神经系统</h2><p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/1.png"><br>人的行为以及精神活动均由脑的活动控制。</p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第八章/2.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第八章/3.png" ></td>
+  </tr>
+</table>
+
+<span style="display:block;text-align:center;">
+Health means that a person is in good physical and mental conditions. 
+</span>
+
+<h3 id="一、神经元"><a href="#一、神经元" class="headerlink" title="一、神经元"></a>一、神经元</h3><p><span style="color:#D81C2F">神经系统中最小活性单位，由胞体、树突与轴突构成。</span></p>
+<p><strong>胞体(soma)</strong><br><strong>树突(dendrite)</strong><br><strong>轴突(axon)</strong><br>成人大脑约有1千亿个神经元。<br>● 轴突为细胞体的延伸，由轴丘 (axon hillock) 分出。<br>● 髓鞘为包裹在轴突外面的一层绝缘膜。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/4.png"><br>形态与大小千变万化<br>通常有一个轴突<br>形态由树突决定<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/5.png"></p>
+<h4 id="1、神经元胞体"><a href="#1、神经元胞体" class="headerlink" title="1、神经元胞体"></a><font size="4">1、神经元胞体</font></h4><p>（质膜、线粒体、高尔基体、核、核糖体、内质网、溶酶体）<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/6.png"></p>
+<h4 id="2、神经元的突起"><a href="#2、神经元的突起" class="headerlink" title="2、神经元的突起"></a><font size="4">2、神经元的突起</font></h4><p><strong>● 树突：</strong><br>胞体的延续，内容物和胞体一致。<br><span style="color:#D81C2F">功能：接受信息，并传向胞体，经整合后由轴突传出。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/7.png"></p>
+<p><strong>● 轴突：</strong><br>主干均匀一致，与胞体细胞质连接，轴浆运输。<br><span style="color:#D81C2F">功能：传导信号。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/8.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/Saltatory_Conduction.gif"></p>
+<h3 id="二、胶质细胞-（神经元的10-50倍数量）"><a href="#二、胶质细胞-（神经元的10-50倍数量）" class="headerlink" title="二、胶质细胞 （神经元的10-50倍数量）"></a>二、胶质细胞 （神经元的10-50倍数量）</h3><p><strong>功能：</strong><br>1、支持作用（星形细胞）<br>2、绝缘屏障（少突细胞）<br>3、保护、修复和再生（小胶质细胞）<br>4、物质代谢与营养 （星形）</p>
+<p>5、免疫应答反应（星形、小胶质）<br>6、维持离子平衡<br>7、调节神经递质<br>8、神经递质合成</p>
+<p>9、神经干细胞<br>10、调节神经元功能<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/9.png"></p>
+<h3 id="三、突触-Synapse"><a href="#三、突触-Synapse" class="headerlink" title="三、突触 (Synapse)"></a>三、突触 (Synapse)</h3><p><span style="color:#D81C2F">突触：神经元之间进行信号传递的接触部位。</span></p>
+<p><span style="color:#D81C2F">神经元学说：借助于突触，神经元相互联系构成神经系统。</span></p>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第八章/10.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第八章/11.png" ></td>
+  </tr>
+</table>
+
+<p><strong>突触连接构成的分类 （轴-体、轴-树、轴-轴、树-树）</strong><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/12.png"></p>
+<p><strong>信息传递机制分类 （化学突触、电突触、混合突触）</strong><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/13.png"></p>
+<h4 id="1、化学突触"><a href="#1、化学突触" class="headerlink" title="1、化学突触"></a><font size="4">1、化学突触</font></h4><p><span style="color:#D81C2F">通过神经递质（化学分子）在神经元之间传递信息</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/14.png"></p>
+<p><span style="color:#D81C2F">前神经元（轴突，囊泡与质膜）、突触间隙、后神经元（树突，质膜）</span></p>
+<h4 id="2、电突触"><a href="#2、电突触" class="headerlink" title="2、电突触"></a><font size="4">2、电突触</font></h4><p>突触前膜、间隙、突触后膜</p>
+<p>圆柱状亲水性半通道（6个相同蛋白质亚基围成，连接子）</p>
+<p>两侧半通道相互准确对接（缝隙连接通道）</p>
+<p>突触一侧电位变化时，通过电突触直接传到下一级神经元</p>
+<p>双向<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/15.png"></p>
+<h3 id="四、化学突触传递"><a href="#四、化学突触传递" class="headerlink" title="四、化学突触传递"></a>四、化学突触传递</h3><p>1、突触前膜产生动作电位引起去极化<br>2、激活前膜电压门控Ca2+通道<br>3、细胞外Ca2+进入前神经元末梢内<br>4、Ca2+浓度升高，信号传至突触囊胞</p>
+<p>5、突触囊胞移至突触前膜并融合<br>6、胞吐释放化学递质到突触间隙<br>7、递质结合于突触后膜受体或门控离子通道<br>8、激活突触后膜的受体或离子通道，进行化学或电信号传导<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/16.png"></p>
+<h4 id="1、神经递质的释放过程-胞吐"><a href="#1、神经递质的释放过程-胞吐" class="headerlink" title="1、神经递质的释放过程 (胞吐)"></a><font size="4">1、神经递质的释放过程 (胞吐)</font></h4><p>1）突触囊胞停靠前膜活动区，停靠 (docking)<br>2）囊胞靠近突触栅栏结构 (ATP提供能量), 启动 (priming)<br>3）Ca2+介导囊胞与前膜融合 (fusion) 并释放递质，胞吐 (exocytosis)<br>4）囊胞膜回收成为包被囊胞，胞吞 (endocytosis)<br>5）包被囊胞脱去包被，释出空的囊胞，并重新装载神经递质，再生 (recycling)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/17.png"></p>
+<span style="display:block;text-align:center;">
+<font size="4">
+神经递质的释放是Ca2+依赖型的，而且为量子释放。
+</font>
+</span>
+
+<p>1、神经递质以囊胞为单位进行释放，一个囊胞被称为一个量子 (quantum)。每个囊胞所含神经递质分子数大致相同 (如，运动神经末梢囊胞含约7000个Ach分子)。</p>
+<p>2、<span style="color:#D81C2F">一次动作电位可以诱发成批的囊胞释放，故释放方式为量子式释放(quantal release)。</span></p>
+<p>3、<span style="color:#D81C2F">释放的囊胞数为量子含量，每个囊胞所含神经递质分子为量子大小。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/18.png"></p>
+<h4 id="2、突触后电位"><a href="#2、突触后电位" class="headerlink" title="2、突触后电位"></a><font size="4">2、突触后电位</font></h4><p><span style="color:#D81C2F">化学突触传递在突触后膜产生的突触反应。膜电位偏离静息电位的变化。</span></p>
+<p><span style="color:#D81C2F">1、兴奋性突触后电位 (excitatory postsynaptic potential, EPSP)：去极化，Na+内流</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/19.png"><br><span style="color:#D81C2F">2、抑制性突触后电位 (inhibitory postsynaptic potential, IPSP)：超极化，Cl-内流</span></p>
+<h4 id="3、突触后电位的整合"><a href="#3、突触后电位的整合" class="headerlink" title="3、突触后电位的整合"></a><font size="4">3、突触后电位的整合</font></h4><p><span style="color:#D81C2F">中枢神经系统中，每个神经元接受千计的突触前末梢与之形成突触联系，且具多样性质，如兴奋性或抑制性，时间不一等。动作电位取决于这些突触后电位在性质、空间、时间上的相互作用。</span></p>
+<h3 id="五、递质灭活"><a href="#五、递质灭活" class="headerlink" title="五、递质灭活"></a>五、递质灭活</h3><p><strong>递质灭活为终止突触传递的必需步骤。</strong><br>● 酶解<br>● 摄取<br>● 弥散</p>
+<h4 id="1、乙酰胆碱"><a href="#1、乙酰胆碱" class="headerlink" title="1、乙酰胆碱"></a><font size="4">1、乙酰胆碱</font></h4><p>● 酶解与摄取。<br>● 由乙酰胆碱酯酶酶解 (AChE)。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/20.png"></p>
+<h4 id="2、单胺与氨基酸"><a href="#2、单胺与氨基酸" class="headerlink" title="2、单胺与氨基酸"></a><font size="4">2、单胺与氨基酸</font></h4><p>● 摄取。<br>● 再摄取转运体 (neurotransmitter transporters)。<br>● 单胺氧化酶 (MAO)<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/21.png"></p>
+<h3 id="六、血脑屏障-blood-brain-barrier-BBB"><a href="#六、血脑屏障-blood-brain-barrier-BBB" class="headerlink" title="六、血脑屏障 (blood brain barrier, BBB)"></a>六、血脑屏障 (blood brain barrier, BBB)</h3><p><span style="color:#D81C2F">血液-脑组织间液和血液-脑脊液间的屏障。</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/22.png"></p>
+<h2 id="第二节-中枢神经系统的递质与受体"><a href="#第二节-中枢神经系统的递质与受体" class="headerlink" title="第二节 中枢神经系统的递质与受体"></a>第二节 中枢神经系统的递质与受体</h2><h3 id="一、去甲肾上腺素-NA-NE"><a href="#一、去甲肾上腺素-NA-NE" class="headerlink" title="一、去甲肾上腺素 (NA, NE)"></a>一、<span style="color:#D81C2F">去甲肾上腺素 (NA, NE)</span></h3><h4 id="1、分布"><a href="#1、分布" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 蓝斑 (Locus coeruleus) 。<br>● 蓝斑约1万2千个神经元，但可形成与25万个突触，形成弥散的神经纤维联系。<br>●蓝斑神经突触经几条通路投射到脑的皮层 (neocortex)、丘脑(thalamus)、下丘脑 (hypothalamus)、小脑 (cerebellum)、颞叶 (temporal lobe)、以及脊髓 (spinal cord)。</p>
+<h4 id="2、受体"><a href="#2、受体" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● <span style="color:#D81C2F">α受体与β受体。</span><br>● <span style="color:#D81C2F">G蛋白偶联型受体</span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/23.png"></p>
+<h4 id="3、蓝斑-LC-的调控功能"><a href="#3、蓝斑-LC-的调控功能" class="headerlink" title="3、蓝斑(LC) 的调控功能"></a><font size="4">3、蓝斑(LC) 的调控功能</font></h4><p>● 应激反应<br>● 情绪<br>● 学习与记忆<br>● 注意力<br>● 脑代谢<br>● 疼痛<br>● 唤醒和睡眠-觉醒<br>● 心血管调节<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/24.png"></p>
+<h4 id="4、代表性相关疾病"><a href="#4、代表性相关疾病" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 情感性精神障碍<br>● 疼痛<br>● 阿片戒断症状<br>● 中枢高血压</p>
+<h3 id="二、去多巴胺-DA"><a href="#二、去多巴胺-DA" class="headerlink" title="二、去多巴胺 (DA)"></a>二、<span style="color:#D81C2F">去多巴胺 (DA)</span></h3><h4 id="1、分布-1"><a href="#1、分布-1" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 黑质(substantial nigra, SN) 和 腹侧被盖区 (ventral tegmental area, VT)。<br>● 弥散型神经递质，通过多个通路投射到整个脑区。<br>● 中皮层通路 (neocortical pathway)，参与认知控制、动机和情绪反应。<br>● 中边缘通路 (mesolimbic pathway)，参与奖赏、愿望、愉悦感、适应性行为 、药物成瘾等。<br>● 结节漏斗通路 (tuberoinfundibular pathway)，下丘脑结节区域的弓状核 (漏斗核) 投射到垂体 (pituitary gland) ，调节垂体前叶分泌催乳素 (prolactin)。<br>● 黑质-纹状体通路 (nigrostriatal pathway) 投射到背侧纹状体(dorsal striatum)、丘脑(thalamus)、壳核 (putamen)。随意运动的发动。黑质DA神经元退化导致帕金森病。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/25.png"></p>
+<h4 id="2、受体-1"><a href="#2、受体-1" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● D1-D5，五个亚型。<br>● G蛋白偶联受体。</p>
+<h4 id="3、DA的调节功能"><a href="#3、DA的调节功能" class="headerlink" title="3、DA的调节功能"></a><font size="4">3、DA的调节功能</font></h4><p>● 欲望<br>● 奖赏<br>● 情绪<br>● 注意力<br>● 成瘾</p>
+<h4 id="4、代表性相关疾病-1"><a href="#4、代表性相关疾病-1" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 药物成瘾<br>● 注意力缺陷型多动症<br>● 精神分裂症<br>● 帕金森病<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/26.png"></p>
+<h3 id="三、5-羟色胺-5-HT"><a href="#三、5-羟色胺-5-HT" class="headerlink" title="三、5-羟色胺 (5-HT)"></a>三、<span style="color:#D81C2F">5-羟色胺 (5-HT)</span></h3><h4 id="1、分布-2"><a href="#1、分布-2" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 脑干9个中缝核群 (raphe nuclei)。<br>● 弥散性神经递质。<br>● 尾端中缝核投射至脊髓，调节疼痛有关的信号。<br>● 前端的投射到脑区的大部区域，参与睡眠-觉醒、学习与记忆、情绪与情感、认知功能等的调节。</p>
+<h4 id="2、受体-2"><a href="#2、受体-2" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● 5-HT1-7，七个亚型。<br>● 5-HT1受体又分5各亚型；5-HT2有3各亚型；5-HT5有两个亚型。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/27.png"></p>
+<h4 id="3、5-HT的调节功能"><a href="#3、5-HT的调节功能" class="headerlink" title="3、5-HT的调节功能"></a><font size="4">3、5-HT的调节功能</font></h4><p>● 情绪<br>● 感觉<br>● 认知<br>● 睡眠<br>● 性欲<br>● 饮食<br>● 神经内分泌<br>● 肠胃<br>● 心血管</p>
+<h4 id="4、代表性相关疾病-2"><a href="#4、代表性相关疾病-2" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 抑郁<br>● 精神分裂<br>● 癫痫<br>● 偏头痛<br>● 厌食<br>● 紧张<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/28.png"><br><span style="display:block;text-align:center;"><br><font size="4"><br>Happy Hormone<br></font><br></span><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/29.png"></p>
+<h3 id="四、谷氨酸-Glu"><a href="#四、谷氨酸-Glu" class="headerlink" title="四、谷氨酸 (Glu)"></a>四、<span style="color:#D81C2F">谷氨酸 (Glu)</span></h3><h4 id="1、分布-3"><a href="#1、分布-3" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 各脑区。无特定核团。<br>● 谷氨酸神经元超总数的50%。<br>● 投射神经元。<br>● 兴奋性神经递质。</p>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/30.png" ><span style="display:block;text-align:center;">
+<font size="4">
+N-methyl-D-aspartate0(NMDA)
+</font>
+    </span>
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/31.png" ><span style="display:block;text-align:center;">
+<font size="4">
+AMPA
+</font>
+    </span>
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/34.png" ><span style="display:block;text-align:center;">
+<font size="4">
+kainic acid
+</font>
+    </span>
+    </td>
+  </tr>
+</table>
+
+<h4 id="2、受体-3"><a href="#2、受体-3" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><h5 id="（1）离子型受体"><a href="#（1）离子型受体" class="headerlink" title="（1）离子型受体"></a><font size="4">（1）离子型受体</font></h5><p>● 谷氨酸门控阳离子通道。<br>● 激动剂：NMDA、AMPA、KA(海人藻酸, kainic acid)。<br>● 谷氨酸结合开启阳离子通道，使神经元去极化，产生兴奋性动作电位。</p>
+<h5 id="（2）代谢型受体"><a href="#（2）代谢型受体" class="headerlink" title="（2）代谢型受体"></a><font size="4">（2）代谢型受体</font></h5><p>● G蛋白偶合受体。<br>● 分为三组：第一组，mGluR1,5；第二组，2, 3; 第三组，4, 6, 7, 8。<br>● 代谢型分布在前神经元和周边，控制递质释放。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/32.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/33.png"></p>
+<h4 id="3、代表性相关疾病"><a href="#3、代表性相关疾病" class="headerlink" title="3、代表性相关疾病"></a><font size="4">3、代表性相关疾病</font></h4><p>● 神经退行性疾病<br>● 认知功能障碍<br>● 精神分裂症<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/35.png"></p>
+<h3 id="五、γ-氨基丁酸-GABA"><a href="#五、γ-氨基丁酸-GABA" class="headerlink" title="五、γ-氨基丁酸 (GABA)"></a>五、<span style="color:#D81C2F">γ-氨基丁酸 (GABA)</span></h3><table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/36.png" ><span style="display:block;text-align:center;">
+<font size="4">
+gamma-Aminobutyric acid
+</font>
+    </span>
+    </td>
+  </tr>
+</table>
+
+<h4 id="1、分布-4"><a href="#1、分布-4" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 抑制型神经递质<br>● 约占神经元总数的20%。<br>● 多数为中间神经元，一部为投射神经元。</p>
+<h4 id="2、受体-4"><a href="#2、受体-4" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p>● 三种：GABA<sub>A</sub>, GABA<sub>B</sub>, GABA<sub>C</sub>。<br>● A和B分布大部分脑区。<br>● A和C为配体门控氯离子通道；B为代谢型受体。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/37.png"></p>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/38.png" >
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/39.png" >
+    </td>
+  </tr>
+</table>
+
+<h4 id="3、GABA的调节功能"><a href="#3、GABA的调节功能" class="headerlink" title="3、GABA的调节功能"></a><font size="4">3、GABA的调节功能</font></h4><p>● 疼痛<br>● 食欲<br>● 心血管<br>● 通过与其它递质合作，间接参与：运动、性行为、体温、肌紧张、睡眠、应激。</p>
+<h4 id="4、代表性相关疾病-3"><a href="#4、代表性相关疾病-3" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 惊厥<br>● 癫痫<br>● 阿尔兹海默症(AD)、帕金森氏症 (PD)、亨廷顿病(HD)。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/40.png"></p>
+<h3 id="六、乙酰胆碱-ACh"><a href="#六、乙酰胆碱-ACh" class="headerlink" title="六、乙酰胆碱 (ACh)"></a>六、<span style="color:#D81C2F">乙酰胆碱 (ACh)</span></h3><h4 id="1、分布-5"><a href="#1、分布-5" class="headerlink" title="1、分布"></a><font size="4">1、分布</font></h4><p>● 内侧隔核 (medial septal nuclei)、Meynert氏基底核 (basal nucleus of Meynert)、脑桥-中脑被盖复合体 (Ponto mesencephalic tegmentum complex)。<br>● Meynert氏基底核投射到大脑皮层，参与兴奋性的调节、唤醒、睡眠-觉醒周期、学习与记忆等。<br>● 内侧隔核投射到海马区，参与认知功能。</p>
+<h4 id="2、受体-5"><a href="#2、受体-5" class="headerlink" title="2、受体"></a><font size="4">2、受体</font></h4><p><span style="color:#D81C2F">● M受体与N受体。</span><br>● M受体为毒蕈碱激活受体，代谢性受体，1-5亚型。<br>● N受体为烟碱激活受体，离子通道，4个亚型。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/41.png"></p>
+<h4 id="3、Ach的调节功能"><a href="#3、Ach的调节功能" class="headerlink" title="3、Ach的调节功能"></a><font size="4">3、Ach的调节功能</font></h4><p>● 学习与记忆<br>● 警觉<br>● 内脏活动</p>
+<h4 id="4、代表性相关疾病-4"><a href="#4、代表性相关疾病-4" class="headerlink" title="4、代表性相关疾病"></a><font size="4">4、代表性相关疾病</font></h4><p>● 阿尔兹海默症 (AD)<br>● 帕金森症 (PD)</p>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/42.png" >
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/43.png" >
+    </td>
+  </tr>
+</table>
+
+<h3 id="七、其它递质"><a href="#七、其它递质" class="headerlink" title="七、其它递质"></a>七、其它递质</h3><h4 id="1、神经肽"><a href="#1、神经肽" class="headerlink" title="1、神经肽"></a><font size="4">1、神经肽</font></h4><p>● 主要以神经激素形式，通过弥散作用于靶细胞。<br><strong>阿片肽 （与阿片受体结合的神经肽）</strong><br>● 阿片肽家族：脑啡肽、强啡肽、β内啡肽、孤啡肽。<br>● 脑啡肽、强啡肽、β内啡肽对阿片受体有高亲和力。<br>● 阿片肽受体调节痛觉。<br>● 吗啡、芬太尼与阿片受体结合，激动受体而兴奋、止痛。</p>
+<table>
+  <tr>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/44.png" ><span style="display:block;text-align:center;">
+<font size="4">
+吗啡 (morphine)
+</font>
+    </span>
+    </td>
+    <td height="50%">
+    <img src="/../img/生理药理学/第八章/45.png" ><span style="display:block;text-align:center;">
+<font size="4">
+芬太尼 (fentanyl)
+</font>
+    </span>
+    </td>
+  </tr>
+</table>
+
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/46.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/47.png"></p>
+<h4 id="2、神经营养因子"><a href="#2、神经营养因子" class="headerlink" title="2、神经营养因子"></a><font size="4">2、神经营养因子</font></h4><p>● 调节神经系统发育、成熟，维持神经细胞功能的多肽。<br><strong>NGF以及其受体</strong><br>● NGF (never growth factor)。<br>● NGF有两类受体：<br>高亲和力受体，Trk受体，包括TrkA、TrkB、TrkC。<br>低亲和力受体，TNF受体，p75受体。<br>●NGF家族以及受体参与神经元生长、发育、分化、凋亡、存活、损伤后修复。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/48.png"></p>
+<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p><span style="color:#D81C2F">1、<a href="#%E4%B8%80%E3%80%81%E7%A5%9E%E7%BB%8F%E5%85%83">神经元</a>、<a href="#%E4%B8%89%E3%80%81%E7%AA%81%E8%A7%A6">突触</a>、<a href="#1%E3%80%81%E5%8C%96%E5%AD%A6%E7%AA%81%E8%A7%A6">化学突触</a><br><br>2、<a href="#1%E3%80%81%E7%A5%9E%E7%BB%8F%E9%80%92%E8%B4%A8%E7%9A%84%E9%87%8A%E6%94%BE%E8%BF%87%E7%A8%8B-%E8%83%9E%E5%90%90">神经递质的释放与灭活</a><br><br>3、<a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%92%E8%B4%A8%E4%B8%8E%E5%8F%97%E4%BD%93">中枢神经系统重要的神经递质</a><br><br>4、<a href="#%E7%AC%AC%E4%BA%8C%E8%8A%82-%E4%B8%AD%E6%9E%A2%E7%A5%9E%E7%BB%8F%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%92%E8%B4%A8%E4%B8%8E%E5%8F%97%E4%BD%93">中枢神经递质的受体</a><br></span></p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>生物制药</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>生理药理学第十三章</title>
     <url>/2025/04/14/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十二章-抗高血压药"><a href="#第十二章-抗高血压药" class="headerlink" title="第十二章 抗高血压药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十二章 抗高血压药</span></h1><h2 id="第一节-血管生理学"><a href="#第一节-血管生理学" class="headerlink" title="第一节 血管生理学"></a>第一节 血管生理学</h2><h3 id="一、血液循环"><a href="#一、血液循环" class="headerlink" title="一、血液循环"></a>一、血液循环</h3><h4 id="1、心血管系统"><a href="#1、心血管系统" class="headerlink" title="1、心血管系统"></a><font size="4">1、心血管系统</font></h4><p>血管：动脉(红)、毛细血管、静脉(蓝)。<br>心血管系统：血管与心脏。<br>血液流动：心房、心室、动脉、毛细血管、静脉、心房…<br>血液分布：体循环系统84%，其中静脉64%，动脉13%，毛细血管7%。另心腔7%，肺9%。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%B8%89%E7%AB%A0/1.png"></p>
@@ -14734,6 +14734,54 @@ gamma-Aminobutyric acid
 <h1 id="本章小节"><a href="#本章小节" class="headerlink" title="本章小节"></a>本章小节</h1><p><a href="#%E4%B8%80%E3%80%81%E7%A5%9E%E7%BB%8F%E9%80%80%E8%A1%8C%E6%80%A7%E7%96%BE%E7%97%85">神经退行性疾病</a></p>
 <p><a href="#%E4%BA%8C%E3%80%81%E6%8A%97%E5%B8%95%E9%87%91%E6%A3%AE%E7%97%85%E8%8D%AF%E7%89%A9">抗帕金森病药物</a></p>
 <p><a href="#%E4%B8%89%E3%80%81%E6%B2%BB%E7%96%97%E9%98%BF%E5%B0%94%E8%8C%A8%E6%B5%B7%E9%BB%98%E7%97%85%E8%8D%AF%E7%89%A9">治疗阿尔茨海默病药物</a></p>
+]]></content>
+      <tags>
+        <tag>学习笔记</tag>
+        <tag>生物制药</tag>
+        <tag>生理药理学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生理药理学第十八章</title>
+    <url>/2025/06/12/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十八章-胰岛素及降血糖药"><a href="#第十八章-胰岛素及降血糖药" class="headerlink" title="第十八章 胰岛素及降血糖药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十八章 胰岛素及降血糖药</span></h1><p><strong><span style="display:block;text-align:center;color:#D81C2F;"><font size="4">糖尿病</font></span></strong></p>
+<span style="color:#D81C2F">
+● 胰岛素分泌不足引起的糖、脂肪、蛋白、水和电解质代谢紊乱的疾病。<br>
+● 高血糖为标志。<br>
+● I型糖尿病：胰岛素依赖型，胰岛β细胞受损，需外源性补充胰岛素。<br>
+● II型糖尿病：非胰岛素依赖型，β细胞功能低下，需要控制血糖。<br>
+</span>
+<table>
+  <tr>
+    <td height="50%"><img src="/../img/生理药理学/第十八章/1.png" ></td>
+    <td height="50%"><img src="/../img/生理药理学/第十八章/2.png" ></td>
+  </tr>
+</table>
+<span style="display:block;text-align:center;color:#D81C2F;">
+主要原因
+I型，自身免疫反应缺陷。
+II型，肥胖及缺乏锻炼。
+</span>
+
+<h2 id="第一节-胰腺的生理学"><a href="#第一节-胰腺的生理学" class="headerlink" title="第一节 胰腺的生理学"></a>第一节 胰腺的生理学</h2><h3 id="1、胰腺"><a href="#1、胰腺" class="headerlink" title="1、胰腺"></a>1、胰腺</h3><p>● 狭长的腺体，称为胰腺，横置于腹后壁腰椎体平面，质地柔软，呈灰红。<br>● 胰腺分为外分泌腺和内分泌腺两部分。<br>● 外分泌腺由腺泡和腺管组成，腺泡分泌胰液，腺管是胰液排出的通道。<br>● 胰液中含有碳酸氢钠、胰蛋白酶原、脂肪酶、淀粉酶等。胰液通过胰腺管排入十二指肠，有消化蛋白质、脂肪和糖的作用。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/4.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/3.png"></p>
+<h3 id="2、胰腺的内分泌腺"><a href="#2、胰腺的内分泌腺" class="headerlink" title="2、胰腺的内分泌腺"></a>2、胰腺的内分泌腺</h3><p>● 由大小不同的细胞团，胰岛组成。<br>● 成人有一至两百万个胰岛。<br>● 主要由4种细胞组成：α(A)细胞、β(B)细胞、δ(D)细胞、PP(F)细胞。</p>
+<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/5.png"><br><em>A细胞分泌胰高血糖素，升高血糖</em><br><em>B细胞分泌胰岛素，降低血糖</em><br><em>D细胞分泌生长抑素，抑制A、B细胞的分泌</em><br><em>PP细胞分泌胰多肽，抑制胃肠运动、胰液分泌和胆囊收缩</em></p>
+<h2 id="第二节-胰岛素-Insulin"><a href="#第二节-胰岛素-Insulin" class="headerlink" title="第二节 胰岛素(Insulin)"></a>第二节 胰岛素(Insulin)</h2><h3 id="1、胰岛素"><a href="#1、胰岛素" class="headerlink" title="1、胰岛素"></a>1、胰岛素</h3><p>● 在β细胞中，胰岛素原为86个氨基酸构成的肽链。<br>● C肽将A和B链链接。<br>● 在高尔基体，胰岛素原被剪接为胰岛素和C肽。<br>● C肽无生物活性。<br>● A链内形成一个二硫键，并与B链形成两个二硫键。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/6.png"><br>血浆胰岛素<br>● 常与血浆蛋白结合，并与游离的胰岛素保持动态平衡。<br>● 只有游离的胰岛素有生物活性。<br>● 血中胰岛素半衰期为6-8分钟。</p>
+<h3 id="2、胰岛素受体-Ins-R"><a href="#2、胰岛素受体-Ins-R" class="headerlink" title="2、胰岛素受体 (Ins-R)"></a>2、胰岛素受体 (Ins-R)</h3><p>胰岛素通过结合它的受体发生效应<br>胰岛素受体<br>● 分布哺乳动物所有细胞膜中。<br>● 酪氨酸激酶受体。<br>● 两个α亚基与两个β亚基通过二硫键形成四聚体。<br>● α亚基在膜外与胰岛素结合。<br>● β亚基膜内部分结合ATP，被α亚基激活后，引起自身磷酸化。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/7.png"></p>
+<h3 id="3、作用机制"><a href="#3、作用机制" class="headerlink" title="3、作用机制"></a>3、作用机制</h3><p>● 胰岛素结合膜外α亚基，活化β亚基。<br>● β亚基自身磷酸化，并激活自身酪氨酸激酶活性。<br>● 磷酸化胰岛素受体底物(IRS)。<br>● 激活下游信号通路，如PI3-K, MAPK等。<br>● 引发激酶、磷酸酶的级联反应。<br>● 产生生物学效应，包括糖转运、糖原合成、蛋白合成等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/8.png"></p>
+<h3 id="4、药理"><a href="#4、药理" class="headerlink" title="4、药理"></a>4、药理</h3><p>● 糖代谢：增加糖转运体表达以及活性，加速糖从血液中的摄取，降低血糖。<br>● 脂肪代谢：抑制脂肪分解、促进脂肪合成与利用。<br>● 蛋白代谢：增加氨基酸转运、促进蛋白合成。</p>
+<h3 id="5、临床"><a href="#5、临床" class="headerlink" title="5、临床"></a>5、临床</h3><p>● 糖尿病，特别是I型糖尿病。<br>● 皮下注射。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/9.png"></p>
+<h2 id="第三节-降血糖药"><a href="#第三节-降血糖药" class="headerlink" title="第三节 降血糖药"></a>第三节 降血糖药</h2><p>使用方便，但作用慢而弱，主要用于轻、中度II型糖尿病治疗。</p>
+<h3 id="一、促胰岛素分泌剂"><a href="#一、促胰岛素分泌剂" class="headerlink" title="一、促胰岛素分泌剂"></a><span style="color:#D81C2F">一、促胰岛素分泌剂</span></h3><h4 id="1、磺酰脲类"><a href="#1、磺酰脲类" class="headerlink" title="1、磺酰脲类"></a><span style="color:#D81C2F"><font size="4">1、磺酰脲类</font></span></h4><p><strong>作用机理</strong><br>● 与磺酰脲受体结合<br>● 引发与受体偶联的ATP敏感K+通道关闭，抑制K+外流。<br>● 细胞去极化，引发电压依赖型钙通道开放，钙离子内流。<br>● 触发胰岛素释放。</p>
+<p><strong>临床</strong><br>● 胰岛功能尚存的II型糖尿病。<br>● 常见药物：<span style="color:#D81C2F">格列苯脲</span>、格列吡嗪、格列美脲、格列齐特等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/10.png"></p>
+<h4 id="2、氯茴苯酸类"><a href="#2、氯茴苯酸类" class="headerlink" title="2、氯茴苯酸类"></a><span style="color:#D81C2F"><font size="4">2、氯茴苯酸类</font></span></h4><p><strong>作用机理</strong><br>● 与磺酰脲类相似<br>● 直接结合胰岛β细胞ATP敏感钾通道，阻滞钾通道。<br>● 抑制钾外流，膜去极化，引起钙内流。<br>● 促进胰岛素分泌。</p>
+<p><strong>常见药物</strong><br>● <span style="color:#D81C2F">瑞格列尔</span><br>● 那格列尔<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/11.png"></p>
+<h3 id="二、双胍类"><a href="#二、双胍类" class="headerlink" title="二、双胍类"></a><span style="color:#D81C2F">二、双胍类</span></h3><p><strong><span style="color:#D81C2F">二甲双胍</span></strong><br>● 对有无胰岛β细胞功能的患者均有降血糖作用。<br>● 治疗肥胖性II糖尿病一线药物。<br>● 激活5-单磷酸腺苷活化蛋白激酶(AMPK)，促进糖的吸收与代谢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/12.png"></p>
+<h3 id="三、胰岛素增敏剂"><a href="#三、胰岛素增敏剂" class="headerlink" title="三、胰岛素增敏剂"></a><span style="color:#D81C2F">三、胰岛素增敏剂</span></h3><p><em><strong><span style="color:#D81C2F">胰岛素抵抗：正常或高于正常浓度的胰岛素只发挥低于正常的生物效应，靶细胞对胰岛素的敏感性下降。</span>也是导致II型糖尿病的主要病理机制。胰岛素抵抗为遗传因素。</strong></em></p>
+<p>● 以增加II型患者对胰岛素敏感性为目的新型药物。<br>● 代表药物：噻唑烷二酮类：<span style="color:#D81C2F">吡格列酮、罗格列酮</span>等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/13.png"></p>
+<h3 id="四、α-葡萄糖苷酶抑制剂"><a href="#四、α-葡萄糖苷酶抑制剂" class="headerlink" title="四、α-葡萄糖苷酶抑制剂"></a><span style="color:#D81C2F">四、α-葡萄糖苷酶抑制剂</span></h3><p>● 阻断α-葡萄糖苷酶，抑制寡糖分解为单糖。<br>● 减少淀粉、糊精、双糖在小肠的吸收。<br>● 代表药物：<span style="color:#D81C2F">阿卡波糖、米格列醇</span>等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/14.png"></p>
+<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0-%E8%83%B0%E5%B2%9B%E7%B4%A0%E5%8F%8A%E9%99%8D%E8%A1%80%E7%B3%96%E8%8D%AF">糖尿病</a>与<a href="#1%E3%80%81%E8%83%B0%E5%B2%9B%E7%B4%A0">胰岛素</a>（β细胞受损或功能低下与胰岛素抵抗）</p>
+<p>2、<a href="#%E7%AC%AC%E4%B8%89%E8%8A%82-%E9%99%8D%E8%A1%80%E7%B3%96%E8%8D%AF">口服降血糖药的常见类别及其代表药。</a></p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>
@@ -14972,54 +15020,6 @@ trans or cis unsaturated fatty acids
 <h5 id="5、PCSK9抑制剂"><a href="#5、PCSK9抑制剂" class="headerlink" title="5、PCSK9抑制剂"></a><font size="4">5、PCSK9抑制剂</font></h5><p>● PCSK9为前蛋白转移酶<br>● 肝脏、小肠、肾表达<br>● 抑制剂阻滞PCSK与LDL受体的结合<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/50.png"><br><strong>抑制PCSK9结合</strong><br>● LDL受体接受血管内LDL结合<br>● 摄取LDL到细胞内并代谢分解<br>● LDL受体再利用<br><strong>PCSK9结合</strong><br>● PCSK9特异结合LDL受体<br>● 移至溶酶体<br>● 受体被降解<br>● LDLR无法再利用<br>● 血液中LDL浓度升高<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E4%BA%94%E7%AB%A0/51.png"></p>
 <h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E4%BA%8C%E3%80%81%E5%BF%83%E8%84%8F%E7%9A%84%E7%94%B5%E7%94%9F%E7%90%86">心脏电生理</a><br>2、<a href="#%E4%B8%89%E3%80%81%E5%BF%83%E5%BE%8B%E5%A4%B1%E5%B8%B8%E7%9A%84%E5%8F%91%E7%94%9F%E6%9C%BA%E5%88%B6">心律失常发生的机制</a><br>3、<a href="#%E4%BA%94%E3%80%81%E5%B8%B8%E8%A7%81%E6%8A%97%E5%BF%83%E5%BE%8B%E5%A4%B1%E5%B8%B8%E8%8D%AF%E7%89%A9">抗心律失常药物分类以及作用机制</a> </p>
 <p>4、<a href="#%E4%B8%80%E3%80%81%E8%A1%80%E8%84%82%E4%BB%A3%E8%B0%A2%E7%94%9F%E7%90%86%E5%AD%A6">血脂</a>、<a href="#%E4%B8%80%E3%80%81%E8%A1%80%E8%84%82%E4%BB%A3%E8%B0%A2%E7%94%9F%E7%90%86%E5%AD%A6">脂蛋白</a>、以及它们的生理功能<br>5、动脉硬化的<a href="#2%E3%80%81%E5%8A%A8%E8%84%89%E7%A1%AC%E5%8C%96%E7%9A%84%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0">影响因素</a>以及<a href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%B2%BB%E7%96%97%E7%AD%96%E7%95%A5">治疗策略</a><br>6、<a href="#1%E3%80%81%E4%BB%96%E6%B1%80%E7%B1%BB%E8%8D%AF%E7%89%A9">他汀类降血脂药的作用机制</a></p>
-]]></content>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>生物制药</tag>
-        <tag>生理药理学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>生理药理学第十八章</title>
-    <url>/2025/06/12/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="第十八章-胰岛素及降血糖药"><a href="#第十八章-胰岛素及降血糖药" class="headerlink" title="第十八章 胰岛素及降血糖药"></a><span style="display:block;text-align:center;color:#00BFFF;">第十八章 胰岛素及降血糖药</span></h1><p><strong><span style="display:block;text-align:center;color:#D81C2F;"><font size="4">糖尿病</font></span></strong></p>
-<span style="color:#D81C2F">
-● 胰岛素分泌不足引起的糖、脂肪、蛋白、水和电解质代谢紊乱的疾病。<br>
-● 高血糖为标志。<br>
-● I型糖尿病：胰岛素依赖型，胰岛β细胞受损，需外源性补充胰岛素。<br>
-● II型糖尿病：非胰岛素依赖型，β细胞功能低下，需要控制血糖。<br>
-</span>
-<table>
-  <tr>
-    <td height="50%"><img src="/../img/生理药理学/第十八章/1.png" ></td>
-    <td height="50%"><img src="/../img/生理药理学/第十八章/2.png" ></td>
-  </tr>
-</table>
-<span style="display:block;text-align:center;color:#D81C2F;">
-主要原因
-I型，自身免疫反应缺陷。
-II型，肥胖及缺乏锻炼。
-</span>
-
-<h2 id="第一节-胰腺的生理学"><a href="#第一节-胰腺的生理学" class="headerlink" title="第一节 胰腺的生理学"></a>第一节 胰腺的生理学</h2><h3 id="1、胰腺"><a href="#1、胰腺" class="headerlink" title="1、胰腺"></a>1、胰腺</h3><p>● 狭长的腺体，称为胰腺，横置于腹后壁腰椎体平面，质地柔软，呈灰红。<br>● 胰腺分为外分泌腺和内分泌腺两部分。<br>● 外分泌腺由腺泡和腺管组成，腺泡分泌胰液，腺管是胰液排出的通道。<br>● 胰液中含有碳酸氢钠、胰蛋白酶原、脂肪酶、淀粉酶等。胰液通过胰腺管排入十二指肠，有消化蛋白质、脂肪和糖的作用。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/4.png"><br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/3.png"></p>
-<h3 id="2、胰腺的内分泌腺"><a href="#2、胰腺的内分泌腺" class="headerlink" title="2、胰腺的内分泌腺"></a>2、胰腺的内分泌腺</h3><p>● 由大小不同的细胞团，胰岛组成。<br>● 成人有一至两百万个胰岛。<br>● 主要由4种细胞组成：α(A)细胞、β(B)细胞、δ(D)细胞、PP(F)细胞。</p>
-<p><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/5.png"><br><em>A细胞分泌胰高血糖素，升高血糖</em><br><em>B细胞分泌胰岛素，降低血糖</em><br><em>D细胞分泌生长抑素，抑制A、B细胞的分泌</em><br><em>PP细胞分泌胰多肽，抑制胃肠运动、胰液分泌和胆囊收缩</em></p>
-<h2 id="第二节-胰岛素-Insulin"><a href="#第二节-胰岛素-Insulin" class="headerlink" title="第二节 胰岛素(Insulin)"></a>第二节 胰岛素(Insulin)</h2><h3 id="1、胰岛素"><a href="#1、胰岛素" class="headerlink" title="1、胰岛素"></a>1、胰岛素</h3><p>● 在β细胞中，胰岛素原为86个氨基酸构成的肽链。<br>● C肽将A和B链链接。<br>● 在高尔基体，胰岛素原被剪接为胰岛素和C肽。<br>● C肽无生物活性。<br>● A链内形成一个二硫键，并与B链形成两个二硫键。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/6.png"><br>血浆胰岛素<br>● 常与血浆蛋白结合，并与游离的胰岛素保持动态平衡。<br>● 只有游离的胰岛素有生物活性。<br>● 血中胰岛素半衰期为6-8分钟。</p>
-<h3 id="2、胰岛素受体-Ins-R"><a href="#2、胰岛素受体-Ins-R" class="headerlink" title="2、胰岛素受体 (Ins-R)"></a>2、胰岛素受体 (Ins-R)</h3><p>胰岛素通过结合它的受体发生效应<br>胰岛素受体<br>● 分布哺乳动物所有细胞膜中。<br>● 酪氨酸激酶受体。<br>● 两个α亚基与两个β亚基通过二硫键形成四聚体。<br>● α亚基在膜外与胰岛素结合。<br>● β亚基膜内部分结合ATP，被α亚基激活后，引起自身磷酸化。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/7.png"></p>
-<h3 id="3、作用机制"><a href="#3、作用机制" class="headerlink" title="3、作用机制"></a>3、作用机制</h3><p>● 胰岛素结合膜外α亚基，活化β亚基。<br>● β亚基自身磷酸化，并激活自身酪氨酸激酶活性。<br>● 磷酸化胰岛素受体底物(IRS)。<br>● 激活下游信号通路，如PI3-K, MAPK等。<br>● 引发激酶、磷酸酶的级联反应。<br>● 产生生物学效应，包括糖转运、糖原合成、蛋白合成等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/8.png"></p>
-<h3 id="4、药理"><a href="#4、药理" class="headerlink" title="4、药理"></a>4、药理</h3><p>● 糖代谢：增加糖转运体表达以及活性，加速糖从血液中的摄取，降低血糖。<br>● 脂肪代谢：抑制脂肪分解、促进脂肪合成与利用。<br>● 蛋白代谢：增加氨基酸转运、促进蛋白合成。</p>
-<h3 id="5、临床"><a href="#5、临床" class="headerlink" title="5、临床"></a>5、临床</h3><p>● 糖尿病，特别是I型糖尿病。<br>● 皮下注射。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/9.png"></p>
-<h2 id="第三节-降血糖药"><a href="#第三节-降血糖药" class="headerlink" title="第三节 降血糖药"></a>第三节 降血糖药</h2><p>使用方便，但作用慢而弱，主要用于轻、中度II型糖尿病治疗。</p>
-<h3 id="一、促胰岛素分泌剂"><a href="#一、促胰岛素分泌剂" class="headerlink" title="一、促胰岛素分泌剂"></a><span style="color:#D81C2F">一、促胰岛素分泌剂</span></h3><h4 id="1、磺酰脲类"><a href="#1、磺酰脲类" class="headerlink" title="1、磺酰脲类"></a><span style="color:#D81C2F"><font size="4">1、磺酰脲类</font></span></h4><p><strong>作用机理</strong><br>● 与磺酰脲受体结合<br>● 引发与受体偶联的ATP敏感K+通道关闭，抑制K+外流。<br>● 细胞去极化，引发电压依赖型钙通道开放，钙离子内流。<br>● 触发胰岛素释放。</p>
-<p><strong>临床</strong><br>● 胰岛功能尚存的II型糖尿病。<br>● 常见药物：<span style="color:#D81C2F">格列苯脲</span>、格列吡嗪、格列美脲、格列齐特等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/10.png"></p>
-<h4 id="2、氯茴苯酸类"><a href="#2、氯茴苯酸类" class="headerlink" title="2、氯茴苯酸类"></a><span style="color:#D81C2F"><font size="4">2、氯茴苯酸类</font></span></h4><p><strong>作用机理</strong><br>● 与磺酰脲类相似<br>● 直接结合胰岛β细胞ATP敏感钾通道，阻滞钾通道。<br>● 抑制钾外流，膜去极化，引起钙内流。<br>● 促进胰岛素分泌。</p>
-<p><strong>常见药物</strong><br>● <span style="color:#D81C2F">瑞格列尔</span><br>● 那格列尔<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/11.png"></p>
-<h3 id="二、双胍类"><a href="#二、双胍类" class="headerlink" title="二、双胍类"></a><span style="color:#D81C2F">二、双胍类</span></h3><p><strong><span style="color:#D81C2F">二甲双胍</span></strong><br>● 对有无胰岛β细胞功能的患者均有降血糖作用。<br>● 治疗肥胖性II糖尿病一线药物。<br>● 激活5-单磷酸腺苷活化蛋白激酶(AMPK)，促进糖的吸收与代谢。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/12.png"></p>
-<h3 id="三、胰岛素增敏剂"><a href="#三、胰岛素增敏剂" class="headerlink" title="三、胰岛素增敏剂"></a><span style="color:#D81C2F">三、胰岛素增敏剂</span></h3><p><em><strong><span style="color:#D81C2F">胰岛素抵抗：正常或高于正常浓度的胰岛素只发挥低于正常的生物效应，靶细胞对胰岛素的敏感性下降。</span>也是导致II型糖尿病的主要病理机制。胰岛素抵抗为遗传因素。</strong></em></p>
-<p>● 以增加II型患者对胰岛素敏感性为目的新型药物。<br>● 代表药物：噻唑烷二酮类：<span style="color:#D81C2F">吡格列酮、罗格列酮</span>等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/13.png"></p>
-<h3 id="四、α-葡萄糖苷酶抑制剂"><a href="#四、α-葡萄糖苷酶抑制剂" class="headerlink" title="四、α-葡萄糖苷酶抑制剂"></a><span style="color:#D81C2F">四、α-葡萄糖苷酶抑制剂</span></h3><p>● 阻断α-葡萄糖苷酶，抑制寡糖分解为单糖。<br>● 减少淀粉、糊精、双糖在小肠的吸收。<br>● 代表药物：<span style="color:#D81C2F">阿卡波糖、米格列醇</span>等。<br><img src="/../img/%E7%94%9F%E7%90%86%E8%8D%AF%E7%90%86%E5%AD%A6/%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0/14.png"></p>
-<h1 id="本章小结"><a href="#本章小结" class="headerlink" title="本章小结"></a>本章小结</h1><p>1、<a href="#%E7%AC%AC%E5%8D%81%E5%85%AB%E7%AB%A0-%E8%83%B0%E5%B2%9B%E7%B4%A0%E5%8F%8A%E9%99%8D%E8%A1%80%E7%B3%96%E8%8D%AF">糖尿病</a>与<a href="#1%E3%80%81%E8%83%B0%E5%B2%9B%E7%B4%A0">胰岛素</a>（β细胞受损或功能低下与胰岛素抵抗）</p>
-<p>2、<a href="#%E7%AC%AC%E4%B8%89%E8%8A%82-%E9%99%8D%E8%A1%80%E7%B3%96%E8%8D%AF">口服降血糖药的常见类别及其代表药。</a></p>
 ]]></content>
       <tags>
         <tag>学习笔记</tag>

@@ -153,6 +153,496 @@
       </tags>
   </entry>
   <entry>
+    <title>JLPT真题</title>
+    <url>/2025/09/12/JLPT%E7%9C%9F%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="选择年份对应的真题"><a href="#选择年份对应的真题" class="headerlink" title="选择年份对应的真题"></a>选择年份对应的真题</h2>
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/exam-question.css" />
+  <style>
+    #input-area {
+      margin: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      font-size: 14px;
+      padding: 10px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    green-button {
+      margin-top: 10px;
+      padding: 10px 24px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    green-button:hover {
+      background-color: #45a049;
+    }
+    
+    #exam-content {
+      margin: 20px;
+    }
+    .check-multi-button {
+      margin-top: 8px;
+      padding: 6px 14px;
+      font-size: 14px;
+      background-color: #3a82f7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .check-multi-button:hover {
+      background-color: #2e6ed0;
+    }
+
+/* --- 侧边栏样式 --- */
+#question-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18%;
+  min-width: 300px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+#question-sidebar.open {
+  transform: translateX(0);
+}
+
+#sidebar-header {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #dee2e6;
+  text-align: center;
+  color: #333;
+}
+
+#question-nav-list {
+  list-style: none;
+  padding: 15px; /* 增加内边距 */
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow-y: auto; /* 当题目过多时可以滚动 */
+  flex-grow: 1;
+}
+
+#question-nav-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+/* --- 题号状态样式 --- */
+
+/* 已选择（但未确认） */
+#question-nav-list li a.answered {
+  border-color: #007bff;
+  background-color: #e7f3ff;
+  color: #007bff;
+}
+
+/* 正确 */
+#question-nav-list li a.correct {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+/* 错误 */
+#question-nav-list li a.incorrect {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+#question-nav-list li a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+
+/* --- 侧边栏开关按钮 --- */
+#sidebar-toggle {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 60px;
+  background-color: #3a82f7;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+}
+
+#question-sidebar.open + #sidebar-toggle {
+  left: 18%; /* 匹配侧边栏宽度 */
+  /* 使用JS动态调整，以匹配max-width */
+}
+
+  </style>
+</head>
+<body>
+  <div id="selection-area" style="margin: 20px;">
+    <h3>选择真题</h3>
+    <select id="year-select" style="padding: 5px; font-size: 16px;"></select> 年
+    <select id="month-select" style="padding: 5px; font-size: 16px;">
+      <option value="12">12</option>
+      <option value="07">07</option>
+    </select> 月
+    <select id="level-select" style="padding: 5px; font-size: 16px;">
+      <option value="N1">N1</option>
+      <option value="N2">N2</option>
+    </select>
+    <br /><br />
+    <green-button onclick="loadQuestions()">加载试题</green-button>
+  </div>
+
+  <div id="exam-content"></div>
+<div style="text-align: center; margin: 30px;">
+  <green-button onclick="submitAnswers()" style="padding: 12px 24px; font-size: 16px; background-color: #2196f3; color: white; border: none; border-radius: 6px; cursor: pointer;">
+    查看得分
+  </green-button>
+</div>
+
+<div id="results" style="display: none; margin: 30px; text-align: center;">
+  <h3>得分结果</h3>
+  <div style="font-size: 18px; margin: 10px 0;">
+    您的得分：<span id="score" style="font-weight: bold;"></span> 分
+  </div>
+  <div style="width: 80%; margin: 10px auto; background: #ddd; height: 20px; border-radius: 10px;">
+    <div id="progressBar" style="height: 20px; background: #4caf50; border-radius: 10px; width: 0%; transition: width 0.5s;"></div>
+  </div>
+  <div id="resultDetails" style="margin-top: 10px; color: #555;"></div>
+</div>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearSelect = document.getElementById('year-select');
+    const currentYear = new Date().getFullYear();
+    for (let year = 2024; year >= 2019; year--) {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      yearSelect.appendChild(option);
+    }
+    /**
+     * 将字符串转换为一个简单的哈希值（正整数）
+     * @param {string} str - 输入字符串
+     * @returns {number} - 哈希值
+     */
+    const simpleHash = str => {
+      let hash = 0;
+      for (let i = 0; i < str.length; i++) {
+        const char = str.charCodeAt(i);
+        // 一个简单的哈希算法 (djb2)
+        hash = ((hash << 5) - hash) + char;
+        hash |= 0; // 转换为 32 位有符号整数
+      }
+      return Math.abs(hash); // 返回正整数
+    };
+
+    const timeString = Date.now().toString();
+    const timeHash = simpleHash(timeString);
+    const placeholder = '[RANDOM_SEED_PLACEHOLDER]';
+
+    // 遍历所有文本节点，查找并替换占位符
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+    let node;
+    while (node = walker.nextNode()) {
+      if (node.nodeValue.includes(placeholder)) {
+        node.nodeValue = node.nodeValue.replace(placeholder, timeHash);
+      }
+    }
+  });
+
+
+
+    async function loadQuestions() {
+      const year = document.getElementById('year-select').value;
+      const month = document.getElementById('month-select').value;
+      const level = document.getElementById('level-select').value;
+
+      const filePath = `/files/真题/${year}年${month}月${level}真题.html`;
+      const container = document.getElementById('exam-content');
+      
+      try {
+        const response = await fetch(filePath);
+        if (!response.ok) {
+          throw new Error(`文件加载失败: ${response.statusText}`);
+        }
+        const htmlContent = await response.text();
+        
+        container.innerHTML = htmlContent;
+
+        // 延迟 100ms 确保 DOM 渲染完成后加载 JS
+        setTimeout(() => {
+          const oldScript = document.getElementById('exam-script');
+          if (oldScript) oldScript.remove();
+
+          const script = document.createElement('script');
+          script.src = '/js/JLPT.js';
+          script.id = 'exam-script';
+          script.defer = true;
+          document.body.appendChild(script);
+        }, 100);
+
+      } catch (error) {
+        container.innerHTML = `<p style="color: red; text-align: center;">${error.message}。请检查文件是否存在于 ${filePath}</p>`;
+        console.error('加载题目时出错:', error);
+      }
+    }
+  </script>
+
+
+<script>
+  (function() {
+    document.addEventListener('DOMContentLoaded', () => {
+
+      let isSidebarInitialized = false;
+
+      // --- 1. 创建并注入侧边栏和开关按钮的HTML ---
+      function createSidebar() {
+        if (document.getElementById('question-sidebar')) return;
+
+        const sidebarContainer = document.createElement('div');
+        sidebarContainer.id = 'question-sidebar';
+        sidebarContainer.innerHTML = `
+          <div id="sidebar-header">题目导航</div>
+          <ul id="question-nav-list"></ul>
+        `;
+
+        const toggleButton = document.createElement('button');
+        toggleButton.id = 'sidebar-toggle';
+        toggleButton.innerHTML = `&#9776;`;
+
+        document.body.appendChild(sidebarContainer);
+        document.body.appendChild(toggleButton);
+
+        toggleButton.addEventListener('click', () => {
+          sidebarContainer.classList.toggle('open');
+          adjustToggleButtonPosition();
+        });
+        
+        setTimeout(() => {
+            sidebarContainer.classList.add('open');
+            adjustToggleButtonPosition();
+        }, 300);
+      }
+      
+      function adjustToggleButtonPosition() {
+        const sidebar = document.getElementById('question-sidebar');
+        const toggle = document.getElementById('sidebar-toggle');
+        if (!sidebar || !toggle) return;
+        if (sidebar.classList.contains('open')) {
+          const sidebarWidth = sidebar.offsetWidth;
+          toggle.style.left = `${sidebarWidth}px`;
+        } else {
+          toggle.style.left = '0px';
+        }
+      }
+
+      // --- 2. 初始化侧边栏，填充题目导航 ---
+      function populateSidebarNav() {
+        const questionContainer = document.getElementById('exam-content');
+        const navList = document.getElementById('question-nav-list');
+        if (!questionContainer || !navList) return;
+
+        navList.innerHTML = '';
+        const questions = questionContainer.querySelectorAll('.question');
+        
+        if (questions.length === 0) return;
+
+        questions.forEach((question, index) => {
+          const questionId = `question-${index + 1}`;
+          question.id = questionId;
+
+          const questionNumberEl = question.querySelector('.question-number');
+          if (!questionNumberEl) return;
+
+          const questionNumber = questionNumberEl.textContent.trim().replace('.', '');
+          
+          const listItem = document.createElement('li');
+          const link = document.createElement('a');
+          link.href = `#${questionId}`;
+          link.textContent = questionNumber;
+          link.dataset.questionIndex = questionNumber;
+
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetElement = document.getElementById(questionId);
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          });
+
+          listItem.appendChild(link);
+          navList.appendChild(listItem);
+        });
+
+        if (!isSidebarInitialized) {
+          attachEventListeners(questionContainer);
+          isSidebarInitialized = true;
+        }
+      }
+      
+      // --- 更新功能1：只更新单个题目的侧边栏状态 ---
+      function updateSingleSidebarStatus(questionDiv) {
+          const questionNumberEl = questionDiv.querySelector('.question-number');
+          if (!questionNumberEl) return;
+
+          const questionNumber = questionNumberEl.textContent.trim().replace('.', '');
+          const navLink = document.querySelector(`#question-nav-list a[data-question-index='${questionNumber}']`);
+          if (!navLink) return;
+
+          const selectedOption = questionDiv.querySelector('input[type="radio"]:checked');
+          
+          // 只有在选择了答案的情况下才更新状态
+          if (selectedOption) {
+            const userAnswer = selectedOption.value;
+            const correctAnswer = questionDiv.dataset.answer;
+            navLink.classList.remove('answered');
+            if (userAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
+              navLink.classList.add('correct');
+              navLink.classList.remove('incorrect');
+            } else {
+              navLink.classList.add('incorrect');
+              navLink.classList.remove('correct');
+            }
+          }
+      }
+      
+      // --- 更新功能2：遍历所有已答题目并更新侧边栏状态 (用于总提交) ---
+      function updateAllAnsweredStatuses() {
+        const questions = document.querySelectorAll('#exam-content .question');
+        questions.forEach(question => {
+          // 检查题目是否被回答过
+          if (question.querySelector('input[type="radio"]:checked')) {
+            updateSingleSidebarStatus(question);
+          }
+        });
+      }
+
+      // --- 3. 为题目选项和确认按钮绑定事件 ---
+      function attachEventListeners(container) {
+        container.addEventListener('change', (e) => {
+          if (e.target.type === 'radio') {
+            const questionDiv = e.target.closest('.question');
+            if (!questionDiv) return;
+            
+            const questionNumber = questionDiv.querySelector('.question-number').textContent.trim().replace('.', '');
+            const navLink = document.querySelector(`#question-nav-list a[data-question-index='${questionNumber}']`);
+            
+            if (navLink && !navLink.classList.contains('correct') && !navLink.classList.contains('incorrect')) {
+              navLink.classList.add('answered');
+            }
+          }
+        });
+
+        container.addEventListener('click', (e) => {
+          if (e.target.classList.contains('check-multi-button')) {
+             const questionDiv = e.target.closest('.question');
+             if (questionDiv) {
+                updateSingleSidebarStatus(questionDiv);
+             }
+          }
+        });
+      }
+
+      // --- 4. 使用 MutationObserver 监听题目加载 ---
+      const observerTarget = document.getElementById('exam-content');
+      if (observerTarget) {
+        createSidebar();
+
+        const observer = new MutationObserver((mutationsList, obs) => {
+          if (observerTarget.querySelector('.question')) {
+            populateSidebarNav();
+            // *** 核心修正 ***
+            // 成功生成导航后，立刻停止观察，避免后续DOM变动（如显示答案）干扰
+            obs.disconnect(); 
+          }
+        });
+        
+        observer.observe(observerTarget, { childList: true, subtree: true });
+      }
+
+      // --- 5. 挂钩到全局的 submitAnswers 函数 ---
+      function hookIntoSubmitAnswers() {
+        if (typeof window.submitAnswers === 'function' && !window.submitAnswers.isHooked) {
+          const originalSubmit = window.submitAnswers;
+          window.submitAnswers = function() {
+            // 点击总提交按钮时，更新所有已答题目的状态
+            updateAllAnsweredStatuses();
+            originalSubmit.apply(this, arguments);
+          };
+          window.submitAnswers.isHooked = true;
+        } else {
+           setTimeout(hookIntoSubmitAnswers, 150);
+        }
+      }
+      
+      hookIntoSubmitAnswers();
+      window.addEventListener('resize', adjustToggleButtonPosition);
+    });
+  })();
+</script>
+
+
+</body>
+</html>
+]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
+        <tag>语言学习</tag>
+        <tag>日语</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>N1语法</title>
     <url>/2025/09/06/N1%E8%AF%AD%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="从-https-www-mojidict-com-article-tPE60OboPb-开始的N1语法爬取结果"><a href="#从-https-www-mojidict-com-article-tPE60OboPb-开始的N1语法爬取结果" class="headerlink" title="从 https://www.mojidict.com/article/tPE60OboPb 开始的N1语法爬取结果"></a>从 <a href="https://www.mojidict.com/article/tPE60OboPb">https://www.mojidict.com/article/tPE60OboPb</a> 开始的N1语法爬取结果</h1><h1 id="1-1-が早いか"><a href="#1-1-が早いか" class="headerlink" title="1-1 ~が早いか"></a>1-1 ~が早いか</h1><p>~するとすぐ続いて次のことが起こる。</p>
@@ -1311,12 +1801,41 @@
       </tags>
   </entry>
   <entry>
-    <title>JLPT真题</title>
-    <url>/2025/09/12/JLPT%E7%9C%9F%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="选择年份对应的真题"><a href="#选择年份对应的真题" class="headerlink" title="选择年份对应的真题"></a>选择年份对应的真题</h2>
+    <title>wireguard的PC端纯ipv6校园网隧道方案</title>
+    <url>/2025/04/04/wireguard%E7%9A%84PC%E7%AB%AF%E7%BA%AFipv6%E6%A0%A1%E5%9B%AD%E7%BD%91%E9%9A%A7%E9%81%93%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="wireguard的PC端纯ipv6校园网隧道方案"><a href="#wireguard的PC端纯ipv6校园网隧道方案" class="headerlink" title="wireguard的PC端纯ipv6校园网隧道方案"></a>wireguard的PC端纯ipv6校园网隧道方案</h1><p>创建本文的原因是因为找不到win的教程，所以给其他像我一样的朋友提个建议。先说一下情况，家里的NAS因为各种原因用的是win系统，所以和一般的wireguard有所不同。同时，本文是在纯ipv6和ddns的情况下进行搭建的，因为wireguard对纯ipv6域名的解析会有误，会解析出连不上的v4地址，所以需要让wireguard强制使用域名的ipv6地址。但运营商给的公网v6地址是动态的，每个一段时间就会变化一次，所以在这里使用powershell加hosts文件的方法让域名变为ipv6地址，wireguard读取域名的时候会直接用hosts里的v6地址而不是瞎√8解析v4。</p>
+<h1 id="前提条件："><a href="#前提条件：" class="headerlink" title="前提条件："></a>前提条件：</h1><p>1.具备公网ipv6，可以用<a href="https://ipv6ready.me/index.html.zh_CN">https://ipv6ready.me/index.html.zh_CN</a> 进行测试，没有公网v6就不用往下看了。<br>2.NAS（或者说你用来中转的电脑服务器）已经搞了ddns以及有相对应的域名，如果没搞ddns就先去把ddns go和域名搞好，这些在站内以及网上都有教程，不多赘述。</p>
+<h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h2><p>1.先去wireguard官网下win的安装包，两台电脑都安装好wireguard。<br>2.对wireguard进行基础的配置，太复杂的东西我也不会，基本上就是生成公钥和私钥，然后配置服务器的端口</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">服务器</span><br><span class="line">[Interface]</span><br><span class="line">PrivateKey = 私钥</span><br><span class="line">ListenPort = 51820</span><br><span class="line">Address = 10.0.0.1/32（这里可以自己随便填内网地址）</span><br><span class="line">[Peer]</span><br><span class="line">PublicKey = 公钥</span><br><span class="line">AllowedIPs = 10.0.0.0/24</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">客户端</span><br><span class="line">[Interface]</span><br><span class="line">PrivateKey = 私钥</span><br><span class="line">ListenPort = 51820</span><br><span class="line">Address = 10.0.0.2/32</span><br><span class="line">[Peer]</span><br><span class="line">PublicKey = 公钥</span><br><span class="line">AllowedIPs = 10.0.0.0/24</span><br><span class="line">Endpoint =  域名:51820</span><br><span class="line">PersistentKeepalive = 25（这里是让校园网内的设备每隔25秒发送一次保活的数据包，因为外部不能主动访问校园网内的设备，所以需要校园网内设备主动发起连接，这样可以保证学校里的电脑一直和家里的设备连接）</span><br></pre></td></tr></table></figure>
 
+<p>3.如果你有公网v4，就不需要往下看了，下面是纯公网v6用的，同时也是本文重点，旨在帮助刚接触wireguard的朋友</p>
+<p>wireguard解析纯v6的域名会解析成运营商的v4地址，导致完全连不上，经过我两天的奋斗，终于找到了一种解决方法。</p>
+<p>我让GPT写了个ps1脚本（新建空白文本把下面的复制进去，改一下域名，然后把txt后缀改成ps1就行），让脚本解析你域名的ipv6地址，再把v6地址写入hosts里，这样wireguard解析域名时会自动读取你hosts里的IP地址，脚本如下</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Hosts 文件路径</span></span><br><span class="line"><span class="variable">$hostsPath</span> = <span class="string">&quot;C:\Windows\System32\drivers\etc\hosts&quot;</span></span><br><span class="line"><span class="comment"># 要删除的目标域名</span></span><br><span class="line"><span class="variable">$domain</span> = <span class="string">&quot;你的域名&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 确保 Hosts 文件存在</span></span><br><span class="line"><span class="keyword">if</span> (!(<span class="built_in">Test-Path</span> <span class="variable">$hostsPath</span>)) &#123;</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;Hosts 文件不存在，退出操作。&quot;</span></span><br><span class="line">    <span class="keyword">exit</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取当前 Hosts 文件内容</span></span><br><span class="line"><span class="variable">$hostsContent</span> = <span class="built_in">Get-Content</span> <span class="variable">$hostsPath</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除目标域名的记录</span></span><br><span class="line"><span class="variable">$updatedContent</span> = <span class="variable">$hostsContent</span> | <span class="built_in">Where-Object</span> &#123; <span class="variable">$_</span> <span class="operator">-notmatch</span> <span class="string">&quot;^\S+\s+<span class="variable">$domain</span>&quot;</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 写回文件</span></span><br><span class="line"><span class="variable">$updatedContent</span> | <span class="built_in">Set-Content</span> <span class="literal">-Path</span> <span class="variable">$hostsPath</span> <span class="literal">-Force</span> <span class="literal">-Encoding</span> UTF8</span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">&quot;已删除域名记录: <span class="variable">$domain</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动脚本 2</span></span><br><span class="line"><span class="built_in">Start-Sleep</span> <span class="literal">-Seconds</span> <span class="number">5</span></span><br><span class="line"><span class="built_in">Start-Process</span> <span class="string">&quot;powershell.exe&quot;</span> <span class="literal">-ArgumentList</span> <span class="string">&quot;-File .\2.ps1&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<p>然后再创建一个2.ps1放在同目录下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 获取动态 IPv6 地址</span><br><span class="line">$dynamicIPv6 = [System.Net.Dns]::GetHostAddresses(&quot;你的域名&quot;) | Where-Object &#123; $_.AddressFamily -eq &quot;InterNetworkV6&quot; &#125; | Select-Object -First 1</span><br><span class="line"></span><br><span class="line">if ($dynamicIPv6) &#123;</span><br><span class="line">    $hostsPath = &quot;C:\Windows\System32\drivers\etc\hosts&quot;</span><br><span class="line">    $domain = &quot;你的域名&quot;</span><br><span class="line"></span><br><span class="line">    # 确保 Hosts 文件存在</span><br><span class="line">    if (!(Test-Path $hostsPath)) &#123;</span><br><span class="line">        Write-Host &quot;Hosts 文件不存在，退出操作。&quot;</span><br><span class="line">        exit</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    # 重试机制</span><br><span class="line">    $maxRetries = 10</span><br><span class="line">    $retryInterval = 1</span><br><span class="line">    $success = $false</span><br><span class="line"></span><br><span class="line">    for ($i = 0; $i -lt $maxRetries; $i++) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            # 读取 Hosts 文件</span><br><span class="line">            $hostsContent = Get-Content $hostsPath -Raw</span><br><span class="line"></span><br><span class="line">            # 添加新记录</span><br><span class="line">            $newEntry = &quot;$($dynamicIPv6)   $domain&quot;</span><br><span class="line">            $hostsContent += &quot;`r`n$newEntry&quot;</span><br><span class="line"></span><br><span class="line">            # 写入 Hosts 文件</span><br><span class="line">            Set-Content -Path $hostsPath -Value $hostsContent -Force -Encoding UTF8</span><br><span class="line">            Write-Host &quot;添加新的解析记录: $newEntry&quot;</span><br><span class="line">            $success = $true</span><br><span class="line">            break</span><br><span class="line">        &#125; catch &#123;</span><br><span class="line">            Write-Host &quot;文件被占用，等待 $retryInterval 秒后重试...&quot;</span><br><span class="line">            Start-Sleep -Seconds $retryInterval</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (-not $success) &#123;</span><br><span class="line">        Write-Host &quot;无法更新 Hosts 文件，操作失败。&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    Write-Host &quot;未获取到动态 IPv6 地址，未进行更改。&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>用powershell运行测试一下没问题<br>（什么？你问我为什么不放在一个脚本里解决？因为会有一个很离谱的bug，塞在一个脚本里执行的话他删完后生成的新解析记录跟旧的一模一样，跟没删一样，等于完全没更新记录）</p>
+<p>再在Win自带的任务计划程序里设置一下脚本开机自启动，一切就搞好了。</p>
+<p>再随便在NAS上设个shadowrocket或者clash代理，走代理访问校园网，这样就可以在离开学校的时候访问学校里的资源了。<br>clash示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">proxies:</span><br><span class="line">  - name: &quot;wireguard&quot;</span><br><span class="line">    type: http</span><br><span class="line">    server: &quot;10.0.0.2&quot;</span><br><span class="line">    port: 7890</span><br></pre></td></tr></table></figure>
 
+<h1 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h1><p>设代理是因为手机的wireguard也会把v6域名解析成v4地址，根本不能用手机的wireguard直接连。NAS和电脑上开个clash，搞个局域网共享就好了。</p>
+]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
+        <tag>WinNAS</tag>
+        <tag>经验记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在线AI刷题辅助复习</title>
+    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="或许是小镇做题家的得力助手"><a href="#或许是小镇做题家的得力助手" class="headerlink" title="或许是小镇做题家的得力助手"></a><del>或许是小镇做题家的得力助手</del></h1><h2 id="请先把提示词和划了重点的复习资料喂给AI生成代码"><a href="#请先把提示词和划了重点的复习资料喂给AI生成代码" class="headerlink" title="请先把提示词和划了重点的复习资料喂给AI生成代码"></a>请先把提示词和划了重点的复习资料喂给AI生成代码</h2><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">模仿以下格式，从复习文件中获取重点（有特殊样式的部分），随机生成知识点不重复的单选题、多选题、填空题、判断题各10道给我，我要用刷题的方式确保自己复习到位并记住了知识点。data-answer内为正确答案，data-explanation内为答案解析，答案解析内如果有引号则一定要使用中文引号，避免影响html。请严格按照复习文件进行题目生成。并严格套用以下样式以html代码的形式输出给我，不可以生成多余的代码，必须完整地输出所有题目：</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 单选题1 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;D&quot; data-explanation=&quot;膜分离技术适用于分离液体中的溶质或杂质，处理不含固形物的料液效果最佳。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;下列哪种物质最适合使用膜分离技术处理？&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1a&quot;&gt;菌体&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1b&quot;&gt;细胞&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1c&quot;&gt;微颗粒&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1d&quot;&gt;不含固形物的料液&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;多项选择题 (每题2分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 多选题49 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;multi&quot; data-answer=&#x27;[&quot;A&quot;,&quot;D&quot;]&#x27; data-explanation=&quot;发酵液的预处理和色层分离通常用于原料准备或精细纯化阶段，不属于初步纯化。&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;49&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;下列分离方法中不属于初步纯化的是( )&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49a&quot;&gt;发酵液(培养液)的预处理和固液分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49b&quot;&gt;吸附法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49c&quot;&gt;离子交换法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49d&quot;&gt;色层分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;button class=&quot;check-multi-button&quot;&gt;确定&lt;/button&gt; &lt;!-- ✅ 添加这一行 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;填空题 (每题2-3分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        &lt;!-- 填空题34 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;fill&quot; data-answer=&#x27;[&quot;有机&quot;,&quot;无机&quot;]&#x27; data-explanation=&quot;碱性清洗剂能有效去除蛋白质等有机污染物，酸性清洗剂则对钙镁盐等无机沉积物更有效。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;34.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;&lt;!-- 根据空格数设置分值 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;膜清洗的化学方法中，碱性清洗剂可有效去除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;0&quot;&gt; </span><br><span class="line"></span><br><span class="line">                污染物，酸性清洗剂用于清除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;1&quot;&gt; </span><br><span class="line"></span><br><span class="line">                沉积。</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;!-- 判断题59 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question&quot; data-type=&quot;judge&quot; data-answer=&quot;正确&quot; data-explanation=&quot;空化作用是超声波在液体中形成气泡并迅速破裂，从而产生冲击力和剪切力实现细胞破碎。&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-number&quot;&gt;59&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-text&quot;&gt;超声破碎是利用在超声波作用下液体发生空化作用。产生极大的冲击波和剪切力,使细胞破碎。&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;true-false-options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59true&quot; value=&quot;正确&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59true&quot;&gt;正确&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59false&quot; value=&quot;错误&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59false&quot;&gt;错误&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;subjective-section&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;h2 class=&quot;section-title&quot;&gt;主观题 (12分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question&quot; data-type=&quot;subjective&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-number&quot;&gt;79&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-score&quot;&gt;12分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-text&quot;&gt;请设计方案将下列蛋白进行分离纯化，并说出采用方法的原理：&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;textarea class=&quot;subjective-answer&quot; placeholder=&quot;请输入您的答案...&quot;&gt;&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;button class=&quot;show-answer-btn&quot; onclick=&quot;toggleSubjectiveAnswer(this)&quot;&gt;查看参考答案&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;reference-answer&quot; style=&quot;display: none;&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;strong&gt;参考答案：&lt;/strong&gt;  </span><br><span class="line">                        该蛋白分离可采用层析技术（如离子交换层析、分子筛层析等），根据蛋白的等电点、分子量、亲水疏水性质等差异进行分步纯化。原理是利用不同蛋白在流动相和固定相中的相互作用力差异，选择性洗脱目标蛋白，从而实现分离。</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"><a href="#本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考" class="headerlink" title="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"></a><em><strong>本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考</strong></em></h1><h2 id="可选的附加提示词"><a href="#可选的附加提示词" class="headerlink" title="可选的附加提示词"></a>可选的附加提示词</h2><p>以上提示词默认生成单选题、多选题、填空题、判断题，只要在AI聊天框里修改提示词就改变生成的题型。如果有额外需要，可以自行调试或者参考以下提示词。<br>名词解释：<code>名词解释使用填空题样式，但section-title要改为“名词解释”，按照知识点重点尽可能地多挖几个空。</code><br>主观题：<code>生成主观题，并按照下列主观题格式生成参考答案。</code><br>遇到复习资料很长的情况下，建议指定AI生成部分章节的题目，提高复习的覆盖率。例如：<code>从复习资料获取第一到第四章的知识点，随机生成知识点不重复的单选题、多选题、填空题、判断题各10道。</code></p>
+<h2 id="再把代码复制进下面的题目生成框里"><a href="#再把代码复制进下面的题目生成框里" class="headerlink" title="再把代码复制进下面的题目生成框里"></a>再把代码复制进下面的题目生成框里</h2>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -1367,141 +1886,20 @@
     .check-multi-button:hover {
       background-color: #2e6ed0;
     }
-
-/* --- 侧边栏样式 --- */
-#question-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 18%;
-  height: 100vh;
-  background-color: #f8f9fa;
-  border-right: 1px solid #dee2e6;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-}
-
-#question-sidebar.open {
-  transform: translateX(0);
-}
-
-#sidebar-header {
-  padding: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  border-bottom: 1px solid #dee2e6;
-  text-align: center;
-  color: #333;
-}
-
-#question-nav-list {
-  list-style: none;
-  padding: 15px; /* 增加内边距 */
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  overflow-y: auto; /* 当题目过多时可以滚动 */
-  flex-grow: 1;
-}
-
-#question-nav-list li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  text-decoration: none;
-  font-weight: bold;
-  color: #555;
-  background-color: #fff;
-  transition: all 0.2s ease;
-}
-
-/* --- 题号状态样式 --- */
-
-/* 已选择（但未确认） */
-#question-nav-list li a.answered {
-  border-color: #007bff;
-  background-color: #e7f3ff;
-  color: #007bff;
-}
-
-/* 正确 */
-#question-nav-list li a.correct {
-  background-color: #28a745;
-  color: white;
-  border-color: #28a745;
-}
-
-/* 错误 */
-#question-nav-list li a.incorrect {
-  background-color: #dc3545;
-  color: white;
-  border-color: #dc3545;
-}
-
-#question-nav-list li a:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 8px rgba(0,0,0,0.15);
-}
-
-
-/* --- 侧边栏开关按钮 --- */
-#sidebar-toggle {
-  position: fixed;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 60px;
-  background-color: #3a82f7;
-  color: white;
-  border: none;
-  border-radius: 0 8px 8px 0;
-  cursor: pointer;
-  z-index: 1001;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: left 0.3s ease-in-out;
-}
-
-#question-sidebar.open + #sidebar-toggle {
-  left: 18%; /* 匹配侧边栏宽度 */
-  /* 使用JS动态调整，以匹配max-width */
-}
-
   </style>
 </head>
 <body>
-  <div id="selection-area" style="margin: 20px;">
-    <h3>选择真题</h3>
-    <select id="year-select" style="padding: 5px; font-size: 16px;"></select> 年
-    <select id="month-select" style="padding: 5px; font-size: 16px;">
-      <option value="12">12</option>
-      <option value="07">07</option>
-    </select> 月
-    <select id="level-select" style="padding: 5px; font-size: 16px;">
-      <option value="N1">N1</option>
-      <option value="N2">N2</option>
-    </select>
-    <br /><br />
-    <green-button onclick="loadQuestions()">加载试题</green-button>
+  <div id="input-area">
+    <h3>粘贴 HTML 试题内容：</h3>
+    <textarea id="html-input" placeholder="请将 HTML 代码粘贴到这里..."></textarea>
+    <br />
+    <green-button onclick="loadQuestions()">确定</green-button>
   </div>
 
   <div id="exam-content"></div>
 <div style="text-align: center; margin: 30px;">
   <green-button onclick="submitAnswers()" style="padding: 12px 24px; font-size: 16px; background-color: #2196f3; color: white; border: none; border-radius: 6px; cursor: pointer;">
-    查看得分
+    提交试卷
   </green-button>
 </div>
 
@@ -1517,276 +1915,29 @@
 </div>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const yearSelect = document.getElementById('year-select');
-    const currentYear = new Date().getFullYear();
-    for (let year = 2024; year >= 2019; year--) {
-      const option = document.createElement('option');
-      option.value = year;
-      option.textContent = year;
-      yearSelect.appendChild(option);
-    }
-    /**
-     * 将字符串转换为一个简单的哈希值（正整数）
-     * @param {string} str - 输入字符串
-     * @returns {number} - 哈希值
-     */
-    const simpleHash = str => {
-      let hash = 0;
-      for (let i = 0; i < str.length; i++) {
-        const char = str.charCodeAt(i);
-        // 一个简单的哈希算法 (djb2)
-        hash = ((hash << 5) - hash) + char;
-        hash |= 0; // 转换为 32 位有符号整数
+    function loadQuestions() {
+      const htmlContent = document.getElementById('html-input').value.trim();
+      if (!htmlContent) {
+        alert('请输入内容！');
+        return;
       }
-      return Math.abs(hash); // 返回正整数
-    };
 
-    const timeString = Date.now().toString();
-    const timeHash = simpleHash(timeString);
-    const placeholder = '[RANDOM_SEED_PLACEHOLDER]';
-
-    // 遍历所有文本节点，查找并替换占位符
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-    let node;
-    while (node = walker.nextNode()) {
-      if (node.nodeValue.includes(placeholder)) {
-        node.nodeValue = node.nodeValue.replace(placeholder, timeHash);
-      }
-    }
-  });
-
-
-
-    async function loadQuestions() {
-      const year = document.getElementById('year-select').value;
-      const month = document.getElementById('month-select').value;
-      const level = document.getElementById('level-select').value;
-
-      const filePath = `/files/真题/${year}年${month}月${level}真题.html`;
       const container = document.getElementById('exam-content');
-      
-      try {
-        const response = await fetch(filePath);
-        if (!response.ok) {
-          throw new Error(`文件加载失败: ${response.statusText}`);
-        }
-        const htmlContent = await response.text();
-        
-        container.innerHTML = htmlContent;
+      container.innerHTML = htmlContent;
 
-        // 延迟 100ms 确保 DOM 渲染完成后加载 JS
-        setTimeout(() => {
-          const oldScript = document.getElementById('exam-script');
-          if (oldScript) oldScript.remove();
+      // 延迟 100ms 确保 DOM 渲染完成后加载 JS（也可用 MutationObserver）
+      setTimeout(() => {
+        const oldScript = document.getElementById('exam-script');
+        if (oldScript) oldScript.remove();
 
-          const script = document.createElement('script');
-          script.src = '/js/JLPT.js';
-          script.id = 'exam-script';
-          script.defer = true;
-          document.body.appendChild(script);
-        }, 100);
-
-      } catch (error) {
-        container.innerHTML = `<p style="color: red; text-align: center;">${error.message}。请检查文件是否存在于 ${filePath}</p>`;
-        console.error('加载题目时出错:', error);
-      }
+        const script = document.createElement('script');
+        script.src = '/js/exam.js';
+        script.id = 'exam-script';
+        script.defer = true; // 保证 DOM 可操作
+        document.body.appendChild(script);
+      }, 100);
     }
   </script>
-
-
-<script>
-  (function() {
-    document.addEventListener('DOMContentLoaded', () => {
-
-      let isSidebarInitialized = false;
-
-      // --- 1. 创建并注入侧边栏和开关按钮的HTML ---
-      function createSidebar() {
-        if (document.getElementById('question-sidebar')) return;
-
-        const sidebarContainer = document.createElement('div');
-        sidebarContainer.id = 'question-sidebar';
-        sidebarContainer.innerHTML = `
-          <div id="sidebar-header">题目导航</div>
-          <ul id="question-nav-list"></ul>
-        `;
-
-        const toggleButton = document.createElement('button');
-        toggleButton.id = 'sidebar-toggle';
-        toggleButton.innerHTML = `&#9776;`;
-
-        document.body.appendChild(sidebarContainer);
-        document.body.appendChild(toggleButton);
-
-        toggleButton.addEventListener('click', () => {
-          sidebarContainer.classList.toggle('open');
-          adjustToggleButtonPosition();
-        });
-        
-        setTimeout(() => {
-            sidebarContainer.classList.add('open');
-            adjustToggleButtonPosition();
-        }, 300);
-      }
-      
-      function adjustToggleButtonPosition() {
-        const sidebar = document.getElementById('question-sidebar');
-        const toggle = document.getElementById('sidebar-toggle');
-        if (!sidebar || !toggle) return;
-        if (sidebar.classList.contains('open')) {
-          const sidebarWidth = sidebar.offsetWidth;
-          toggle.style.left = `${sidebarWidth}px`;
-        } else {
-          toggle.style.left = '0px';
-        }
-      }
-
-      // --- 2. 初始化侧边栏，填充题目导航 ---
-      function populateSidebarNav() {
-        const questionContainer = document.getElementById('exam-content');
-        const navList = document.getElementById('question-nav-list');
-        if (!questionContainer || !navList) return;
-
-        navList.innerHTML = '';
-        const questions = questionContainer.querySelectorAll('.question');
-        
-        if (questions.length === 0) return;
-
-        questions.forEach((question, index) => {
-          const questionId = `question-${index + 1}`;
-          question.id = questionId;
-
-          const questionNumberEl = question.querySelector('.question-number');
-          if (!questionNumberEl) return;
-
-          const questionNumber = questionNumberEl.textContent.trim().replace('.', '');
-          
-          const listItem = document.createElement('li');
-          const link = document.createElement('a');
-          link.href = `#${questionId}`;
-          link.textContent = questionNumber;
-          link.dataset.questionIndex = questionNumber;
-
-          link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const targetElement = document.getElementById(questionId);
-            if (targetElement) {
-              targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-          });
-
-          listItem.appendChild(link);
-          navList.appendChild(listItem);
-        });
-
-        if (!isSidebarInitialized) {
-          attachEventListeners(questionContainer);
-          isSidebarInitialized = true;
-        }
-      }
-      
-      // --- 更新功能1：只更新单个题目的侧边栏状态 ---
-      function updateSingleSidebarStatus(questionDiv) {
-          const questionNumberEl = questionDiv.querySelector('.question-number');
-          if (!questionNumberEl) return;
-
-          const questionNumber = questionNumberEl.textContent.trim().replace('.', '');
-          const navLink = document.querySelector(`#question-nav-list a[data-question-index='${questionNumber}']`);
-          if (!navLink) return;
-
-          const selectedOption = questionDiv.querySelector('input[type="radio"]:checked');
-          
-          // 只有在选择了答案的情况下才更新状态
-          if (selectedOption) {
-            const userAnswer = selectedOption.value;
-            const correctAnswer = questionDiv.dataset.answer;
-            navLink.classList.remove('answered');
-            if (userAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
-              navLink.classList.add('correct');
-              navLink.classList.remove('incorrect');
-            } else {
-              navLink.classList.add('incorrect');
-              navLink.classList.remove('correct');
-            }
-          }
-      }
-      
-      // --- 更新功能2：遍历所有已答题目并更新侧边栏状态 (用于总提交) ---
-      function updateAllAnsweredStatuses() {
-        const questions = document.querySelectorAll('#exam-content .question');
-        questions.forEach(question => {
-          // 检查题目是否被回答过
-          if (question.querySelector('input[type="radio"]:checked')) {
-            updateSingleSidebarStatus(question);
-          }
-        });
-      }
-
-      // --- 3. 为题目选项和确认按钮绑定事件 ---
-      function attachEventListeners(container) {
-        container.addEventListener('change', (e) => {
-          if (e.target.type === 'radio') {
-            const questionDiv = e.target.closest('.question');
-            if (!questionDiv) return;
-            
-            const questionNumber = questionDiv.querySelector('.question-number').textContent.trim().replace('.', '');
-            const navLink = document.querySelector(`#question-nav-list a[data-question-index='${questionNumber}']`);
-            
-            if (navLink && !navLink.classList.contains('correct') && !navLink.classList.contains('incorrect')) {
-              navLink.classList.add('answered');
-            }
-          }
-        });
-
-        container.addEventListener('click', (e) => {
-          if (e.target.classList.contains('check-multi-button')) {
-             const questionDiv = e.target.closest('.question');
-             if (questionDiv) {
-                updateSingleSidebarStatus(questionDiv);
-             }
-          }
-        });
-      }
-
-      // --- 4. 使用 MutationObserver 监听题目加载 ---
-      const observerTarget = document.getElementById('exam-content');
-      if (observerTarget) {
-        createSidebar();
-
-        const observer = new MutationObserver((mutationsList, obs) => {
-          if (observerTarget.querySelector('.question')) {
-            populateSidebarNav();
-            // *** 核心修正 ***
-            // 成功生成导航后，立刻停止观察，避免后续DOM变动（如显示答案）干扰
-            obs.disconnect(); 
-          }
-        });
-        
-        observer.observe(observerTarget, { childList: true, subtree: true });
-      }
-
-      // --- 5. 挂钩到全局的 submitAnswers 函数 ---
-      function hookIntoSubmitAnswers() {
-        if (typeof window.submitAnswers === 'function' && !window.submitAnswers.isHooked) {
-          const originalSubmit = window.submitAnswers;
-          window.submitAnswers = function() {
-            // 点击总提交按钮时，更新所有已答题目的状态
-            updateAllAnsweredStatuses();
-            originalSubmit.apply(this, arguments);
-          };
-          window.submitAnswers.isHooked = true;
-        } else {
-           setTimeout(hookIntoSubmitAnswers, 150);
-        }
-      }
-      
-      hookIntoSubmitAnswers();
-      window.addEventListener('resize', adjustToggleButtonPosition);
-    });
-  })();
-</script>
-
 
 </body>
 </html>
@@ -1794,39 +1945,7 @@
       <tags>
         <tag>代码相关</tag>
         <tag>技术分享</tag>
-        <tag>语言学习</tag>
-        <tag>日语</tag>
         <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>wireguard的PC端纯ipv6校园网隧道方案</title>
-    <url>/2025/04/04/wireguard%E7%9A%84PC%E7%AB%AF%E7%BA%AFipv6%E6%A0%A1%E5%9B%AD%E7%BD%91%E9%9A%A7%E9%81%93%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="wireguard的PC端纯ipv6校园网隧道方案"><a href="#wireguard的PC端纯ipv6校园网隧道方案" class="headerlink" title="wireguard的PC端纯ipv6校园网隧道方案"></a>wireguard的PC端纯ipv6校园网隧道方案</h1><p>创建本文的原因是因为找不到win的教程，所以给其他像我一样的朋友提个建议。先说一下情况，家里的NAS因为各种原因用的是win系统，所以和一般的wireguard有所不同。同时，本文是在纯ipv6和ddns的情况下进行搭建的，因为wireguard对纯ipv6域名的解析会有误，会解析出连不上的v4地址，所以需要让wireguard强制使用域名的ipv6地址。但运营商给的公网v6地址是动态的，每个一段时间就会变化一次，所以在这里使用powershell加hosts文件的方法让域名变为ipv6地址，wireguard读取域名的时候会直接用hosts里的v6地址而不是瞎√8解析v4。</p>
-<h1 id="前提条件："><a href="#前提条件：" class="headerlink" title="前提条件："></a>前提条件：</h1><p>1.具备公网ipv6，可以用<a href="https://ipv6ready.me/index.html.zh_CN">https://ipv6ready.me/index.html.zh_CN</a> 进行测试，没有公网v6就不用往下看了。<br>2.NAS（或者说你用来中转的电脑服务器）已经搞了ddns以及有相对应的域名，如果没搞ddns就先去把ddns go和域名搞好，这些在站内以及网上都有教程，不多赘述。</p>
-<h2 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h2><p>1.先去wireguard官网下win的安装包，两台电脑都安装好wireguard。<br>2.对wireguard进行基础的配置，太复杂的东西我也不会，基本上就是生成公钥和私钥，然后配置服务器的端口</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">服务器</span><br><span class="line">[Interface]</span><br><span class="line">PrivateKey = 私钥</span><br><span class="line">ListenPort = 51820</span><br><span class="line">Address = 10.0.0.1/32（这里可以自己随便填内网地址）</span><br><span class="line">[Peer]</span><br><span class="line">PublicKey = 公钥</span><br><span class="line">AllowedIPs = 10.0.0.0/24</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">客户端</span><br><span class="line">[Interface]</span><br><span class="line">PrivateKey = 私钥</span><br><span class="line">ListenPort = 51820</span><br><span class="line">Address = 10.0.0.2/32</span><br><span class="line">[Peer]</span><br><span class="line">PublicKey = 公钥</span><br><span class="line">AllowedIPs = 10.0.0.0/24</span><br><span class="line">Endpoint =  域名:51820</span><br><span class="line">PersistentKeepalive = 25（这里是让校园网内的设备每隔25秒发送一次保活的数据包，因为外部不能主动访问校园网内的设备，所以需要校园网内设备主动发起连接，这样可以保证学校里的电脑一直和家里的设备连接）</span><br></pre></td></tr></table></figure>
-
-<p>3.如果你有公网v4，就不需要往下看了，下面是纯公网v6用的，同时也是本文重点，旨在帮助刚接触wireguard的朋友</p>
-<p>wireguard解析纯v6的域名会解析成运营商的v4地址，导致完全连不上，经过我两天的奋斗，终于找到了一种解决方法。</p>
-<p>我让GPT写了个ps1脚本（新建空白文本把下面的复制进去，改一下域名，然后把txt后缀改成ps1就行），让脚本解析你域名的ipv6地址，再把v6地址写入hosts里，这样wireguard解析域名时会自动读取你hosts里的IP地址，脚本如下</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Hosts 文件路径</span></span><br><span class="line"><span class="variable">$hostsPath</span> = <span class="string">&quot;C:\Windows\System32\drivers\etc\hosts&quot;</span></span><br><span class="line"><span class="comment"># 要删除的目标域名</span></span><br><span class="line"><span class="variable">$domain</span> = <span class="string">&quot;你的域名&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 确保 Hosts 文件存在</span></span><br><span class="line"><span class="keyword">if</span> (!(<span class="built_in">Test-Path</span> <span class="variable">$hostsPath</span>)) &#123;</span><br><span class="line">    <span class="built_in">Write-Host</span> <span class="string">&quot;Hosts 文件不存在，退出操作。&quot;</span></span><br><span class="line">    <span class="keyword">exit</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取当前 Hosts 文件内容</span></span><br><span class="line"><span class="variable">$hostsContent</span> = <span class="built_in">Get-Content</span> <span class="variable">$hostsPath</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除目标域名的记录</span></span><br><span class="line"><span class="variable">$updatedContent</span> = <span class="variable">$hostsContent</span> | <span class="built_in">Where-Object</span> &#123; <span class="variable">$_</span> <span class="operator">-notmatch</span> <span class="string">&quot;^\S+\s+<span class="variable">$domain</span>&quot;</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 写回文件</span></span><br><span class="line"><span class="variable">$updatedContent</span> | <span class="built_in">Set-Content</span> <span class="literal">-Path</span> <span class="variable">$hostsPath</span> <span class="literal">-Force</span> <span class="literal">-Encoding</span> UTF8</span><br><span class="line"><span class="built_in">Write-Host</span> <span class="string">&quot;已删除域名记录: <span class="variable">$domain</span>&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动脚本 2</span></span><br><span class="line"><span class="built_in">Start-Sleep</span> <span class="literal">-Seconds</span> <span class="number">5</span></span><br><span class="line"><span class="built_in">Start-Process</span> <span class="string">&quot;powershell.exe&quot;</span> <span class="literal">-ArgumentList</span> <span class="string">&quot;-File .\2.ps1&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>然后再创建一个2.ps1放在同目录下</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 获取动态 IPv6 地址</span><br><span class="line">$dynamicIPv6 = [System.Net.Dns]::GetHostAddresses(&quot;你的域名&quot;) | Where-Object &#123; $_.AddressFamily -eq &quot;InterNetworkV6&quot; &#125; | Select-Object -First 1</span><br><span class="line"></span><br><span class="line">if ($dynamicIPv6) &#123;</span><br><span class="line">    $hostsPath = &quot;C:\Windows\System32\drivers\etc\hosts&quot;</span><br><span class="line">    $domain = &quot;你的域名&quot;</span><br><span class="line"></span><br><span class="line">    # 确保 Hosts 文件存在</span><br><span class="line">    if (!(Test-Path $hostsPath)) &#123;</span><br><span class="line">        Write-Host &quot;Hosts 文件不存在，退出操作。&quot;</span><br><span class="line">        exit</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    # 重试机制</span><br><span class="line">    $maxRetries = 10</span><br><span class="line">    $retryInterval = 1</span><br><span class="line">    $success = $false</span><br><span class="line"></span><br><span class="line">    for ($i = 0; $i -lt $maxRetries; $i++) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            # 读取 Hosts 文件</span><br><span class="line">            $hostsContent = Get-Content $hostsPath -Raw</span><br><span class="line"></span><br><span class="line">            # 添加新记录</span><br><span class="line">            $newEntry = &quot;$($dynamicIPv6)   $domain&quot;</span><br><span class="line">            $hostsContent += &quot;`r`n$newEntry&quot;</span><br><span class="line"></span><br><span class="line">            # 写入 Hosts 文件</span><br><span class="line">            Set-Content -Path $hostsPath -Value $hostsContent -Force -Encoding UTF8</span><br><span class="line">            Write-Host &quot;添加新的解析记录: $newEntry&quot;</span><br><span class="line">            $success = $true</span><br><span class="line">            break</span><br><span class="line">        &#125; catch &#123;</span><br><span class="line">            Write-Host &quot;文件被占用，等待 $retryInterval 秒后重试...&quot;</span><br><span class="line">            Start-Sleep -Seconds $retryInterval</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (-not $success) &#123;</span><br><span class="line">        Write-Host &quot;无法更新 Hosts 文件，操作失败。&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    Write-Host &quot;未获取到动态 IPv6 地址，未进行更改。&quot;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>用powershell运行测试一下没问题<br>（什么？你问我为什么不放在一个脚本里解决？因为会有一个很离谱的bug，塞在一个脚本里执行的话他删完后生成的新解析记录跟旧的一模一样，跟没删一样，等于完全没更新记录）</p>
-<p>再在Win自带的任务计划程序里设置一下脚本开机自启动，一切就搞好了。</p>
-<p>再随便在NAS上设个shadowrocket或者clash代理，走代理访问校园网，这样就可以在离开学校的时候访问学校里的资源了。<br>clash示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">proxies:</span><br><span class="line">  - name: &quot;wireguard&quot;</span><br><span class="line">    type: http</span><br><span class="line">    server: &quot;10.0.0.2&quot;</span><br><span class="line">    port: 7890</span><br></pre></td></tr></table></figure>
-
-<h1 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h1><p>设代理是因为手机的wireguard也会把v6域名解析成v4地址，根本不能用手机的wireguard直接连。NAS和电脑上开个clash，搞个局域网共享就好了。</p>
-]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
-        <tag>WinNAS</tag>
-        <tag>经验记录</tag>
       </tags>
   </entry>
   <entry>
@@ -7557,124 +7676,6 @@
       <tags>
         <tag>语言学习</tag>
         <tag>日语</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在线AI刷题辅助复习</title>
-    <url>/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="或许是小镇做题家的得力助手"><a href="#或许是小镇做题家的得力助手" class="headerlink" title="或许是小镇做题家的得力助手"></a><del>或许是小镇做题家的得力助手</del></h1><h2 id="请先把提示词和划了重点的复习资料喂给AI生成代码"><a href="#请先把提示词和划了重点的复习资料喂给AI生成代码" class="headerlink" title="请先把提示词和划了重点的复习资料喂给AI生成代码"></a>请先把提示词和划了重点的复习资料喂给AI生成代码</h2><h1 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a><a href="https://blog.yediao.dpdns.org/2025/06/21/%E5%9C%A8%E7%BA%BFAI%E5%88%B7%E9%A2%98%E8%BE%85%E5%8A%A9%E5%A4%8D%E4%B9%A0%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">使用教程</a></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">模仿以下格式，从复习文件中获取重点（有特殊样式的部分），随机生成知识点不重复的单选题、多选题、填空题、判断题各10道给我，我要用刷题的方式确保自己复习到位并记住了知识点。data-answer内为正确答案，data-explanation内为答案解析，答案解析内如果有引号则一定要使用中文引号，避免影响html。请严格按照复习文件进行题目生成。并严格套用以下样式以html代码的形式输出给我，不可以生成多余的代码，必须完整地输出所有题目：</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;单项选择题 (每题1分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!-- 单选题1 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;choice&quot; data-answer=&quot;D&quot; data-explanation=&quot;膜分离技术适用于分离液体中的溶质或杂质，处理不含固形物的料液效果最佳。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;1.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;下列哪种物质最适合使用膜分离技术处理？&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1a&quot;&gt;菌体&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1b&quot;&gt;细胞&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1c&quot;&gt;微颗粒&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;input type=&quot;radio&quot; name=&quot;q1&quot; id=&quot;q1d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;label for=&quot;q1d&quot;&gt;不含固形物的料液&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">&lt;h2 class=&quot;section-title&quot;&gt;多项选择题 (每题2分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- 多选题49 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question&quot; data-type=&quot;multi&quot; data-answer=&#x27;[&quot;A&quot;,&quot;D&quot;]&#x27; data-explanation=&quot;发酵液的预处理和色层分离通常用于原料准备或精细纯化阶段，不属于初步纯化。&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-number&quot;&gt;49&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;question-text&quot;&gt;下列分离方法中不属于初步纯化的是( )&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;options&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49a&quot; value=&quot;A&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49a&quot;&gt;发酵液(培养液)的预处理和固液分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49b&quot; value=&quot;B&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49b&quot;&gt;吸附法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49c&quot; value=&quot;C&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49c&quot;&gt;离子交换法&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;option&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;input type=&quot;checkbox&quot; name=&quot;q49&quot; id=&quot;q49d&quot; value=&quot;D&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;label for=&quot;q49d&quot;&gt;色层分离&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;button class=&quot;check-multi-button&quot;&gt;确定&lt;/button&gt; &lt;!-- ✅ 添加这一行 --&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">    &lt;div class=&quot;section&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;h2 class=&quot;section-title&quot;&gt;填空题 (每题2-3分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">        &lt;!-- 填空题34 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;div class=&quot;question&quot; data-type=&quot;fill&quot; data-answer=&#x27;[&quot;有机&quot;,&quot;无机&quot;]&#x27; data-explanation=&quot;碱性清洗剂能有效去除蛋白质等有机污染物，酸性清洗剂则对钙镁盐等无机沉积物更有效。&quot;&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-number&quot;&gt;34.&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-score&quot;&gt;2分&lt;/div&gt;&lt;!-- 根据空格数设置分值 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question-text&quot;&gt;膜清洗的化学方法中，碱性清洗剂可有效去除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;0&quot;&gt; </span><br><span class="line"></span><br><span class="line">                污染物，酸性清洗剂用于清除</span><br><span class="line"></span><br><span class="line">                &lt;input type=&quot;text&quot; class=&quot;blank-input&quot; data-index=&quot;1&quot;&gt; </span><br><span class="line"></span><br><span class="line">                沉积。</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;!-- 判断题59 --&gt;</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;question&quot; data-type=&quot;judge&quot; data-answer=&quot;正确&quot; data-explanation=&quot;空化作用是超声波在液体中形成气泡并迅速破裂，从而产生冲击力和剪切力实现细胞破碎。&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-number&quot;&gt;59&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-score&quot;&gt;1分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question-text&quot;&gt;超声破碎是利用在超声波作用下液体发生空化作用。产生极大的冲击波和剪切力,使细胞破碎。&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;true-false-options&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59true&quot; value=&quot;正确&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59true&quot;&gt;正确&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;true-false-option&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;input type=&quot;radio&quot; name=&quot;q59&quot; id=&quot;q59false&quot; value=&quot;错误&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;label for=&quot;q59false&quot;&gt;错误&lt;/label&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;feedback&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line">            &lt;div class=&quot;subjective-section&quot;&gt;</span><br><span class="line"></span><br><span class="line">                &lt;h2 class=&quot;section-title&quot;&gt;主观题 (12分)&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">                &lt;div class=&quot;question&quot; data-type=&quot;subjective&quot;&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-header&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-number&quot;&gt;79&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;div class=&quot;question-score&quot;&gt;12分&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;question-text&quot;&gt;请设计方案将下列蛋白进行分离纯化，并说出采用方法的原理：&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;textarea class=&quot;subjective-answer&quot; placeholder=&quot;请输入您的答案...&quot;&gt;&lt;/textarea&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;button class=&quot;show-answer-btn&quot; onclick=&quot;toggleSubjectiveAnswer(this)&quot;&gt;查看参考答案&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">                    &lt;div class=&quot;reference-answer&quot; style=&quot;display: none;&quot;&gt;</span><br><span class="line"></span><br><span class="line">                        &lt;strong&gt;参考答案：&lt;/strong&gt;  </span><br><span class="line">                        该蛋白分离可采用层析技术（如离子交换层析、分子筛层析等），根据蛋白的等电点、分子量、亲水疏水性质等差异进行分步纯化。原理是利用不同蛋白在流动相和固定相中的相互作用力差异，选择性洗脱目标蛋白，从而实现分离。</span><br><span class="line"></span><br><span class="line">                    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">                &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"><a href="#本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考" class="headerlink" title="本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考"></a><em><strong>本人不对AI生成的题目负责，AI生成的题目只能辅助复习，不能保证考试会考</strong></em></h1><h2 id="可选的附加提示词"><a href="#可选的附加提示词" class="headerlink" title="可选的附加提示词"></a>可选的附加提示词</h2><p>以上提示词默认生成单选题、多选题、填空题、判断题，只要在AI聊天框里修改提示词就改变生成的题型。如果有额外需要，可以自行调试或者参考以下提示词。<br>名词解释：<code>名词解释使用填空题样式，但section-title要改为“名词解释”，按照知识点重点尽可能地多挖几个空。</code><br>主观题：<code>生成主观题，并按照下列主观题格式生成参考答案。</code><br>遇到复习资料很长的情况下，建议指定AI生成部分章节的题目，提高复习的覆盖率。例如：<code>从复习资料获取第一到第四章的知识点，随机生成知识点不重复的单选题、多选题、填空题、判断题各10道。</code></p>
-<h2 id="再把代码复制进下面的题目生成框里"><a href="#再把代码复制进下面的题目生成框里" class="headerlink" title="再把代码复制进下面的题目生成框里"></a>再把代码复制进下面的题目生成框里</h2>
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" type="text/css" href="/css/exam-question.css" />
-  <style>
-    #input-area {
-      margin: 20px;
-    }
-    textarea {
-      width: 100%;
-      height: 200px;
-      font-size: 14px;
-      padding: 10px;
-      box-sizing: border-box;
-      resize: vertical;
-    }
-    green-button {
-      margin-top: 10px;
-      padding: 10px 24px;
-      font-size: 16px;
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    green-button:hover {
-      background-color: #45a049;
-    }
-    
-    #exam-content {
-      margin: 20px;
-    }
-    .check-multi-button {
-      margin-top: 8px;
-      padding: 6px 14px;
-      font-size: 14px;
-      background-color: #3a82f7;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .check-multi-button:hover {
-      background-color: #2e6ed0;
-    }
-  </style>
-</head>
-<body>
-  <div id="input-area">
-    <h3>粘贴 HTML 试题内容：</h3>
-    <textarea id="html-input" placeholder="请将 HTML 代码粘贴到这里..."></textarea>
-    <br />
-    <green-button onclick="loadQuestions()">确定</green-button>
-  </div>
-
-  <div id="exam-content"></div>
-<div style="text-align: center; margin: 30px;">
-  <green-button onclick="submitAnswers()" style="padding: 12px 24px; font-size: 16px; background-color: #2196f3; color: white; border: none; border-radius: 6px; cursor: pointer;">
-    提交试卷
-  </green-button>
-</div>
-
-<div id="results" style="display: none; margin: 30px; text-align: center;">
-  <h3>得分结果</h3>
-  <div style="font-size: 18px; margin: 10px 0;">
-    您的得分：<span id="score" style="font-weight: bold;"></span> 分
-  </div>
-  <div style="width: 80%; margin: 10px auto; background: #ddd; height: 20px; border-radius: 10px;">
-    <div id="progressBar" style="height: 20px; background: #4caf50; border-radius: 10px; width: 0%; transition: width 0.5s;"></div>
-  </div>
-  <div id="resultDetails" style="margin-top: 10px; color: #555;"></div>
-</div>
-
-  <script>
-    function loadQuestions() {
-      const htmlContent = document.getElementById('html-input').value.trim();
-      if (!htmlContent) {
-        alert('请输入内容！');
-        return;
-      }
-
-      const container = document.getElementById('exam-content');
-      container.innerHTML = htmlContent;
-
-      // 延迟 100ms 确保 DOM 渲染完成后加载 JS（也可用 MutationObserver）
-      setTimeout(() => {
-        const oldScript = document.getElementById('exam-script');
-        if (oldScript) oldScript.remove();
-
-        const script = document.createElement('script');
-        script.src = '/js/exam.js';
-        script.id = 'exam-script';
-        script.defer = true; // 保证 DOM 可操作
-        document.body.appendChild(script);
-      }, 100);
-    }
-  </script>
-
-</body>
-</html>
-]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
         <tag>学习笔记</tag>
       </tags>
   </entry>
@@ -14712,26 +14713,6 @@ GABAA receptor: : γ-氨基丁酸受体
       </tags>
   </entry>
   <entry>
-    <title>谷歌虹咲日历</title>
-    <url>/2025/08/20/%E8%B0%B7%E6%AD%8C%E8%99%B9%E5%92%B2%E6%97%A5%E5%8E%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="本页面为对cloudflare代理谷歌日历进行测试"><a href="#本页面为对cloudflare代理谷歌日历进行测试" class="headerlink" title="本页面为对cloudflare代理谷歌日历进行测试"></a>本页面为对cloudflare代理谷歌日历进行测试</h2><iframe 
-  src="https://calendar.tennouji.dpdns.org/calendar/embed?src=c_r5tf64n6deed8dkmj6h7r6tr90@group.calendar.google.com&color=%23f6bf26&ctz=Asia%2FTokyo"
-  style="border: 0; width: 100%; height: 600px;" 
-  frameborder="0" 
-  scrolling="no">
-</iframe>
-
-
-
-<h2 id="相关代码-由GPT生成"><a href="#相关代码-由GPT生成" class="headerlink" title="相关代码(由GPT生成)"></a>相关代码(由GPT生成)</h2><p>创建到CF worker里</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Cloudflare Worker: Google Calendar 全域通配反代</span><br><span class="line"> * - 默认路径：代理 https://calendar.google.com 的 HTML</span><br><span class="line"> * - /proxy/&#123;scheme&#125;/&#123;host&#125;/&#123;path&#125;?&#123;query&#125;：通配代理任意目标（scheme: http|https）</span><br><span class="line"> * - HTMLRewriter：改写 HTML 中所有 *.google*.com 等静态资源地址为 /proxy 路径</span><br><span class="line"> * - 动态拦截：注入脚本，统一把运行时的 fetch / XHR / WebSocket / EventSource 指向 /proxy</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">const PROXY_PREFIX = &quot;/proxy/&quot;;</span><br><span class="line">const HTML_TYPES = [&quot;text/html&quot;, &quot;application/xhtml+xml&quot;];</span><br><span class="line"></span><br><span class="line">// 需要代理的域名后缀白名单（尽量覆盖 Google 生态）</span><br><span class="line">const HOST_WHITELIST_SUFFIX = [</span><br><span class="line">  &quot;.google.com&quot;,</span><br><span class="line">  &quot;.googleapis.com&quot;,</span><br><span class="line">  &quot;.gstatic.com&quot;,</span><br><span class="line">  &quot;.googleusercontent.com&quot;,</span><br><span class="line">  &quot;.ggpht.com&quot;,</span><br><span class="line">  &quot;.gvt1.com&quot;,</span><br><span class="line">  &quot;.gvt2.com&quot;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  async fetch(request, env, ctx) &#123;</span><br><span class="line">    const reqUrl = new URL(request.url);</span><br><span class="line"></span><br><span class="line">    // 1) 处理通配代理入口 /proxy/&#123;scheme&#125;/&#123;host&#125;/...</span><br><span class="line">    if (reqUrl.pathname.startsWith(PROXY_PREFIX)) &#123;</span><br><span class="line">      return handleProxy(request, reqUrl);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 2) 默认：把非 /proxy 的请求转到 calendar.google.com（嵌入页）</span><br><span class="line">    //    然后用 HTMLRewriter 改写里面的资源链接</span><br><span class="line">    const upstreamUrl = new URL(request.url);</span><br><span class="line">    upstreamUrl.hostname = &quot;calendar.google.com&quot;;</span><br><span class="line"></span><br><span class="line">    // 保持同样的 path/query</span><br><span class="line">    const upstreamResp = await fetch(upstreamUrl.toString(), &#123;</span><br><span class="line">      method: request.method,</span><br><span class="line">      headers: stripHopByHop(request.headers),</span><br><span class="line">      body: request.body,</span><br><span class="line">      redirect: &quot;follow&quot;,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    const ct = upstreamResp.headers.get(&quot;content-type&quot;) || &quot;&quot;;</span><br><span class="line">    // 非 HTML：去掉限制性头，原样透传</span><br><span class="line">    if (!HTML_TYPES.some(t =&gt; ct.includes(t))) &#123;</span><br><span class="line">      return passthroughResponse(upstreamResp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // HTML：改写静态链接 + 注入动态拦截脚本</span><br><span class="line">    const rewriter = new HTMLRewriter()</span><br><span class="line">      // 统一改写常见链接属性</span><br><span class="line">      .on(&quot;a[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">      .on(&quot;link[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">      .on(&quot;script[src]&quot;, new AttrRewriter(&quot;src&quot;, &#123; removeIntegrity: true &#125;))</span><br><span class="line">      .on(&quot;img[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">      .on(&quot;source[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">      .on(&quot;img[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">      .on(&quot;iframe[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">      .on(&quot;form[action]&quot;, new AttrRewriter(&quot;action&quot;))</span><br><span class="line">      // style 属性里的 url(...)</span><br><span class="line">      .on(&quot;*[style]&quot;, new StyleAttrRewriter(&quot;style&quot;))</span><br><span class="line">      // &lt;style&gt; 标签内的 url(...)</span><br><span class="line">      .on(&quot;style&quot;, new StyleTagRewriter())</span><br><span class="line">      // 移除可能阻止内嵌的 CSP/XFO meta</span><br><span class="line">      .on(&#x27;meta[http-equiv=&quot;Content-Security-Policy&quot;]&#x27;, &#123; element: el =&gt; el.remove() &#125;)</span><br><span class="line">      .on(&quot;head&quot;, new HeadInjector())</span><br><span class="line">      .on(&quot;body&quot;, new BodyInjector());</span><br><span class="line"></span><br><span class="line">    const rewritten = rewriter.transform(upstreamResp);</span><br><span class="line">    return addFriendlyHeaders(rewritten);</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/* ---------------- Utils ---------------- */</span><br><span class="line"></span><br><span class="line">function isWhitelistedHost(hostname) &#123;</span><br><span class="line">  const host = hostname.toLowerCase();</span><br><span class="line">  return HOST_WHITELIST_SUFFIX.some(sfx =&gt; host.endsWith(sfx));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 统一把绝对 URL 改写为 /proxy/&#123;scheme&#125;/&#123;host&#125;/&#123;path&#125;?&#123;query&#125;</span><br><span class="line">function toProxyUrl(absUrl, origin) &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    // 处理协议相对 // 开头</span><br><span class="line">    if (absUrl.startsWith(&quot;//&quot;)) &#123;</span><br><span class="line">      absUrl = &quot;https:&quot; + absUrl;</span><br><span class="line">    &#125;</span><br><span class="line">    const u = new URL(absUrl);</span><br><span class="line">    if (!isWhitelistedHost(u.hostname)) return absUrl; // 非白名单，不动</span><br><span class="line">    const scheme = u.protocol.replace(&quot;:&quot;, &quot;&quot;);</span><br><span class="line">    return `$&#123;origin&#125;$&#123;PROXY_PREFIX&#125;$&#123;scheme&#125;/$&#123;u.hostname&#125;$&#123;u.pathname&#125;$&#123;u.search&#125;`;</span><br><span class="line">  &#125; catch &#123;</span><br><span class="line">    // 非法/相对地址，不改写</span><br><span class="line">    return absUrl;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 去除 hop-by-hop 头</span><br><span class="line">function stripHopByHop(headers) &#123;</span><br><span class="line">  const h = new Headers(headers);</span><br><span class="line">  [</span><br><span class="line">    &quot;connection&quot;,</span><br><span class="line">    &quot;keep-alive&quot;,</span><br><span class="line">    &quot;proxy-authenticate&quot;,</span><br><span class="line">    &quot;proxy-authorization&quot;,</span><br><span class="line">    &quot;te&quot;,</span><br><span class="line">    &quot;trailer&quot;,</span><br><span class="line">    &quot;transfer-encoding&quot;,</span><br><span class="line">    &quot;upgrade&quot;,</span><br><span class="line">    // 有些站点会对 accept-encoding 进行压缩协商，HTMLRewriter 可处理解压，这里保留即可</span><br><span class="line">  ].forEach(k =&gt; h.delete(k));</span><br><span class="line">  return h;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 透传并放宽安全头</span><br><span class="line">async function passthroughResponse(resp) &#123;</span><br><span class="line">  const buf = await resp.arrayBuffer();</span><br><span class="line">  const h = new Headers(resp.headers);</span><br><span class="line">  // 允许 iframe 嵌入</span><br><span class="line">  h.delete(&quot;x-frame-options&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy-report-only&quot;);</span><br><span class="line">  // 放宽跨域（其实 iframe 同源下并不需要，但留着更稳）</span><br><span class="line">  h.set(&quot;access-control-allow-origin&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-credentials&quot;, &quot;true&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-headers&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-methods&quot;, &quot;GET,POST,PUT,PATCH,DELETE,OPTIONS&quot;);</span><br><span class="line">  return new Response(buf, &#123; status: resp.status, statusText: resp.statusText, headers: h &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 在 HTML 响应上附加友好头（同上）</span><br><span class="line">function addFriendlyHeaders(resp) &#123;</span><br><span class="line">  const h = new Headers(resp.headers);</span><br><span class="line">  h.delete(&quot;x-frame-options&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy-report-only&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-origin&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-credentials&quot;, &quot;true&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-headers&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-methods&quot;, &quot;GET,POST,PUT,PATCH,DELETE,OPTIONS&quot;);</span><br><span class="line">  return new Response(resp.body, &#123; status: resp.status, statusText: resp.statusText, headers: h &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// /proxy/&#123;scheme&#125;/&#123;host&#125;/... 入口</span><br><span class="line">async function handleProxy(request, reqUrl) &#123;</span><br><span class="line">  const seg = reqUrl.pathname.slice(PROXY_PREFIX.length).split(&quot;/&quot;);</span><br><span class="line">  if (seg.length &lt; 2) &#123;</span><br><span class="line">    return new Response(&quot;Invalid proxy path&quot;, &#123; status: 400 &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  const scheme = seg[0]; // http | https</span><br><span class="line">  const host = seg[1];</span><br><span class="line">  const pathRest = &quot;/&quot; + seg.slice(2).join(&quot;/&quot;);</span><br><span class="line">  const target = `$&#123;scheme&#125;://$&#123;host&#125;$&#123;pathRest&#125;$&#123;reqUrl.search || &quot;&quot;&#125;`;</span><br><span class="line"></span><br><span class="line">  // 非白名单域名直接拒绝，避免被滥用成开放代理</span><br><span class="line">  if (!isWhitelistedHost(host)) &#123;</span><br><span class="line">    return new Response(&quot;Host not allowed&quot;, &#123; status: 403 &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 预检请求快速放行</span><br><span class="line">  if (request.method === &quot;OPTIONS&quot;) &#123;</span><br><span class="line">    return new Response(null, &#123;</span><br><span class="line">      status: 204,</span><br><span class="line">      headers: &#123;</span><br><span class="line">        &quot;access-control-allow-origin&quot;: &quot;*&quot;,</span><br><span class="line">        &quot;access-control-allow-headers&quot;: &quot;*&quot;,</span><br><span class="line">        &quot;access-control-allow-methods&quot;: &quot;GET,POST,PUT,PATCH,DELETE,OPTIONS&quot;,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  const upstreamResp = await fetch(target, &#123;</span><br><span class="line">    method: request.method,</span><br><span class="line">    headers: stripHopByHop(request.headers),</span><br><span class="line">    body: request.body,</span><br><span class="line">    redirect: &quot;follow&quot;,</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  const ct = upstreamResp.headers.get(&quot;content-type&quot;) || &quot;&quot;;</span><br><span class="line">  if (!HTML_TYPES.some(t =&gt; ct.includes(t))) &#123;</span><br><span class="line">    return passthroughResponse(upstreamResp);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 即使是通过 /proxy 拿到的 HTML，也执行改写（以防页面里继续生成绝对链接）</span><br><span class="line">  const rewriter = new HTMLRewriter()</span><br><span class="line">    .on(&quot;a[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">    .on(&quot;link[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">    .on(&quot;script[src]&quot;, new AttrRewriter(&quot;src&quot;, &#123; removeIntegrity: true &#125;))</span><br><span class="line">    .on(&quot;img[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">    .on(&quot;source[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">    .on(&quot;img[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">    .on(&quot;iframe[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">    .on(&quot;form[action]&quot;, new AttrRewriter(&quot;action&quot;))</span><br><span class="line">    .on(&quot;*[style]&quot;, new StyleAttrRewriter(&quot;style&quot;))</span><br><span class="line">    .on(&quot;style&quot;, new StyleTagRewriter())</span><br><span class="line">    .on(&#x27;meta[http-equiv=&quot;Content-Security-Policy&quot;]&#x27;, &#123; element: el =&gt; el.remove() &#125;)</span><br><span class="line">    .on(&quot;head&quot;, new HeadInjector())</span><br><span class="line">    .on(&quot;body&quot;, new BodyInjector());</span><br><span class="line"></span><br><span class="line">  const rewritten = rewriter.transform(upstreamResp);</span><br><span class="line">  return addFriendlyHeaders(rewritten);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* --------------- HTMLRewriter Handlers --------------- */</span><br><span class="line"></span><br><span class="line">// 改写单个属性（href/src/action/...）</span><br><span class="line">class AttrRewriter &#123;</span><br><span class="line">  constructor(attr, opts = &#123;&#125;) &#123;</span><br><span class="line">    this.attr = attr;</span><br><span class="line">    this.opts = opts;</span><br><span class="line">  &#125;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    const val = el.getAttribute(this.attr);</span><br><span class="line">    if (!val) return;</span><br><span class="line">    const origin = getOrigin(el);</span><br><span class="line">    const newVal = toProxyUrl(val, origin);</span><br><span class="line">    if (newVal !== val) &#123;</span><br><span class="line">      el.setAttribute(this.attr, newVal);</span><br><span class="line">      // SRI 会因改写 URL 失效，干脆去掉</span><br><span class="line">      if (this.opts.removeIntegrity) &#123;</span><br><span class="line">        el.removeAttribute(&quot;integrity&quot;);</span><br><span class="line">        el.removeAttribute(&quot;crossorigin&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改写 srcset（多 URL）</span><br><span class="line">class SrcSetRewriter &#123;</span><br><span class="line">  constructor(attr) &#123;</span><br><span class="line">    this.attr = attr;</span><br><span class="line">  &#125;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    const val = el.getAttribute(this.attr);</span><br><span class="line">    if (!val) return;</span><br><span class="line">    const origin = getOrigin(el);</span><br><span class="line">    const parts = val.split(&quot;,&quot;).map(s =&gt; s.trim()).map(entry =&gt; &#123;</span><br><span class="line">      const [u, rest] = entry.split(/\s+/, 2);</span><br><span class="line">      const prox = toProxyUrl(u, origin);</span><br><span class="line">      return rest ? `$&#123;prox&#125; $&#123;rest&#125;` : prox;</span><br><span class="line">    &#125;);</span><br><span class="line">    el.setAttribute(this.attr, parts.join(&quot;, &quot;));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改写 style=&quot;background-image:url(...)&quot; 等</span><br><span class="line">class StyleAttrRewriter &#123;</span><br><span class="line">  constructor(attr) &#123;</span><br><span class="line">    this.attr = attr;</span><br><span class="line">  &#125;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    const val = el.getAttribute(this.attr);</span><br><span class="line">    if (!val) return;</span><br><span class="line">    const origin = getOrigin(el);</span><br><span class="line">    const replaced = replaceCssUrls(val, origin);</span><br><span class="line">    if (replaced !== val) el.setAttribute(this.attr, replaced);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改写 &lt;style&gt; 内的 url(...)</span><br><span class="line">class StyleTagRewriter &#123;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    el.onEndTag(t =&gt; &#123; /* no-op, need text stage */ &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  text(t) &#123;</span><br><span class="line">    const origin = getOriginFromTextTransformer(this);</span><br><span class="line">    const old = t.text;</span><br><span class="line">    const rep = replaceCssUrls(old, origin);</span><br><span class="line">    if (rep !== old) t.replace(rep);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 往 &lt;head&gt; 注入一些 meta/脚本（如需）</span><br><span class="line">class HeadInjector &#123;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    // 可按需注入 &lt;meta&gt;，例如 viewport 或去除 nosniff</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 在 &lt;/body&gt; 之前注入“动态拦截脚本”</span><br><span class="line">class BodyInjector &#123;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    el.append(DYNAMIC_SHIM, &#123; html: true &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 获取当前文档 origin（用于生成 /proxy 绝对 URL）</span><br><span class="line">function getOrigin(el) &#123;</span><br><span class="line">  // HTMLRewriter 没有直接给 origin，只能用一个安全兜底：</span><br><span class="line">  // 由浏览器加载时，location.origin 就是当前 Worker 绑定域名</span><br><span class="line">  return &quot;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">// StyleTagRewriter 文本阶段拿不到 window，这里同样返回空，toProxyUrl 会拼接 origin=&quot;&quot; =&gt; 从浏览器解析成相对地址</span><br><span class="line">function getOriginFromTextTransformer(_) &#123;</span><br><span class="line">  return &quot;&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 把 CSS 文本里的 url(&quot;https://...&quot;) 改写为 /proxy</span><br><span class="line">function replaceCssUrls(cssText, origin) &#123;</span><br><span class="line">  // 捕获 url(...) 中的引号或无引号 URL</span><br><span class="line">  return cssText.replace(/url\(\s*([&#x27;&quot;]?)(https?:\/\/[^&#x27;&quot;)\s]+)\1\s*\)/g, (m, q, u) =&gt; &#123;</span><br><span class="line">    const prox = toProxyUrl(u, origin);</span><br><span class="line">    return `url($&#123;q&#125;$&#123;prox&#125;$&#123;q&#125;)`;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* --------------- 动态请求“猴补丁” --------------- */</span><br><span class="line"></span><br><span class="line">const DYNAMIC_SHIM = `</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">  const HOST_WHITELIST_SUFFIX = $&#123;JSON.stringify(HOST_WHITELIST_SUFFIX)&#125;;</span><br><span class="line">  const PROXY_PREFIX = $&#123;JSON.stringify(PROXY_PREFIX)&#125;;</span><br><span class="line">  function isWhitelisted(h)&#123;</span><br><span class="line">    h = (h||&quot;&quot;).toLowerCase();</span><br><span class="line">    return HOST_WHITELIST_SUFFIX.some(s=&gt;h.endsWith(s));</span><br><span class="line">  &#125;</span><br><span class="line">  function toProxy(u)&#123;</span><br><span class="line">    try&#123;</span><br><span class="line">      if (typeof u !== &#x27;string&#x27;) return u;</span><br><span class="line">      if (u.startsWith(&#x27;/&#x27;)) return u; // 相对路径不动</span><br><span class="line">      if (u.startsWith(&#x27;//&#x27;)) u = &#x27;https:&#x27; + u;</span><br><span class="line">      const url = new URL(u, location.href);</span><br><span class="line">      if (!isWhitelisted(url.hostname)) return u;</span><br><span class="line">      const scheme = url.protocol.replace(&#x27;:&#x27;,&#x27;&#x27;);</span><br><span class="line">      return PROXY_PREFIX + scheme + &#x27;/&#x27; + url.hostname + url.pathname + url.search;</span><br><span class="line">    &#125;catch(e)&#123;return u;&#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // fetch 拦截</span><br><span class="line">  const _fetch = window.fetch;</span><br><span class="line">  window.fetch = function(input, init)&#123;</span><br><span class="line">    if (typeof input === &#x27;string&#x27;) &#123;</span><br><span class="line">      input = toProxy(input);</span><br><span class="line">    &#125; else if (input &amp;&amp; input.url) &#123;</span><br><span class="line">      input = new Request(toProxy(input.url), input);</span><br><span class="line">    &#125;</span><br><span class="line">    return _fetch(input, init);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  // XHR 拦截</span><br><span class="line">  const _open = XMLHttpRequest.prototype.open;</span><br><span class="line">  XMLHttpRequest.prototype.open = function(method, url)&#123;</span><br><span class="line">    try &#123; url = toProxy(url); &#125; catch(e)&#123;&#125;</span><br><span class="line">    return _open.apply(this, [method, url, ...Array.prototype.slice.call(arguments,2)]);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  // EventSource 拦截</span><br><span class="line">  const _ES = window.EventSource;</span><br><span class="line">  if (_ES) &#123;</span><br><span class="line">    window.EventSource = function(url, cfg)&#123;</span><br><span class="line">      return new _ES(toProxy(url), cfg);</span><br><span class="line">    &#125;</span><br><span class="line">    window.EventSource.prototype = _ES.prototype;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // WebSocket 拦截（如有）</span><br><span class="line">  const _WS = window.WebSocket;</span><br><span class="line">  if (_WS) &#123;</span><br><span class="line">    window.WebSocket = function(url, proto)&#123;</span><br><span class="line">      // WS/ WSS 不在此代理范围，如有需要，可在 Worker 添加 ws 反代</span><br><span class="line">      // 这里仅避免 google ws 直连（Calendar 通常不用 ws）</span><br><span class="line">      try&#123;</span><br><span class="line">        if (typeof url === &#x27;string&#x27;)&#123;</span><br><span class="line">          const u = new URL(url, location.href);</span><br><span class="line">          if (isWhitelisted(u.hostname)) &#123;</span><br><span class="line">            // 阻止直连（可直接抛错/改为长轮询）</span><br><span class="line">            throw new Error(&#x27;Blocked direct WebSocket to &#x27; + u.hostname);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;catch(e)&#123;&#125;</span><br><span class="line">      return new _WS(url, proto);</span><br><span class="line">    &#125;</span><br><span class="line">    window.WebSocket.prototype = _WS.prototype;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 替换 Document 中现存的绝对链接（极端兜底）</span><br><span class="line">  function rewriteDom()&#123;</span><br><span class="line">    const sel = [&#x27;a[href]&#x27;,&#x27;link[href]&#x27;,&#x27;script[src]&#x27;,&#x27;img[src]&#x27;,&#x27;source[srcset]&#x27;,&#x27;img[srcset]&#x27;,&#x27;iframe[src]&#x27;,&#x27;form[action]&#x27;];</span><br><span class="line">    sel.forEach(s=&gt;&#123;</span><br><span class="line">      document.querySelectorAll(s).forEach(el=&gt;&#123;</span><br><span class="line">        [&#x27;href&#x27;,&#x27;src&#x27;,&#x27;action&#x27;,&#x27;srcset&#x27;].forEach(attr=&gt;&#123;</span><br><span class="line">          if (!el.hasAttribute(attr)) return;</span><br><span class="line">          const v = el.getAttribute(attr);</span><br><span class="line">          const nv = toProxy(v);</span><br><span class="line">          if (v !== nv) &#123;</span><br><span class="line">            el.setAttribute(attr, nv);</span><br><span class="line">            el.removeAttribute(&#x27;integrity&#x27;);</span><br><span class="line">            el.removeAttribute(&#x27;crossorigin&#x27;);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  document.addEventListener(&#x27;DOMContentLoaded&#x27;, rewriteDom);</span><br><span class="line">  window.addEventListener(&#x27;load&#x27;, rewriteDom);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">`;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <tags>
-        <tag>代码相关</tag>
-        <tag>技术分享</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>虹咲未来地图汉化补丁制作</title>
     <url>/2025/05/01/%E8%99%B9%E5%92%B2%E6%9C%AA%E6%9D%A5%E5%9C%B0%E5%9B%BE%E8%A1%A5%E4%B8%81%E5%88%B6%E4%BD%9C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="本次汉化补丁靠的是大家的共同努力，才能在五一前完成测试并上线。我在这次补丁的制作中主要搞的是翻译和后期打包以及测试本文记载的是打包遇到的各种状况，为日后遇到类似问题时可以提供参考思路"><a href="#本次汉化补丁靠的是大家的共同努力，才能在五一前完成测试并上线。我在这次补丁的制作中主要搞的是翻译和后期打包以及测试本文记载的是打包遇到的各种状况，为日后遇到类似问题时可以提供参考思路" class="headerlink" title="本次汉化补丁靠的是大家的共同努力，才能在五一前完成测试并上线。我在这次补丁的制作中主要搞的是翻译和后期打包以及测试本文记载的是打包遇到的各种状况，为日后遇到类似问题时可以提供参考思路"></a>本次汉化补丁靠的是大家的共同努力，才能在五一前完成测试并上线。<br>我在这次补丁的制作中主要搞的是翻译和后期打包以及测试<br>本文记载的是打包遇到的各种状况，为日后遇到类似问题时可以提供参考思路</h2><h1 id="特别感谢"><a href="#特别感谢" class="headerlink" title="特别感谢"></a>特别感谢</h1><h2 id="在这里要特别感谢凌空和某魏两位大佬开发出的解包和打包工具以及最初的解包文件，使得字幕组可以在二月份就对文本进行汉化作业。（因为一些奇奇怪怪的原因导致4月中快发售了才想起来要做图片的嵌字部分）"><a href="#在这里要特别感谢凌空和某魏两位大佬开发出的解包和打包工具以及最初的解包文件，使得字幕组可以在二月份就对文本进行汉化作业。（因为一些奇奇怪怪的原因导致4月中快发售了才想起来要做图片的嵌字部分）" class="headerlink" title="在这里要特别感谢凌空和某魏两位大佬开发出的解包和打包工具以及最初的解包文件，使得字幕组可以在二月份就对文本进行汉化作业。（因为一些奇奇怪怪的原因导致4月中快发售了才想起来要做图片的嵌字部分）"></a>在这里要特别感谢<a href="https://github.com/LingkongSky">凌空</a>和<a href="https://github.com/wlt233">某魏</a>两位大佬开发出的解包和打包工具以及最初的解包文件，使得字幕组可以在二月份就对文本进行汉化作业。<del><em><strong>（因为一些奇奇怪怪的原因导致4月中快发售了才想起来要做图片的嵌字部分）</strong></em></del></h2><h1 id="完整解包流程"><a href="#完整解包流程" class="headerlink" title="完整解包流程"></a>完整解包流程</h1><h2 id="阶段一：解包文件"><a href="#阶段一：解包文件" class="headerlink" title="阶段一：解包文件"></a>阶段一：解包文件</h2><p>使用某魏制作的<a href="https://github.com/wlt233/hunex_script/tree/master/hdlg">py脚本</a>对游戏的hdlg和hpb等文件进行解包<br><img src="/../img/%E8%99%B9%E5%92%B2%E6%9C%AA%E6%9D%A5%E5%9C%B0%E5%9B%BE%E6%B1%89%E5%8C%96%E8%A1%A5%E4%B8%81/1.png"><br><img src="/../img/%E8%99%B9%E5%92%B2%E6%9C%AA%E6%9D%A5%E5%9C%B0%E5%9B%BE%E6%B1%89%E5%8C%96%E8%A1%A5%E4%B8%81/2.png"></p>
@@ -14995,6 +14976,26 @@ GABAA receptor: : γ-氨基丁酸受体
       <tags>
         <tag>学习笔记</tag>
         <tag>生物制药</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>谷歌虹咲日历</title>
+    <url>/2025/08/20/%E8%B0%B7%E6%AD%8C%E8%99%B9%E5%92%B2%E6%97%A5%E5%8E%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="本页面为对cloudflare代理谷歌日历进行测试"><a href="#本页面为对cloudflare代理谷歌日历进行测试" class="headerlink" title="本页面为对cloudflare代理谷歌日历进行测试"></a>本页面为对cloudflare代理谷歌日历进行测试</h2><iframe 
+  src="https://calendar.tennouji.dpdns.org/calendar/embed?src=c_r5tf64n6deed8dkmj6h7r6tr90@group.calendar.google.com&color=%23f6bf26&ctz=Asia%2FTokyo"
+  style="border: 0; width: 100%; height: 600px;" 
+  frameborder="0" 
+  scrolling="no">
+</iframe>
+
+
+
+<h2 id="相关代码-由GPT生成"><a href="#相关代码-由GPT生成" class="headerlink" title="相关代码(由GPT生成)"></a>相关代码(由GPT生成)</h2><p>创建到CF worker里</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Cloudflare Worker: Google Calendar 全域通配反代</span><br><span class="line"> * - 默认路径：代理 https://calendar.google.com 的 HTML</span><br><span class="line"> * - /proxy/&#123;scheme&#125;/&#123;host&#125;/&#123;path&#125;?&#123;query&#125;：通配代理任意目标（scheme: http|https）</span><br><span class="line"> * - HTMLRewriter：改写 HTML 中所有 *.google*.com 等静态资源地址为 /proxy 路径</span><br><span class="line"> * - 动态拦截：注入脚本，统一把运行时的 fetch / XHR / WebSocket / EventSource 指向 /proxy</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">const PROXY_PREFIX = &quot;/proxy/&quot;;</span><br><span class="line">const HTML_TYPES = [&quot;text/html&quot;, &quot;application/xhtml+xml&quot;];</span><br><span class="line"></span><br><span class="line">// 需要代理的域名后缀白名单（尽量覆盖 Google 生态）</span><br><span class="line">const HOST_WHITELIST_SUFFIX = [</span><br><span class="line">  &quot;.google.com&quot;,</span><br><span class="line">  &quot;.googleapis.com&quot;,</span><br><span class="line">  &quot;.gstatic.com&quot;,</span><br><span class="line">  &quot;.googleusercontent.com&quot;,</span><br><span class="line">  &quot;.ggpht.com&quot;,</span><br><span class="line">  &quot;.gvt1.com&quot;,</span><br><span class="line">  &quot;.gvt2.com&quot;,</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  async fetch(request, env, ctx) &#123;</span><br><span class="line">    const reqUrl = new URL(request.url);</span><br><span class="line"></span><br><span class="line">    // 1) 处理通配代理入口 /proxy/&#123;scheme&#125;/&#123;host&#125;/...</span><br><span class="line">    if (reqUrl.pathname.startsWith(PROXY_PREFIX)) &#123;</span><br><span class="line">      return handleProxy(request, reqUrl);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 2) 默认：把非 /proxy 的请求转到 calendar.google.com（嵌入页）</span><br><span class="line">    //    然后用 HTMLRewriter 改写里面的资源链接</span><br><span class="line">    const upstreamUrl = new URL(request.url);</span><br><span class="line">    upstreamUrl.hostname = &quot;calendar.google.com&quot;;</span><br><span class="line"></span><br><span class="line">    // 保持同样的 path/query</span><br><span class="line">    const upstreamResp = await fetch(upstreamUrl.toString(), &#123;</span><br><span class="line">      method: request.method,</span><br><span class="line">      headers: stripHopByHop(request.headers),</span><br><span class="line">      body: request.body,</span><br><span class="line">      redirect: &quot;follow&quot;,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    const ct = upstreamResp.headers.get(&quot;content-type&quot;) || &quot;&quot;;</span><br><span class="line">    // 非 HTML：去掉限制性头，原样透传</span><br><span class="line">    if (!HTML_TYPES.some(t =&gt; ct.includes(t))) &#123;</span><br><span class="line">      return passthroughResponse(upstreamResp);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // HTML：改写静态链接 + 注入动态拦截脚本</span><br><span class="line">    const rewriter = new HTMLRewriter()</span><br><span class="line">      // 统一改写常见链接属性</span><br><span class="line">      .on(&quot;a[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">      .on(&quot;link[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">      .on(&quot;script[src]&quot;, new AttrRewriter(&quot;src&quot;, &#123; removeIntegrity: true &#125;))</span><br><span class="line">      .on(&quot;img[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">      .on(&quot;source[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">      .on(&quot;img[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">      .on(&quot;iframe[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">      .on(&quot;form[action]&quot;, new AttrRewriter(&quot;action&quot;))</span><br><span class="line">      // style 属性里的 url(...)</span><br><span class="line">      .on(&quot;*[style]&quot;, new StyleAttrRewriter(&quot;style&quot;))</span><br><span class="line">      // &lt;style&gt; 标签内的 url(...)</span><br><span class="line">      .on(&quot;style&quot;, new StyleTagRewriter())</span><br><span class="line">      // 移除可能阻止内嵌的 CSP/XFO meta</span><br><span class="line">      .on(&#x27;meta[http-equiv=&quot;Content-Security-Policy&quot;]&#x27;, &#123; element: el =&gt; el.remove() &#125;)</span><br><span class="line">      .on(&quot;head&quot;, new HeadInjector())</span><br><span class="line">      .on(&quot;body&quot;, new BodyInjector());</span><br><span class="line"></span><br><span class="line">    const rewritten = rewriter.transform(upstreamResp);</span><br><span class="line">    return addFriendlyHeaders(rewritten);</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/* ---------------- Utils ---------------- */</span><br><span class="line"></span><br><span class="line">function isWhitelistedHost(hostname) &#123;</span><br><span class="line">  const host = hostname.toLowerCase();</span><br><span class="line">  return HOST_WHITELIST_SUFFIX.some(sfx =&gt; host.endsWith(sfx));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 统一把绝对 URL 改写为 /proxy/&#123;scheme&#125;/&#123;host&#125;/&#123;path&#125;?&#123;query&#125;</span><br><span class="line">function toProxyUrl(absUrl, origin) &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    // 处理协议相对 // 开头</span><br><span class="line">    if (absUrl.startsWith(&quot;//&quot;)) &#123;</span><br><span class="line">      absUrl = &quot;https:&quot; + absUrl;</span><br><span class="line">    &#125;</span><br><span class="line">    const u = new URL(absUrl);</span><br><span class="line">    if (!isWhitelistedHost(u.hostname)) return absUrl; // 非白名单，不动</span><br><span class="line">    const scheme = u.protocol.replace(&quot;:&quot;, &quot;&quot;);</span><br><span class="line">    return `$&#123;origin&#125;$&#123;PROXY_PREFIX&#125;$&#123;scheme&#125;/$&#123;u.hostname&#125;$&#123;u.pathname&#125;$&#123;u.search&#125;`;</span><br><span class="line">  &#125; catch &#123;</span><br><span class="line">    // 非法/相对地址，不改写</span><br><span class="line">    return absUrl;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 去除 hop-by-hop 头</span><br><span class="line">function stripHopByHop(headers) &#123;</span><br><span class="line">  const h = new Headers(headers);</span><br><span class="line">  [</span><br><span class="line">    &quot;connection&quot;,</span><br><span class="line">    &quot;keep-alive&quot;,</span><br><span class="line">    &quot;proxy-authenticate&quot;,</span><br><span class="line">    &quot;proxy-authorization&quot;,</span><br><span class="line">    &quot;te&quot;,</span><br><span class="line">    &quot;trailer&quot;,</span><br><span class="line">    &quot;transfer-encoding&quot;,</span><br><span class="line">    &quot;upgrade&quot;,</span><br><span class="line">    // 有些站点会对 accept-encoding 进行压缩协商，HTMLRewriter 可处理解压，这里保留即可</span><br><span class="line">  ].forEach(k =&gt; h.delete(k));</span><br><span class="line">  return h;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 透传并放宽安全头</span><br><span class="line">async function passthroughResponse(resp) &#123;</span><br><span class="line">  const buf = await resp.arrayBuffer();</span><br><span class="line">  const h = new Headers(resp.headers);</span><br><span class="line">  // 允许 iframe 嵌入</span><br><span class="line">  h.delete(&quot;x-frame-options&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy-report-only&quot;);</span><br><span class="line">  // 放宽跨域（其实 iframe 同源下并不需要，但留着更稳）</span><br><span class="line">  h.set(&quot;access-control-allow-origin&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-credentials&quot;, &quot;true&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-headers&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-methods&quot;, &quot;GET,POST,PUT,PATCH,DELETE,OPTIONS&quot;);</span><br><span class="line">  return new Response(buf, &#123; status: resp.status, statusText: resp.statusText, headers: h &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 在 HTML 响应上附加友好头（同上）</span><br><span class="line">function addFriendlyHeaders(resp) &#123;</span><br><span class="line">  const h = new Headers(resp.headers);</span><br><span class="line">  h.delete(&quot;x-frame-options&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy&quot;);</span><br><span class="line">  h.delete(&quot;content-security-policy-report-only&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-origin&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-credentials&quot;, &quot;true&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-headers&quot;, &quot;*&quot;);</span><br><span class="line">  h.set(&quot;access-control-allow-methods&quot;, &quot;GET,POST,PUT,PATCH,DELETE,OPTIONS&quot;);</span><br><span class="line">  return new Response(resp.body, &#123; status: resp.status, statusText: resp.statusText, headers: h &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// /proxy/&#123;scheme&#125;/&#123;host&#125;/... 入口</span><br><span class="line">async function handleProxy(request, reqUrl) &#123;</span><br><span class="line">  const seg = reqUrl.pathname.slice(PROXY_PREFIX.length).split(&quot;/&quot;);</span><br><span class="line">  if (seg.length &lt; 2) &#123;</span><br><span class="line">    return new Response(&quot;Invalid proxy path&quot;, &#123; status: 400 &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  const scheme = seg[0]; // http | https</span><br><span class="line">  const host = seg[1];</span><br><span class="line">  const pathRest = &quot;/&quot; + seg.slice(2).join(&quot;/&quot;);</span><br><span class="line">  const target = `$&#123;scheme&#125;://$&#123;host&#125;$&#123;pathRest&#125;$&#123;reqUrl.search || &quot;&quot;&#125;`;</span><br><span class="line"></span><br><span class="line">  // 非白名单域名直接拒绝，避免被滥用成开放代理</span><br><span class="line">  if (!isWhitelistedHost(host)) &#123;</span><br><span class="line">    return new Response(&quot;Host not allowed&quot;, &#123; status: 403 &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 预检请求快速放行</span><br><span class="line">  if (request.method === &quot;OPTIONS&quot;) &#123;</span><br><span class="line">    return new Response(null, &#123;</span><br><span class="line">      status: 204,</span><br><span class="line">      headers: &#123;</span><br><span class="line">        &quot;access-control-allow-origin&quot;: &quot;*&quot;,</span><br><span class="line">        &quot;access-control-allow-headers&quot;: &quot;*&quot;,</span><br><span class="line">        &quot;access-control-allow-methods&quot;: &quot;GET,POST,PUT,PATCH,DELETE,OPTIONS&quot;,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  const upstreamResp = await fetch(target, &#123;</span><br><span class="line">    method: request.method,</span><br><span class="line">    headers: stripHopByHop(request.headers),</span><br><span class="line">    body: request.body,</span><br><span class="line">    redirect: &quot;follow&quot;,</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  const ct = upstreamResp.headers.get(&quot;content-type&quot;) || &quot;&quot;;</span><br><span class="line">  if (!HTML_TYPES.some(t =&gt; ct.includes(t))) &#123;</span><br><span class="line">    return passthroughResponse(upstreamResp);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 即使是通过 /proxy 拿到的 HTML，也执行改写（以防页面里继续生成绝对链接）</span><br><span class="line">  const rewriter = new HTMLRewriter()</span><br><span class="line">    .on(&quot;a[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">    .on(&quot;link[href]&quot;, new AttrRewriter(&quot;href&quot;))</span><br><span class="line">    .on(&quot;script[src]&quot;, new AttrRewriter(&quot;src&quot;, &#123; removeIntegrity: true &#125;))</span><br><span class="line">    .on(&quot;img[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">    .on(&quot;source[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">    .on(&quot;img[srcset]&quot;, new SrcSetRewriter(&quot;srcset&quot;))</span><br><span class="line">    .on(&quot;iframe[src]&quot;, new AttrRewriter(&quot;src&quot;))</span><br><span class="line">    .on(&quot;form[action]&quot;, new AttrRewriter(&quot;action&quot;))</span><br><span class="line">    .on(&quot;*[style]&quot;, new StyleAttrRewriter(&quot;style&quot;))</span><br><span class="line">    .on(&quot;style&quot;, new StyleTagRewriter())</span><br><span class="line">    .on(&#x27;meta[http-equiv=&quot;Content-Security-Policy&quot;]&#x27;, &#123; element: el =&gt; el.remove() &#125;)</span><br><span class="line">    .on(&quot;head&quot;, new HeadInjector())</span><br><span class="line">    .on(&quot;body&quot;, new BodyInjector());</span><br><span class="line"></span><br><span class="line">  const rewritten = rewriter.transform(upstreamResp);</span><br><span class="line">  return addFriendlyHeaders(rewritten);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* --------------- HTMLRewriter Handlers --------------- */</span><br><span class="line"></span><br><span class="line">// 改写单个属性（href/src/action/...）</span><br><span class="line">class AttrRewriter &#123;</span><br><span class="line">  constructor(attr, opts = &#123;&#125;) &#123;</span><br><span class="line">    this.attr = attr;</span><br><span class="line">    this.opts = opts;</span><br><span class="line">  &#125;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    const val = el.getAttribute(this.attr);</span><br><span class="line">    if (!val) return;</span><br><span class="line">    const origin = getOrigin(el);</span><br><span class="line">    const newVal = toProxyUrl(val, origin);</span><br><span class="line">    if (newVal !== val) &#123;</span><br><span class="line">      el.setAttribute(this.attr, newVal);</span><br><span class="line">      // SRI 会因改写 URL 失效，干脆去掉</span><br><span class="line">      if (this.opts.removeIntegrity) &#123;</span><br><span class="line">        el.removeAttribute(&quot;integrity&quot;);</span><br><span class="line">        el.removeAttribute(&quot;crossorigin&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改写 srcset（多 URL）</span><br><span class="line">class SrcSetRewriter &#123;</span><br><span class="line">  constructor(attr) &#123;</span><br><span class="line">    this.attr = attr;</span><br><span class="line">  &#125;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    const val = el.getAttribute(this.attr);</span><br><span class="line">    if (!val) return;</span><br><span class="line">    const origin = getOrigin(el);</span><br><span class="line">    const parts = val.split(&quot;,&quot;).map(s =&gt; s.trim()).map(entry =&gt; &#123;</span><br><span class="line">      const [u, rest] = entry.split(/\s+/, 2);</span><br><span class="line">      const prox = toProxyUrl(u, origin);</span><br><span class="line">      return rest ? `$&#123;prox&#125; $&#123;rest&#125;` : prox;</span><br><span class="line">    &#125;);</span><br><span class="line">    el.setAttribute(this.attr, parts.join(&quot;, &quot;));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改写 style=&quot;background-image:url(...)&quot; 等</span><br><span class="line">class StyleAttrRewriter &#123;</span><br><span class="line">  constructor(attr) &#123;</span><br><span class="line">    this.attr = attr;</span><br><span class="line">  &#125;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    const val = el.getAttribute(this.attr);</span><br><span class="line">    if (!val) return;</span><br><span class="line">    const origin = getOrigin(el);</span><br><span class="line">    const replaced = replaceCssUrls(val, origin);</span><br><span class="line">    if (replaced !== val) el.setAttribute(this.attr, replaced);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 改写 &lt;style&gt; 内的 url(...)</span><br><span class="line">class StyleTagRewriter &#123;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    el.onEndTag(t =&gt; &#123; /* no-op, need text stage */ &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  text(t) &#123;</span><br><span class="line">    const origin = getOriginFromTextTransformer(this);</span><br><span class="line">    const old = t.text;</span><br><span class="line">    const rep = replaceCssUrls(old, origin);</span><br><span class="line">    if (rep !== old) t.replace(rep);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 往 &lt;head&gt; 注入一些 meta/脚本（如需）</span><br><span class="line">class HeadInjector &#123;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    // 可按需注入 &lt;meta&gt;，例如 viewport 或去除 nosniff</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 在 &lt;/body&gt; 之前注入“动态拦截脚本”</span><br><span class="line">class BodyInjector &#123;</span><br><span class="line">  element(el) &#123;</span><br><span class="line">    el.append(DYNAMIC_SHIM, &#123; html: true &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 获取当前文档 origin（用于生成 /proxy 绝对 URL）</span><br><span class="line">function getOrigin(el) &#123;</span><br><span class="line">  // HTMLRewriter 没有直接给 origin，只能用一个安全兜底：</span><br><span class="line">  // 由浏览器加载时，location.origin 就是当前 Worker 绑定域名</span><br><span class="line">  return &quot;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">// StyleTagRewriter 文本阶段拿不到 window，这里同样返回空，toProxyUrl 会拼接 origin=&quot;&quot; =&gt; 从浏览器解析成相对地址</span><br><span class="line">function getOriginFromTextTransformer(_) &#123;</span><br><span class="line">  return &quot;&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 把 CSS 文本里的 url(&quot;https://...&quot;) 改写为 /proxy</span><br><span class="line">function replaceCssUrls(cssText, origin) &#123;</span><br><span class="line">  // 捕获 url(...) 中的引号或无引号 URL</span><br><span class="line">  return cssText.replace(/url\(\s*([&#x27;&quot;]?)(https?:\/\/[^&#x27;&quot;)\s]+)\1\s*\)/g, (m, q, u) =&gt; &#123;</span><br><span class="line">    const prox = toProxyUrl(u, origin);</span><br><span class="line">    return `url($&#123;q&#125;$&#123;prox&#125;$&#123;q&#125;)`;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* --------------- 动态请求“猴补丁” --------------- */</span><br><span class="line"></span><br><span class="line">const DYNAMIC_SHIM = `</span><br><span class="line">&lt;script&gt;</span><br><span class="line">(function()&#123;</span><br><span class="line">  const HOST_WHITELIST_SUFFIX = $&#123;JSON.stringify(HOST_WHITELIST_SUFFIX)&#125;;</span><br><span class="line">  const PROXY_PREFIX = $&#123;JSON.stringify(PROXY_PREFIX)&#125;;</span><br><span class="line">  function isWhitelisted(h)&#123;</span><br><span class="line">    h = (h||&quot;&quot;).toLowerCase();</span><br><span class="line">    return HOST_WHITELIST_SUFFIX.some(s=&gt;h.endsWith(s));</span><br><span class="line">  &#125;</span><br><span class="line">  function toProxy(u)&#123;</span><br><span class="line">    try&#123;</span><br><span class="line">      if (typeof u !== &#x27;string&#x27;) return u;</span><br><span class="line">      if (u.startsWith(&#x27;/&#x27;)) return u; // 相对路径不动</span><br><span class="line">      if (u.startsWith(&#x27;//&#x27;)) u = &#x27;https:&#x27; + u;</span><br><span class="line">      const url = new URL(u, location.href);</span><br><span class="line">      if (!isWhitelisted(url.hostname)) return u;</span><br><span class="line">      const scheme = url.protocol.replace(&#x27;:&#x27;,&#x27;&#x27;);</span><br><span class="line">      return PROXY_PREFIX + scheme + &#x27;/&#x27; + url.hostname + url.pathname + url.search;</span><br><span class="line">    &#125;catch(e)&#123;return u;&#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // fetch 拦截</span><br><span class="line">  const _fetch = window.fetch;</span><br><span class="line">  window.fetch = function(input, init)&#123;</span><br><span class="line">    if (typeof input === &#x27;string&#x27;) &#123;</span><br><span class="line">      input = toProxy(input);</span><br><span class="line">    &#125; else if (input &amp;&amp; input.url) &#123;</span><br><span class="line">      input = new Request(toProxy(input.url), input);</span><br><span class="line">    &#125;</span><br><span class="line">    return _fetch(input, init);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  // XHR 拦截</span><br><span class="line">  const _open = XMLHttpRequest.prototype.open;</span><br><span class="line">  XMLHttpRequest.prototype.open = function(method, url)&#123;</span><br><span class="line">    try &#123; url = toProxy(url); &#125; catch(e)&#123;&#125;</span><br><span class="line">    return _open.apply(this, [method, url, ...Array.prototype.slice.call(arguments,2)]);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  // EventSource 拦截</span><br><span class="line">  const _ES = window.EventSource;</span><br><span class="line">  if (_ES) &#123;</span><br><span class="line">    window.EventSource = function(url, cfg)&#123;</span><br><span class="line">      return new _ES(toProxy(url), cfg);</span><br><span class="line">    &#125;</span><br><span class="line">    window.EventSource.prototype = _ES.prototype;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // WebSocket 拦截（如有）</span><br><span class="line">  const _WS = window.WebSocket;</span><br><span class="line">  if (_WS) &#123;</span><br><span class="line">    window.WebSocket = function(url, proto)&#123;</span><br><span class="line">      // WS/ WSS 不在此代理范围，如有需要，可在 Worker 添加 ws 反代</span><br><span class="line">      // 这里仅避免 google ws 直连（Calendar 通常不用 ws）</span><br><span class="line">      try&#123;</span><br><span class="line">        if (typeof url === &#x27;string&#x27;)&#123;</span><br><span class="line">          const u = new URL(url, location.href);</span><br><span class="line">          if (isWhitelisted(u.hostname)) &#123;</span><br><span class="line">            // 阻止直连（可直接抛错/改为长轮询）</span><br><span class="line">            throw new Error(&#x27;Blocked direct WebSocket to &#x27; + u.hostname);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;catch(e)&#123;&#125;</span><br><span class="line">      return new _WS(url, proto);</span><br><span class="line">    &#125;</span><br><span class="line">    window.WebSocket.prototype = _WS.prototype;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  // 替换 Document 中现存的绝对链接（极端兜底）</span><br><span class="line">  function rewriteDom()&#123;</span><br><span class="line">    const sel = [&#x27;a[href]&#x27;,&#x27;link[href]&#x27;,&#x27;script[src]&#x27;,&#x27;img[src]&#x27;,&#x27;source[srcset]&#x27;,&#x27;img[srcset]&#x27;,&#x27;iframe[src]&#x27;,&#x27;form[action]&#x27;];</span><br><span class="line">    sel.forEach(s=&gt;&#123;</span><br><span class="line">      document.querySelectorAll(s).forEach(el=&gt;&#123;</span><br><span class="line">        [&#x27;href&#x27;,&#x27;src&#x27;,&#x27;action&#x27;,&#x27;srcset&#x27;].forEach(attr=&gt;&#123;</span><br><span class="line">          if (!el.hasAttribute(attr)) return;</span><br><span class="line">          const v = el.getAttribute(attr);</span><br><span class="line">          const nv = toProxy(v);</span><br><span class="line">          if (v !== nv) &#123;</span><br><span class="line">            el.setAttribute(attr, nv);</span><br><span class="line">            el.removeAttribute(&#x27;integrity&#x27;);</span><br><span class="line">            el.removeAttribute(&#x27;crossorigin&#x27;);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  document.addEventListener(&#x27;DOMContentLoaded&#x27;, rewriteDom);</span><br><span class="line">  window.addEventListener(&#x27;load&#x27;, rewriteDom);</span><br><span class="line">&#125;)();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">`;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>代码相关</tag>
+        <tag>技术分享</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
 </search>

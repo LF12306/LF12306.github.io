@@ -1,8 +1,8 @@
 /* 货币转换器小工具 */
 #currency-converter {
   background: var(--card-bg);
-  border-radius: 12px;
-  padding: 1rem;
+  border-radius: 8px;
+  padding: 0;
   margin-bottom: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   overflow: hidden;
@@ -11,7 +11,8 @@
 #currency-converter .item-headline {
   font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: 0.8rem;
+  padding: 10px 15px 0;
+  margin-bottom: 0;
   color: var(--text-color);
   display: flex;
   align-items: center;
@@ -25,7 +26,6 @@
 .currency-converter-container {
   position: relative;
   width: 100%;
-  min-height: 260px;
 }
 
 /* 深色模式适配 */
@@ -36,11 +36,6 @@
 /* 移动端优化 */
 @media (max-width: 768px) {
   #currency-converter {
-    padding: 0.8rem;
     margin-bottom: 0.8rem;
-  }
-  
-  .currency-converter-container {
-    min-height: 260px;
   }
 }
